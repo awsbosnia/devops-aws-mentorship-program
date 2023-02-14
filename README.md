@@ -1,17 +1,18 @@
-# ☁️ AWS / Cloud / DevOps / Site Reliability Engineering / Platform Engineering / Production Engineering Mentorship program ☁️
+# DevOps Mentoship Program
 
 -- Work in progress--  
 
 **NOTE: Readme file ce biti dodatno azuriran i unaprijedjen**
 ## 🧚 Background Story
 
-Mentorship program je pokrenut od strane AWS zajednice u Bosni i Hercegovini uz pomoc nasih kolega iz AWS zajednice Crne Gore. 
-Cilj mentorship programa je da pomogne svima prijavljenim ucesnicima u sticanju novih znanje i vjestina vezanih za AWS cloud i DevOps alate i kulturu. 
+☁️ **AWS / Cloud / DevOps / Site Reliability Engineering / Platform Engineering / Production Engineering Mentorship program** ☁️ ili skraceno **DevOps Mentorship program** 😀 je mentorski program pokrenut od strane grupe entuzijasta, AWS zajednice u Bosni i Hercegovini te uz pomoc nasih kolega iz AWS zajednice Crne Gore sa ciljem sirenja znanja i pomoci svima onima koji zele da svoju IT karijeru grade i razvijaju u navedenom podrucuju. 
+
+Po definiciji, DevOps kao radno mjesto odnosno pozicija ne postoji, ono sto postoji je DevOps kultura i pokret koji se oslanja na upotrebu razilicitih alata i vjestina kako bi se pomoglo brzoj isporuci softvera. Upravo iz tog razloga, mentorship program podjednako obuhvata razvoj tehickih i "soft" skills. 
 
 
 ## 💡 How to use this repository
 
-Ovaj repozitoriji ce biti koristen kao glavni izvor informacija za **AWS / Cloud / DevOps / Site Reliability Engineering / Platform Engineering / Production Engineering Mentorship program** gdje cemo pratiti i dodavati:
+Ovaj repozitoriji ce biti koristen kao glavni izvor informacija za **DevOps Mentorship Program* gdje cemo pratiti i dodavati:
 
 - Biljeske sa sedmicni predavanja
 - Biljeske sa Office Hours sesija

@@ -47,3 +47,6 @@ Ovaj program sam po sebi ne garantuje dobijanje posla po automatizmu. Dakle ovo 
 
 #### Da li ce mi ovaj mentorship program pomoci da uspjesno prodjem interviju za posao?
 TBA
+
+### Da li cemo znanje koje stekenmo na ovom mentorship programu moci upotrijebiti na ostalim cloud platformama pored AWS-a?
+TBA
