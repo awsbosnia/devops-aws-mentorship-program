@@ -29,8 +29,8 @@ Kako bi se komunikacija unutar slack kanala drzala sto preglednijom i boljom kre
 - **🔒#tier-1-group-1** Privatni kanal ciji su clanovi oni koji prate predavanja Utorkom. 
 - **🔒#tier-1-group-2** Privatni kanal ciji su clanovi oni koji prate predavanja Cetvrtkom. 
 - **🔒#tier-2** Kanal namjenjen onima koji su clanovi Tier-2 grupe polaznika.
-- **🔓#mentorship-program-all** Kanal u kojem se nalaze svi oni koji su se prijavili na mentorship program
-- **#mentorship-program-all-random** Kanal u kojem se nalaze svi oni koji su se prijavili na mentoriship program i u kojem mozete postavljati i pisati poruke koje nisu striktno vezane za ovo sto radimo i ucimo. **NOTE: Ovo je javni kanal i poruke su vidljive svima koji se nalaze unutar AWS Bosnia slack workspace-a.** 
+- **🔒#mentorship-program-all** Kanal u kojem se nalaze svi oni koji su se prijavili na mentorship program
+- **🔓#mentorship-program-all-random** Kanal u kojem se nalaze svi oni koji su se prijavili na mentoriship program i u kojem mozete postavljati i pisati poruke koje nisu striktno vezane za ovo sto radimo i ucimo. **NOTE: Ovo je javni kanal i poruke su vidljive svima koji se nalaze unutar AWS Bosnia slack workspace-a.** 
 
 *Detaljnije upute o slack komunikaciji i pravilima komunikacije ce po potrebi biti postavljeni unutar samih slack kanala.*
 
