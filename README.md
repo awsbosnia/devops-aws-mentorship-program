@@ -48,5 +48,5 @@ U nastavku mozete pronaci linkove za pracene napretka, predjenog gradiva po sedm
 Pravila ponsanja su definisana unutar [AWS Code of Conduct](https://aws.amazon.com/codeofconduct/). 
 
 ## ❓ FAQ 
-Za sva pitanje i nejasnoce molimo Vas da prvo pogledate [Frequently Asked Questions (FAQ)](FAQ.md) dokument. 
+Za sva pitanje i nejasnoce molimo Vas da prvo pogledate [Frequently Asked Questions (FAQ)](FAQ.md) dokument.  
 Ukoliko odgovor na vase pitanje ne mozete pronaci tamo budite slobodni da posaljete email na <dzenan.dzevlan@gmail.com>.
