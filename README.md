@@ -1,6 +1,7 @@
 # ☁️ AWS / Cloud / DevOps / Site Reliability Engineering / Platform Engineering / Production Engineering Mentorship program ☁️
 
--- Work in progress--
+-- Work in progress--  
+
 **NOTE: Readme file ce biti dodatno azuriran i unaprijedjen**
 ## 🧚 Background Story
 
@@ -17,7 +18,8 @@ Ovaj repozitoriji ce biti koristen kao glavni izvor informacija za **AWS / Cloud
 - Rjesenja domacih zadataka
 - Dokumentaciju i materijale za ucenje
 - Dokumentaciju i materijale za dodatno ucenje i istrazivanje
-- Linkove na snimke predavanja
+- Linkove na snimke predavanja  
+
 ...
 
 ## 💬 Additional Channels for Communication 
@@ -27,7 +29,7 @@ Kako bi se komunikacija unutar slack kanala drzala sto preglednijom i boljom kre
 - **🔒#tier-1-group-1** Privatni kanal ciji su clanovi oni koji prate predavanja Utorkom. 
 - **🔒#tier-1-group-2** Privatni kanal ciji su clanovi oni koji prate predavanja Cetvrtkom. 
 - **🔒#tier-2** Kanal namjenjen onima koji su clanovi Tier-2 grupe polaznika.
-- **🔒#mentorship-program-all** Kanal u kojem se nalaze svi oni koji su se prijavili na mentorship program
+- **🔓#mentorship-program-all** Kanal u kojem se nalaze svi oni koji su se prijavili na mentorship program
 - **#mentorship-program-all-random** Kanal u kojem se nalaze svi oni koji su se prijavili na mentoriship program i u kojem mozete postavljati i pisati poruke koje nisu striktno vezane za ovo sto radimo i ucimo. **NOTE: Ovo je javni kanal i poruke su vidljive svima koji se nalaze unutar AWS Bosnia slack workspace-a.** 
 
 *Detaljnije upute o slack komunikaciji i pravilima komunikacije ce po potrebi biti postavljeni unutar samih slack kanala.*
@@ -43,4 +45,8 @@ U nastavku mozete pronaci linkove za pracene napretka, predjenog gradiva po sedm
 </details>
 
 ## 🚨 Code of Conduct
-Koristimo [AWS Code of Conduct](https://aws.amazon.com/codeofconduct/). 
+Pravila ponsanja su definisana unutar [AWS Code of Conduct](https://aws.amazon.com/codeofconduct/). 
+
+## ❓ FAQ 
+Za sva pitanje i nejasnoce molimo Vas da prvo pogledate [Frequently Asked Questions (FAQ)](FAQ.md) dokument. 
+Ukoliko odgovor na vase pitanje ne mozete pronaci tamo budite slobodni da posaljete email na <dzenan.dzevlan@gmail.com>.
