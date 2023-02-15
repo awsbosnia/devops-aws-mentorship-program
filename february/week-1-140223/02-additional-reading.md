@@ -1,8 +1,8 @@
-# Additional reading
-## Date: 14.02.2023.
+# 📖 Additional reading
+## 📅 Date: 14.02.2023.
 
-### Books
+### 📚 Books
 
-### Video lessons
+### 📹 Video lessons
 
-### Blog Posts
+### 🌐 Blog Posts
