@@ -1,6 +1,6 @@
 # DevOps Mentoship Program
 
--- Work in progress--  
+  ![alt DevOps](/images/dev_ops.png)
 
 **NOTE: Readme file ce biti dodatno azuriran i unaprijedjen**
 ## 🧚 Background Story
@@ -43,8 +43,8 @@ U nastavku mozete pronaci linkove za pracenje napretka po sedmicama.
 <details>
   <summary>Week-1</summary>
 
-  **Kljucne rijeci: git, GitHub**
-  [Class notes](/february/week-1-140223/00-class-notes.md)  \
+  **Kljucne rijeci: git, GitHub**  
+  [Class notes](/february/week-1-140223/00-class-notes.md)  
   [Homework](/february/week-1-140223/01-homework.md)  
   [Additional reading](/february/week-1-140223/02-additiona-reading.md)
 
