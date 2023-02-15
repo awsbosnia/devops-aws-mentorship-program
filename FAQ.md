@@ -1,4 +1,4 @@
-# Frequently Asked Questions (FAQ)
+# ❓ Frequently Asked Questions (FAQ)
 
 #### Sta obuhvata DevOps mentorship program?
 TBA

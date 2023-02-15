@@ -3,7 +3,7 @@
 
 ## Git Intro 
 
-**Install Git on Windows:**
+**Install Git on Windows:**  
 Preuzmite [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.3) da bi dobili terminal pogodniji za rad.
 Na ovome [linku](https://www.youtube.com/watch?v=a-zX_qc2S-M&ab_channel=CameronMcKenzie) mozete ispratiti kako da kreirati ssh kljuc i podesite vas GitHub profil da mozete izvrsavati git commande.
 

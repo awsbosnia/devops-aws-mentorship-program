@@ -1,8 +1,8 @@
-# Class notes
-## Date: 21.02.2023.
+# 📝 Class notes
+## 📅 Date: 21.02.2023.
 
 
-## Reading materials
+## 📖 Reading materials
 - 
 
-## Session recordings
+## 📹 Session recordings
