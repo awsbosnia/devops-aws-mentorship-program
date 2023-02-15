@@ -37,13 +37,17 @@ Kako bi se komunikacija unutar slack kanala drzala sto preglednijom i boljom kre
 
 Svi kanali osim kanala `#mentorship-program-all-random` su privatni i ukoliko niste dobili pristup slack kanalu kojem pripadate budite slobodni da se napiste poruku unutar `#mentorship-program-all-random` kanala i zatrazite pristup.
 ## 📊 Progres Overview
-U nastavku mozete pronaci linkove za pracene napretka, predjenog gradiva po sedmicama.
+U nastavku mozete pronaci linkove za pracenje napretka po sedmicama.
 ### February 2023. 
 
 <details>
   <summary>Week-1</summary>
-  [00-class-notes](/february/week-1/00-class-notes.md)
-</details>
+
+  [Class notes](/february/week-1-140223/00-class-notes.md)
+  [Homework](/february/week-1-140223/01-homework.md)
+  [Additional reading](/february/week-1-140223/02-additiona-reading.md)
+
+  </details>
 
 ## 🚨 Code of Conduct
 Pravila ponsanja su definisana unutar [AWS Code of Conduct](https://aws.amazon.com/codeofconduct/). 
