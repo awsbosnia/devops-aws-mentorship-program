@@ -12,7 +12,7 @@
     main
     development
 
-## **<span style="color:red"> Direct commits to main branch should be forbidden.</span>**
+# ***Direct commits to main branch should be forbidden.</span>***
 
 ### All changes needs to be pushed to development branch first, and then you need to make ***Pull Request*** from ***development*** to ***main branch***.
 
