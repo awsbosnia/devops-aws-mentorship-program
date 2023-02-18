@@ -12,7 +12,7 @@ Na ovome [**linku**](https://www.youtube.com/watch?v=a-zX_qc2S-M&ab_channel=Came
 Takodje mozete preuzeti i [**Windows Terminal**](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=sr-cyrl-ba&gl=ba&rtc=1)
 
 <details><summary>Ovde kliknite za dodatne informacije kako da podesite prikazivanje brache unutar terminala</summary>
-<p>
+<p>  
 
 Evo par komandi da podesite PowerShell na najnoviju verziju PS 7 i da se prikazuje ime branch-a u kojem se trenutno nalazite dok radite sa Git-om. Pošto je ovdje glavni branch master, mora se preimenovati na main pa imate na kraju i tu komandu.
 
@@ -65,5 +65,5 @@ git remote -v
 - [**📹 Git for Professionals Tutorial - Tools & Concepts for Mastering Version Control with Git**](https://www.youtube.com/watch?v=Uszj_k0DGsg)
 - [**📖 git Documentation**](https://git-scm.com/docs/git)
 
-[Homework Task](/february/week-1-140223/01-homework.md)
-[Additional Reading](/february/week-1-140223/02-additional-reading.md)
+[Go to Homework Task](/february/week-1-140223/01-homework.md)
+[Go to Additional Reading](/february/week-1-140223/02-additional-reading.md)
