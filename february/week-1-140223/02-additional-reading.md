@@ -15,5 +15,5 @@
 * [**Mastering git merge and rebase**](https://towardsdatascience.com/mastering-git-merge-and-rebase-f2a7c5c348a9)<br/>
 * [**Git Flow vs Github Flow**](https://www.geeksforgeeks.org/git-flow-vs-github-flow/)  
 
-[Class Notes](/february/week-1-140223/00-class-notes.md)
-[Homework Task](/february/week-1-140223/01-homework.md)
+[Go to Class Notes](/february/week-1-140223/00-class-notes.md)
+[Go to Homework Task](/february/week-1-140223/01-homework.md)
