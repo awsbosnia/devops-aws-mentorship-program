@@ -55,7 +55,7 @@ git clone
 git remote -v
 
 ```
-  ![alt Git Cheat Sheet](/images/git-cheat-sheet.jpg)
+  ![alt Git Cheat Sheet](/resources/images/git-cheat-sheet.jpg)
 
 - [**Lucidchart diagram tier-1-group-1**](files/lucidchart-week-1-tier-1.pdf)
 - [**Whiteboard tier-1-group-1**](files/whiteboard-week-1-tier-1.pdf)

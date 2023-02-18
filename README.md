@@ -1,6 +1,6 @@
 # DevOps Mentorship Program
 
-  ![alt DevOps](/images/dev_ops.png)
+  ![alt DevOps](/resources/images/dev_ops.png)
 
 
 **NOTE: Readme file ce biti dodatno azuriran i unaprijedjen**
