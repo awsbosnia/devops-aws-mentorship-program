@@ -1,18 +1,17 @@
 # 📝 Homework / Task assigment
 ## 📅 Date: 14.02.2023.
 
-<br />
+## Task-1
+You need to create ***public GitHub repository*** inside your own GitHub account called: `firstname-lastname-devops-mentorship`***`. 
 
-### You need to create ***public GitHub repository*** inside your own GitHub account called: ***firstname-lastname-devops-mentorship***. <br />
-### You need to create ***.gitignore* and *README.md*** files and push those files to GitHub. <br /> <br />
+You need to create `.gitignore` and `README.md` files and push those files to GitHub.
 
-## **Please pay attention on the following:**
+**NOTE: Please pay attention on the following:**
+**Your repository should have two branches**
+- `main`
+- `development`
 
-### Your repository should have two branches
-    main
-    development
+**Direct commits to main branch should be forbidden.**
 
-# ***Direct commits to main branch should be forbidden.</span>***
-
-### All changes needs to be pushed to development branch first, and then you need to make ***Pull Request*** from ***development*** to ***main branch***.
+All changes needs to be pushed to development branch first, and then you need to make **Pull Request** from `development` to `main` branch.
 
