@@ -43,6 +43,16 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 - **Class Notes** - biljeske sa predavanja, snimci predavanja kao i obavezna literatura i materijali za ucenje. Materijali za ucenje su poredani na nacin da bi trebali krenuti sa gledanjem/citanjem redom koji su navedeni.
 - **Homework / Task assigment** - Zadatak odnosno task za rad kod kuce. Zadaci su dostupni na uvid i unutar projekta [DevOps / AWS Mentorship Program Project](https://github.com/orgs/allops-solutions/projects/1). Svima koji pripadaju Tier-1 grupi polaznika zadatak ce biti pregledan od strane mentora. 
 - **Additional learning materials** - Dodatni materijali za ucenje (knjige, blogovi, video resursi) koji su namjenjeni onima koji zele znati vise i naucite vise o tehnologijama i alatima koje obradjujemo
+
+**Legenda:**
+
+| Simbol | Resurs                  |
+|--------|-------------------------|
+| 📹      | Video lekcija           |
+| 🌐      | Blog post               |
+| 📚      | Knjige                  |
+| 📖      | Dokumentacija           |
+| 💵      | Resursi koji se placaju |
 #### February 2023. 
 
 <details>

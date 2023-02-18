@@ -2,7 +2,7 @@
 ## 	📅 Date: 14.02.2023.
 
 ## **Git Intro** 
-
+Git je alat koji je razvio Linus Torvalds da bi mu olaksao vodjenje jednog velikog i kompleksnog projekta – Linux kernela. Git je de-facto postao standardni alat za verzionisanje koda. 
 ## **Install Git on Windows:**  
 Git mozete preuzeti sa sledeceg [**linka**](https://git-scm.com/download/win).
 
@@ -53,17 +53,26 @@ git pull
 git push 
 git clone
 git remote -v
+
 ```
+  ![alt Git Cheat Sheet](/images/git-cheat-sheet.jpg)
+
 - [**Lucidchart diagram tier-1-group-1**](files/lucidchart-week-1-tier-1.pdf)
 - [**Whiteboard tier-1-group-1**](files/whiteboard-week-1-tier-1.pdf)
 
 ## 📹 Session recordings
-[**tier-1-group-1 video session recording**](https://youtu.be/jNPFe9vdRFI)  
-[**tier-1-group-2 video session recording**](https://youtu.be/FDOho51mkuE)
+- [**tier-1-group-1 video session recording**](https://youtu.be/jNPFe9vdRFI)  
+- [**tier-1-group-2 video session recording**](https://youtu.be/FDOho51mkuE)
 
 ## 📖 Learning materials
 - [**📹 Git for Professionals Tutorial - Tools & Concepts for Mastering Version Control with Git**](https://www.youtube.com/watch?v=Uszj_k0DGsg)
-- [**📖 git Documentation**](https://git-scm.com/docs/git)
+- [**📖 git Documentation**](https://git-scm.com/docs/git)  
 
+## ⚒️ Useful Tools  
+- [VS Code Git History Extension](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+- [VS Code Git Graph Extension](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- [VS Code GitLens — Git supercharged Extension](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+
+## **Ostale stranice**
 [Go to Homework Task](/february/week-1-140223/01-homework.md)
 [Go to Additional Reading](/february/week-1-140223/02-additional-reading.md)
