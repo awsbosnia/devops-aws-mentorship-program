@@ -59,9 +59,9 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   <summary>Week-1</summary>
 
   **Kljucne rijeci: git, GitHub**  
-  - [Class notes](/february/week-1-140223/00-class-notes.md)  
-  - [Homework](/february/week-1-140223/01-homework.md)  
-  - [Additional reading](/february/week-1-140223/02-additional-reading.md)
+  - [Class notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)  
+  - [Homework](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)  
+  - [Additional reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)
 
   </details>   
 

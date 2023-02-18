@@ -26,7 +26,7 @@
 [DNS and BIND](https://learning.oreilly.com/library/view/dns-and-bind/0596100574/)  
 [Linux Observability with BPF](https://learning.oreilly.com/library/view/linux-observability-with/9781492050193/)  
 [Cloud Strategy The Architect Elevator](https://www.amazon.com/Cloud-Strategy-Decision-based-Successful-Migration-ebook/dp/B094RJ9K2C/)  
-[Anatomy of an Incident](/docs/books/Anatomy_Of_An_Incident.pdf)
+[Anatomy of an Incident](/resources/books/anatomy_of_an_incident.pdf)
 [BPF Performance Tools](https://learning.oreilly.com/library/view/bpf-performance-tools/9780136588870/)
 [Time Management for System Administrators](https://learning.oreilly.com/library/view/time-management-for/0596007833/)
 [Database Internals](https://learning.oreilly.com/library/view/database-internals/9781492040330/)
