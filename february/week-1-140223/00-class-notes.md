@@ -65,3 +65,6 @@ git remote -v
 ## 📹 Session recordings
 [**tier-1-group-1 video session recording**](https://youtu.be/jNPFe9vdRFI)  
 [**tier-1-group-2 video session recording**](https://youtu.be/FDOho51mkuE)
+
+[Homework Task](/february/week-1-140223/01-homework.md)
+[Additional Reading](/february/week-1-140223/02-additional-reading.md)
