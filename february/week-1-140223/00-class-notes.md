@@ -57,8 +57,11 @@ git remote -v
 - [**Lucidchart diagram tier-1-group-1**](files/lucidchart-week-1-tier-1.pdf)
 - [**Whiteboard tier-1-group-1**](files/whiteboard-week-1-tier-1.pdf)
 
-## 📖 Reading materials
-- [**📚 Uvod u Git - Tomo Krajina**](../../books/github_knjiga_tomo_krajina.pdf) 
+## 📖 Learning materials
+- [**📹 Git for Professionals Tutorial - Tools & Concepts for Mastering Version Control with Git**](https://www.youtube.com/watch?v=Uszj_k0DGsg)
+- [**📖 git Documentation**](https://git-scm.com/docs/git)
+
 
 ## 📹 Session recordings
 [**tier-1-group-1 video session recording**](https://youtu.be/jNPFe9vdRFI)
+[**tier-1-group-2 video session recording**](https://youtu.be/FDOho51mkuE)
