@@ -1,4 +1,4 @@
-# DevOps Mentoship Program
+# DevOps Mentorship Program
 
   ![alt DevOps](/images/dev_ops.png)
 
