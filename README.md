@@ -38,16 +38,29 @@ Kako bi se komunikacija unutar slack kanala drzala sto preglednijom i boljom kre
 
 Svi kanali osim kanala `#mentorship-program-all-random` su privatni i ukoliko niste dobili pristup slack kanalu kojem pripadate budite slobodni da se napiste poruku unutar `#mentorship-program-all-random` kanala i zatrazite pristup.
 ## **📊 Progres Overview**
-U nastavku mozete pronaci linkove za pracenje napretka po sedmicama.
-### February 2023. 
+U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.  
+**Svaka sedmica sadrzi sljedece fajlove:**
+- **Class Notes** - biljeske sa predavanja, snimci predavanja kao i obavezna literatura i materijali za ucenje. Materijali za ucenje su poredani na nacin da bi trebali krenuti sa gledanjem/citanjem redom koji su navedeni.
+- **Homework / Task assigment** - Zadatak odnosno task za rad kod kuce. Zadaci su dostupni na uvid i unutar projekta [DevOps / AWS Mentorship Program Project](https://github.com/orgs/allops-solutions/projects/1). Svima koji pripadaju Tier-1 grupi polaznika zadatak ce biti pregledan od strane mentora. 
+- **Additional learning materials** - Dodatni materijali za ucenje (knjige, blogovi, video resursi) koji su namjenjeni onima koji zele znati vise i naucite vise o tehnologijama i alatima koje obradjujemo
+#### February 2023. 
 
 <details>
   <summary>Week-1</summary>
 
   **Kljucne rijeci: git, GitHub**  
-  [Class notes](/february/week-1-140223/00-class-notes.md)  
-  [Homework](/february/week-1-140223/01-homework.md)  
-  [Additional reading](/february/week-1-140223/02-additional-reading.md)
+  - [Class notes](/february/week-1-140223/00-class-notes.md)  
+  - [Homework](/february/week-1-140223/01-homework.md)  
+  - [Additional reading](/february/week-1-140223/02-additional-reading.md)
+
+  </details>   
+
+#### Office Hours   
+Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze kako bi se napravila rekapitulacija obradjenih tema, odgovrilo na eventualna pitanja, kao i dale dodatne upute ako je to potrebno. Snimci do sada odrzanih Office Hours sesija su dostupni preko linkova ispod.
+<details>
+  <summary>Office Hours Recordings</summary>
+  
+  - [Office Hours-Staturday-18-02-2023](https://drive.google.com/file/d/1aXZ9DZl8k9otG7qpEnmf7vWbFezoIzgh/view?usp=sharing)  
 
   </details>
 
