@@ -78,4 +78,6 @@ git remote -v
 
 ## **Ostale stranice**
 - [Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)  
-- [Go to Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)  
+- [Go to Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)   
+- [HOME](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
+

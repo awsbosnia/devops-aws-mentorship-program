@@ -17,4 +17,5 @@ All changes needs to be pushed to development branch first, and then you need to
 
 ## **Ostale stranice**  
 - [Class Notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)  
-- [Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)  
+- [Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)   
+- [HOME](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
