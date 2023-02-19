@@ -50,9 +50,9 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 |--------|-------------------------|
 | 📹      | Video lekcija           |
 | 🌐      | Blog post               |
-| 📚      | Knjige                  |
+| 📚      | Knjiga                 |
 | 📖      | Dokumentacija           |
-| 💵      | Resursi koji se placaju |
+| 💵      | Resursi koji nisu FREE |
 #### February 2023. 
 
 <details>
