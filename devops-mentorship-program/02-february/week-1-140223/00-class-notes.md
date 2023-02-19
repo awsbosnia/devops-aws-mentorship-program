@@ -65,7 +65,6 @@ git remote -v
 - [**tier-1-group-2 video session recording**](https://youtu.be/FDOho51mkuE)
 
 ## 📖 Learning materials
-- [**📖 Uvod u Git, kratke biljeske iz knjige**](/devops-mentorship-program/02-february/week-1-140223/files/uvod-u-git-notes.md)
 - [**📹 Git for Professionals Tutorial - Tools & Concepts for Mastering Version Control with Git**](https://www.youtube.com/watch?v=Uszj_k0DGsg)
 - [**📖 git Documentation**](https://git-scm.com/docs/git)  
 
