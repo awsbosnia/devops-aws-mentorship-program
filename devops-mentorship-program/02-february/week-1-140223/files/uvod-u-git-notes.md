@@ -1,6 +1,6 @@
 # Uvod u Git - Biljeske
 
-Ispod mozete pronaci kratke biljeske iz knjige [**Uvod u Git autora Tome Krajine**](/resources/books/github_knjiga_tomo_krajina.pdf). Navedena knjiga predstavlja sjajan izvor inofrmacija i moze posluziti kao odican resurs za ucenje o Git alatu. 
+Ispod mozete pronaci kratke biljeske iz knjige [**Uvod u Git autora Tome Krajine**](/resources/books/github_knjiga_tomo_krajina.pdf). Navedena knjiga predstavlja sjajan izvor inoformacija i moze posluziti kao odican resurs za ucenje o Git alatu. 
 
 - [📖 1 UVOD](#1-uvod)
 
