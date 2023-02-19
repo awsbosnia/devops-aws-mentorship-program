@@ -18,5 +18,5 @@
 
 ## **Ostale stranice**
 
-[Go to Class Notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)
-[Go to Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)
+- [Class Notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)  
+- [Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)  

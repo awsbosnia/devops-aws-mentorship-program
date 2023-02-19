@@ -77,5 +77,5 @@ git remote -v
 - [VS Code GitLens — Git supercharged Extension](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
 ## **Ostale stranice**
-[Go to Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)
-[Go to Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)
+- [Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)  
+- [Go to Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)  
