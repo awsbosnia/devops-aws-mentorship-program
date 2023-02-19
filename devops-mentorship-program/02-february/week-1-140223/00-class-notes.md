@@ -67,6 +67,7 @@ git remote -v
 - [**tier-1-group-2 video session recording**](https://youtu.be/FDOho51mkuE)
 
 ## 📖 Learning materials
+- [**📖 Uvod u Git - Biljeske iz knjige**](/devops-mentorship-program/02-february/week-1-140223/files/uvod-u-git-notes.md)
 - [**📹 Git for Professionals Tutorial - Tools & Concepts for Mastering Version Control with Git**](https://www.youtube.com/watch?v=Uszj_k0DGsg)
 - [**📖 git Documentation**](https://git-scm.com/docs/git)  
 
@@ -76,5 +77,5 @@ git remote -v
 - [VS Code GitLens — Git supercharged Extension](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
 ## **Ostale stranice**
-[Go to Homework Task](/february/week-1-140223/01-homework.md)
-[Go to Additional Reading](/february/week-1-140223/02-additional-reading.md)
+[Go to Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)
+[Go to Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)

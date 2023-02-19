@@ -1368,5 +1368,5 @@ export PATH=$PATH:~/moj-git-plugin
 
 - `Tag` je oznaka iliti imenovana referenca na neki commit.
 
-[Go to Class Notes](/february/week-1-140223/00-class-notes.md)
-[Go to Additional Reading](/february/week-2-210223/02-additional-reading.md)
+[Go to Class Notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)
+[Go to Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)

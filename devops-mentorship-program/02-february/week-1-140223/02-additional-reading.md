@@ -2,15 +2,9 @@
 ## 📅 **Date: 14.02.2023.**
 
 ### ***📚 Books***
-<<<<<<< HEAD:devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md
 - [**Uvod u Git - Tomo Krajina**](/resources/books/github_knjiga_tomo_krajina.pdf) 
 - [**Git Pro - Scott Chacon & Ben Straub**](https://git-scm.com/book/en/v2)
 - [**Git Notes for Professionals**](/resources//books/git-notes-for-professionals.pdf)
-=======
-- [**Uvod u Git - Tomo Krajina**](../../books/github_knjiga_tomo_krajina.pdf) 
-- [**Git Pro - Scott Chacon & Ben Straub**](https://git-scm.com/book/en/v2)
-- [**Git Notes for Professionals](/books/git-notes-for-professionals.pdf)
->>>>>>> main:february/week-1-140223/02-additional-reading.md
 ### ***📹 Video lessons***
 * [**The gitflow workflow - in less than 5 mins.**](https://www.youtube.com/watch?v=1SXpE08hvGs&ab_channel=Devchild)
 * [**Professional Guides: Workflow Strategies**](https://www.youtube.com/watch?v=aJnFGMclhU8&ab_channel=GitHubTraining%26Guides)
@@ -22,5 +16,7 @@
 * [**Mastering git merge and rebase**](https://towardsdatascience.com/mastering-git-merge-and-rebase-f2a7c5c348a9)<br/>
 * [**Git Flow vs Github Flow**](https://www.geeksforgeeks.org/git-flow-vs-github-flow/)  
 
-[Go to Class Notes](/february/week-1-140223/00-class-notes.md)
-[Go to Homework Task](/february/week-1-140223/01-homework.md)
+## **Ostale stranice**
+
+[Go to Class Notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)
+[Go to Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)
