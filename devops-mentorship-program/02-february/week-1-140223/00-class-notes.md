@@ -55,7 +55,11 @@ git clone
 git remote -v
 
 ```
+<<<<<<< HEAD:devops-mentorship-program/02-february/week-1-140223/00-class-notes.md
   ![alt Git Cheat Sheet](/resources/images/git-cheat-sheet.jpg)
+=======
+  ![alt Git Cheat Sheet](/images/git-cheat-sheet.jpg)
+>>>>>>> main:february/week-1-140223/00-class-notes.md
 
 - [**Lucidchart diagram tier-1-group-1**](files/lucidchart-week-1-tier-1.pdf)
 - [**Whiteboard tier-1-group-1**](files/whiteboard-week-1-tier-1.pdf)
