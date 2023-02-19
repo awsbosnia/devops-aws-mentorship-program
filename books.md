@@ -1,4 +1,4 @@
-# DevOps Books Recomendation  
+# 📚 DevOps Books Recomendation  
 Ovdje mozete pronaci listu knjiga za razlicite alate i tehnologije koje koristimo. 
 ## AWS  
 - [AWS Cookbook](https://learning.oreilly.com/library/view/aws-cookbook/9781492092599/)  
