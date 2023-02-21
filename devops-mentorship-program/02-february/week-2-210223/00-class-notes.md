@@ -30,10 +30,10 @@ ls -la #Long listing, displays file ownership Displays hidden files/directories
 $ pwd #Print Working Directory 
 ```
 
-```bash
-`$ grep` [grep command](/resources/images/grep.jpg)  
-`$ find` [find command](/resources/images/find.jpg)  
-```
+
+`$ grep` [grep command](/resources/images/grep.jpg)    
+`$ find` [find command](/resources/images/find.jpg)    
+
 
 ```bash
 $ chmod
