@@ -6,9 +6,10 @@
 
 ```bash
 $ ssh [ip or hostname] #Secure shell, an encrypted network protocol allowing for remote login and command execution
+$ ssh -vvv #verbose for troubleshooting access
 ```   
 ```bash
-sudo su
+$ sudo su -
 ```
 
 ```bash
@@ -28,11 +29,15 @@ ls -la #Long listing, displays file ownership Displays hidden files/directories
 ```bash
 $ pwd #Print Working Directory 
 ```
-```bash
-$ whoami
+
 ```
 `$ grep` [grep command](/resources/images/grep.jpg)
 `$ find` [find command](/resources/images/find.jpg)
+
+```bash
+$ chmod
+$ chown 
+```
 
  - Struktura Linux/Unix file sistema
 
