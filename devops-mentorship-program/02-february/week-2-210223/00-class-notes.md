@@ -1,7 +1,7 @@
 # 📝 Class notes
 ## 📅 Date: 21.02.2023.
 
-**Komande koje vam mogu pomoci u svakodnevnom radu:**
+**Komande koje vam mogu biti korisne u svakodnevnom radu:**
 
 ```bash
 $ ssh [ip or hostname] #Secure shell, an encrypted network protocol allowing for remote login and command execution
