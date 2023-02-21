@@ -30,9 +30,10 @@ ls -la #Long listing, displays file ownership Displays hidden files/directories
 $ pwd #Print Working Directory 
 ```
 
+```bash
+`$ grep` [grep command](/resources/images/grep.jpg)  
+`$ find` [find command](/resources/images/find.jpg)  
 ```
-`$ grep` [grep command](/resources/images/grep.jpg)
-`$ find` [find command](/resources/images/find.jpg)
 
 ```bash
 $ chmod
@@ -45,11 +46,11 @@ $ chown
 
 
 ## 📖 Reading materials
-[Uvod u Linux](/resources/papers/uvod_u_linux_srce.pdf)
-[UNIX and Linux System Administration Handbook, 5th Edition](/resources/books/unix-linux-sys-admin-handbook.pdf)
-[UNIX Operativni Sistemi](http://os.etf.rs/POS/tutorials/srdjan/kurs/html/sadrzaj.html)
-[yum cheat sheet](/resources/chaet-sheets/yum-cheatsheet.pdf)
-[Linux Performance Analysis in 60,000 Milliseconds](https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55)
+- [Uvod u Linux](/resources/papers/uvod_u_linux_srce.pdf)   
+- [UNIX and Linux System Administration Handbook, 5th Edition](/resources/books/unix-linux-sys-admin-handbook.pdf)   
+- [UNIX Operativni Sistemi](http://os.etf.rs/POS/tutorials/srdjan/kurs/html/sadrzaj.html)   
+- [yum cheat sheet](/resources/chaet-sheets/yum-cheatsheet.pdf)  
+- [Linux Performance Analysis in 60,000 Milliseconds](https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55)   
 ## 📹 Session recordings  
 
 ## **Ostale stranice**
