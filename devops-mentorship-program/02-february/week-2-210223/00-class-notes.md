@@ -1,5 +1,6 @@
 # 📝 Class notes
 ## 📅 Date: 21.02.2023.
+### Linux / UNIX Operativni sistemi
 
 **Komande koje vam mogu biti korisne u svakodnevnom radu:**
 
