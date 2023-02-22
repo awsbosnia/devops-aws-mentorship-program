@@ -70,7 +70,7 @@ $ chown #Chenge owner
 - [yum cheat sheet](/resources/chaet-sheets/yum-cheatsheet.pdf)  
 - [Linux Performance Analysis in 60,000 Milliseconds](https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55)   
 ## 📹 Session recordings  
-- [:yt: **WEEK-2-tier-1-group-1 video session recording**](https://youtu.be/VWUv7sISfs0)  
+- [**WEEK-2-tier-1-group-1 video session recording**](https://youtu.be/VWUv7sISfs0)  
 
 ## **Ostale stranice**
 - [Homework Task](/devops-mentorship-program/02-february/week-2-210223/01-homework.md)  
