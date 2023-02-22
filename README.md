@@ -67,6 +67,17 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 
   </details>   
 
+<details>
+  <summary>Week-2</summary>
+
+  **Kljucne rijeci: Linux, UNIX**  
+
+  - [Class notes](/devops-mentorship-program/02-february/week-2-210223/00-class-notes.md)  
+  - [Homework](/devops-mentorship-program/02-february/week-2-210223/01-homework.md)  
+  - [Additional reading](/devops-mentorship-program/02-february/week-2-210223/02-additional-reading.md)
+
+  </details>   
+
 #### Office Hours   
 Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze kako bi se napravila rekapitulacija obradjenih tema, odgovrilo na eventualna pitanja, kao i dale dodatne upute ako je to potrebno. Snimci do sada odrzanih Office Hours sesija su dostupni preko linkova ispod.
 <details>
