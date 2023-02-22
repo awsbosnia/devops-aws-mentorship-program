@@ -5,4 +5,9 @@
 
 ### 📹 Video lessons
 
-### 🌐 Blog Posts
+### 🌐 Blog Posts   
+
+[:fast_forward: Class Notes](/devops-mentorship-program/02-february/week-2-210223/00-class-notes.md)  
+[:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-2-210223/01-homework.md)  
+[:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)   
+

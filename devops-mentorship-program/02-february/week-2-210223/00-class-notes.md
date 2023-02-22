@@ -70,9 +70,10 @@ $ chown #Chenge owner
 - [yum cheat sheet](/resources/chaet-sheets/yum-cheatsheet.pdf)  
 - [Linux Performance Analysis in 60,000 Milliseconds](https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55)   
 ## 📹 Session recordings  
-- [**WEEK-2-tier-1-group-1 video session recording**](https://youtu.be/VWUv7sISfs0)  
+- [**WEEK-2-tier-1-group-1 video session recording**](https://youtu.be/VWUv7sISfs0)   
 
-## **Ostale stranice**
-- [Homework Task](/devops-mentorship-program/02-february/week-2-210223/01-homework.md)  
-- [Go to Additional Reading](/devops-mentorship-program/02-february/week-2-210223/02-additional-reading.md)   
-- [HOME](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
+
+
+[:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-2-210223/01-homework.md)  
+[:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-2-210223/02-additional-reading.md)   
+[:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
