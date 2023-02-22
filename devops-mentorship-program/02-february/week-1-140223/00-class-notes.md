@@ -63,8 +63,8 @@ git remote -v
 - [**Whiteboard tier-1-group-1**](files/whiteboard-week-1-tier-1.pdf)
 
 ## 📹 Session recordings
-- [**tier-1-group-1 video session recording**](https://youtu.be/jNPFe9vdRFI)  
-- [**tier-1-group-2 video session recording**](https://youtu.be/FDOho51mkuE)
+- [**WEEK-1-tier-1-group-1 video session recording**](https://youtu.be/jNPFe9vdRFI)  
+- [**WEEK-1-tier-1-group-2 video session recording**](https://youtu.be/FDOho51mkuE)
 
 ## 📖 Learning materials
 - [**📖 Uvod u Git - Biljeske iz knjige**](/devops-mentorship-program/02-february/week-1-140223/files/uvod-u-git-notes.md)
