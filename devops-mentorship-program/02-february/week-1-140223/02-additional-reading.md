@@ -16,8 +16,8 @@
 * [**Mastering git merge and rebase**](https://towardsdatascience.com/mastering-git-merge-and-rebase-f2a7c5c348a9)<br/>
 * [**Git Flow vs Github Flow**](https://www.geeksforgeeks.org/git-flow-vs-github-flow/)  
 
-## **Ostale stranice**
 
-- [Class Notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)  
-- [Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)  
-- [HOME](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)   
+
+[:fast_forward: Class Notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)  
+[:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)  
+[:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)   

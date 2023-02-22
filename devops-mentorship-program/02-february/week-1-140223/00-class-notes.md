@@ -74,10 +74,10 @@ git remote -v
 ## ⚒️ Useful Tools  
 - [VS Code Git History Extension](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 - [VS Code Git Graph Extension](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
-- [VS Code GitLens — Git supercharged Extension](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [VS Code GitLens — Git supercharged Extension](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)  
 
-## **Ostale stranice**
-- [Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)  
-- [Go to Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)   
-- [HOME](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
+
+[:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)  
+[:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)   
+[:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
 

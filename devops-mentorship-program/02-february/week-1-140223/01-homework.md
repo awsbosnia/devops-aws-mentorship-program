@@ -15,7 +15,7 @@ You need to create `.gitignore` and `README.md` files and push those files to Gi
 
 All changes needs to be pushed to development branch first, and then you need to make **Pull Request** from `development` to `main` branch.
 
-## **Ostale stranice**  
-- [Class Notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)  
-- [Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)   
-- [HOME](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
+ 
+[:fast_forward: Class Notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)  
+[:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)   
+[:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
