@@ -64,7 +64,7 @@ $ chown #Chenge owner
 
 ## 📖 Reading materials
 - [Linux i UNIX - B. Djordjevic, D.Pleskonjic, N.Macek - Beograd 2004](/resources/books/os-unix-i-linux-beograd-el-skola.pdf) 
-- [Uvod u Linux](/resources/papers/uvod_u_linux_srce.pdf)   
+- [Osnove Administracije Operacijskog Sustava Linux - Obrazovni Sustav Srce Hr](/resources/papers/osnove-administracije-operacijskog-susteva-1-linux-srca.pdf) | [Biljeske iz Knjige](/devops-mentorship-program/02-february/week-2-210223/files/osnove-administracije-linuxa-biljeske.md)  
 - [UNIX and Linux System Administration Handbook, 5th Edition](/resources/books/unix-linux-sys-admin-handbook.pdf)   
 - [UNIX Operativni Sistemi](http://os.etf.rs/POS/tutorials/srdjan/kurs/html/sadrzaj.html)   
 - [yum cheat sheet](/resources/chaet-sheets/yum-cheatsheet.pdf)  
