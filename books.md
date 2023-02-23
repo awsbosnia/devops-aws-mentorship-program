@@ -71,10 +71,14 @@ Ovdje mozete pronaci listu knjiga za razlicite alate i tehnologije koje koristim
 - [Database Internals](https://learning.oreilly.com/library/view/database-internals/9781492040330/)    
 ## Architecture
 - [Cloud Strategy The Architect Elevator](https://www.amazon.com/Cloud-Strategy-Decision-based-Successful-Migration-ebook/dp/B094RJ9K2C/)     
-- [Continuous Architecture in Practice: Software Architecture in the Age of Agility and DevOps](https://learning.oreilly.com/library/view/continuous-architecture-in/9780136523796/)  
-- [The Software Architect Elevator](https://learning.oreilly.com/library/view/the-software-architect/9781492077534/)    
+- [Continuous Architecture in Practice: Software Architecture in the Age of Agility and DevOps](https://learning.oreilly.com/library/view/continuous-architecture-in/9780136523796/)     
 - [Clean Code](https://learning.oreilly.com/library/view/clean-code-a/9780136083238/)    
 - [Clean Architecture](https://learning.oreilly.com/library/view/clean-architecture-a/9780134494272/)    
 - [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)    
 - [Hunt/The Pragmatic Programmer, First Edition](https://learning.oreilly.com/library/view/hunt-the-pragmatic-programmer/020161622X/)  
 - [Building Multi-Tenant SaaS Architectures](https://learning.oreilly.com/library/view/building-multi-tenant-saas/9781098140632/)
+
+## Software Architecture  
+- [Fundamentals of Software Architecture](https://learning.oreilly.com/library/view/fundamentals-of-software/9781492043447/)
+- [The Software Architect Elevator](https://learning.oreilly.com/library/view/the-software-architect/9781492077534/) 
+- [Software Architecture: The Hard Parts](https://learning.oreilly.com/library/view/software-architecture-the/9781492086888/)

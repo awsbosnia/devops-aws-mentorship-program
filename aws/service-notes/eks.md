@@ -9,3 +9,4 @@
 - [:octocat: terraform-aws-eks-blueprints](https://github.com/aws-ia/terraform-aws-eks-blueprints)
 - [:octocat: Containers on AWS - Tools, examples, and workshops for AWS container services](https://github.com/aws-containers)
 - [📖 How do I plan an upgrade strategy for an Amazon EKS cluster?](https://aws.amazon.com/premiumsupport/knowledge-center/eks-plan-upgrade-cluster/)
+- [🌐 AWS DevOps Blog: CI/CD on Amazon EKS using AWS CodeCommit, AWS CodePipeline, AWS CodeBuild, and FluxCD](https://aws.amazon.com/blogs/devops/ci-cd-on-amazon-eks-using-aws-codecommit-aws-codepipeline-aws-codebuild-and-fluxcd/)
