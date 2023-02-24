@@ -12,6 +12,7 @@
 * [**Git Tutorial - Git Crash Course using BitBucket**](https://www.youtube.com/watch?v=1tC6Z57AOkY&t=984s&ab_channel=AHTCloud)
 
 ### ***🌐 Blog Posts***
+* [**15 Git Commands You May Not Know**](https://dev.to/zaiste/15-git-commands-you-may-not-know-4a8j)<br/>
 * [**Introduction to git flow**](https://blog.knoldus.com/introduction-to-git-flow/)<br/>
 * [**Mastering git merge and rebase**](https://towardsdatascience.com/mastering-git-merge-and-rebase-f2a7c5c348a9)<br/>
 * [**Git Flow vs Github Flow**](https://www.geeksforgeeks.org/git-flow-vs-github-flow/)  
