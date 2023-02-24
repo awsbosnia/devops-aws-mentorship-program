@@ -68,7 +68,22 @@ $ mv file1 file2 #Move file1 to file2, file1 is deleted
 $ rm file1 #Remove file1
 
 $ rm -r dir1 #Remove directory dir1 and all its contents
+```
+ 
+:boom: :exclamation: U **UNIX** sistemima, postoje dva tipa poveznica (eng. links) koje se koriste za stvaranje referenci na datoteke i direktorije - simbolicke (engl. symbolic links) i tvrde (engl. hard links).
 
+**Simbolička poveznica**, također poznata i kao `soft link`, je datoteka koja predstavlja simbolicku referencu na neku drugu datoteku ili direktorij. Simbolicka poveznica sadrži putanju do izvorne datoteke ili direktorija, a kada se na nju pristupa, sistem ce slijediti putanju koju simbolicka poveznica pokazuje i doci do izvorne datoteke. Simbolicke poveznice se stvaraju uz pomoc naredbe `ln -s`, **a brisanje simboličke poveznice neće utjecati na izvornu datoteku ili direktorij**. 
+
+S druge strane, tvrda poveznica, također poznata i kao `hard link`, je druga kopija iste datoteke ili direktorija. Tvrde poveznice se stvaraju uz pomoc naredbe ln, a nakon stvaranja tvrde poveznice, izvorna datoteka **i njezina tvrda poveznica se tretiraju kao jedna te ista datoteka**. To znaci da ako se promijeni sadrzaj izvorne datoteke, promjena ce se vidjeti i u tvrdoj poveznici, jer su to ista datoteka. Brisanje izvorne datoteke nece utjecati na tvrdu poveznicu, jer tvrda poveznica nije samo referenca na izvornu datoteku, vec je to druga kopija te datoteke.
+
+Kljucna razlika između simbolickih i tvrdih poveznica u **UNIX** sistemima je u tome što simbolicke poveznice predstavljaju samo referencu na izvornu datoteku ili direktorij, dok su tvrde poveznice kopije izvorne datoteke ili direktorija. :boom: :exclamation: 
+```bash
+$ ln -s /path/to/file /path/to/symlink #Create a symbolic link to file
+
+$ ln file1 file2 #Create a hard link to file1
+```
+
+```bash
 $ ls # Directory listing
 
 $ ls -l 
@@ -111,7 +126,7 @@ $ chmod u+x <filename> #Change persmissions for user
 $ chown user:group <filename> #Chenge owner
 ```
 
- - Struktura Linux/Unix file sistema
+#### Struktura Linux/Unix file sistema
 
 ```bash
 $ tree #list contents of directories in a tree-like format`
@@ -141,6 +156,7 @@ $ tree -L 2 #list contents of directories in a tree-like format with depth 2
 |-- usr
 `-- var
  ```
+ Za vise informacija o fajl sistemu i strukturi direktorijuma pogledati [File System Hierachy Standard](/resources/books/filesystem-hierarchy-standard.pdf)
 
   ![alt Linux Directory Structure](/resources/images/linux-dirs.jpeg)  
 
