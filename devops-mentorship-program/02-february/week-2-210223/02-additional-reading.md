@@ -10,7 +10,7 @@
 
 ### 💻 Free interactive Linux practice 
 
-#### [LinuxJourney](https://linuxjourney.com)
+#### [Linux Journey](https://linuxjourney.com)
 #### [OverTheWire](https://overthewire.org/wargames)
 
 ### 🌐 Blog Posts   
