@@ -5,6 +5,7 @@
 
 ### 📹 Video lessons
 
+#### LinuxJourney - https://linuxjourney.com/
 #### OverTheWIre - https://overthewire.org/wargames/
 #### Cisco Netacad Linux Course Beginner - https://www.netacad.com/courses/os-it/ndg-linux-unhatched
 #### Cisco Netacad Linux Course (preparation for Linux Essentials cert) - https://www.netacad.com/courses/os-it/ndg-linux-essentials
