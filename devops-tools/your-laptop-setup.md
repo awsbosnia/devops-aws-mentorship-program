@@ -1,0 +1,1 @@
+# Podesavanje i Konfiguracija Laptopa

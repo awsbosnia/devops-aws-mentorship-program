@@ -59,7 +59,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 <details>
   <summary>Week-1</summary>
 
-  **Kljucne rijeci: git, GitHub**  
+  **Topic: git, GitHub**  
 
   - [Class notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)  
   - [Homework](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)  
@@ -70,11 +70,35 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 <details>
   <summary>Week-2</summary>
 
-  **Kljucne rijeci: Linux, UNIX**  
+  **Topic: Linux, UNIX**  
 
   - [Class notes](/devops-mentorship-program/02-february/week-2-210223/00-class-notes.md)  
   - [Homework](/devops-mentorship-program/02-february/week-2-210223/01-homework.md)  
   - [Additional reading](/devops-mentorship-program/02-february/week-2-210223/02-additional-reading.md)
+
+  </details>    
+
+<details>
+  <summary>Week-3</summary>
+
+  **Topic: Shell and Bash scripting**  
+
+  - [Class notes](/devops-mentorship-program/02-february/week-3-28022023/00-class-notes.md)  
+  - [Homework](/devops-mentorship-program/02-february/week-3-28022023/01-homework.md)  
+  - [Additional reading](/devops-mentorship-program/02-february/week-3-28022023/02-additional-reading.md)
+
+  </details>   
+
+#### March 2023. 
+
+<details>
+  <summary>Week-4</summary>
+
+  **Topic: -**  
+
+  - [Class notes](/devops-mentorship-program/03-march/week-4-070223/00-class-notes.md)  
+  - [Homework](/devops-mentorship-program/03-march/week-4-070223/01-homework.md)  
+  - [Additional reading](/devops-mentorship-program/03-march/week-4-070223/02-additional-reading.md)
 
   </details>   
 

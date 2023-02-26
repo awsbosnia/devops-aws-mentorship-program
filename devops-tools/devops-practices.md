@@ -1,20 +1,20 @@
-# DevOps Practices and Terms
+# DevOps Pojmovi, Prakse i Standardi
 
 Uloga ove stranice je da vam pomogne u boljem razumijevanju DevOps prakse, kulture i osnovnih termina. Prije nego krenete da se upoznajte i ucite o samim DevOps alatima preporuka je da se upoznate sa terminologijom i filozofijom DevOps-a.  Pored toga na ovoj stranici cete pronaci neke od preporuka kada je u pitanju organizacija, komunikacija a sve u cilju boljeg i efektivnijeg rada i bolji rezultata. 
 
-## DevOps Definition
+### Definicija DevOps-a
 
-## DevOps Oriented Titles
+### DevOps Pozicije
 
-## Basic Principles 
+### Najbolje Prakse
 
-## How to be better DevOps Engineer 
+### Kako biti bolji DevOps Engineer 
 
-## How to organize your work and daily tasks
+### Kako organizovati rad i dnevne zadatke
 
-## How to communicate with your team
+### Kako efektivno komunicirati sa kolegama i timovima
 
-## How to stay up to date with new tools and technologies
+### Kako ostati u korak sa novim tehnologijama i alatima iz DevOps svijeta
 
-## DevOps Tools
+### DevOps Tools
 
