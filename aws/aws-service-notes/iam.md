@@ -2,7 +2,8 @@
 
 
 ## IAM Tips and Tricks
-[How can I troubleshoot access denied or unauthorized operation errors with an IAM policy?](https://aws.amazon.com/premiumsupport/knowledge-center/troubleshoot-iam-policy-issues/)
+[How can I troubleshoot access denied or unauthorized operation errors with an IAM policy?](https://aws.amazon.com/premiumsupport/knowledge-center/troubleshoot-iam-policy-issues/)  
+[How to read encoded authorization error messages in AWS](https://arpadt.com/articles/decode-encoded-error-message)
 
 ## Resources
 [AWS re:Inforce 2022 - Security best practices with AWS IAM (IAM201)](https://youtu.be/SMjvtxXOXdU)

@@ -173,7 +173,8 @@ $ tree -L 2 #list contents of directories in a tree-like format with depth 2
 - [**WEEK-2-tier-1-group-2 video session recording**](https://youtu.be/ZbtgMIyu5ZY)  
 
 ## 🛠️ Tools 
-- vim - [Vim Cheat Sheet 1](/resources/chaet-sheets/vi-vim-cheat-sheet-and-tutorial.pdf) [Vim Cheat Sheet 2](https://vim.rtorr.com/)
+- vim - [Vim Cheat Sheet 1](/resources/chaet-sheets/vi-vim-cheat-sheet-and-tutorial.pdf) [Vim Cheat Sheet 2](https://vim.rtorr.com/)    
+- [:octocat: Learn-Vim](https://github.com/iggredible/Learn-Vim)  
 - [:octocat: tmux](https://github.com/tmux/tmux/wiki)
 - [chmod calculator](https://chmod-calculator.com/)
 

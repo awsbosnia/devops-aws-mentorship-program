@@ -17,7 +17,8 @@
 
 # Cache Databases
 
-## Redis
+## Redis  
+[Redis Explained](https://architecturenotes.co/redis/?s=09)
 
 ## Memcached
 
