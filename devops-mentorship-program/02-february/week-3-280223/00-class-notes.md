@@ -61,6 +61,8 @@ $ ls -la .*
 
 - `.bash_logout` - Ovaj fajl se izvrsava kada se korisnik izloguje iz Bash shell-a. Ovaj fajl se nalazi u korisnikovom home direktoriju.
 
+- `.profile` - Ako postoji, ovaj konfiguracijski fajl interno poziva `.bashrc`
+
 Razliciti shellovi imaju razlicite nazive i putanje do konfiguracijskih fajlova. Ovo su neki od njih:   
 - `sh` - `.profile`
 - `csh` - `.cshrc`
@@ -98,7 +100,12 @@ Skriptu mozemo izvrsiti na nekoliko nacin:
 
 `./` - U UNIX sistemima, "./" predstavlja relativnu putanju do trenutnog direktorija u kojem se nalazimo u shell-u. "." predstavlja trenutni direktorij, a "/" predstavlja putanju.
 
-Kada se koristi `./` zajedno sa nazivom izvršnog fajla (npr. "./hello.sh"), to znazi da se taj fajl pokreće iz trenutnog direktorija. Ovo je korisno kada se nalazimo u direktoriju u kojem se nalazi izvršni fajl, jer nam omogućava da pokrenemo fajl bez potrebe za kucanjem pune putanje do fajla. 
+Kada se koristi `./` zajedno sa nazivom izvršnog fajla (npr. "./hello.sh"), to znazi da se taj fajl pokreće iz trenutnog direktorija. Ovo je korisno kada se nalazimo u direktoriju u kojem se nalazi izvršni fajl, jer nam omogućava da pokrenemo fajl bez potrebe za kucanjem pune putanje do fajla.  
+
+### Kompajler VS Interpreter  
+- **Kompajliranje** - Programski jezici koji koriste kompajler (C, C++, Java ...) za izradu izvršnog fajla. Kompajler je program koji prevede izvorni kod u izvršni fajl. 
+
+- **Interpreter** - Shell je zasnovan na interpreteru, svaka linija programa odnosno skripte je usnos u shell. Linija shell skripte se izvrsava jedna po jedna sekvencijalno. Cak i ako druga linija skripte ima gresku, shell interpreter ce izvrsiti prvu liniju.
 
 ### Environment Variables
 **Environment variables** su varijable koje su definisane u operativnom sistemu i dostupne su svim procesima koji se pokrecu u tom okruzenju. One sadrze informacije koje se koriste za postavljanje okruzenja za procese koji se pokrecu u operativnom sistemu, kao što su putanje do direktorija, sistemski parametri, konfiguracijske postavke i druge informacije koje su potrebne da bi se programi izvršavali ispravno.
@@ -118,7 +125,7 @@ Kada korisnik unese neku komandu u shell, operativni sistem traži tu komandu u 
 Standardne putanje koje su definisane u PATH-u obično uključuju direktorije poput `/usr/bin`, `/bin` i `/usr/local/bin`. Kada  korisnik unese neka komanda, npr. `ls`, OS ce pretražiti ove direktorije u `PATH-u`, i ako se fajl `ls` pronadje u jednom od tih direktorija, on će biti pokrenut.
 
 ```bash
-$ which ls
+$ which ls # whcih je komanda koja nam pokazuje putanju do izvrsnog fajla
 
 alias ls='ls --color=auto'
 	/usr/bin/ls #putanja na kojoj se nalazi ls executable fajl
@@ -131,7 +138,8 @@ $ echo $PATH
 
 Putanje u PATH-u na UNIX sistemima su odvojene dvotackom `:`.
 
-Korisnici mogu mijenjati PATH varijablu kako bi dodali nove direktorije u nju, omogucavajuci im da pokrenu programe koji se nalaze u drugim direktorijima osim standardnih direktorija. To se može uraditi dodavanjem novih direktorija u PATH putem komandne linije ili putem konfiguracijskih fajlova za shell, kao sto je `.bashrc`
+Korisnici mogu mijenjati PATH varijablu kako bi dodali nove direktorije u nju, omogucavajuci im da pokrenu programe koji se nalaze u drugim direktorijima osim standardnih direktorija. To se može uraditi dodavanjem novih direktorija u PATH putem komandne linije ili putem konfiguracijskih fajlova za shell, kao sto je `.bashrc`  
+
 ## 📖 Reading materials 
 [Linux Command Line and Shell Scripting Bible, 3nd Edition](/books/linux-command-line-and-shell-scripting-bible-3rd-edition.pdf)
 
