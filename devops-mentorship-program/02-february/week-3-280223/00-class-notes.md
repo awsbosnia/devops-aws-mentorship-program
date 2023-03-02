@@ -14,8 +14,8 @@ Postoji vise razlicith shell programa koje su razvijane za razlicite verzije UNI
 
 Detaljnije o razlikama izmedju razlicith shellova mozete pogledati na linku: [Hyperpolyglot - Unix Shells: Bash, Fish, Ksh, Tcsh, Zsh](https://hyperpolyglot.org/unix-shells)  
 
-Kad god ukucamo neki tekst u Terminal shella, shell (`bin/bash`) je odgovoran da pravilno izvrsi komandu. Aktivnosti koje shell izvrsava su:
-- Parsiranje komande
+Kad god ukucamo neku komandu u Terminal shella, shell (`bin/bash`) je odgovoran da pravilno izvrsi komandu. Aktivnosti koje shell izvrsava su:
+- parsiranje komande
 - procjenjivanje meta karaktera kao sto su zamjenski znakovi, specijalni karakter itd.
 - obrada signala
 - pokretanje programa za izvrsenje komande
@@ -26,7 +26,7 @@ Da bi provjerili koji shell koristimo, mozemo ukucati komandu `echo $SHELL`. Ova
 $ echo $SHELL
 /bin/bash
 ```
-Prethodna komanda nam govori da koristimo `/bin/bash` odnosno Bash shell.
+Prethodna komanda nam govori da koristimo `/bin/bash` odnosno Bash shell.  Sljedecom komndom mozemo provjeriti verziju Bash shell-a.  
 ```bash
 $ bash --version
 
