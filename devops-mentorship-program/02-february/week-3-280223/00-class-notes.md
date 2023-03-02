@@ -141,7 +141,10 @@ Putanje u PATH-u na UNIX sistemima su odvojene dvotackom `:`.
 Korisnici mogu mijenjati PATH varijablu kako bi dodali nove direktorije u nju, omogucavajuci im da pokrenu programe koji se nalaze u drugim direktorijima osim standardnih direktorija. To se može uraditi dodavanjem novih direktorija u PATH putem komandne linije ili putem konfiguracijskih fajlova za shell, kao sto je `.bashrc`  
 
 ## 📖 Reading materials 
-[Linux Command Line and Shell Scripting Bible, 3nd Edition](/books/linux-command-line-and-shell-scripting-bible-3rd-edition.pdf)
+[Linux Command Line and Shell Scripting Bible, 3nd Edition](/resources/books/linux_command_line_and_shell_scripting_bible_3rd_edition.pdf)
+
+## 🛠️ Tools
+- [explainshell.com](https://explainshell.com/)
 
 ## 📹 Session recordings  
 - [**WEEK-3-tier-1-group-1 video session recording**](https://youtu.be/HVXbqo21ED0) 
