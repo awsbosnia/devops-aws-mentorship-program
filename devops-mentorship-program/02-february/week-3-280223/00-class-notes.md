@@ -147,8 +147,8 @@ Korisnici mogu mijenjati PATH varijablu kako bi dodali nove direktorije u nju, o
 - [explainshell.com](https://explainshell.com/)
 
 ## 📹 Session recordings  
-- [**WEEK-3-tier-1-group-1 video session recording**](https://youtu.be/HVXbqo21ED0) 
-
+- [**WEEK-3-tier-1-group-1 video session recording**](https://youtu.be/HVXbqo21ED0)  
+- [**WEEK-3-tier-1-group-2 video session recording**](https://youtu.be/QYeX0iP6rXY)
 
 
 [:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-2-280223/01-homework.md)  
