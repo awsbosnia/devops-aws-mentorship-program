@@ -10,7 +10,7 @@
 4. [Racunarske Mreze](/devops-tools/networking.md)  
 5. [Web Serveri](/devops-tools/web-servers.md)  
 6. [Sigurnost](/devops-tools/security.md)  
-7. [SSL](/devops-tools/ssl.md)  
+7. [SSL Certifikati](/devops-tools/ssl.md)  
 8. [Docker](/devops-tools/docker.md)  
 9. [Automatizacija Konfigruacije Servera / Configuration Management](/devops-tools/configuration-management.md)  
 9.1. [Ansible](/devops-tools/ansible.md)  
