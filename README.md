@@ -104,10 +104,13 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 
 #### Office Hours   
 Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze kako bi se napravila rekapitulacija obradjenih tema, odgovrilo na eventualna pitanja, kao i dale dodatne upute ako je to potrebno. Snimci do sada odrzanih Office Hours sesija su dostupni preko linkova ispod.
+
+- [DevOps Mentorship Program - Kick Off Meeting](https://youtu.be/Ybwp3LJ1Vlo)
 <details>
   <summary>Office Hours Recordings</summary>
   
-  - [Office Hours-Staturday-18-02-2023](https://drive.google.com/file/d/1aXZ9DZl8k9otG7qpEnmf7vWbFezoIzgh/view?usp=sharing)  
+  - [DevOps Mentorship Program - Office Hours 18.02.2023.](https://youtu.be/Ve7BY5WwRDw)  
+  - [DevOps Mentorship Program - Office Hours 04.03.2023.](https://youtu.be/NTlYCjF0ldY)  
 
   </details>
 
