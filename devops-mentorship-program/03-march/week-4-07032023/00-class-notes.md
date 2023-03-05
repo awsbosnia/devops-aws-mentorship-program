@@ -85,9 +85,10 @@ Svaki interfejs na svim racunarima i na ruterima mora da ima `IP adresu` koja je
 
 **Prije nego je usvojena CIDR sema, mrezni dio IP adrese morao je da bude duzine 8 bitova, 16 bitova ili 24 bita u semi poznatoj kao puno klasno adresiranje (classful addresing) jer su podmreze sa adresama od 8 bitova, 16 bitova i 24 bita bila poznate kao mreze klase A, B i C.**
 
-**Class A:** `10.0.0.0` to `10.255.255.255`
-**Class B:** `172.16.0.0` to `172.31.255.255`
-**Class C:** `192.168.0.0` to `192.168.255.255`
+- **Class A:** `10.0.0.0` to `10.255.255.255`   
+- **Class B:** `172.16.0.0` to `172.31.255.255`   
+- **Class C:** `192.168.0.0` to `192.168.255.255`   
+
 Sve adrese koje pripadaju ovim klasama su privatne adrese i smatraju se non routable adresama.
 Sve adrese koje ne pripadaju nijednoj od ovih klasa su javne adrese / `PUBLIC IP` address.
 
@@ -95,6 +96,11 @@ Podmreza kalse C (/24) je na osnovu toga mogla da obuhvati samo 2^8 - 2 = 254 ra
 Podklasa mreze B (/16) koja obuhvata 65634 adrese bila je prevelika za vecinu organizacija. sto je vodilo do lose iskoristenosti adresnog prostora klase B. 
 
 IP v4 adrese su ogranicene na 4.294.967.296 adrese.
+
+### Specijalne IP adrese
+Postoji nekoliko IPv4 adresa koje se koriste za posebne svrhe. Ove adrese se ne mogu koristiti za komunikaciju između uređaja na internetu.  
+![Sepecijalne IP adrese](/devops-mentorship-program/03-march/week-4-07032023/files/special-ipv4.png)
+
 
 ### IPv6
 **IPv6 (Internet Protocol version 6)** adresiranje je nasljednik IPv4 protokola i koristi se za identificiranje mrežnih uređaja u globalnoj mreži interneta. IPv6 koristi 128-bitne adrese, što je znatno više od IPv4 protokola koji koristi 32-bitne adrese. To znači da IPv6 može podržati znatno veći broj mrežnih uređaja i povezanih uređaja u usporedbi s IPv4.
@@ -170,7 +176,8 @@ Kada korisnik započne sesiju na eBay web stranici, server će mu poslati kolač
 
 Kada korisnik zatraži neku stranicu na eBay web stranici, kolačići će se poslati na server zajedno sa zahtjevom. Na taj način, server će biti u mogućnosti prepoznati korisnika i pružiti mu personalizirano iskustvo na web stranici.
 
-Također, kolačići se koriste za praćenje aktivnosti korisnika na web stranici. Na primjer, eBay može koristiti kolačiće za praćenje koje su proizvode korisnici pregledali ili stavili u košaricu za kupnju. Ove informacije se mogu koristiti za personaliziranje ponuda ili marketinških poruka koje će korisnik vidjeti na web stranici.
+Također, kolačići se koriste za praćenje aktivnosti korisnika na web stranici. Na primjer, eBay može koristiti kolačiće za praćenje koje su proizvode korisnici pregledali ili stavili u košaricu za kupnju. Ove informacije se mogu koristiti za personaliziranje ponuda ili marketinških poruka koje će korisnik vidjeti na web stranici.  
+
 ![Cookies](/devops-mentorship-program/03-march/week-4-07032023/files/cookies.png)
 
 #### HTTP metode zahtjeva
@@ -382,7 +389,7 @@ UDP protokol je često korišten za aplikacije koje zahtijevaju brz prijenos pod
 ![Common TCP and UDP Ports](/devops-mentorship-program/03-march/week-4-07032023/files/common-udp-tcp-protocols.png)
 
 ## DNS (Domain Name System)
-DNS (Domain Name System) je distribuirana baza podataka koja povezuje ljudski čitljive domenske imene s njihovim IP adresama računala. DNS je ključan za funkcioniranje Interneta jer omogućuje korisnicima da pristupe web stranicama, e-pošti i drugim uslugama na Internetu pomoću lako pamtljivih imena umjesto složenih IP adresa.
+DNS (Domain Name System) je strogo hijerarhijski distribuiran sistem koji povezuje ljudski čitljiva domenska imene s njihovim pripadajucim IP adresama. DNS je ključan za funkcioniranje Interneta jer omogućuje korisnicima da pristupe web stranicama, e-pošti i drugim uslugama na Internetu pomoću lako pamtljivih imena umjesto složenih IP adresa.
 
 DNS se sastoji od nekoliko komponenti:
 
@@ -397,6 +404,91 @@ DNS se sastoji od nekoliko komponenti:
 - **DNS caching:** DNS poslužitelji i klijenti obično pohranjuju informacije o DNS upitima kako bi se smanjio broj upita koji se šalju DNS poslužiteljima i ubrzalo vrijeme odgovora. To se naziva DNS caching. DNS zapisi imaju svoje vrijeme života (TTL - Time to Live) koje se koristi za upravljanje caching-om, što znači da se informacije u cache-u automatski brišu nakon isteka TTL-a.
 
 - **DNS hijacking:** Ovo je tehnika u kojoj napadač preusmjerava DNS upite s legitimne DNS adrese na lažnu adresu. To omogućava napadaču da preuzme kontrolu nad komunikacijom između DNS klijenta i poslužitelja te može preusmjeravati korisnike na zlonamjerne web stranice ili krađu identiteta.
+
+## Fully Qualified Domain Name (FQDN)
+
+Fully Qualified Domain Name (FQDN) je naziv koji se koristi za potpuno identificiranje jedinstvene lokacije na internetu, a sastoji se od nekoliko dijelova u hijerarhijskom poretku. FQDN uključuje sve dijelove naziva domene, uključujući naziv subdomene, naziv drugog nivoa i naziv domene vrha (top-level domain, TLD).  
+
+Primjer FQDN-a za web stranicu može biti: `www.example.com`.
+
+**Domena** se odnosi na ime koje se koristi za identifikaciju određene web stranice ili servisa na internetu. Domena je sastavljena od `jedinstvenog naziva` i `top-level domene` (npr. `.com`, `.org`, `.net` itd.), a koristi se kako bi se olakšalo pronalaženje web stranice ili servisa na internetu.
+
+**Domensko ime** je dio domene i odnosi se na ime koje se koristi za identifikaciju pojedinog web mjesta. Domensko ime se nalazi prije top-level domene i sastoji se od naziva web stranice i naziva domene koja se nalazi nakon toga. Na primjer, u domeni `google.com`, `google` je naziv web stranice, a `.com` je top-level domena.
+ 
+Komponente domene uključuju:
+
+
+![Domain](/devops-mentorship-program/03-march/week-4-07032023/files/domain-description-image.jpg)
+
+- **Top-level domena (TLD):** TLD je najviša razina domene u hijerarhiji domena. To su najčešće tri slova (npr. .com, .org, .net, .gov itd.) koja se nalaze nakon naziva web stranice.
+**Postoje dvije vrste TLD (Top Level Domain) domena:**
+    - generičke 
+    - geografski bazirane   
+
+    **Generičke domene** su one koje se mogu koristiti za bilo koju web stranicu, dok su geografski bazirane domene rezervirane za web stranice koje se odnose na pojedine zemlje. Na primjer, `.com` je generička domena, dok je `.ba` geografska domena.
+
+- **Druga razina domene (SLD):** SLD je dio domene koji se nalazi ispred top-level domene i koji obično predstavlja naziv web mjesta. Na primjer, u domeni `google.com`, `google` je SLD.
+
+- **Subdomena:** Subdomena je dio domene koji se nalazi ispred drugog nivoa domene i obično se koristi za organiziranje web stranica na istom web mjestu. Na primjer, u domeni `docs.google.com`, `docs` je subdomena koja pokazuje na Googleov servis za obradu teksta.
+
+Domena i domensko ime koriste se kako bi se olakšalo pronalaženje i pristupanje web stranicama i servisima na internetu. Svaka domena mora biti jedinstvena i registrirana kod registrara domena, koji upravlja domenom i odgovoran je za dodjelu domena korisnicima.
+
+### Domenski registri
+Slino kao i za IP adrese, postoje domenski registri, baze podataka o domenama i odgovarajućim IP adresama, po jedan za svaku TLD. Oni kao uslugu daju domenska imena za vlastitu TLD te omogućavaju ostatku svijeta pregled informacija o registracijama pojedinih domena. Domenski registri se inače nazivaju NIC (Network Information Centre).
+### DNS rezolucija
+
+Svaki se funkcionalni DNS sistem sastoji se od tri dijela:
+
+1.  **DNS klijent (engl. resolver)**, program koji se izvršava na klijentskom racunaru i koji formira određeni DNS zahtjev. Takav program ne mora biti poseban servis, on je na većini UNIX operativnih sistema najčešće ugrađen u standardnoj biblioteci u formi sistemskih poziva koje
+pozivaju različiti korisnički programi,
+2.  **Rekurzivni (engl. recursive) DNS poslužitelj**, koji nakon dobivenih
+upita za klijenta obavlja pretraživanje kroz DNS stablo i vraća nazad odgovore klijentima
+3. **Autoritativni (engl. authoritative) DNS poslužitelj**, koji odgovara na upite rekurzivnih poslužitelja te vraća ili završni odgovor ili zbog delegiranja vraća referencu na neki drugi autoritativni DNS poslužitelj.
+
+Sam proces primanja zahtjeva i njihove obrade te vraćanja odgovora se naziva **DNS rezolucija (engl. name resolution)**. Pojednostavljeno, osnovna rezolucija je proces pretvaranja domenskog imena u IP adresu: prvo tražimo autoritativni DNS poslužitelj, a zatim mu šaljemo upit za adresom, na koji on odgovara sa traženom adresom. Budući da je **DNS strogo distribuirana baza**, ona je raspodijeljena po mnogo različitih poslužitelja. No, očigledno je da zbog raspodijeljenosti rezolucija obično ne može biti obavljena kroz samo jedan upit i odgovor, već najčešće zahtijeva dužu komunikaciju i niz upita i odgovora. Najčešća je situacija da klijent šalje zahtjeve lokalnom DNS poslužitelju (nadležan za klijentsko računalo, obično dodijeljen od ISP-a ili ustanove u kojoj se nalazi klijentsko računalo), koji predstavlja rekurzivni poslužitelj i obavlja upite te zatim vraća odgovor klijentu. Dakle, najveći i najkompliciraniji dio procedure predstavlja traženje autoritativnog poslužitelja u složenoj DNS hijerarhiji.  
+Što se samih tipova DNS rezolucije tiče, postoje dva osnovna tipa prolaska kroz DNS hijerarhiju da bi se otkrio točan zapis. Oni se razlikuju po tome tko obavlja većinu posla oko saznavanja podataka i njihove obrade, a prvenstveno se pojavljuju kad obrada određenog DNS upita zahtijeva nekoliko koraka (dakle, lokalni DNS poslužitelj nema sve informacije):  
+
+- **Iterativni** - kada klijent šalje dotične upite, poslužitelj mora odgovoriti jednim od dva moguća odgovora: 
+    a) odgovorom na zahtjev ili 
+    b) imenom drugog DNS poslužitelja (vrši se delegiranje) koji ima više podataka o traženom upitu. U ovakvom tipu upita najveći dio posla obavlja klijent iterirajući akcije upit-odgovor i prolazeći kroz DNS hijerarhiju.    
+
+- **Rekurzivni** - kada klijent šalje rekurzivni upit, poslužitelj preuzima posao pronalaženja informacija o traženom upitu. Dakle, ono što je u iterativnom obavljao klijent, kod rekurzivnih upita obavlja poslužitelj - obrađuje informacije i šalje nove upite drugim poslužiteljima sve dok ne pronađe traženo. Dakle, klijent šalje svega jedan zahtjev te dobiva ili točnu informaciju koju je tražio ili poruku o grešci.  
+
+Očigledno je rekurzivan način pretraživanja vrlo povoljan za klijente, ali može znatno opteretiti DNS poslužitelje (na stranu i potencijalni problem trovanja DNS poslužitelja o kojem će kasnije biti riječi), pa se takve forme upita obično eksplicitno dozvoljavaju samo računalima iz lokalne mreže, dakle računalima kojima je dotični DNS poslužitelj nadležan. I isključivo njima.
+### DNS Hijerarhija
+
+**DNS (Domain Name System) hijerarhija** je organizacija domena na internetu koja omogućuje rješavanje domenskih imena u IP adrese. DNS hijerarhija ima nekoliko razina domena, pri čemu svaka razina odgovara jednoj komponenti u domenskom imenu.
+
+Najviša razina u DNS hijerarhiji su `root serveri`, koji se nalaze na vrhu hijerarhijske strukture i upucuju na druge DNS poslužitelje koji su zaduženi za rješavanje domenskih imena u nižim razinama. **Root serveri** su razmješteni sirom svijeta i upucuju na posluzitelje za `Top-Level Domain (TLD)` - **najvišu razinu domena**.
+
+Nakon `root servera` dolaze `TLD` poslužitelji, koji upućuju na poslužitelje za drugu razinu domena (SLD), poput `.com`, `.org`, `.net` itd. `TLD` poslužitelji upućuju na poslužitelje za `SLD` domene, koji se nalaze na nižoj razini u hijerarhiji.
+
+Poslužitelji za `SLD` domene upućuju na poslužitelje za subdomene, ukoliko su definirane. Npr, poslužitelj za domenu `example.com` bi uputio na poslužitelje za subdomene, kao što su `mail.example.com` ili `support.example.com`.
+
+Kada korisnik upiše domensko ime u pregledniku, preglednik prvo upućuje DNS upit lokalnom DNS poslužitelju. Ako lokalni DNS poslužitelj nema traženo rješenje, on šalje upit TLD poslužitelju, a zatim se upit šalje poslužitelju za SLD domenu i tako dalje, sve dok se ne pronađe IP adresa povezana s traženim domenskim imenom.
+
+DNS hijerarhija omogućuje brzo i učinkovito rješavanje domenskih imena u IP adrese, što je ključno za rad interneta.
+
+![DNS Query](/devops-mentorship-program/03-march/week-4-07032023/files/Typical-DNS-request-and-response-cycle.jpg)
+
+Postoje četiri glavna tipa DNS poslužitelja:
+
+- **Root poslužitelji:** Ovo su najviši DNS poslužitelji u hijerarhiji i oni upućuju na poslužitelje TLD domena.
+
+- **TLD poslužitelji:** Ovi poslužitelji upućuju na poslužitelje za drugu razinu domena (SLD), poput .com, .org, .net itd.
+
+- **Poslužitelji za SLD domene:** Ovi poslužitelji upućuju na poslužitelje za subdomene, ukoliko su definirane.
+
+- **Autoritativni poslužitelji:** Ovi poslužitelji su izvorni izvori informacija o DNS zapisima za određenu domenu i oni vraćaju IP adrese za tražena domenska imena.
+
+Kada se pronađe IP adresa povezana s traženim domenskim imenom, DNS poslužitelj vraća tu adresu lokalnom DNS poslužitelju, koji je sprema u cache. U budućnosti, kada se ponovno zatraži isto domensko ime, lokalni DNS poslužitelj vraća spremljenu IP adresu iz cache-a, umjesto da ponovo traži adresu od DNS poslužitelja.  
+
+![DNS Hierarchy](/devops-mentorship-program/03-march/week-4-07032023/files/dns-hierarchy.png)
+
+
+
+![DNS Hierarchy](/devops-mentorship-program/03-march/week-4-07032023/files/dns-hierarchy-tree.png)
+
 ## VPN (Virtual Private Network)
 
 **VPN (Virtual Private Network)** je sigurna mrežna veza koja povezuje udaljene korisnike i uređaje preko interneta kao da su direktno povezani u istoj lokalnoj mreži. VPN se koristi za sigurno spajanje na udaljene mreže, pristup internetskim stranicama i servisima koji su inače nedostupni izvan određene lokacije, za zaštitu privatnosti i anonimnosti, te za zaštitu protoka podataka od neovlaštenog pristupa.
@@ -419,7 +511,16 @@ VPN se može koristiti na različite načine, uključujući:
 - [Subnetting - ANDing - part2](https://youtu.be/KS3oz_D9FF8)
 - [Learning Subnetting Part 2 - The Subnet Mask, the Network Address and ANDing](https://youtu.be/uE5gdwr1mE0)
 - [Subnetting Cisco CCNA -Part 2 The Magic Number](https://youtu.be/84-zNmomYzk)
+- [DNS 101 Miniseries - #1 - What does DNS do ?](https://youtu.be/zEmUuNFBgN8)
+- [DNS 101 Miniseries - #2 - Why DNS needs a complex architecture!](https://youtu.be/QTu7yDnR_58)
+- [DNS 101 Miniseries #3 - How DNS actually works ... walking the tree](https://youtu.be/xf01fJQsagQ)  
+- [DNS 101 Miniseries - #4 - What happens when a domain is registered?](https://youtu.be/-WWQzOwbth4)  
+- [DNS 101 Miniseries - #5 - Why do we need DNSSEC](https://youtu.be/thAUzOnUvP4)
+- [DNS 101 Miniseries - #6 - How DNSSEC Works within a Zone](https://youtu.be/4qlIim15xwM)
+- [DNS 101 Miniseries - #7 - DNSSEC Chain of Trust](https://youtu.be/YCk2WI-Fbtk)  
+- [DNS 101 Miniseries - #8 - The DNSSEC Root Signing Ceremony - the most important meeting ever](https://youtu.be/1VqscYMG_Rs)
 - [A Beginner's Guide to WebSockets](https://youtu.be/8ARodQ4Wlf4)
+- [DNS Prirucnik](/Users/ddzevlan/Documents/sqlheisenberg/devops-aws-mentorship-program/devops-mentorship-program/03-march/week-4-07032023/files/DNS-prirucnik-1_5.pdf)
 - [What happens when you type a URL into your browser?](https://aws.amazon.com/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/)
 
 

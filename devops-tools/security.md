@@ -3,7 +3,7 @@
 
 Postoji nekoliko vrsta SSL certifikata koje web server može koristiti, uključujući pojedinačne SSL certifikate, wildcard SSL certifikate i SSL certifikate više domena.
 
-Pojedinačni SSL certifikat izdaje se za pojedinačni domenu ili poddomenu web stranice, što znači da se certifikat može koristiti samo za taj domen ili poddomen. Wildcard SSL certifikat se koristi za više poddomena koji pripadaju jednom glavnom domenu, na primjer *.example.com. SSL certifikati više domena omogućuju web serveru da koristi jedan certifikat za više različitih domena.
+Pojedinačni SSL certifikat izdaje se za pojedinačni domenu ili poddomenu web stranice, što znači da se certifikat može koristiti samo za taj domen ili poddomen. Wildcard SSL certifikat se koristi za više poddomena koji pripadaju jednom glavnom domenu, na primjer `*.example.com`. SSL certifikati više domena omogućuju web serveru da koristi jedan certifikat za više različitih domena.
 
 SSL certifikati se izdaju od strane povjerljivih izdavača certifikata, koji provjeravaju autentičnost podataka o vlasniku domene prije izdavanja certifikata. SSL certifikati su najčešće plaćeni, ali postoje i besplatne opcije kao što su Let's Encrypt i CloudFlare SSL certifikati.
 
