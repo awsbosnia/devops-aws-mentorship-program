@@ -2,11 +2,16 @@
 ## 📅 Date: 07.03.2023.    
 
 ## Racunarske Mreze
+**Racunarske mreze** su skup povezanih racunara i drugih uredjaja koji su medjusobno povezani radi razmjene informacija i resursa. Ove mreze omogucuju racunarima da komuniciraju i razmjenjuju podatke jedni s drugima putem zicanih ili bezicnih veza.  
+Postoji nekoliko razlicitih vrsta racunarskih mreza, ukljucujuci lokalne mreze (LAN), mreze sireg podrucja (WAN), virtualne privatne mreže (VPN) itd.  
+
 Internet je racunarska mreza koja povezuje milione racunarskih uredjaja sirom svijeta.  
 ![Internet](/devops-mentorship-program/03-march/week-4-07032023/files/internet.png)
 
 ## OSI model
 Medjunarodna organizacija za standardizaciju je krajem 70tih godina predlozila organizaciju racunarskih mreza u sedam slojeva. Takva arhitektura mreza dobila je naziv model otvorenog sistem za medjusobno povezivanje (Eng. Open System Interconnection - OSI)
+
+![OSI Model](/devops-mentorship-program/03-march/week-4-07032023/files/osi-model.jpg)
 
 - Aplikativni sloj
 - Prezentacijski sloj
@@ -14,7 +19,10 @@ Medjunarodna organizacija za standardizaciju je krajem 70tih godina predlozila o
 - Transportni sloj
 - Mrezni sloj
 - Sloj veze
-- Fizicki sloj
+- Fizicki sloj  
+
+![OSI Model Tabela](/devops-mentorship-program/03-march/week-4-07032023/files/osi-model-tabela.png)  
+*Tabela i Slika su preuzeti sa stranice [Layers of OSI Model](https://www.geeksforgeeks.org/layers-of-osi-model/)
 
 ### Aplikativni sloj
 
@@ -33,7 +41,7 @@ Sloj sesije obezbjedjuje razgranicavanje i sinhoronizovanje razmjene podatka ukl
 Transportni sloj prenosi poruke aplikativnog sloja izmedju krajnjih tacaka aplikacije. Protokoli transportnog sloja su `TCP` i `UDP`.
 `TCP` protokol aplikacijama koje ga koriste nudi uslugu sa uspostavljanjem veze. Ova usluga podrazumjeva garantovanu isporuku poruka aplikativnog sloja do odredista i kontrolu toka Za razliku od `TCP` protokola, `UDP` protokol aplikacijama koje ga koriste nudi uslugu bez uspostavljanja veze sto ga cini manje pouzdanim jer nema kontrolu toka i kontrolu zagusenja.
 
-Mrezni sloj
+### Mrezni sloj
 
 Mrezni sloj odgovoran je za prenosenje paketa mreznog sloja poznatih kao `datagrami` od jednog racunara do drugog. Prtokol transportnog sloja u izvornom racunaru prosljedjuje paket (odnosno segment) transportnog sloja i odredisnu mreznu adresu. Mrezni sloj je taj koji obezbjedjuje isporuku paketa do transportnog sloja na odredisnom racunaru.
 
@@ -85,9 +93,9 @@ Svaki interfejs na svim racunarima i na ruterima mora da ima `IP adresu` koja je
 
 **Prije nego je usvojena CIDR sema, mrezni dio IP adrese morao je da bude duzine 8 bitova, 16 bitova ili 24 bita u semi poznatoj kao puno klasno adresiranje (classful addresing) jer su podmreze sa adresama od 8 bitova, 16 bitova i 24 bita bila poznate kao mreze klase A, B i C.**
 
-- **Class A:** `10.0.0.0` to `10.255.255.255`   
-- **Class B:** `172.16.0.0` to `172.31.255.255`   
-- **Class C:** `192.168.0.0` to `192.168.255.255`   
+- **Class A:** `10.0.0.0` to `10.255.255.255`     
+- **Class B:** `172.16.0.0` to `172.31.255.255`    
+- **Class C:** `192.168.0.0` to `192.168.255.255`    
 
 Sve adrese koje pripadaju ovim klasama su privatne adrese i smatraju se non routable adresama.
 Sve adrese koje ne pripadaju nijednoj od ovih klasa su javne adrese / `PUBLIC IP` address.
