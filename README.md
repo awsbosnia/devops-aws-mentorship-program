@@ -94,10 +94,10 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 <details>
   <summary>Week-4</summary>
 
-  **Topic: Netoworks, TCP, HTTP, SSL, DNS**  
+  **Topic: Netoworks, OSI Model, TCP, HTTP, SSL, DNS**  
 
-  - [Class notes](/devops-mentorship-program/03-march/week-4-07032023/00-class-notes.md)  
-  - [Homework](/devops-mentorship-program/03-march/week-4-07032023/01-homework.md)  
+  - [Class notes](/devops-mentorship-program/03-march/week-4-070323/00-class-notes.md)  
+  - [Homework](/devops-mentorship-program/03-march/week-4-070323/01-homework.md)  
   - [Additional reading](/devops-mentorship-program/03-march/week-4-07022023/02-additional-reading.md)
 
   </details>   
