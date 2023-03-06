@@ -6,12 +6,12 @@
 Postoji nekoliko razlicitih vrsta racunarskih mreza, ukljucujuci lokalne mreze (LAN), mreze sireg podrucja (WAN), virtualne privatne mreže (VPN) itd.  
 
 Internet je racunarska mreza koja povezuje milione racunarskih uredjaja sirom svijeta.  
-![Internet](/devops-mentorship-program/03-march/week-4-07032023/files/internet.png)
+![Internet](/devops-mentorship-program/03-march/week-4-070323/files/internet.png)
 
 ## OSI model
 Medjunarodna organizacija za standardizaciju je krajem 70tih godina predlozila organizaciju racunarskih mreza u sedam slojeva. Takva arhitektura mreza dobila je naziv model otvorenog sistem za medjusobno povezivanje (Eng. Open System Interconnection - OSI)
 
-![OSI Model](/devops-mentorship-program/03-march/week-4-07032023/files/osi-model.jpg)
+![OSI Model](/devops-mentorship-program/03-march/week-4-070323/files/osi-model.jpg)
 
 - Aplikativni sloj
 - Prezentacijski sloj
@@ -21,7 +21,7 @@ Medjunarodna organizacija za standardizaciju je krajem 70tih godina predlozila o
 - Sloj veze
 - Fizicki sloj  
 
-![OSI Model Tabela](/devops-mentorship-program/03-march/week-4-07032023/files/osi-model-tabela.png)  
+![OSI Model Tabela](/devops-mentorship-program/03-march/week-4-070323/files/osi-model-tabela.png)  
 *Tabela i Slika su preuzeti sa stranice [Layers of OSI Model](https://www.geeksforgeeks.org/layers-of-osi-model/)
 
 ### Aplikativni sloj
@@ -107,7 +107,7 @@ IP v4 adrese su ogranicene na 4.294.967.296 adrese.
 
 ### Specijalne IP adrese
 Postoji nekoliko IPv4 adresa koje se koriste za posebne svrhe. Ove adrese se ne mogu koristiti za komunikaciju između uređaja na internetu.  
-![Sepecijalne IP adrese](/devops-mentorship-program/03-march/week-4-07032023/files/special-ipv4.png)
+![Sepecijalne IP adrese](/devops-mentorship-program/03-march/week-4-070323/files/special-ipv4.png)
 
 
 ### IPv6
@@ -128,7 +128,7 @@ Web aplikacija ima dva nezavisna udaljena programa odnosno procesa koji komunici
 
 U okviru komunikacione sesije izmedju dva procesa, proces koji prekece komunikaciju, tj prvi kontaktira proces na pocetku sesije oznacava se kao klijent. Proces koji ceka na poziv da bi uspostavio komunikaciju oznacava se kao server. Sve poruke poslate od jednog procesa do drugog moraju da prodju kroz mrezu izmedju njih. Procesi salju poruke u mrezu i primaju poruke iz mreze preko softverskog interfejsa koji se zove `socket`.
 
-![Aplikativni proces, soketi i transportni protokol na kome se zasnivaju](/devops-mentorship-program/03-march/week-4-07032023/files/app-proces-socketi.png)  
+![Aplikativni proces, soketi i transportni protokol na kome se zasnivaju](/devops-mentorship-program/03-march/week-4-070323/files/app-proces-socketi.png)  
 
 Na internetu se racunar identifikuje svojom IP adresom, pored toga sto zna adresu racunara kome je poruka namjenjena, predajni proces mora takodjer da identifikuje prijemni proces (tacnije prijemni soket) koji se izvrsava na tom racunaru za sta se koristi odredisni broj **porta**. 
 
@@ -150,9 +150,9 @@ Na internetu se racunar identifikuje svojom IP adresom, pored toga sto zna adres
 - SYN 
 - SYN/ACK
 - ACK
-![TCP 3-Way Handshake Process](/devops-mentorship-program/03-march/week-4-07032023/files/handshake-1.png)
+![TCP 3-Way Handshake Process](/devops-mentorship-program/03-march/week-4-070323/files/handshake-1.png)
 
-![TCP 3-Way Handshake Process - 2](/devops-mentorship-program/03-march/week-4-07032023/files/TCP-connection-1.png)
+![TCP 3-Way Handshake Process - 2](/devops-mentorship-program/03-march/week-4-070323/files/TCP-connection-1.png)
 
 
 **Korak 1:** Sinhronizacija (SYN) - U ovom koraku klijent šalje SYN paket poslužitelju kako bi inicirao uspostavu veze. SYN paket sadrži vrijednost početnog broja (Initial Sequence Number - ISN), koja se koristi za identifikaciju početne pozicije podataka u sekvencijskom broju, i zatvarački broj (window size), koji se koristi za kontrolu protoka podataka. Nakon što poslužitelj primi SYN paket, on šalje odgovor u koraku 2.
@@ -186,7 +186,7 @@ Kada korisnik zatraži neku stranicu na eBay web stranici, kolačići će se pos
 
 Također, kolačići se koriste za praćenje aktivnosti korisnika na web stranici. Na primjer, eBay može koristiti kolačiće za praćenje koje su proizvode korisnici pregledali ili stavili u košaricu za kupnju. Ove informacije se mogu koristiti za personaliziranje ponuda ili marketinških poruka koje će korisnik vidjeti na web stranici.  
 
-![Cookies](/devops-mentorship-program/03-march/week-4-07032023/files/cookies.png)
+![Cookies](/devops-mentorship-program/03-march/week-4-070323/files/cookies.png)
 
 #### HTTP metode zahtjeva
 **GET** - Ova metoda se koristi za preuzimanje resursa sa servera. Primjerice, ako želite preuzeti određenu web stranicu, možete koristiti GET metodu kako biste zatražili stranicu s poslužitelja. Primjer zahtjeva koji koristi GET metodu:
@@ -327,7 +327,7 @@ TLS radi u tri glavna koraka:
 3. Autentifikacija: TLS koristi certifikate kako bi se osigurala autentičnost servera s kojim se klijent povezuje. Server šalje svoj certifikat klijentu kako bi se klijent uvjerio da se povezuje s pravim serverom.
 
 TLS također podržava razne sigurnosne mehanizme kao što su provjera integriteta podataka, provjera autentičnosti klijenta i zaštita od ponovnog reproduciranja (engl. replay attack).
-![TLS Handshake](/devops-mentorship-program/03-march/week-4-07032023/files/tls-sequence-diagram.png)  
+![TLS Handshake](/devops-mentorship-program/03-march/week-4-070323/files/tls-sequence-diagram.png)  
 
 TLS handshake process je proces kojim se klijent i server dogovaraju o parametrima sigurne veze prije nego što započnu prijenos podataka. U ovom procesu, klijent i server razmjenjuju informacije o algoritmima kriptiranja i autentifikaciji, te se dogovaraju oko ključeva koji će se koristiti za kriptiranje podataka. TLS handshake proces se sastoji od sljedećih koraka:
 
@@ -394,7 +394,7 @@ UDP protokol je često korišten za aplikacije koje zahtijevaju brz prijenos pod
 - **NTP (Network Time Protocol)** - UDP se koristi za NTP, protokol za sinkronizaciju vremena između računala u mreži. NTP omogućuje računalima u mreži da se sinkroniziraju sa zajedničkim referentnim vremenom, što je ključno za različite aplikacije koje se oslanjaju na točno vrijeme, kao što su bankarske transakcije ili mjerenje vremena u proizvodnoj liniji.
 
 ### Common TCP and UDP Ports
-![Common TCP and UDP Ports](/devops-mentorship-program/03-march/week-4-07032023/files/common-udp-tcp-protocols.png)
+![Common TCP and UDP Ports](/devops-mentorship-program/03-march/week-4-070323/files/common-udp-tcp-protocols.png)
 
 ## DNS (Domain Name System)
 DNS (Domain Name System) je strogo hijerarhijski distribuiran sistem koji povezuje ljudski čitljiva domenska imene s njihovim pripadajucim IP adresama. DNS je ključan za funkcioniranje Interneta jer omogućuje korisnicima da pristupe web stranicama, e-pošti i drugim uslugama na Internetu pomoću lako pamtljivih imena umjesto složenih IP adresa.
@@ -426,7 +426,7 @@ Primjer FQDN-a za web stranicu može biti: `www.example.com`.
 Komponente domene uključuju:
 
 
-![Domain](/devops-mentorship-program/03-march/week-4-07032023/files/domain-description-image.jpg)
+![Domain](/devops-mentorship-program/03-march/week-4-070323/files/domain-description-image.jpg)
 
 - **Top-level domena (TLD):** TLD je najviša razina domene u hijerarhiji domena. To su najčešće tri slova (npr. .com, .org, .net, .gov itd.) koja se nalaze nakon naziva web stranice.
 **Postoje dvije vrste TLD (Top Level Domain) domena:**
@@ -477,7 +477,7 @@ Kada korisnik upiše domensko ime u pregledniku, preglednik prvo upućuje DNS up
 
 DNS hijerarhija omogućuje brzo i učinkovito rješavanje domenskih imena u IP adrese, što je ključno za rad interneta.
 
-![DNS Query](/devops-mentorship-program/03-march/week-4-07032023/files/Typical-DNS-request-and-response-cycle.jpg)
+![DNS Query](/devops-mentorship-program/03-march/week-4-070323/files/Typical-DNS-request-and-response-cycle.jpg)
 
 Postoje četiri glavna tipa DNS poslužitelja:
 
@@ -491,11 +491,11 @@ Postoje četiri glavna tipa DNS poslužitelja:
 
 Kada se pronađe IP adresa povezana s traženim domenskim imenom, DNS poslužitelj vraća tu adresu lokalnom DNS poslužitelju, koji je sprema u cache. U budućnosti, kada se ponovno zatraži isto domensko ime, lokalni DNS poslužitelj vraća spremljenu IP adresu iz cache-a, umjesto da ponovo traži adresu od DNS poslužitelja.  
 
-![DNS Hierarchy](/devops-mentorship-program/03-march/week-4-07032023/files/dns-hierarchy.png)
+![DNS Hierarchy](/devops-mentorship-program/03-march/week-4-070323/files/dns-hierarchy.png)
 
 
 
-![DNS Hierarchy](/devops-mentorship-program/03-march/week-4-07032023/files/dns-hierarchy-tree.png)
+![DNS Hierarchy](/devops-mentorship-program/03-march/week-4-070323/files/dns-hierarchy-tree.png)
 
 ## VPN (Virtual Private Network)
 
@@ -528,10 +528,10 @@ VPN se može koristiti na različite načine, uključujući:
 - [DNS 101 Miniseries - #7 - DNSSEC Chain of Trust](https://youtu.be/YCk2WI-Fbtk)  
 - [DNS 101 Miniseries - #8 - The DNSSEC Root Signing Ceremony - the most important meeting ever](https://youtu.be/1VqscYMG_Rs)
 - [A Beginner's Guide to WebSockets](https://youtu.be/8ARodQ4Wlf4)
-- [DNS Prirucnik](/Users/ddzevlan/Documents/sqlheisenberg/devops-aws-mentorship-program/devops-mentorship-program/03-march/week-4-07032023/files/DNS-prirucnik-1_5.pdf)
+- [DNS Prirucnik](/Users/ddzevlan/Documents/sqlheisenberg/devops-aws-mentorship-program/devops-mentorship-program/03-march/week-4-070323/files/DNS-prirucnik-1_5.pdf)
 - [What happens when you type a URL into your browser?](https://aws.amazon.com/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/)
 
 
-[:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-4-07032023/00-class-notes.md)  
-[:fast_forward: Additional Reading](/devops-mentorship-program/03-march/week-4-07032023/02-additional-reading.md)   
+[:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-4-070323/00-class-notes.md)  
+[:fast_forward: Additional Reading](/devops-mentorship-program/03-march/week-4-070323/02-additional-reading.md)   
 [:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
