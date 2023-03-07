@@ -12,7 +12,7 @@
 6. [Sigurnost](/devops-tools/security.md)  
 7. [SSL Certifikati](/devops-tools/ssl.md)  
 8. [Docker](/devops-tools/docker.md)  
-9. [Automatizacija Konfigruacije Servera / Configuration Management](/devops-tools/configuration-management.md)  
+9. [Automatizacija Konfiguracije Servera / Configuration Management](/devops-tools/configuration-management.md)  
 9.1. [Ansible](/devops-tools/ansible.md)  
 9.2. [Packer](/devops-tools/packer.md)  
 10. [Racunarstvo u Oblaku / Cloud Computing](/devops-tools/cloud-computing.md)   
