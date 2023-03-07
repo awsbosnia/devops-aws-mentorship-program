@@ -34,4 +34,7 @@ Na taj nacin cemo imati male timove sastavljene od 3 clana.
 
 Prvi sljedeci review koji napravimo nakon ucenja o AWS-u ce ukljucivati evaluaciju polaznika koji su kvalifikovani za polaganje AWS certifikata. Dakle ocekuje se da nakon sto prodjemo lekcije i gradivo namjenjeno ucenju AWS-a budete spremni za polaganje **AWS Solutions Architect Associate Certifikata**. Jos uvijek ne znamo tacan broj sedmica koje ce nam biti potrebne za kompletiranje gradiva, pretpostavljamo da se radi o 8 sedmica. Sto bi znacilo da cemo nakon **Week 16** napraviti novi **Review** koji ce raditi evaluaciju kandidata spremnih za polaganje certifikata. Kandidati koji uspjesno prodju evaluaciju ce dobiti voucher za polaganje certifikata u vrijednosti od `150$`.  
 
- **Ne ocekujemo niti trazimo da svi budu spremni za polaganje nakon Week 16. Nekima ce biti potrebno dodatno vrijeme sto je uredu. O detaljima druge evaluacije cete biti obavjesteni na vrijeme. Za sva pitanja i nejasnoce pitajte u thredu na ovu poruku ili spremite pitanja za sljedecu office hours sesiju pa ih tu mozemo prodiskutovati.**
+ **Ne ocekujemo niti trazimo da svi budu spremni za polaganje nakon Week 16. Nekima ce biti potrebno dodatno vrijeme sto je uredu. O detaljima druge evaluacije cete biti obavjesteni na vrijeme. Za sva pitanja i nejasnoce pitajte u thredu na ovu poruku ili spremite pitanja za sljedecu office hours sesiju pa ih tu mozemo prodiskutovati.**  
+
+ [:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)
+
