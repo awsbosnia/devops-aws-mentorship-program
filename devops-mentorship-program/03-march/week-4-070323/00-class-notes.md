@@ -528,7 +528,7 @@ VPN se može koristiti na različite načine, uključujući:
 - [DNS 101 Miniseries - #7 - DNSSEC Chain of Trust](https://youtu.be/YCk2WI-Fbtk)  
 - [DNS 101 Miniseries - #8 - The DNSSEC Root Signing Ceremony - the most important meeting ever](https://youtu.be/1VqscYMG_Rs)
 - [A Beginner's Guide to WebSockets](https://youtu.be/8ARodQ4Wlf4)
-- [DNS Prirucnik](/Users/ddzevlan/Documents/sqlheisenberg/devops-aws-mentorship-program/devops-mentorship-program/03-march/week-4-070323/files/DNS-prirucnik-1_5.pdf)
+- [DNS Prirucnik](/devops-mentorship-program/03-march/week-4-070323/files/DNS-prirucnik-1_5.pdf)
 - [What happens when you type a URL into your browser?](https://aws.amazon.com/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/)
 
 

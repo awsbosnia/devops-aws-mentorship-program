@@ -54,8 +54,8 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 | 📖      | Dokumentacija           |
 | 💵      | Resursi koji se placaju |
 
-### Predavanja po mjesecima i sedmicama
-#### February 2023. 
+### :mortar_board: Predavanja po mjesecima i sedmicama
+#### :calendar: February 2023. 
 
 <details>
   <summary>Week-1</summary>
@@ -90,7 +90,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 
   </details>   
 
-#### March 2023. 
+#### :calendar: March 2023. 
 
 <details>
   <summary>Week-4</summary>
@@ -103,11 +103,10 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 
   </details>   
 
-### Predavanja po mjesecima i sedmicama
-## Office Hours   
+## :office: :alarm_clock: Office Hours   
 Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze kako bi se napravila rekapitulacija obradjenih tema, odgovrilo na eventualna pitanja, kao i dale dodatne upute ako je to potrebno. Snimci do sada odrzanih Office Hours sesija su dostupni preko linkova ispod.
 
-- [DevOps Mentorship Program - Kick Off Meeting](https://youtu.be/Ybwp3LJ1Vlo)
+ [:loudspeaker: DevOps Mentorship Program - Kick Off Meeting](https://youtu.be/Ybwp3LJ1Vlo)
 <details>
   <summary>Office Hours Recordings</summary>
   
@@ -118,7 +117,9 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
 
 ## :bangbang: Team Notes and Updates
 Sve vaznije informacije i obavjestenja mozete pronaci unutar sljedeceg dokumenta: 
-- [Importan Team Notes and Updates](/devops-mentorship-program/team-notes-and-updates.md)
+ [:pushpin: Importan Team Notes and Updates](/devops-mentorship-program/team-notes-and-updates.md)
+
+
 ## **🚨 Code of Conduct**
 Pravila ponsanja su definisana unutar [AWS Code of Conduct](https://aws.amazon.com/codeofconduct/). 
 
