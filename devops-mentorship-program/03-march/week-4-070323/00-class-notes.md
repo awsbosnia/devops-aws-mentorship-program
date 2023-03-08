@@ -529,9 +529,13 @@ VPN se može koristiti na različite načine, uključujući:
 - [DNS 101 Miniseries - #8 - The DNSSEC Root Signing Ceremony - the most important meeting ever](https://youtu.be/1VqscYMG_Rs)
 - [A Beginner's Guide to WebSockets](https://youtu.be/8ARodQ4Wlf4)
 - [DNS Prirucnik](/devops-mentorship-program/03-march/week-4-070323/files/DNS-prirucnik-1_5.pdf)
-- [What happens when you type a URL into your browser?](https://aws.amazon.com/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/)
+- [What happens when you type a URL into your browser?](https://aws.amazon.com/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/)  
+
+## 📹 Session recordings  
+- [**WEEK-4-tier-1-group-1 video session recording**](https://youtu.be/4coqHeNVeps) 
 
 
 [:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-4-070323/00-class-notes.md)  
 [:fast_forward: Additional Reading](/devops-mentorship-program/03-march/week-4-070323/02-additional-reading.md)   
 [:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
+
