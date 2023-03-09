@@ -9,7 +9,7 @@ Internet je racunarska mreza koja povezuje milione racunarskih uredjaja sirom sv
 ![Internet](/devops-mentorship-program/03-march/week-4-070323/files/internet.png)
 
 ## OSI model
-Medjunarodna organizacija za standardizaciju je krajem 70tih godina predlozila organizaciju racunarskih mreza u sedam slojeva. Takva arhitektura mreza dobila je naziv model otvorenog sistem za medjusobno povezivanje (Eng. Open System Interconnection - OSI)
+Medjunarodna organizacija za standardizaciju je krajem 70tih godina predlozila organizaciju racunarskih mreza u sedam slojeva. Takva arhitektura mreza dobila je naziv model otvorenog sistem za medjusobno povezivanje (Eng. Open System Interconnection - OSI).
 
 ![OSI Model](/devops-mentorship-program/03-march/week-4-070323/files/osi-model.jpg)
 
@@ -30,7 +30,7 @@ Na aplikativnom sloju nalaze se mrezne aplikacije i njihovi protokoli aplikativn
 
 ### Prezentacijski sloj
 
-Uloga prezentacijskog sloja je da aplikacijama koje medjusotvno razmijenjuju podatke obezbjedi usluge koje omogucavaju tumacenje znacenja ramzmijenjenih podataka. 
+Uloga prezentacijskog sloja je da aplikacijama koje medjusobno komuniciraju, razmijenjuju podatke, obezbjedi usluge koje omogucavaju tumacenje znacenja ramzmijenjenih podataka. 
 
 ### Sloj sesije
 
@@ -43,7 +43,7 @@ Transportni sloj prenosi poruke aplikativnog sloja izmedju krajnjih tacaka aplik
 
 ### Mrezni sloj
 
-Mrezni sloj odgovoran je za prenosenje paketa mreznog sloja poznatih kao `datagrami` od jednog racunara do drugog. Prtokol transportnog sloja u izvornom racunaru prosljedjuje paket (odnosno segment) transportnog sloja i odredisnu mreznu adresu. Mrezni sloj je taj koji obezbjedjuje isporuku paketa do transportnog sloja na odredisnom racunaru.
+Mrezni sloj odgovoran je za prenosenje paketa mreznog sloja poznatih kao `datagrami` od jednog racunara do drugog. **Datagrami** su osnovna jedinica za prenos podataka u mrežama koje koriste paketno prenošenje podataka. Datagrami su obicno sastavljeni od zaglavlja (header) i korisnih podataka (payload). Zaglavlje sadrzi informacije o adresama odredista i izvora, kao i druge kontrole informacija koje su potrebne za uspjesan prijenos podataka. Payload sadrzi stvarne podatke koji se prenose preko mreze. Protokol transportnog sloja u izvornom racunaru prosljedjuje paket (odnosno segment) transportnog sloja i odredisnu mreznu adresu. **Mrezni sloj je taj koji obezbjedjuje isporuku paketa do transportnog sloja na odredisnom racunaru.**
 
 **IP protokol** pripada mreznom sloju. Mrezni sloj takodjer obuhvata protokole za rutiranje.
 
@@ -56,16 +56,16 @@ Mrezni sloj usmjerava datagrame kroz niz rutera izmedju izvora i odredista. Za p
 Zadatak fizickog sloja jeste prenosenje pojedinacnih bitova iz istog paketa prosljedjenog od strane sloja veze izmedju susjetnih cvorova. Protokoli na ovom sloju zavise od vrste linka ali i medija uz pomoc kojeg je taj link ostvaren (opticka vlakna, bakrene parice i sl.)
 
 ## Protokoli
-Mrezni protokol slican je pravilu ponasanja medju ljudima. Svime sto se desava na internetu a obuhvata komunikaciju dva udaljena samostalna dijela ili vise njih upravlja neki protokol.
+Mrezni protokol slican je pravilu ponasanja medju ljudima. **Svime sto se desava na internetu a obuhvata komunikaciju dva udaljena samostalna dijela ili vise njih upravlja neki protokol.**
 
-Protokol definise format poruke i redoslijed po kojem se ta poruka ramijenjuje izmedju najmenje dvije zasebne cjeline koje medjustovno komuniciraju, kao i postupke koji se preduzimaju poslije slanja i/ili prijema odredjenih poruka ili nekog durgog dogadjaja.
+Protokol definise format poruke i redoslijed po kojem se ta poruka ramijenjuje izmedju najmenje dvije zasebne cjeline koje medjusobno komuniciraju, kao i postupke koji se preduzimaju poslije slanja i/ili prijema odredjenih poruka ili nekog durgog dogadjaja.
 
 Internet kao i sve druge racunarske mreze koriste protokole, prilikom komunikacije za ispunjavanje razlicitih zadataka koriste se razliciti protokoli.
 
-Svaki od protokola pripada jednom od slojeva OSI modela. Prtokol na nekom sluju moze da se sprovodi kako u softveru tako i u hardveru, ali i uporedo. Protokoli aplikativnog sloja (`HTTP`, `SMTP`) skoro uvijek se sprovode u softveru krajnjih sistema. Isti je slucaj i sa protokolima transportnog sloja. Posto su fizicki sloj i sloj veze podataka odgovorni za komunikaciju preko odredjenog linka, protokoli na njima obicno se sporovode u mreznoj kartici koja je povezana sa datim linkom. Protokoli na mreznom sloju obicno se istovremeno sprovode i u softveru i u hardveru. Svi protokoli zajedno nazivaju se skup protokola
+Svaki od protokola pripada jednom od slojeva **OSI modela**. Prtokol na nekom sloju moze da se sprovodi kako u softveru tako i u hardveru, ali i uporedo. Protokoli aplikativnog sloja (`HTTP`, `SMTP`) skoro uvijek se sprovode u softveru krajnjih sistema. Isti je slucaj i sa protokolima transportnog sloja. Posto su fizicki sloj i sloj veze podataka odgovorni za komunikaciju preko odredjenog linka, protokoli na njima obicno se sporovode u mreznoj kartici koja je povezana sa datim linkom. Protokoli na mreznom sloju obicno se istovremeno sprovode i u softveru i u hardveru. Svi protokoli zajedno nazivaju se skup protokola.
 
 ## IPv4 Adresiranje
-Racunar obicno ima samo jedan link prema mrezi: kada IP adresa u tom racunaru zeli da posalje datagram (paket mreznog sloja) ona to radi preko tog linka.
+Racunar obicno ima samo jedan link prema mrezi: **kada IP adresa u tom racunaru zeli da posalje datagram (paket mreznog sloja) ona to radi preko tog linka.**
 Granica izmedju racunara i fizickog linka naziva se `interfejs`.
 
 Posto je zadatak rutera da primi datagram sa jednog linka i proslijedi ga na drugi link, ruter obavezno mora da bude povezan sa najmanje dva linka. Granica izmedju rutera i bilo kojeg od njegovih linkova takodjer se naziva `interfejs`. **U skladu s tim ruter ima vise interfejsa, po jedan za svaki link**. 
@@ -78,18 +78,23 @@ Posto svi racunari i ruteri mogu da primaju i salju `IP datagrame`, `IP` zatijev
 
 IP adrese se obicno pisu u decimalnoj notaciji sa tackama u kojoj se svaki bajt adrese zapisuje u decimalnom obliku a od ostalih bajtova u adresi razdvaja se tackom. 
 
-Uzmimo za primjer IP adresu `193.32.216.9` Broj `193` je vrijednost prvih `osam bitova` u adresi.
+Uzmimo za primjer IP adresu `193.32.216.9` Broj `193` je vrijednost prvih `osam bitova` u adresi.  
+Prevedeno u binarni oblik, IP adresa `193.32.216.9` bi izgledalo ovako:
+```
+193     . 32     . 216    . 9
+11000001 00100000 11011000 00001001
+```
 
-Svaki interfejs na svim racunarima i na ruterima mora da ima `IP adresu` koja je globalno jedinstvena osim interfejsa ispred kojih se koriti `NAT - Network Address Translator` odnosno prevodjenje adresa. Adrese ne mogu da se biraju nasumicno. **Dio IP adrese interfejsa odredjuje podmreza sa kojom je povezan.** U IP zargonu  mreza koja povezuje intefejse tri racunara i intefejs rutera predstavlja podmrezu (subnet). Podmreza se u literaturi naziva IP mreza ili samo mreza.
+Svaki interfejs na svim racunarima i na ruterima mora da ima `IP adresu` koja je globalno jedinstvena osim interfejsa ispred kojih se koriti `NAT - Network Address Translator` odnosno prevodjenje adresa. Adrese **ne mogu** da se biraju nasumicno. **Dio IP adrese interfejsa odredjuje podmreza sa kojom je povezan.** U IP zargonu  mreza koja povezuje intefejse tri racunara i intefejs rutera predstavlja **podmrezu (subnet).** Podmreza se u literaturi naziva IP mreza ili samo mreza.
 
-**Subnet Mask - MASKA PODMREZE** (npr /24) znaci da 24 krajnja lijeva bita 32-bitne vrijednosti IP adrese predstavljaju adresu podmreze. Strategija dodjeljivanja adresa na interentu poznata je kao besklasno rutiranje izmedju domena Classless Internetdomain Routing - CIDR (cider blok)
+**Subnet Mask - MASKA PODMREZE** (npr: `/24`) znaci da 24 krajnja lijeva bita 32-bitne vrijednosti IP adrese predstavljaju adresu podmreze. Strategija dodjeljivanja adresa na interentu poznata je kao besklasno rutiranje izmedju domena **Classless Internetdomain Routing - CIDR**(cider blok).
 
 `a.b.c.d / X`  `(a.b.c.d/24)`
 `X` oznacava broj bitova u prvom dijelu adrese koji oznacavaju **MREZNI DIO IP ADRESE**, preostali biti su namjenjeni hostovim odnosno uredjajima unutar te podmreze.
 
 **Ruteri** izvan ove organizacije sa kojim komunicira ova mreza u obzir uzimaju samo adresu podmreze odnosno mrezni prefix adrese. Ovo doprinosi smanjenu velicine ruting tabela, gdje ostatale mreze sa kojima ova mreza komunicira ne moraju da znaju za ostale adrese unutar mreze, cesto i vise manjih podmreza unutar nje. Mogucnost da se korisiti jedan prefiks za predstavljanje vise mreza cesto se naziva agregacija adresa. Preostali `biti` unutar `IP adrese` odnose se na `hostove` i na osnovu njih se pravi razlika izmedju uredjaja unutar iste podmreze gdje svi ti hostovi imaju isti `mrezni prefix` odnosno istu `adresu podmreze`.
 
-`255.255.255.255` - IP Adresa za difuzno emitovanje. Kada racunar posalje datagram sa odresom odredista `255.255.255.255` ta se poruka isporucuje svim racunarima u istoj podmrezi. 
+`255.255.255.255` - IP Adresa za difuzno emitovanje. Kada racunar posalje `datagram` sa odresom odredista `255.255.255.255` ta se poruka isporucuje svim racunarima u istoj podmrezi. 
 
 **Prije nego je usvojena CIDR sema, mrezni dio IP adrese morao je da bude duzine 8 bitova, 16 bitova ili 24 bita u semi poznatoj kao puno klasno adresiranje (classful addresing) jer su podmreze sa adresama od 8 bitova, 16 bitova i 24 bita bila poznate kao mreze klase A, B i C.**
 
@@ -97,11 +102,11 @@ Svaki interfejs na svim racunarima i na ruterima mora da ima `IP adresu` koja je
 - **Class B:** `172.16.0.0` to `172.31.255.255`    
 - **Class C:** `192.168.0.0` to `192.168.255.255`    
 
-Sve adrese koje pripadaju ovim klasama su privatne adrese i smatraju se non routable adresama.
-Sve adrese koje ne pripadaju nijednoj od ovih klasa su javne adrese / `PUBLIC IP` address.
+**Sve adrese koje pripadaju ovim klasama su privatne adrese i smatraju se non routable adresama.**
+Sve adrese koje **ne pripadaju** nijednoj od ovih klasa su **javne adrese** / `PUBLIC IP` address.
 
-Podmreza kalse C (/24) je na osnovu toga mogla da obuhvati samo 2^8 - 2 = 254 racunara sto je premalo.
-Podklasa mreze B (/16) koja obuhvata 65634 adrese bila je prevelika za vecinu organizacija. sto je vodilo do lose iskoristenosti adresnog prostora klase B. 
+Podmreza kalse C - `/24` je na osnovu toga mogla da obuhvati samo `2^8 - 2 = 254` racunara sto je premalo.
+Podklasa mreze B - `/16` koja obuhvata `65634` adrese bila je prevelika za vecinu organizacija, sto je vodilo do lose iskoristenosti adresnog prostora klase B. 
 
 IP v4 adrese su ogranicene na 4.294.967.296 adrese.
 
@@ -111,12 +116,12 @@ Postoji nekoliko IPv4 adresa koje se koriste za posebne svrhe. Ove adrese se ne 
 
 
 ### IPv6
-**IPv6 (Internet Protocol version 6)** adresiranje je nasljednik IPv4 protokola i koristi se za identificiranje mrežnih uređaja u globalnoj mreži interneta. IPv6 koristi 128-bitne adrese, što je znatno više od IPv4 protokola koji koristi 32-bitne adrese. To znači da IPv6 može podržati znatno veći broj mrežnih uređaja i povezanih uređaja u usporedbi s IPv4.
+**IPv6 (Internet Protocol version 6)** adresiranje je nasljednik IPv4 protokola. IPv6 koristi 128-bitne adrese, što je znatno više od IPv4 protokola koji koristi 32-bitne adrese. To znači da IPv6 može podržati znatno veći broj mrežnih uređaja i povezanih uređaja u usporedbi s IPv4.
 
 IPv6 adrese se sastoje od 8 blokova koji se odvajaju dvotočkom. Svaki blok je zapisan kao 4 heksadecimalne znamenke, što znači da svaki blok ima vrijednost između `0` i `FFFF`. Na primjer, IPv6 adresa može izgledati ovako: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`.
 
 Jedna od glavnih prednosti IPv6 protokola je veća sigurnost, jer IPv6 uključuje ugrađenu enkripciju i autentifikaciju koja štiti od napada na mrežnu sigurnost. Također, IPv6 adresiranje omogućuje jednostavnije upravljanje mrežom i veću učinkovitost u usporedbi s IPv4, jer se ne moraju koristiti razni trikovi poput NAT-a (Network Address Translation) kako bi se omogućilo povezivanje velikog broja uređaja na internet.
-IPv6 adrese su duzine 128 bita i mogu da obuhvate 340.282.366.920.938.463.463.374.607.431.768.211.456 adresa.
+IPv6 adrese su duzine 128 bita i mogu da obuhvate `340.282.366.920.938.463.463.374.607.431.768.211.456` adresa.
 
 ## Web aplikacije
 
@@ -126,7 +131,7 @@ Web aplikacija ima dva nezavisna udaljena programa odnosno procesa koji komunici
 
 **U Klijent-Server arhitekturi** postoji uvijek dostupan racunar odnosno server, cije usluge trazi vise drugih racunara koji se nazivaju klijenti. Kada od racunara klijenta stigne zahtjev za uslugom, web server na racunaru servera obradjuje zahtjev i vraca klijentu odgovor. Klijenti ne komuniciraju neposredno jedan sa drugim. Takodjer bitno je napomenuti da server ima stalnu IP adresu (ili domensko ime preko kojeg je dostupan).
 
-U okviru komunikacione sesije izmedju dva procesa, proces koji prekece komunikaciju, tj prvi kontaktira proces na pocetku sesije oznacava se kao klijent. Proces koji ceka na poziv da bi uspostavio komunikaciju oznacava se kao server. Sve poruke poslate od jednog procesa do drugog moraju da prodju kroz mrezu izmedju njih. Procesi salju poruke u mrezu i primaju poruke iz mreze preko softverskog interfejsa koji se zove `socket`.
+U okviru komunikacione sesije izmedju dva procesa, proces koji prekece komunikaciju, tj. prvi kontaktira proces na pocetku sesije oznacava se kao **klijent**. Proces koji ceka na poziv da bi uspostavio komunikaciju oznacava se kao **server**. Sve poruke poslate od jednog procesa do drugog moraju da prodju kroz mrezu izmedju njih. Procesi salju poruke u mrezu i primaju poruke iz mreze preko softverskog interfejsa koji se zove `socket`.
 
 ![Aplikativni proces, soketi i transportni protokol na kome se zasnivaju](/devops-mentorship-program/03-march/week-4-070323/files/app-proces-socketi.png)  
 
