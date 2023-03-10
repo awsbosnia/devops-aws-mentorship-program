@@ -537,7 +537,8 @@ VPN se može koristiti na različite načine, uključujući:
 - [What happens when you type a URL into your browser?](https://aws.amazon.com/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/)  
 
 ## 📹 Session recordings  
-- [**WEEK-4-tier-1-group-1 video session recording**](https://youtu.be/4coqHeNVeps) 
+- [**WEEK-4-tier-1-group-1 video session recording**](https://youtu.be/4coqHeNVeps)
+- [**WEEK-4-tier-1-group-2 video session recording**](https://youtu.be/UlkPnSWJlH8) 
 
 
 [:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-4-070323/00-class-notes.md)  
