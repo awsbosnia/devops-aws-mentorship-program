@@ -101,9 +101,13 @@ Uzmimo za primjer da imamo Node.js aplikaciju koju zelimo da pokrenemo na nasem 
 #### Kako da konfigurišemo Nginx da bude Reverse Proxy server?
 Da bi konfigurisali NGINX da bude Reverse Proxy server neophodno je da podesimo jednostavnu Node.js aplikaciju koja ce da vrati `Hello World` poruku kada se pozove. Ova aplikacija ce biti naš **Backend** server. Nakon toga potrebno je da podesimo NGINX da bude **Reverse Proxy** server koji ce da obradjuje `HTTP` zahtjeve i proslijedjuje ih našem **Backend** serveru.
 
+U tu svrhu cemo ispratiti tutorijal sa Digital Ocean stranice [How To Set Up a Node.js Application for Production on CentOS 7](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-centos-7)
 ```bash
 $ curl -L -o nodesource_setup.sh https://rpm.nodesource.com/setup_14.x # Download Node.js setup script
 $ sudo bash nodesource_setup.sh # Run Node.js setup script
+$ sudo yum clean all # Clean yum cache
+$ sudo yum makecache fast # Make yum cache
+$ sudo yum install -y gcc-c++ make # Install build tools
 $ sudo yum install nodejs # Install Node.js
 $ node -v # Check Node.js version
 ```
