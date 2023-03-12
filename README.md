@@ -137,7 +137,7 @@ Mentori ovog programa su se potrudili da materijal koji se nalazi u ovom repozit
 
 Bilo da se radi o tipografskim greskama, nejasnim formulacijama, nedostacima u dokumentaciji ili nekom drugom aspektu, svi ste dobrodosli da pomognete u kreiranju kvalitetnijeg materijala.
 
-Za detaljno objasnjenje kako da kreirate Pull Request molimo vas da pogledate [CONTRIBUTING](/devops-mentorship-program/contributing.md) dokument.
+Za detaljno objasnjenje kako da kreirate Pull Request molimo vas da pogledate [CONTRIBUTING](CONTRIBUTING.md) dokument.
 
 ## :blue_heart: Feedback  
 Povratne informacije bilo pozitivne ili negativne su nam jako bitne. Budite slobodni da povratne informacije i generalni feedback posaljete na email <dzenan.dzevlan@gmail.com> ili da svoju podrsku ovom programu iskazete na drustvenim mrezama i [YouTube](https://www.youtube.com/channel/UCFad2d7jXJdeNLdOOllG61A) kanalu gdje objavljujemo snimke svih predavanja. 
