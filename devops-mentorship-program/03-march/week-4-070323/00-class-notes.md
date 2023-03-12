@@ -131,7 +131,7 @@ Web aplikacija ima dva nezavisna udaljena programa odnosno procesa koji komunici
 
 **U Klijent-Server arhitekturi** postoji uvijek dostupan racunar odnosno server, cije usluge trazi vise drugih racunara koji se nazivaju klijenti. Kada od racunara klijenta stigne zahtjev za uslugom, web server na racunaru servera obradjuje zahtjev i vraca klijentu odgovor. Klijenti ne komuniciraju neposredno jedan sa drugim. Takodjer bitno je napomenuti da server ima stalnu IP adresu (ili domensko ime preko kojeg je dostupan).
 
-U okviru komunikacione sesije izmedju dva procesa, proces koji prekece komunikaciju, tj. prvi kontaktira proces na pocetku sesije oznacava se kao **klijent**. Proces koji ceka na poziv da bi uspostavio komunikaciju oznacava se kao **server**. Sve poruke poslate od jednog procesa do drugog moraju da prodju kroz mrezu izmedju njih. Procesi salju poruke u mrezu i primaju poruke iz mreze preko softverskog interfejsa koji se zove `socket`.
+U okviru komunikacione sesije izmedju dva procesa, proces koji inicira komunikaciju, tj. prvi kontaktira proces na pocetku sesije oznacava se kao **klijent**. Proces koji ceka na poziv da bi uspostavio komunikaciju oznacava se kao **server**. Sve poruke poslate od jednog procesa do drugog moraju da prodju kroz mrezu izmedju njih. Procesi salju poruke u mrezu i primaju poruke iz mreze preko softverskog interfejsa koji se zove `socket`.
 
 ![Aplikativni proces, soketi i transportni protokol na kome se zasnivaju](/devops-mentorship-program/03-march/week-4-070323/files/app-proces-socketi.png)  
 
