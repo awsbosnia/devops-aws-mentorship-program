@@ -92,6 +92,8 @@ To su sljedeci fajlovi:
 - `uwsgi_params` - Ovaj fajl sadrži podešavanja za `uWSGI` procese. `uWSGI` je jedan od najpopularnijh **WSGI (Web Server Gateway Interface)** servera. `uWSGI` procesi se koriste za obradu dinamičkog sadržaja na web sajtu. `uWSGI` je protokol koji omogućava web serveru da uspostavi vezu sa `uWSGI` procesom koji izvršava aplikaciju. `uWSGI` procesi se koriste za generisanje dinamickog sadržaja na web sajtu, kao sto su skripte za generisanje HTML stranica, **Python skripte** i drugi programski jezici. Preporuka je da pogledate sljedecu stranicu [Why is WSGI necessary?](https://www.fullstackpython.com/wsgi-servers.html) kako bi razumjeli zašto je potreban WSGI protokol.
 - `*-utf` - UTF metode omogucavaju enkodiranje znakova razlicitih jezika sto omogucava njihovo prikazivanje. 
 
+**NAPOMENA:** Instalacija Nginx-a na ostalim Linux/Unix distribucijama moze da kreira dodatne direktorije poput `sites-available` i `sites-enabled`. Ovi direktoriji mogu da sadrze dodatne `.conf` fajlove koji se koriste za dodatna podešavanja i konfiguracije. Kod CentOS 7 OS-a konfiguracije za razlicite sajtove se nalaze unutar direktorijuma `/etc/nginx/conf.d/`.
+
 ### Aplikacijski server
 Da bi smo u potpunosti razumijeli rad web servera neophodno je da razumijemo aplikacijski server. Osnovni zadatak aplikacijskog servera je da omoguci klijentima pristup onome sto cesto nazivamo **biznis logikom aplikacije** koja generise dinamicki sadrzaj. **Web Server** isporucuje staticki sadrzaj ukljucujuci HTML stranice, slike, video fajlove i druge tipove podataka ukljucene u web sajt. Aplikacijski server sa druge strane generise dinamicki sadrzaj koji se isporucuje klijentima. Aplikacijski server nikada ne moze biti zamjena za web servere, umjsto toga aplikacijski server i web server moraju da rade zajedno kako bi se klijent imao potpuno iskustvo prilikom korištenja web sajta. Bez aplikacijskog web servera, web aplikacije bi bile ograničene na statički sadržaj i ne bi bile u mogućnosti da se prilagode promjenama u zahtjevima korisnika.
 
@@ -99,7 +101,7 @@ Da bi smo u potpunosti razumijeli rad web servera neophodno je da razumijemo apl
 Uzmimo za primjer da imamo Node.js aplikaciju koju zelimo da pokrenemo na nasem serveru (hostu). Da bi je pokrenuli potreban nam je `Node.js` server koji omogucava pokretanje `Node.js` aplikacije. `Node.js` server omogucava obradu `HTTP` zahtjeva koji stižu od klijenata i generisanje odgovora na osnovu Node.js koda. `Node.js` server pruža podršku za različite HTTP metode, uključujući GET, POST, PUT, DELETE, i druge. Kako bi omogucili posluzivanje statickih fajlova, bolju skalabilnost, sigurnost, jednostavniju konfiguraciju neophodno je da ispred naseg Node.js servera postavimo web server (u ovom primjeru Nginx) koji ce da obradi `HTTP` zahtjeve i proslijedi ih `Node.js` serveru. Ovaj tip arhitekture se naziva **Reverse Proxy** arhitektura. U ovom slučaju, **NGINX** server je **Reverse Proxy** server koji obradjuje `HTTP` zahtjeve i proslijedjuje ih `Node.js` serveru. `Node.js` server je u ovom slučaju **Backend** server.
 
 #### Kako da konfigurišemo Nginx da bude Reverse Proxy server?
-Da bi konfigurisali NGINX da bude Reverse Proxy server neophodno je da podesimo jednostavnu Node.js aplikaciju koja ce da vrati `Hello World` poruku kada se pozove. Ova aplikacija ce biti naš **Backend** server. Nakon toga potrebno je da podesimo NGINX da bude **Reverse Proxy** server koji ce da obradjuje `HTTP` zahtjeve i proslijedjuje ih našem **Backend** serveru.
+Da bi konfigurisali **NGINX** da bude **Reverse Proxy** server neophodno je da podesimo jednostavnu Node.js aplikaciju koja ce da vrati `Hello World` poruku kada se pozove. Ova aplikacija ce biti naš **Backend** server. Nakon toga potrebno je da podesimo NGINX da bude **Reverse Proxy** server koji ce da obradjuje `HTTP` zahtjeve i proslijedjuje ih našem **Backend** serveru.
 
 U tu svrhu cemo ispratiti tutorijal sa Digital Ocean stranice [How To Set Up a Node.js Application for Production on CentOS 7](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-centos-7)
 ```bash
@@ -110,11 +112,17 @@ $ sudo yum makecache fast # Make yum cache
 $ sudo yum install -y gcc-c++ make # Install build tools
 $ sudo yum install nodejs # Install Node.js
 $ node -v # Check Node.js version
+```
 
-## Application setup
-
+#### Application setup
+``` 
 $ npm install -g pm2 # Install pm2 process manager
 $ pm2 start server.js # Start Node.js application
+```
+
+
+```
+$ sudo nginx -t # Test NGINX configuration
 ```
 
 ### Forward Proxy
@@ -135,7 +143,9 @@ $ pm2 start server.js # Start Node.js application
 ### DNS serveri
 
 
-[nginx documentation](http://nginx.org/en/docs/)
+[nginx documentation](http://nginx.org/en/docs/)  
+[How nginx processes a request](http://nginx.org/en/docs/http/request_processing.html)  
+[nginx server names](http://nginx.org/en/docs/http/server_names.html)
 
 [:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-5-140323/00-class-notes.md)  
 [:fast_forward: Additional Reading](/devops-mentorship-program/03-march/week-5-140323/02-additional-reading.md)   
