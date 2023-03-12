@@ -2,7 +2,7 @@
 ## 📅 Date: 28.02.2023.  
 ### Bash / Shell Scripting
 
-**Shell** je program koji obezbjedjuje koriisniku direktnu interakciju sa operativnim sistemom. Na pocetku je Unix OS koristio shell program pod nazivom **Bourne shell**. Danas se koristi **Bash** shell program koji je kompatibilan sa Bourne shell-om. **Bash** shell je standardni shell program na vecini Linux distribucija.  
+**Shell** je program koji obezbjedjuje korisniku direktnu interakciju sa operativnim sistemom. Na pocetku je Unix OS koristio shell program pod nazivom **Bourne shell**. Danas se koristi **Bash** shell program koji je kompatibilan sa Bourne shell-om. **Bash** shell je standardni shell program na vecini Linux distribucija.  
 Postoji vise razlicith shell programa koje su razvijane za razlicite verzije UNIX-a. Ovo su neki od njih:  
 - `sh` - Bourne shell
 - `csh` - C shell
