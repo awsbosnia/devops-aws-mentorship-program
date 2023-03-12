@@ -121,9 +121,9 @@ $ rsync -e "ssh -P $port_value" remoteuser@remoteip:/path/  localpath #Copy file
 [Find i Grep - Notability biljeske](/resources/notability/bash_notes.pdf)  
 
 ```bash
-$ chmod 600 <filename> #Change persmissions for user
-$ chmod u+x <filename> #Change persmissions for user
-$ chown user:group <filename> #Chenge owner
+$ chmod 600 <filename> #Change permissions for user
+$ chmod u+x <filename> #Change permissions for user
+$ chown user:group <filename> #Change owner
 ```
 
 #### Struktura Linux/Unix file sistema
