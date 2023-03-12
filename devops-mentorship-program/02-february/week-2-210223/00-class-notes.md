@@ -7,13 +7,13 @@ izvrsavanje kriticnih aplikacija od visoke vaznosti. **UNIX** je cvrsto povezan 
 servisima TCP/IP protokola, cime je u potpunosti promijenjena slika **UNIX**  servera i radnog
 okruženja iz prošlosti. Umjesto servera sa klasicnim serijskim terminalima UNIX server se
 nalazi u mreži, pri cemu sa radnim stanicama ostvaruje vezu preko LAN/WAN mreže i
-TCP/IP skupa protokola. Veina velikih svetskih proizvodjaca racunara razvija specificnu
+TCP/IP skupa protokola. Vecina velikih svjetskih proizvodjaca racunara razvija specificnu
 varijantu UNIX operativnog sistema, što ukazuje na njegov kvalitet, popularnost i
 rasprostranjenost. Vecina UNIX sistema, poput Red Hat Enteprise, je komercijalna -
 korisnik mora da plati licencu za korišenje, a izvorni kod nije rasploziv. To su razlozi
 narastajuce popularnosti Linux sistema koji zadržava vecinu dobrih osobina UNIX
 sistema, a dodatno se odlikuje raspolozivim izvornim kodom i prakticno besplatnim
-korišenjem. Zbog toga danas veina proizvoaca racunara osim sopstvene komercijalne
+korišenjem. Zbog toga danas veina proizvodjaca racunara osim sopstvene komercijalne
 verzije UNIX sistema nudi i podršku za Linux. Linux se najcesce koristi kao operativni
 sistem na radnim stanicama ili serverima u manjoj ili srednjoj klasi servera, a jedna od
 oblasti dominantne primjene, u kojoj veliki broj korisnika podržava i promoviše Linux kao
