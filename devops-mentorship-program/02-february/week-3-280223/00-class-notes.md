@@ -80,7 +80,7 @@ Razliciti shellovi imaju razlicite nazive i putanje do konfiguracijskih fajlova.
 Kreirajte novi fajl sa nazivom `hello.sh` i dodajte sljedeci sadrzaj:
 ```bash
 #!/bin/bash 
-# Ovo je komtar unutar skripte
+# Ovo je komentar unutar skripte
 echo "Danas je: "
 date
 ```
@@ -103,9 +103,9 @@ Skriptu mozemo izvrsiti na nekoliko nacin:
 Kada se koristi `./` zajedno sa nazivom izvršnog fajla (npr. "./hello.sh"), to znazi da se taj fajl pokreće iz trenutnog direktorija. Ovo je korisno kada se nalazimo u direktoriju u kojem se nalazi izvršni fajl, jer nam omogućava da pokrenemo fajl bez potrebe za kucanjem pune putanje do fajla.  
 
 ### Kompajler VS Interpreter  
-- **Kompajliranje** - Programski jezici koji koriste kompajler (C, C++, Java ...) za izradu izvršnog fajla. Kompajler je program koji prevede izvorni kod u izvršni fajl. 
+- **Kompajler** - Kompajler je program koji prevede izvorni kod u izvrsni fajl. Programski jezici koji koriste kompajler (C, C++, Java ...) za izradu izvrsnog fajla.  
 
-- **Interpreter** - Shell je zasnovan na interpreteru, svaka linija programa odnosno skripte je usnos u shell. Linija shell skripte se izvrsava jedna po jedna sekvencijalno. Cak i ako druga linija skripte ima gresku, shell interpreter ce izvrsiti prvu liniju.
+- **Interpreter** - Interpreter je program koji u toku izvršavanja prevodi jednu po jednu naredbu. Shell je zasnovan na interpreteru, svaka linija programa odnosno skripte je usnos u shell. Linije shell skripte se izvrsavaju jedna po jedna sekvencijalno. Cak i ako druga linija skripte ima gresku, shell interpreter ce izvrsiti prvu liniju.
 
 ### Environment Variables
 **Environment variables** su varijable koje su definisane u operativnom sistemu i dostupne su svim procesima koji se pokrecu u tom okruzenju. One sadrze informacije koje se koriste za postavljanje okruzenja za procese koji se pokrecu u operativnom sistemu, kao što su putanje do direktorija, sistemski parametri, konfiguracijske postavke i druge informacije koje su potrebne da bi se programi izvršavali ispravno.
@@ -122,10 +122,10 @@ Programi koji se izvršavaju u **UNIX** okruženju mogu koristiti environment va
 
 Kada korisnik unese neku komandu u shell, operativni sistem traži tu komandu u nizu direktorija definisanim u `PATH` varijabli, počevši od prvog direktorija u nizu, sve dok ne pronađe traženi fajl. Ako se fajl ne pronađe u nijednom direktoriju u PATH-u, operativni sistem će prijaviti grešku i prikazati poruku o grešci.
 
-Standardne putanje koje su definisane u PATH-u obično uključuju direktorije poput `/usr/bin`, `/bin` i `/usr/local/bin`. Kada  korisnik unese neka komanda, npr. `ls`, OS ce pretražiti ove direktorije u `PATH-u`, i ako se fajl `ls` pronadje u jednom od tih direktorija, on će biti pokrenut.
+Standardne putanje koje su definisane unutar environemtn varijable `PATH` obicno ukljucuju direktorije poput `/usr/bin`, `/bin` i `/usr/local/bin`. Kada korisnik unese neku komandu, npr. `ls`, OS ce pretraziti direktorije navedene u `PATH` putanji unutar kojih ce traziti izvrsni (executable) fajl komande `ls`. Ako se izvrsni fajl za komandu `ls` nalazi u jednom od tih direktorija komanda `ls` ce biti uspjesno izvrsena.
 
 ```bash
-$ which ls # whcih je komanda koja nam pokazuje putanju do izvrsnog fajla
+$ which ls # which je komanda koja nam pokazuje putanju do izvrsnog fajla
 
 alias ls='ls --color=auto'
 	/usr/bin/ls #putanja na kojoj se nalazi ls executable fajl
@@ -133,12 +133,12 @@ alias ls='ls --color=auto'
 $ echo $PATH
 
 /usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/centos/.local/bin:/home/centos/bin
-# Vidimo da je putanja /usr/bin/ fajla u PATH-u i da ce se ta komanda  moze uspjesno izvrsiti
+# Vidimo da je putanja /usr/bin/ fajla u PATH-u i da ce se ls komanda  moze uspjesno izvrsiti
 ```
 
 Putanje u PATH-u na UNIX sistemima su odvojene dvotackom `:`.
 
-Korisnici mogu mijenjati PATH varijablu kako bi dodali nove direktorije u nju, omogucavajuci im da pokrenu programe koji se nalaze u drugim direktorijima osim standardnih direktorija. To se može uraditi dodavanjem novih direktorija u PATH putem komandne linije ili putem konfiguracijskih fajlova za shell, kao sto je `.bashrc`  
+Korisnici mogu mijenjati `PATH` varijablu kako bi dodali nove direktorije u nju, omogucavajuci im da pokrenu programe koji se nalaze u drugim direktorijima osim standardnih direktorija. To se može uraditi dodavanjem novih direktorija u `PATH` putem komandne linije odnosno terminala ili putem konfiguracijskih fajlova za `shell`, kao sto je `.bashrc`  
 
 ## 📖 Reading materials 
 [Linux Command Line and Shell Scripting Bible, 3nd Edition](/resources/books/linux_command_line_and_shell_scripting_bible_3rd_edition.pdf)
