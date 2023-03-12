@@ -126,5 +126,7 @@ $ git config --global user.name "username" #podesavanje korisnickog imena --glob
 
 [:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)  
 [:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-1-140223/02-additional-reading.md)   
-[:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
+[:fast_forward: HOME - README.md](../../../README.md)  
+[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)  
+
 

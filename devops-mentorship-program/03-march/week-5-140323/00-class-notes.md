@@ -98,14 +98,25 @@ To su sljedeci fajlovi:
 Da bi smo u potpunosti razumijeli rad web servera neophodno je da razumijemo aplikacijski server. Osnovni zadatak aplikacijskog servera je da omoguci klijentima pristup onome sto cesto nazivamo **biznis logikom aplikacije** koja generise dinamicki sadrzaj. **Web Server** isporucuje staticki sadrzaj ukljucujuci HTML stranice, slike, video fajlove i druge tipove podataka ukljucene u web sajt. Aplikacijski server sa druge strane generise dinamicki sadrzaj koji se isporucuje klijentima. Aplikacijski server nikada ne moze biti zamjena za web servere, umjsto toga aplikacijski server i web server moraju da rade zajedno kako bi se klijent imao potpuno iskustvo prilikom korištenja web sajta. Bez aplikacijskog web servera, web aplikacije bi bile ograničene na statički sadržaj i ne bi bile u mogućnosti da se prilagode promjenama u zahtjevima korisnika.
 
 ### Reverse Proxy 
-Uzmimo za primjer da imamo Node.js aplikaciju koju zelimo da pokrenemo na nasem serveru (hostu). Da bi je pokrenuli potreban nam je `Node.js` server koji omogucava pokretanje `Node.js` aplikacije. `Node.js` server omogucava obradu `HTTP` zahtjeva koji stižu od klijenata i generisanje odgovora na osnovu Node.js koda. `Node.js` server pruža podršku za različite HTTP metode, uključujući GET, POST, PUT, DELETE, i druge. Kako bi omogucili posluzivanje statickih fajlova, bolju skalabilnost, sigurnost, jednostavniju konfiguraciju neophodno je da ispred naseg Node.js servera postavimo web server (u ovom primjeru Nginx) koji ce da obradi `HTTP` zahtjeve i proslijedi ih `Node.js` serveru. Ovaj tip arhitekture se naziva **Reverse Proxy** arhitektura. U ovom slučaju, **NGINX** server je **Reverse Proxy** server koji obradjuje `HTTP` zahtjeve i proslijedjuje ih `Node.js` serveru. `Node.js` server je u ovom slučaju **Backend** server.
+Uzmimo za primjer da imamo Node.js aplikaciju koju zelimo da pokrenemo na nasem serveru (hostu). Da bi je pokrenuli potreban nam je `Node.js` server koji omogucava pokretanje `Node.js` aplikacije. `Node.js` server omogucava obradu `HTTP` zahtjeva koji stižu od klijenata i generisanje odgovora na osnovu Node.js koda. `Node.js` server pruža podršku za različite `HTTP` metode, uključujući `GET`, `POST`, `PUT`, `DELETE`, i druge. Kako bi omogucili posluzivanje statickih fajlova, bolju skalabilnost, sigurnost, jednostavniju konfiguraciju neophodno je da ispred naseg Node.js servera postavimo web server (u ovom primjeru Nginx) koji ce da obradi `HTTP` zahtjeve i proslijedi ih `Node.js` serveru. Ovaj tip arhitekture se naziva **Reverse Proxy** arhitektura. U ovom slučaju, **NGINX** server je **Reverse Proxy** server koji obradjuje `HTTP` zahtjeve i proslijedjuje ih `Node.js` serveru. `Node.js` server je u ovom slučaju **Backend** server koji obradjuje `HTTP` zahtjeve i generise odgovore na osnovu Node.js koda koje proslijedjuje **NGINX** serveru koji ih isporucuje klijentima.
+
+![Reverse Proxy](/devops-mentorship-program/03-march/week-5-140323/files/reverse-proxy-1.png)
 
 #### Kako da konfigurišemo Nginx da bude Reverse Proxy server?
-Da bi konfigurisali **NGINX** da bude **Reverse Proxy** server neophodno je da podesimo jednostavnu Node.js aplikaciju koja ce da vrati `Hello World` poruku kada se pozove. Ova aplikacija ce biti naš **Backend** server. Nakon toga potrebno je da podesimo NGINX da bude **Reverse Proxy** server koji ce da obradjuje `HTTP` zahtjeve i proslijedjuje ih našem **Backend** serveru.
+Da bi konfigurisali **NGINX** da bude **Reverse Proxy** server neophodno je da podesimo jednostavnu Node.js aplikaciju koja ce da vrati `Hello World` poruku kada se pozove. Ova aplikacija ce biti naš **Backend** server. Nakon toga potrebno je da podesimo NGINX da bude **Reverse Proxy** server koji ce da obradjuje `HTTP` zahtjeve i proslijedjuje ih našem **Backend** serveru.  
+
+Postoji vise razloga zasto bi koristili reverse proxy, a neki od njih su:
+- **Skalabilnost** - Reverse proxy serveri mogu da podrže veliki broj klijenata i da se lako skaliraju.
+- **Sigurnost** - Reverse proxy moze da sprijeci napade na backend servere.
+- **Jednostavnost** - Reverse proxy serveri mogu da se konfigurišu jednostavnije nego backend odnosno aplikacijski serveri.
+- **Brzina** - Reverse proxy serveri mogu da se konfigurišu da podrže cache-ovanje i da omoguće brže isporuke sadržaja klijentima.
+- **Load Balancing** - Reverse proxy serveri mogu da podrže load balancing i da rasporede zahteve klijenata na različite backend odnosno aplikacijske servere.
+- **SSL Termination** - Reverse proxy serveri mogu da podrže SSL terminaciju i da omoguće klijentima da komuniciraju sa backend serverima preko HTTPS protokola.
+
 
 U tu svrhu cemo ispratiti tutorijal sa Digital Ocean stranice [How To Set Up a Node.js Application for Production on CentOS 7](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-centos-7)
 ```bash
-$ curl -L -o nodesource_setup.sh https://rpm.nodesource.com/setup_14.x # Download Node.js setup script
+$ curl -L -o nodesource_setup.sh https://rpm.nodesource.com/setup_14.x # Download Node.js 14 setup script
 $ sudo bash nodesource_setup.sh # Run Node.js setup script
 $ sudo yum clean all # Clean yum cache
 $ sudo yum makecache fast # Make yum cache
@@ -155,6 +166,10 @@ server {
 - `proxy_cache_bypass $http_upgrade;` - onemogucuje koristenje kesa za WebSocket komunikaciju.
 #### Troubleshooting
 
+Pogledajte NGINX logove i greske:
+```bash
+$ cat /var/log/nginx/error.log
+```
 ```
 [crit] 19207#19207: *23 connect() to 127.0.0.1:3000 failed (13: Permission denied) while connecting to upstream, 
 client: 185.58.94.229, server: 3.68.91.255, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", 
@@ -164,27 +179,32 @@ host: "3.68.91.255"
 ```bash
 $ curl -l http://localhost:3000 # Check if Node.js application is running
 $ pm2 list # Check if Node.js application is running
+$ ps aux | grep node # Check if Node.js application is running 
 $ sudo netstat -tulpn | grep :3000 # Check if Node.js application is running on port 3000
 $ systemctl status nginx # Check if NGINX is running
+$ sudo systemctl reload nginx # Reload NGINX configuration without stopping/restarting the NGINX service and without losing any active connections.
+$ sudo systemctl stop/start/restart nginx # Stop NGINX service / Start NGINX service / Restart NGINX service
 $ sudo nginx -t # Test NGINX configuration
 $ sudo nginx -s reload # Reload NGINX configuration, this command is used to reload NGINX configuration after making changes to the configuration file without restarting the NGINX service.
 $ sudo journalctl -u nginx # Shop NGINX logs and errors. journalctl is a command line tool for viewing and querying the systemd journal.
 $ sudo systemctl reload nginx # Reload NGINX configuration without stopping/restarting the NGINX service.
 $ semanage port --list # SELinux port list
 $ semanage port --list | grep http_port_t # Check if port 80 is allowed
-
 ```
 
-```
-$ sudo nginx -t # Test NGINX configuration
-```
+
 
 ### Forward Proxy
+Za razliku od reverse proxy-a koji sluzi za zastitu servera, **forward proxy** sluzi za zastitu klijenta. 
+Forward proxy je server koji se nalazi izmedju klijenta ili grupe klijenta i interneta. Kada klijenti naprave zahtijev odnosno request prema internetu, oni se prvo salju na forward proxy server, koji ih proslijedi na internet. Forward proxy ce presresti zahtijev i "razgovarati" ce sa web serverom u ime klijenta.   
+
+![Forward Proxy](/devops-mentorship-program/03-march/week-5-140323/files/forward_proxy.png)  
+Nekoliko je razloga zasto bi klijent zelio da koristi forward proxy server:
+- **Zastita privatnosti** - klijent moze da sakrije svoju IP adresu i da koristi IP adresu forward proxy servera.
+- **Zaobilazak zabrana** - klijent moze da koristi forward proxy server da bi zaobilazio zabrane koje su postavljene na strani servera.
+- **Blokira pristup** - forward proxy server moze da zabrani klijentima pristup odredjenim web stranicama.
 
 ### Apache
-
-### SSL/TLS Certifikati
-
 
 ## Ostale vrste servera
 
@@ -198,6 +218,7 @@ $ sudo nginx -t # Test NGINX configuration
 
 ## 📖 Reading materials   
 - [DevOps Learning Path - Linux/UNIX OS](../../../devops-tools/web-servers.md)
+- [Proxy vs Reverse Proxy (Real-world Examples)](https://youtu.be/4NB0NDtOwIQ)
 - [nginx documentation](http://nginx.org/en/docs/)  
 - [How nginx processes a request](http://nginx.org/en/docs/http/request_processing.html)  
 - [nginx server names](http://nginx.org/en/docs/http/server_names.html)  
