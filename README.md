@@ -103,6 +103,17 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 
   </details>   
 
+  <details>
+  <summary>Week-5</summary>
+
+  **Topic: Web Servers, Application Servers, NGINX, Apache, SSL/TLS**  
+
+  - [Class notes](/devops-mentorship-program/03-march/week-5-140323/00-class-notes.md)  
+  - [Homework](/devops-mentorship-program/03-march/week-5-140323/01-homework.md)  
+  - [Additional reading](/devops-mentorship-program/03-march/week-5-140323/02-additional-reading.md)
+
+  </details>  
+
 ## :office: :alarm_clock: Office Hours   
 Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze kako bi se napravila rekapitulacija obradjenih tema, odgovrilo na eventualna pitanja, kao i dale dodatne upute ako je to potrebno. Snimci do sada odrzanih Office Hours sesija su dostupni preko linkova ispod.
 
@@ -119,10 +130,25 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
 Sve vaznije informacije i obavjestenja mozete pronaci unutar sljedeceg dokumenta: 
  [:pushpin: Importan Team Notes and Updates](/devops-mentorship-program/team-notes-and-updates.md)
 
+## 👏 How to Contribute
+**Jedna od glavnih uloga ovog repozitorija je da posluzi u edukacijske svrhe svima onima koji bi zeljeli da krenu sa ucenjem AWS Clouda te DevOps kulture i alata.**    
+
+Mentori ovog programa su se potrudili da materijal koji se nalazi u ovom repozitoriji bude sto je moguce kvalitetniji, precizniji i detaljniji. Medjutim vrlo je vjerovatno da se prilikom kreiranja dokumentacije potkrala greska ili da je neki detalj koji je bitan za razumijevanje materijala ostao neobradjen. Ukoliko primjetite nesto takvo molimo vas da date svoj doprinos ovim materijalima na nacin da otvorite Pull Request sa izmjenama koje mislite da bi bile korisne. 
+
+Bilo da se radi o tipografskim greskama, nejasnim formulacijama, nedostacima u dokumentaciji ili nekom drugom aspektu, svi ste dobrodosli da pomognete u kreiranju kvalitetnijeg materijala.
+
+Za detaljno objasnjenje kako da kreirate Pull Request molimo vas da pogledate [CONTRIBUTING](/devops-mentorship-program/contributing.md) dokument.
+
+## :blue_heart: Feedback  
+Povratne informacije bilo pozitivne ili negativne su nam jako bitne. Budite slobodni da povratne informacije i generalni feedback posaljete na email <dzenan.dzevlan@gmail.com> ili da svoju podrsku ovom programu iskazete na drustvenim mrezama i [YouTube](https://www.youtube.com/channel/UCFad2d7jXJdeNLdOOllG61A) kanalu gdje objavljujemo snimke svih predavanja. 
 
 ## **🚨 Code of Conduct**
-Pravila ponsanja su definisana unutar [AWS Code of Conduct](https://aws.amazon.com/codeofconduct/). 
+Molimo vas da se prilikom komunikacije sa polaznicima, mentorima i svim ucesnicima ovog programa odnosite sa postovanjem i uvazavanjem. Svako narusavanje ovog pravila ce biti sankcionisano na nacin da ce polaznik biti iskljucen iz programa.
+Detaljija pravila ponsanja su definisana unutar [AWS Code of Conduct](https://aws.amazon.com/codeofconduct/). 
 
 ## **❓ FAQ** 
 Za sva pitanje i nejasnoce molimo Vas da prvo pogledate [Frequently Asked Questions (FAQ)](FAQ.md) dokument.  
 Ukoliko odgovor na vase pitanje ne mozete pronaci tamo budite slobodni da posaljete email na <dzenan.dzevlan@gmail.com>.
+
+## :memo: License
+Za detaljne informacije o licenci koja se odnosi na ovaj repozitorijum molimo Vas da pogledate [LICENSE](LICENSE.md) dokument.
