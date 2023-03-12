@@ -58,11 +58,11 @@ Zadatak fizickog sloja jeste prenosenje pojedinacnih bitova iz istog paketa pros
 ## Protokoli
 Mrezni protokol slican je pravilu ponasanja medju ljudima. **Svime sto se desava na internetu a obuhvata komunikaciju dva udaljena samostalna dijela ili vise njih upravlja neki protokol.**
 
-Protokol definise format poruke i redoslijed po kojem se ta poruka ramijenjuje izmedju najmenje dvije zasebne cjeline koje medjusobno komuniciraju, kao i postupke koji se preduzimaju poslije slanja i/ili prijema odredjenih poruka ili nekog durgog dogadjaja.
+Protokol definise format poruke i redoslijed po kojem se ta poruka razmijenjuje izmedju najmenje dvije zasebne cjeline koje medjusobno komuniciraju, kao i postupke koji se preduzimaju poslije slanja i/ili prijema odredjenih poruka ili nekog drugog dogadjaja.
 
 Internet kao i sve druge racunarske mreze koriste protokole, prilikom komunikacije za ispunjavanje razlicitih zadataka koriste se razliciti protokoli.
 
-Svaki od protokola pripada jednom od slojeva **OSI modela**. Prtokol na nekom sloju moze da se sprovodi kako u softveru tako i u hardveru, ali i uporedo. Protokoli aplikativnog sloja (`HTTP`, `SMTP`) skoro uvijek se sprovode u softveru krajnjih sistema. Isti je slucaj i sa protokolima transportnog sloja. Posto su fizicki sloj i sloj veze podataka odgovorni za komunikaciju preko odredjenog linka, protokoli na njima obicno se sporovode u mreznoj kartici koja je povezana sa datim linkom. Protokoli na mreznom sloju obicno se istovremeno sprovode i u softveru i u hardveru. Svi protokoli zajedno nazivaju se skup protokola.
+Svaki od protokola pripada jednom od slojeva **OSI modela**. Protokol na nekom sloju moze da se sprovodi kako u softveru tako i u hardveru, ali i uporedo. Protokoli aplikativnog sloja (`HTTP`, `SMTP`) skoro uvijek se sprovode u softveru krajnjih sistema. Isti je slucaj i sa protokolima transportnog sloja. Posto su fizicki sloj i sloj veze podataka odgovorni za komunikaciju preko odredjenog linka, protokoli na njima obicno se sporovode u mreznoj kartici koja je povezana sa datim linkom. Protokoli na mreznom sloju obicno se istovremeno sprovode i u softveru i u hardveru. Svi protokoli zajedno nazivaju se skup protokola.
 
 ## IPv4 Adresiranje
 Racunar obicno ima samo jedan link prema mrezi: **kada IP adresa u tom racunaru zeli da posalje datagram (paket mreznog sloja) ona to radi preko tog linka.**
@@ -70,7 +70,7 @@ Granica izmedju racunara i fizickog linka naziva se `interfejs`.
 
 Posto je zadatak rutera da primi datagram sa jednog linka i proslijedi ga na drugi link, ruter obavezno mora da bude povezan sa najmanje dva linka. Granica izmedju rutera i bilo kojeg od njegovih linkova takodjer se naziva `interfejs`. **U skladu s tim ruter ima vise interfejsa, po jedan za svaki link**. 
 
-Posto svi racunari i ruteri mogu da primaju i salju `IP datagrame`, `IP` zatijeva da svi interfejsi racunara i rutera imaju vlastitu `IP adresu`. 
+Posto svi racunari i ruteri mogu da primaju i salju `IP datagrame`, `IP` protokola zahtijeva da svi interfejsi racunara i rutera imaju vlastitu `IP adresu`. 
 
 `IP adresa` je tehnicki pridruzena interfejsu a ne racunaru ili ruteru na kome se nalazi taj intefejs.
 
@@ -85,7 +85,7 @@ Prevedeno u binarni oblik, IP adresa `193.32.216.9` bi izgledalo ovako:
 11000001 00100000 11011000 00001001
 ```
 
-Svaki interfejs na svim racunarima i na ruterima mora da ima `IP adresu` koja je globalno jedinstvena osim interfejsa ispred kojih se koriti `NAT - Network Address Translator` odnosno prevodjenje adresa. Adrese **ne mogu** da se biraju nasumicno. **Dio IP adrese interfejsa odredjuje podmreza sa kojom je povezan.** U IP zargonu  mreza koja povezuje intefejse tri racunara i intefejs rutera predstavlja **podmrezu (subnet).** Podmreza se u literaturi naziva IP mreza ili samo mreza.
+Svaki interfejs na svim racunarima i na ruterima mora da ima `IP adresu` koja je globalno jedinstvena osim interfejsa ispred kojih se koristi `NAT - Network Address Translator` odnosno prevodjenje adresa. Adrese **ne mogu** da se biraju nasumicno. **Dio IP adrese interfejsa odredjuje podmreza sa kojom je povezan.** U IP zargonu, mreza koja povezuje tri racunara i interfejse rutera predstavlja **podmrezu (subnet).** Podmreza se u literaturi naziva IP mreza ili samo mreza.
 
 **Subnet Mask - MASKA PODMREZE** (npr: `/24`) znaci da 24 krajnja lijeva bita 32-bitne vrijednosti IP adrese predstavljaju adresu podmreze. Strategija dodjeljivanja adresa na interentu poznata je kao besklasno rutiranje izmedju domena **Classless Internetdomain Routing - CIDR**(cider blok).
 
@@ -94,7 +94,7 @@ Svaki interfejs na svim racunarima i na ruterima mora da ima `IP adresu` koja je
 
 **Ruteri** izvan ove organizacije sa kojim komunicira ova mreza u obzir uzimaju samo adresu podmreze odnosno mrezni prefix adrese. Ovo doprinosi smanjenu velicine ruting tabela, gdje ostatale mreze sa kojima ova mreza komunicira ne moraju da znaju za ostale adrese unutar mreze, cesto i vise manjih podmreza unutar nje. Mogucnost da se korisiti jedan prefiks za predstavljanje vise mreza cesto se naziva agregacija adresa. Preostali `biti` unutar `IP adrese` odnose se na `hostove` i na osnovu njih se pravi razlika izmedju uredjaja unutar iste podmreze gdje svi ti hostovi imaju isti `mrezni prefix` odnosno istu `adresu podmreze`.
 
-`255.255.255.255` - IP Adresa za difuzno emitovanje. Kada racunar posalje `datagram` sa odresom odredista `255.255.255.255` ta se poruka isporucuje svim racunarima u istoj podmrezi. 
+`255.255.255.255` - IP Adresa za difuzno emitovanje. Kada racunar posalje `datagram` sa adresom odredista `255.255.255.255` ta se poruka isporucuje svim racunarima unutar iste podmreze. 
 
 **Prije nego je usvojena CIDR sema, mrezni dio IP adrese morao je da bude duzine 8 bitova, 16 bitova ili 24 bita u semi poznatoj kao puno klasno adresiranje (classful addresing) jer su podmreze sa adresama od 8 bitova, 16 bitova i 24 bita bila poznate kao mreze klase A, B i C.**
 
@@ -116,12 +116,12 @@ Postoji nekoliko IPv4 adresa koje se koriste za posebne svrhe. Ove adrese se ne 
 
 
 ### IPv6
-**IPv6 (Internet Protocol version 6)** adresiranje je nasljednik IPv4 protokola. IPv6 koristi 128-bitne adrese, što je znatno više od IPv4 protokola koji koristi 32-bitne adrese. To znači da IPv6 može podržati znatno veći broj mrežnih uređaja i povezanih uređaja u usporedbi s IPv4.
+**IPv6 (Internet Protocol version 6)** adresiranje je nasljednik IPv4 protokola. IPv6 koristi 128-bitne adrese, što je znatno vise od IPv4 protokola koji koristi 32-bitne adrese. To znaci da IPv6 može podržati znatno veci broj mreznih uredjaja i povezanih uredjaja u poredjenju s IPv4.
 
-IPv6 adrese se sastoje od 8 blokova koji se odvajaju dvotočkom. Svaki blok je zapisan kao 4 heksadecimalne znamenke, što znači da svaki blok ima vrijednost između `0` i `FFFF`. Na primjer, IPv6 adresa može izgledati ovako: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`.
+IPv6 adrese se sastoje od 8 blokova koji se odvajaju sa dvije tacke. Svaki blok je zapisan sa 4 heksadecimalne znamenke, sto znaci da svaki blok ima vrijednost između `0` i `FFFF`. Na primjer, IPv6 adresa može izgledati ovako: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`.
 
-Jedna od glavnih prednosti IPv6 protokola je veća sigurnost, jer IPv6 uključuje ugrađenu enkripciju i autentifikaciju koja štiti od napada na mrežnu sigurnost. Također, IPv6 adresiranje omogućuje jednostavnije upravljanje mrežom i veću učinkovitost u usporedbi s IPv4, jer se ne moraju koristiti razni trikovi poput NAT-a (Network Address Translation) kako bi se omogućilo povezivanje velikog broja uređaja na internet.
-IPv6 adrese su duzine 128 bita i mogu da obuhvate `340.282.366.920.938.463.463.374.607.431.768.211.456` adresa.
+Jedna od glavnih prednosti IPv6 protokola je veca sigurnost, jer IPv6 ukljucuje ugradjenu enkripciju i autentifikaciju koja stiti od napada na mreznu sigurnost. Takodjer, IPv6 adresiranje omogućuje jednostavnije upravljanje mrezom i vecu ucinkovitost u usporedbi s IPv4, jer se ne moraju koristiti razni trikovi poput NAT-a (Network Address Translation) kako bi se omogucilo povezivanje velikog broja uredjaja na internet.
+IPv6 adrese su velicine 128 bita i mogu da obuhvate `340.282.366.920.938.463.463.374.607.431.768.211.456` adresa.
 
 ## Web aplikacije
 
