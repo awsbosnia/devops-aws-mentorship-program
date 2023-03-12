@@ -184,5 +184,5 @@ $ tree -L 2 #list contents of directories in a tree-like format with depth 2
 [:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-2-210223/01-homework.md)  
 [:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-2-210223/02-additional-reading.md)   
 [:fast_forward: HOME - README.md](../../../README.md)  
-[:fast_forward:  Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)  
+[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)  
 

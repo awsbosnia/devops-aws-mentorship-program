@@ -119,7 +119,61 @@ $ node -v # Check Node.js version
 $ npm install -g pm2 # Install pm2 process manager
 $ pm2 start server.js # Start Node.js application
 ```
+#### NGINX setup
+```bash
+$ cd /etc/nginx/conf.d
+$ vi node-app.conf
+```
+gdje je `node-app.conf`:
 
+```nginx
+server {
+  listen 80;
+  server_name 3.68.91.255;
+
+  location / {
+    proxy_pass http://127.0.0.1:3000;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+  }
+}
+```
+`node-app.conf` - predstavlja konfiguracijski fajl gdje smo unutar `server` bloka definisali jedan virtuealni server koji ce da obradjuje `HTTP` zahtjeve koji stizu na port `80` i proslijedjuje ih na `Node.js` server koji slusa na portu `3000`  
+
+- `server` - pocetak definicije bloka konfiguracije za virtualni server.
+- `listen 80` - Nginx ce slusati dolazne zahtjeve na portu 80.
+- `server_name 3.68.91.255` - ovaj virtualni server ce odgovoriti na zahtjeve sa hostom 3.68.91.255
+- `location /` - sva podudaranja putanja će biti preusmjerena na proxy server.
+- `proxy_pass http://127.0.0.1:3000` - svi dolazni zahtjevi će biti proslijeđeni na adresu `127.0.0.1:3000` gdje se pokrece vasa aplikacija, to je ustvari `localhost` adresa pa ste mogli da koristite i `proxy_pass http://localhost:3000`
+- `proxy_http_version 1.1` - verzija HTTP protokola koja će se koristiti za komunikaciju između Nginx i aplikacije.
+- `proxy_set_header Upgrade $http_upgrade;` - podesava zaglavlje Upgrade koje omogucava koristenje WebSocket komunikacije.
+- `proxy_set_header Connection 'upgrade';` - podesava zaglavlje Connection koje omogućava koristenje WebSocket komunikacije.
+- `proxy_set_header Host $host;` - podesava zaglavlje Host na vrijednost primljenog zahtjeva.
+- `proxy_cache_bypass $http_upgrade;` - onemogucuje koristenje kesa za WebSocket komunikaciju.
+#### Troubleshooting
+
+```
+[crit] 19207#19207: *23 connect() to 127.0.0.1:3000 failed (13: Permission denied) while connecting to upstream, 
+client: 185.58.94.229, server: 3.68.91.255, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", 
+host: "3.68.91.255"
+```
+**Korisne komande za troubleshooting:**
+```bash
+$ curl -l http://localhost:3000 # Check if Node.js application is running
+$ pm2 list # Check if Node.js application is running
+$ sudo netstat -tulpn | grep :3000 # Check if Node.js application is running on port 3000
+$ systemctl status nginx # Check if NGINX is running
+$ sudo nginx -t # Test NGINX configuration
+$ sudo nginx -s reload # Reload NGINX configuration, this command is used to reload NGINX configuration after making changes to the configuration file without restarting the NGINX service.
+$ sudo journalctl -u nginx # Shop NGINX logs and errors. journalctl is a command line tool for viewing and querying the systemd journal.
+$ sudo systemctl reload nginx # Reload NGINX configuration without stopping/restarting the NGINX service.
+$ semanage port --list # SELinux port list
+$ semanage port --list | grep http_port_t # Check if port 80 is allowed
+
+```
 
 ```
 $ sudo nginx -t # Test NGINX configuration
@@ -140,13 +194,21 @@ $ sudo nginx -t # Test NGINX configuration
 
 ### File serveri
 
-### DNS serveri
+### DNS serveri  
 
+## 📖 Reading materials   
+- [DevOps Learning Path - Linux/UNIX OS](../../../devops-tools/web-servers.md)
+- [nginx documentation](http://nginx.org/en/docs/)  
+- [How nginx processes a request](http://nginx.org/en/docs/http/request_processing.html)  
+- [nginx server names](http://nginx.org/en/docs/http/server_names.html)  
+- [Avoiding the Top 10 NGINX Configuration Mistakes](https://www.nginx.com/blog/avoiding-top-10-nginx-configuration-mistakes/)
 
-[nginx documentation](http://nginx.org/en/docs/)  
-[How nginx processes a request](http://nginx.org/en/docs/http/request_processing.html)  
-[nginx server names](http://nginx.org/en/docs/http/server_names.html)
+## 📹 Session recordings  
+- [**WEEK-5-tier-1-group-1 video session recording**]()   
+- [**WEEK-5-tier-1-group-2 video session recording**]()
+
 
 [:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-5-140323/00-class-notes.md)  
 [:fast_forward: Additional Reading](/devops-mentorship-program/03-march/week-5-140323/02-additional-reading.md)   
-[:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
+[:fast_forward: HOME - README.md](../../../README.md)  
+[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)  
