@@ -110,6 +110,11 @@ $ sudo yum makecache fast # Make yum cache
 $ sudo yum install -y gcc-c++ make # Install build tools
 $ sudo yum install nodejs # Install Node.js
 $ node -v # Check Node.js version
+
+## Application setup
+
+$ npm install -g pm2 # Install pm2 process manager
+$ pm2 start server.js # Start Node.js application
 ```
 
 ### Forward Proxy

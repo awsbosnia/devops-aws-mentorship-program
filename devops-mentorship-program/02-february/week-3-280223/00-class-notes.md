@@ -151,6 +151,6 @@ Korisnici mogu mijenjati PATH varijablu kako bi dodali nove direktorije u nju, o
 - [**WEEK-3-tier-1-group-2 video session recording**](https://youtu.be/QYeX0iP6rXY)
 
 
-[:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-2-280223/01-homework.md)  
-[:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-2-280223/02-additional-reading.md)   
+[:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-3-280223/01-homework.md)  
+[:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-3-280223/02-additional-reading.md)   
 [:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
