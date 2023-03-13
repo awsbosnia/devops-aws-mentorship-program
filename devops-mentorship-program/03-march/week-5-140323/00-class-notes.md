@@ -34,9 +34,12 @@ Server OS ima nekoliko karakteristika koje ga razlikuju od Operatinih Sistema na
 - Sigurnost
 - Udaljeno upravljanje
 ### Web Serveri
-
+**Web serveri** su racunarski programi / servisi koji su dizajnirani za obradjivanje HTTP zahtjeva i slanje HTTP odgovora korisnicima koji pregledavaju web stranice ili pristupaju web aplikacijama. Web serveri obicno se koriste za posluzivanje statickih web stranica, dinamickih web stranica i drugih vrsta web sadrzaja. Web serveri moze biti bilo koji racunar dostupan na Internetu, ali se obicno koriste posebni racunari odnosno serveri koje su optimizovani za brz i siguran rad. Trenutno najpopularniji web serveri su **Apache, Nginx i Microsoft IIS**.  
+![How Web Server Works](/devops-mentorship-program/03-march/week-5-140323/files/how-web-server-works.png)
 ### NGINX
+**NGINX** (izgovara se "Engine X") je open-source web server i reverse proxy server. Zahvaljujuci svojoj jednostavnosti koristenja, brzini, skalabilnosti i sigurnosti postao je jedan od najpopularnijih web servera. NGINX ima i svoju placenu verziju koja se naziva **NGINX Plus**. Iako NGINX Plus ima odredjene funkcionalnosti koje nisu dostupne u open-source verziji, vecina korisnika i dalje nalazi dovoljnim open-source verziju NGINX-a.  
 
+#### Instalacija NGINX-a na CentOS 7
 Koraci za instalaciju Nginx-a na CentOS 7:
 ```bash
 $ sudo yum install epel-release -y # instalacija EPEL repozitorija
@@ -178,21 +181,30 @@ host: "3.68.91.255"
 **Korisne komande za troubleshooting:**
 ```bash
 $ curl -l http://localhost:3000 # Check if Node.js application is running
+
 $ pm2 list # Check if Node.js application is running
+
 $ ps aux | grep node # Check if Node.js application is running 
+
 $ sudo netstat -tulpn | grep :3000 # Check if Node.js application is running on port 3000
+
 $ systemctl status nginx # Check if NGINX is running
+
 $ sudo systemctl reload nginx # Reload NGINX configuration without stopping/restarting the NGINX service and without losing any active connections.
+
 $ sudo systemctl stop/start/restart nginx # Stop NGINX service / Start NGINX service / Restart NGINX service
+
 $ sudo nginx -t # Test NGINX configuration
+
 $ sudo nginx -s reload # Reload NGINX configuration, this command is used to reload NGINX configuration after making changes to the configuration file without restarting the NGINX service.
 $ sudo journalctl -u nginx # Shop NGINX logs and errors. journalctl is a command line tool for viewing and querying the systemd journal.
+
 $ sudo systemctl reload nginx # Reload NGINX configuration without stopping/restarting the NGINX service.
+
 $ semanage port --list # SELinux port list
+
 $ semanage port --list | grep http_port_t # Check if port 80 is allowed
 ```
-
-
 
 ### Forward Proxy
 Za razliku od reverse proxy-a koji sluzi za zastitu servera, **forward proxy** sluzi za zastitu klijenta. 
@@ -205,17 +217,26 @@ Nekoliko je razloga zasto bi klijent zelio da koristi forward proxy server:
 - **Blokira pristup** - forward proxy server moze da zabrani klijentima pristup odredjenim web stranicama.
 
 ### Apache
+**Apache HTTP Server** ili **Apache** ili **Apache HTTPD** je besplatni, open-source web server koji se koristi za hostovanje web stranica i web aplikacija. 
+
+### Apache Tomcat
+**Apache Tomcat** ili samo **Tomcat** je open-source web server koji se koristi za posluzivanje web aplikacija koje su napisane u **Javi**. Tomcat se obično koristi za posluživanje dinamickih web stranica koje koriste **JSP (JavaServer Pages)** i servlet tehnologije.
+
+**Tomcat** je razvijen na bazi **Apache web servera** i sadrzi mnoge od njegovih funkcionalnosti, ali se razlikuje po tome što je specijaliziran za posluzivanje Java aplikacija. Tomcat također ima svoje vlastite funkcionalnosti, uključujući ugrađenu podršku za **Java Servlet API**, **JavaServer Pages (JSP)**, **WebSockets** i **Java Server Faces (JSF)**.
 
 ## Ostale vrste servera
 
-### Serveri za baze podataka
+- **Serveri za baze podataka** - Koriste se za pohranu i upravljanje podacima u bazi podataka, neki od popularnih servera baza podataka (eng. database server) su:
+    - MySQL
+    - PostgreSQL
+    - MariaDB
+    - Microsoft SQL Server
+    - Oracle Database
 
-### E-mail serveri
-
-### File serveri
-
-### DNS serveri  
-
+- **E-mail serveri** - Koriste se za slanje i primanje e-poste.
+- **File serveri** - Koriste se za pohranu i dijeljenje fajlova.
+- **FTP serveri** - Koriste se za slanje i primanje fajlova preko `FTP (File Transfer Protocol)` protokola.
+- **DNS serveri** - Koriste se za razrjesavanje domenskih imena u IP adrese.
 ## 📖 Reading materials   
 - [DevOps Learning Path - Linux/UNIX OS](../../../devops-tools/web-servers.md)
 - [Proxy vs Reverse Proxy (Real-world Examples)](https://youtu.be/4NB0NDtOwIQ)
@@ -223,6 +244,7 @@ Nekoliko je razloga zasto bi klijent zelio da koristi forward proxy server:
 - [How nginx processes a request](http://nginx.org/en/docs/http/request_processing.html)  
 - [nginx server names](http://nginx.org/en/docs/http/server_names.html)  
 - [Avoiding the Top 10 NGINX Configuration Mistakes](https://www.nginx.com/blog/avoiding-top-10-nginx-configuration-mistakes/)
+- [Apache HTTP Server Project](https://httpd.apache.org/)
 
 ## 📹 Session recordings  
 - [**WEEK-5-tier-1-group-1 video session recording**]()   
