@@ -2,7 +2,8 @@
 ## 📅 Date: 14.03.2023.
 
 ### 📚 Books
-
+- [Apache Definitive Guide](resources/books/apache-the-definitive-guide-3rd-edition.pdf)
+- [Apache Tomcat 7](resources/books/apache-tomcat-7.pdf)
 ### 🌐 Blog Posts
 
 
