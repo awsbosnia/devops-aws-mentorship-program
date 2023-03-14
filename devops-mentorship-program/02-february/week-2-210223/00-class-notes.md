@@ -162,6 +162,7 @@ $ tree -L 2 #list contents of directories in a tree-like format with depth 2
 
 
 ## 📖 Reading materials
+- [DevOps Learning Path - Linux/UNIX OS](../../../devops-tools/linux-unix.md)
 - [Linux i UNIX - B. Djordjevic, D.Pleskonjic, N.Macek - Beograd 2004](/resources/books/os-unix-i-linux-beograd-el-skola.pdf) 
 - [Osnove Administracije Operacijskog Sustava Linux - Obrazovni Sustav Srce Hr](/resources/papers/osnove-administracije-operacijskog-susteva-1-linux-srca.pdf) | [Biljeske iz Knjige](/devops-mentorship-program/02-february/week-2-210223/files/osnove-administracije-linuxa-biljeske.md)  
 - [UNIX and Linux System Administration Handbook, 5th Edition](/resources/books/unix-linux-sys-admin-handbook.pdf)   
@@ -182,4 +183,6 @@ $ tree -L 2 #list contents of directories in a tree-like format with depth 2
 
 [:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-2-210223/01-homework.md)  
 [:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-2-210223/02-additional-reading.md)   
-[:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
+[:fast_forward: HOME - README.md](../../../README.md)  
+[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)  
+

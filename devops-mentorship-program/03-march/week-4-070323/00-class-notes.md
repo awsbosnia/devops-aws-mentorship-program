@@ -543,5 +543,6 @@ VPN se može koristiti na različite načine, uključujući:
 
 [:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-4-070323/00-class-notes.md)  
 [:fast_forward: Additional Reading](/devops-mentorship-program/03-march/week-4-070323/02-additional-reading.md)   
-[:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
+[:fast_forward: HOME - README.md](../../../README.md)  
+[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)  
 

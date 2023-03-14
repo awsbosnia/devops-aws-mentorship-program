@@ -122,7 +122,7 @@ Programi koji se izvršavaju u **UNIX** okruženju mogu koristiti environment va
 
 Kada korisnik unese neku komandu u shell, operativni sistem traži tu komandu u nizu direktorija definisanim u `PATH` varijabli, počevši od prvog direktorija u nizu, sve dok ne pronađe traženi fajl. Ako se fajl ne pronađe u nijednom direktoriju u PATH-u, operativni sistem će prijaviti grešku i prikazati poruku o grešci.
 
-Standardne putanje koje su definisane unutar environemtn varijable `PATH` obicno ukljucuju direktorije poput `/usr/bin`, `/bin` i `/usr/local/bin`. Kada korisnik unese neku komandu, npr. `ls`, OS ce pretraziti direktorije navedene u `PATH` putanji unutar kojih ce traziti izvrsni (executable) fajl komande `ls`. Ako se izvrsni fajl za komandu `ls` nalazi u jednom od tih direktorija komanda `ls` ce biti uspjesno izvrsena.
+Standardne putanje koje su definisane unutar environment varijable `PATH` obicno ukljucuju direktorije poput `/usr/bin`, `/bin` i `/usr/local/bin`. Kada korisnik unese neku komandu, npr. `ls`, OS ce pretraziti direktorije navedene u `PATH` putanji unutar kojih ce traziti izvrsni (executable) fajl komande `ls`. Ako se izvrsni fajl za komandu `ls` nalazi u jednom od tih direktorija komanda `ls` ce biti uspjesno izvrsena.
 
 ```bash
 $ which ls # which je komanda koja nam pokazuje putanju do izvrsnog fajla
@@ -153,4 +153,5 @@ Korisnici mogu mijenjati `PATH` varijablu kako bi dodali nove direktorije u nju,
 
 [:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-3-280223/01-homework.md)  
 [:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-3-280223/02-additional-reading.md)   
-[:fast_forward: HOME - README.md](https://github.com/allops-solutions/devops-aws-mentorship-program#devops-mentorship-program)  
+[:fast_forward: HOME - README.md](../../../README.md)  
+[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)  
