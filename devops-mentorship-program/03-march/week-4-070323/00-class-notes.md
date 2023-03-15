@@ -1,11 +1,11 @@
-# 📝 Class notes    
-## 📅 Date: 07.03.2023.    
+# 📝 Class notes
+## 📅 Date: 07.03.2023.
 
 ## Racunarske Mreze
-**Racunarske mreze** su skup povezanih racunara i drugih uredjaja koji su medjusobno povezani radi razmjene informacija i resursa. Ove mreze omogucuju racunarima da komuniciraju i razmjenjuju podatke jedni s drugima putem zicanih ili bezicnih veza.  
-Postoji nekoliko razlicitih vrsta racunarskih mreza, ukljucujuci lokalne mreze (LAN), mreze sireg podrucja (WAN), virtualne privatne mreže (VPN) itd.  
+**Racunarske mreze** su skup povezanih racunara i drugih uredjaja koji su medjusobno povezani radi razmjene informacija i resursa. Ove mreze omogucuju racunarima da komuniciraju i razmjenjuju podatke jedni s drugima putem zicanih ili bezicnih veza.
+Postoji nekoliko razlicitih vrsta racunarskih mreza, ukljucujuci lokalne mreze (LAN), mreze sireg podrucja (WAN), virtualne privatne mreže (VPN) itd.
 
-Internet je racunarska mreza koja povezuje milione racunarskih uredjaja sirom svijeta.  
+Internet je racunarska mreza koja povezuje milione racunarskih uredjaja sirom svijeta.
 ![Internet](/devops-mentorship-program/03-march/week-4-070323/files/internet.png)
 
 ## OSI model
@@ -19,9 +19,9 @@ Medjunarodna organizacija za standardizaciju je krajem 70tih godina predlozila o
 - Transportni sloj
 - Mrezni sloj
 - Sloj veze
-- Fizicki sloj  
+- Fizicki sloj
 
-![OSI Model Tabela](/devops-mentorship-program/03-march/week-4-070323/files/osi-model-tabela.png)  
+![OSI Model Tabela](/devops-mentorship-program/03-march/week-4-070323/files/osi-model-tabela.png)
 *Tabela i Slika su preuzeti sa stranice [Layers of OSI Model](https://www.geeksforgeeks.org/layers-of-osi-model/)
 
 ### Aplikativni sloj
@@ -30,7 +30,7 @@ Na aplikativnom sloju nalaze se mrezne aplikacije i njihovi protokoli aplikativn
 
 ### Prezentacijski sloj
 
-Uloga prezentacijskog sloja je da aplikacijama koje medjusobno komuniciraju, razmijenjuju podatke, obezbjedi usluge koje omogucavaju tumacenje znacenja ramzmijenjenih podataka. 
+Uloga prezentacijskog sloja je da aplikacijama koje medjusobno komuniciraju, razmijenjuju podatke, obezbjedi usluge koje omogucavaju tumacenje znacenja ramzmijenjenih podataka.
 
 ### Sloj sesije
 
@@ -68,17 +68,17 @@ Svaki od protokola pripada jednom od slojeva **OSI modela**. Protokol na nekom s
 Racunar obicno ima samo jedan link prema mrezi: **kada IP adresa u tom racunaru zeli da posalje datagram (paket mreznog sloja) ona to radi preko tog linka.**
 Granica izmedju racunara i fizickog linka naziva se `interfejs`.
 
-Posto je zadatak rutera da primi datagram sa jednog linka i proslijedi ga na drugi link, ruter obavezno mora da bude povezan sa najmanje dva linka. Granica izmedju rutera i bilo kojeg od njegovih linkova takodjer se naziva `interfejs`. **U skladu s tim ruter ima vise interfejsa, po jedan za svaki link**. 
+Posto je zadatak rutera da primi datagram sa jednog linka i proslijedi ga na drugi link, ruter obavezno mora da bude povezan sa najmanje dva linka. Granica izmedju rutera i bilo kojeg od njegovih linkova takodjer se naziva `interfejs`. **U skladu s tim ruter ima vise interfejsa, po jedan za svaki link**.
 
-Posto svi racunari i ruteri mogu da primaju i salju `IP datagrame`, `IP` protokola zahtijeva da svi interfejsi racunara i rutera imaju vlastitu `IP adresu`. 
+Posto svi racunari i ruteri mogu da primaju i salju `IP datagrame`, `IP` protokola zahtijeva da svi interfejsi racunara i rutera imaju vlastitu `IP adresu`.
 
 `IP adresa` je tehnicki pridruzena interfejsu a ne racunaru ili ruteru na kome se nalazi taj intefejs.
 
 **Svaka IP adresa dugacka je 32 bita.**
 
-IP adrese se obicno pisu u decimalnoj notaciji sa tackama u kojoj se svaki bajt adrese zapisuje u decimalnom obliku a od ostalih bajtova u adresi razdvaja se tackom. 
+IP adrese se obicno pisu u decimalnoj notaciji sa tackama u kojoj se svaki bajt adrese zapisuje u decimalnom obliku a od ostalih bajtova u adresi razdvaja se tackom.
 
-Uzmimo za primjer IP adresu `193.32.216.9` Broj `193` je vrijednost prvih `osam bitova` u adresi.  
+Uzmimo za primjer IP adresu `193.32.216.9` Broj `193` je vrijednost prvih `osam bitova` u adresi.
 Prevedeno u binarni oblik, IP adresa `193.32.216.9` bi izgledalo ovako:
 ```
 193     . 32     . 216    . 9
@@ -94,24 +94,24 @@ Svaki interfejs na svim racunarima i na ruterima mora da ima `IP adresu` koja je
 
 **Ruteri** izvan ove organizacije sa kojim komunicira ova mreza u obzir uzimaju samo adresu podmreze odnosno mrezni prefix adrese. Ovo doprinosi smanjenu velicine ruting tabela, gdje ostatale mreze sa kojima ova mreza komunicira ne moraju da znaju za ostale adrese unutar mreze, cesto i vise manjih podmreza unutar nje. Mogucnost da se korisiti jedan prefiks za predstavljanje vise mreza cesto se naziva agregacija adresa. Preostali `biti` unutar `IP adrese` odnose se na `hostove` i na osnovu njih se pravi razlika izmedju uredjaja unutar iste podmreze gdje svi ti hostovi imaju isti `mrezni prefix` odnosno istu `adresu podmreze`.
 
-`255.255.255.255` - IP Adresa za difuzno emitovanje. Kada racunar posalje `datagram` sa adresom odredista `255.255.255.255` ta se poruka isporucuje svim racunarima unutar iste podmreze. 
+`255.255.255.255` - IP Adresa za difuzno emitovanje. Kada racunar posalje `datagram` sa adresom odredista `255.255.255.255` ta se poruka isporucuje svim racunarima unutar iste podmreze.
 
 **Prije nego je usvojena CIDR sema, mrezni dio IP adrese morao je da bude duzine 8 bitova, 16 bitova ili 24 bita u semi poznatoj kao puno klasno adresiranje (classful addresing) jer su podmreze sa adresama od 8 bitova, 16 bitova i 24 bita bila poznate kao mreze klase A, B i C.**
 
-- **Class A:** `10.0.0.0` to `10.255.255.255`     
-- **Class B:** `172.16.0.0` to `172.31.255.255`    
-- **Class C:** `192.168.0.0` to `192.168.255.255`    
+- **Class A:** `10.0.0.0` to `10.255.255.255`
+- **Class B:** `172.16.0.0` to `172.31.255.255`
+- **Class C:** `192.168.0.0` to `192.168.255.255`
 
 **Sve adrese koje pripadaju ovim klasama su privatne adrese i smatraju se non routable adresama.**
 Sve adrese koje **ne pripadaju** nijednoj od ovih klasa su **javne adrese** / `PUBLIC IP` address.
 
 Podmreza kalse C - `/24` je na osnovu toga mogla da obuhvati samo `2^8 - 2 = 254` racunara sto je premalo.
-Podklasa mreze B - `/16` koja obuhvata `65634` adrese bila je prevelika za vecinu organizacija, sto je vodilo do lose iskoristenosti adresnog prostora klase B. 
+Podklasa mreze B - `/16` koja obuhvata `65634` adrese bila je prevelika za vecinu organizacija, sto je vodilo do lose iskoristenosti adresnog prostora klase B.
 
 IP v4 adrese su ogranicene na 4.294.967.296 adrese.
 
 ### Specijalne IP adrese
-Postoji nekoliko IPv4 adresa koje se koriste za posebne svrhe. Ove adrese se ne mogu koristiti za komunikaciju između uređaja na internetu.  
+Postoji nekoliko IPv4 adresa koje se koriste za posebne svrhe. Ove adrese se ne mogu koristiti za komunikaciju između uređaja na internetu.
 ![Sepecijalne IP adrese](/devops-mentorship-program/03-march/week-4-070323/files/special-ipv4.png)
 
 
@@ -133,9 +133,9 @@ Web aplikacija ima dva nezavisna udaljena programa odnosno procesa koji komunici
 
 U okviru komunikacione sesije izmedju dva procesa, proces koji inicira komunikaciju, tj. prvi kontaktira proces na pocetku sesije oznacava se kao **klijent**. Proces koji ceka na poziv da bi uspostavio komunikaciju oznacava se kao **server**. Sve poruke poslate od jednog procesa do drugog moraju da prodju kroz mrezu izmedju njih. Procesi salju poruke u mrezu i primaju poruke iz mreze preko softverskog interfejsa koji se zove `socket`.
 
-![Aplikativni proces, soketi i transportni protokol na kome se zasnivaju](/devops-mentorship-program/03-march/week-4-070323/files/app-proces-socketi.png)  
+![Aplikativni proces, soketi i transportni protokol na kome se zasnivaju](/devops-mentorship-program/03-march/week-4-070323/files/app-proces-socketi.png)
 
-Na internetu se racunar identifikuje svojom IP adresom, pored toga sto zna adresu racunara kome je poruka namjenjena, predajni proces mora takodjer da identifikuje prijemni proces (tacnije prijemni soket) koji se izvrsava na tom racunaru za sta se koristi odredisni broj **porta**. 
+Na internetu se racunar identifikuje svojom IP adresom, pored toga sto zna adresu racunara kome je poruka namjenjena, predajni proces mora takodjer da identifikuje prijemni proces (tacnije prijemni soket) koji se izvrsava na tom racunaru za sta se koristi odredisni broj **porta**.
 
 ### TCP Protokol
 
@@ -152,7 +152,7 @@ Na internetu se racunar identifikuje svojom IP adresom, pored toga sto zna adres
 5. Poredak: TCP osigurava da se podaci isporučuju u pravom redoslijedu.
 
 **TCP 3-Way Handshake Process** - Trostepeni proces za uspostavu veze između dva računala preko TCP-a sastoji se od:
-- SYN 
+- SYN
 - SYN/ACK
 - ACK
 ![TCP 3-Way Handshake Process](/devops-mentorship-program/03-march/week-4-070323/files/handshake-1.png)
@@ -183,13 +183,13 @@ Uz to, HTTP također podržava SSL (Secure Sockets Layer) i TLS (Transport Layer
 
 Ukratko, HTTP je protokol kojim se omogućava komunikacija između klijenta i poslužitelja na webu. HTTP koristi model zahtjev-odgovor, podržava različite metode zahtjeva, koristi cookie-je za pohranu informacija između zahtjeva i osigurava sigurnu komunikaciju putem interneta.
 
-#### Cookies 
+#### Cookies
 
 Kada korisnik započne sesiju na eBay web stranici, server će mu poslati kolačić koji će sadržavati jedinstveni identifikator sesije. Taj identifikator će biti korišten za identifikaciju korisnika u budućim zahtjevima koje korisnik šalje na server. Također, kolačići se koriste za pohranjivanje postavki i preferencija korisnika, kao što su preferirani jezik ili valuta.
 
 Kada korisnik zatraži neku stranicu na eBay web stranici, kolačići će se poslati na server zajedno sa zahtjevom. Na taj način, server će biti u mogućnosti prepoznati korisnika i pružiti mu personalizirano iskustvo na web stranici.
 
-Također, kolačići se koriste za praćenje aktivnosti korisnika na web stranici. Na primjer, eBay može koristiti kolačiće za praćenje koje su proizvode korisnici pregledali ili stavili u košaricu za kupnju. Ove informacije se mogu koristiti za personaliziranje ponuda ili marketinških poruka koje će korisnik vidjeti na web stranici.  
+Također, kolačići se koriste za praćenje aktivnosti korisnika na web stranici. Na primjer, eBay može koristiti kolačiće za praćenje koje su proizvode korisnici pregledali ili stavili u košaricu za kupnju. Ove informacije se mogu koristiti za personaliziranje ponuda ili marketinških poruka koje će korisnik vidjeti na web stranici.
 
 ![Cookies](/devops-mentorship-program/03-march/week-4-070323/files/cookies.png)
 
@@ -227,10 +227,10 @@ Ovaj primjer ažurira postojeći dokument.doc s novim sadržajem.
 DELETE /file.txt HTTP/1.1
 Host: www.example.com
 ```
-Ovaj primjer briše datoteku.txt s poslužitelja.  
+Ovaj primjer briše datoteku.txt s poslužitelja.
 
-#### HTTP Poruke 
-HTTP poruka se sastoji od tri dijela: početne linije (engl. start line), zaglavlja (engl. headers) i tijela (engl. body). Format HTTP poruke je strogo definiran i slijedi određena pravila. 
+#### HTTP Poruke
+HTTP poruka se sastoji od tri dijela: početne linije (engl. start line), zaglavlja (engl. headers) i tijela (engl. body). Format HTTP poruke je strogo definiran i slijedi određena pravila.
 Početna linija (start line) se sastoji od tri dijela: HTTP metode, URI i verzije HTTP protokola. Primjer početne linije za GET zahtjev za web stranicu `https://example.com/page.html` u verziji HTTP/1.1 bi bio:
 ```
 GET /page.html HTTP/1.1
@@ -265,9 +265,9 @@ HTTP kodovi su 3-znamenkasti kodovi koje server šalje u odgovoru na zahtjev kli
 - `403 Forbidden`: Server je razumio zahtjev, ali ne dopušta pristup resursu zahtjevanom klijentu.
 - `404 Not Found`: Server nije uspio pronaći traženi resurs.
 - `500 Internal Server Error`: Server je doživio interno neplanirano ponašanje, što je dovelo do pogreške u obradi zahtjeva.
-- `503 Service Unavailable`: Server trenutno nije dostupan i ne može obraditi zahtjev klijenta.  
+- `503 Service Unavailable`: Server trenutno nije dostupan i ne može obraditi zahtjev klijenta.
 
-Postoji mnogo drugih HTTP kodova koji se koriste za različite scenarije. Razumijevanje ovih kodova može pomoći klijentu da shvati što se dogodilo s njihovim zahtjevom i serveru kako bi mogao reagirati na određene zahtjeve i situacije.  
+Postoji mnogo drugih HTTP kodova koji se koriste za različite scenarije. Razumijevanje ovih kodova može pomoći klijentu da shvati što se dogodilo s njihovim zahtjevom i serveru kako bi mogao reagirati na određene zahtjeve i situacije.
 
 #### HTTP Headers
 HTTP zaglavlje (engl. headers) je dio HTTP poruke koji se sastoji od polja koja prenose dodatne informacije o zahtjevu ili odgovoru. Zaglavlje je formatirano kao niz linija, pri čemu svaka linija predstavlja jedno polje. Svaki redak zaglavlja sadrži naziv polja, dvotočku i vrijednost polja, odvojene razmakom.
@@ -284,7 +284,7 @@ Ovaj primjer zaglavlja za zahtjev sadrži sljedeće polja:
 - Metoda (GET) i URI (/index.html) su dio početne linije HTTP poruke.
 - Host: specifikacija servera s kojim korisnik komunicira.
 - User-Agent: informacija o pregledniku ili softveru koji korisnik koristi za pristup resursu.
-- Accept-Language: informacija o prihvatljivim jezicima koje korisnik preferira.  
+- Accept-Language: informacija o prihvatljivim jezicima koje korisnik preferira.
 
 Primjer zaglavlja za odgovor može biti sljedeći:
 ```
@@ -309,9 +309,9 @@ Ovaj primjer zaglavlja za odgovor sadrži sljedeća polja:
 Uz ova polja, u zaglavlju HTTP poruke se mogu nalaziti i druga polja koja se koriste za različite svrhe, kao što su autentifikacija, kolačići (engl. cookies), cache kontrola i druge.
 
 ### SSL/TLS
-**SSL (Secure Sockets Layer)** je kriptografski protokol koji se koristi za sigurnu komunikaciju izmedju racunara preko interneta. SSL se sastoji od dva sloja: 
-- protokola za upravljanje sigurnoscu i 
-- protokola za prijenos podataka.  
+**SSL (Secure Sockets Layer)** je kriptografski protokol koji se koristi za sigurnu komunikaciju izmedju racunara preko interneta. SSL se sastoji od dva sloja:
+- protokola za upravljanje sigurnoscu i
+- protokola za prijenos podataka.
 
 SSL omogućuje kripotovanje podataka koji se prenose preko interneta, što znači da su podaci zasticeni od neovlastenog pristupa i manipulacije. Osim toga, SSL omogućuje provjeru identiteta web servera s kojim se korisnik povezuje, kako bi se spriječilo da se podaci šalju na lažni ili zlonamjerni server.
 
@@ -332,7 +332,7 @@ TLS radi u tri glavna koraka:
 3. Autentifikacija: TLS koristi certifikate kako bi se osigurala autentičnost servera s kojim se klijent povezuje. Server šalje svoj certifikat klijentu kako bi se klijent uvjerio da se povezuje s pravim serverom.
 
 TLS također podržava razne sigurnosne mehanizme kao što su provjera integriteta podataka, provjera autentičnosti klijenta i zaštita od ponovnog reproduciranja (engl. replay attack).
-![TLS Handshake](/devops-mentorship-program/03-march/week-4-070323/files/tls-sequence-diagram.png)  
+![TLS Handshake](/devops-mentorship-program/03-march/week-4-070323/files/tls-sequence-diagram.png)
 
 TLS handshake process je proces kojim se klijent i server dogovaraju o parametrima sigurne veze prije nego što započnu prijenos podataka. U ovom procesu, klijent i server razmjenjuju informacije o algoritmima kriptiranja i autentifikaciji, te se dogovaraju oko ključeva koji će se koristiti za kriptiranje podataka. TLS handshake proces se sastoji od sljedećih koraka:
 
@@ -382,7 +382,7 @@ Postoje mnogi popularni TCP protokoli osim HTTP-a i HTTPS-a, neki od njih su:
 ## UDP (User Datagram Protocol) Protokoli
 UDP (User Datagram Protocol) je protokol na nižem sloju transportnog protokola u OSI (Open Systems Interconnection) modelu. Za razliku od TCP-a, koji pruža pouzdani prijenos podataka, UDP ne pruža garancije o isporuci paketa. UDP paketi se šalju putem mreže bez ikakvog garancija o tome da li će paket stići na odredište, hoće li se zagubiti ili duplicirati.
 
-UDP protokol je često korišten za aplikacije koje zahtijevaju brz prijenos podataka, ali ne zahtijevaju pouzdanost prijenosa, kao što su video streaming, online igre i druge interaktivne aplikacije. Budući da UDP ne uključuje mehanizme kao što su potvrda primitka i ponovno slanje paketa, to ga čini manje pouzdanim, ali bržim i lakšim za uporabu.  
+UDP protokol je često korišten za aplikacije koje zahtijevaju brz prijenos podataka, ali ne zahtijevaju pouzdanost prijenosa, kao što su video streaming, online igre i druge interaktivne aplikacije. Budući da UDP ne uključuje mehanizme kao što su potvrda primitka i ponovno slanje paketa, to ga čini manje pouzdanim, ali bržim i lakšim za uporabu.
 
 - **DNS (Domain Name System)** - UDP se često koristi za DNS jer DNS paketi obično nisu veliki, a brzina odgovora je ključna. DNS je odgovoran za mapiranje IP adresa na ljudski čitljive imena domena.
 
@@ -420,14 +420,14 @@ DNS se sastoji od nekoliko komponenti:
 
 ## Fully Qualified Domain Name (FQDN)
 
-Fully Qualified Domain Name (FQDN) je naziv koji se koristi za potpuno identificiranje jedinstvene lokacije na internetu, a sastoji se od nekoliko dijelova u hijerarhijskom poretku. FQDN uključuje sve dijelove naziva domene, uključujući naziv subdomene, naziv drugog nivoa i naziv domene vrha (top-level domain, TLD).  
+Fully Qualified Domain Name (FQDN) je naziv koji se koristi za potpuno identificiranje jedinstvene lokacije na internetu, a sastoji se od nekoliko dijelova u hijerarhijskom poretku. FQDN uključuje sve dijelove naziva domene, uključujući naziv subdomene, naziv drugog nivoa i naziv domene vrha (top-level domain, TLD).
 
 Primjer FQDN-a za web stranicu može biti: `www.example.com`.
 
 **Domena** se odnosi na ime koje se koristi za identifikaciju određene web stranice ili servisa na internetu. Domena je sastavljena od `jedinstvenog naziva` i `top-level domene` (npr. `.com`, `.org`, `.net` itd.), a koristi se kako bi se olakšalo pronalaženje web stranice ili servisa na internetu.
 
 **Domensko ime** je dio domene i odnosi se na ime koje se koristi za identifikaciju pojedinog web mjesta. Domensko ime se nalazi prije top-level domene i sastoji se od naziva web stranice i naziva domene koja se nalazi nakon toga. Na primjer, u domeni `google.com`, `google` je naziv web stranice, a `.com` je top-level domena.
- 
+
 Komponente domene uključuju:
 
 
@@ -435,8 +435,8 @@ Komponente domene uključuju:
 
 - **Top-level domena (TLD):** TLD je najviša razina domene u hijerarhiji domena. To su najčešće tri slova (npr. .com, .org, .net, .gov itd.) koja se nalaze nakon naziva web stranice.
 **Postoje dvije vrste TLD (Top Level Domain) domena:**
-    - generičke 
-    - geografski bazirane   
+    - generičke
+    - geografski bazirane
 
     **Generičke domene** su one koje se mogu koristiti za bilo koju web stranicu, dok su geografski bazirane domene rezervirane za web stranice koje se odnose na pojedine zemlje. Na primjer, `.com` je generička domena, dok je `.ba` geografska domena.
 
@@ -458,14 +458,14 @@ pozivaju različiti korisnički programi,
 upita za klijenta obavlja pretraživanje kroz DNS stablo i vraća nazad odgovore klijentima
 3. **Autoritativni (engl. authoritative) DNS poslužitelj**, koji odgovara na upite rekurzivnih poslužitelja te vraća ili završni odgovor ili zbog delegiranja vraća referencu na neki drugi autoritativni DNS poslužitelj.
 
-Sam proces primanja zahtjeva i njihove obrade te vraćanja odgovora se naziva **DNS rezolucija (engl. name resolution)**. Pojednostavljeno, osnovna rezolucija je proces pretvaranja domenskog imena u IP adresu: prvo tražimo autoritativni DNS poslužitelj, a zatim mu šaljemo upit za adresom, na koji on odgovara sa traženom adresom. Budući da je **DNS strogo distribuirana baza**, ona je raspodijeljena po mnogo različitih poslužitelja. No, očigledno je da zbog raspodijeljenosti rezolucija obično ne može biti obavljena kroz samo jedan upit i odgovor, već najčešće zahtijeva dužu komunikaciju i niz upita i odgovora. Najčešća je situacija da klijent šalje zahtjeve lokalnom DNS poslužitelju (nadležan za klijentsko računalo, obično dodijeljen od ISP-a ili ustanove u kojoj se nalazi klijentsko računalo), koji predstavlja rekurzivni poslužitelj i obavlja upite te zatim vraća odgovor klijentu. Dakle, najveći i najkompliciraniji dio procedure predstavlja traženje autoritativnog poslužitelja u složenoj DNS hijerarhiji.  
-Što se samih tipova DNS rezolucije tiče, postoje dva osnovna tipa prolaska kroz DNS hijerarhiju da bi se otkrio točan zapis. Oni se razlikuju po tome tko obavlja većinu posla oko saznavanja podataka i njihove obrade, a prvenstveno se pojavljuju kad obrada određenog DNS upita zahtijeva nekoliko koraka (dakle, lokalni DNS poslužitelj nema sve informacije):  
+Sam proces primanja zahtjeva i njihove obrade te vraćanja odgovora se naziva **DNS rezolucija (engl. name resolution)**. Pojednostavljeno, osnovna rezolucija je proces pretvaranja domenskog imena u IP adresu: prvo tražimo autoritativni DNS poslužitelj, a zatim mu šaljemo upit za adresom, na koji on odgovara sa traženom adresom. Budući da je **DNS strogo distribuirana baza**, ona je raspodijeljena po mnogo različitih poslužitelja. No, očigledno je da zbog raspodijeljenosti rezolucija obično ne može biti obavljena kroz samo jedan upit i odgovor, već najčešće zahtijeva dužu komunikaciju i niz upita i odgovora. Najčešća je situacija da klijent šalje zahtjeve lokalnom DNS poslužitelju (nadležan za klijentsko računalo, obično dodijeljen od ISP-a ili ustanove u kojoj se nalazi klijentsko računalo), koji predstavlja rekurzivni poslužitelj i obavlja upite te zatim vraća odgovor klijentu. Dakle, najveći i najkompliciraniji dio procedure predstavlja traženje autoritativnog poslužitelja u složenoj DNS hijerarhiji.
+Što se samih tipova DNS rezolucije tiče, postoje dva osnovna tipa prolaska kroz DNS hijerarhiju da bi se otkrio točan zapis. Oni se razlikuju po tome tko obavlja većinu posla oko saznavanja podataka i njihove obrade, a prvenstveno se pojavljuju kad obrada određenog DNS upita zahtijeva nekoliko koraka (dakle, lokalni DNS poslužitelj nema sve informacije):
 
-- **Iterativni** - kada klijent šalje dotične upite, poslužitelj mora odgovoriti jednim od dva moguća odgovora: 
-    a) odgovorom na zahtjev ili 
-    b) imenom drugog DNS poslužitelja (vrši se delegiranje) koji ima više podataka o traženom upitu. U ovakvom tipu upita najveći dio posla obavlja klijent iterirajući akcije upit-odgovor i prolazeći kroz DNS hijerarhiju.    
+- **Iterativni** - kada klijent šalje dotične upite, poslužitelj mora odgovoriti jednim od dva moguća odgovora:
+    a) odgovorom na zahtjev ili
+    b) imenom drugog DNS poslužitelja (vrši se delegiranje) koji ima više podataka o traženom upitu. U ovakvom tipu upita najveći dio posla obavlja klijent iterirajući akcije upit-odgovor i prolazeći kroz DNS hijerarhiju.
 
-- **Rekurzivni** - kada klijent šalje rekurzivni upit, poslužitelj preuzima posao pronalaženja informacija o traženom upitu. Dakle, ono što je u iterativnom obavljao klijent, kod rekurzivnih upita obavlja poslužitelj - obrađuje informacije i šalje nove upite drugim poslužiteljima sve dok ne pronađe traženo. Dakle, klijent šalje svega jedan zahtjev te dobiva ili točnu informaciju koju je tražio ili poruku o grešci.  
+- **Rekurzivni** - kada klijent šalje rekurzivni upit, poslužitelj preuzima posao pronalaženja informacija o traženom upitu. Dakle, ono što je u iterativnom obavljao klijent, kod rekurzivnih upita obavlja poslužitelj - obrađuje informacije i šalje nove upite drugim poslužiteljima sve dok ne pronađe traženo. Dakle, klijent šalje svega jedan zahtjev te dobiva ili točnu informaciju koju je tražio ili poruku o grešci.
 
 Očigledno je rekurzivan način pretraživanja vrlo povoljan za klijente, ali može znatno opteretiti DNS poslužitelje (na stranu i potencijalni problem trovanja DNS poslužitelja o kojem će kasnije biti riječi), pa se takve forme upita obično eksplicitno dozvoljavaju samo računalima iz lokalne mreže, dakle računalima kojima je dotični DNS poslužitelj nadležan. I isključivo njima.
 ### DNS Hijerarhija
@@ -494,7 +494,7 @@ Postoje četiri glavna tipa DNS poslužitelja:
 
 - **Autoritativni poslužitelji:** Ovi poslužitelji su izvorni izvori informacija o DNS zapisima za određenu domenu i oni vraćaju IP adrese za tražena domenska imena.
 
-Kada se pronađe IP adresa povezana s traženim domenskim imenom, DNS poslužitelj vraća tu adresu lokalnom DNS poslužitelju, koji je sprema u cache. U budućnosti, kada se ponovno zatraži isto domensko ime, lokalni DNS poslužitelj vraća spremljenu IP adresu iz cache-a, umjesto da ponovo traži adresu od DNS poslužitelja.  
+Kada se pronađe IP adresa povezana s traženim domenskim imenom, DNS poslužitelj vraća tu adresu lokalnom DNS poslužitelju, koji je sprema u cache. U budućnosti, kada se ponovno zatraži isto domensko ime, lokalni DNS poslužitelj vraća spremljenu IP adresu iz cache-a, umjesto da ponovo traži adresu od DNS poslužitelja.
 
 ![DNS Hierarchy](/devops-mentorship-program/03-march/week-4-070323/files/dns-hierarchy.png)
 
@@ -517,32 +517,33 @@ VPN se može koristiti na različite načine, uključujući:
 - Za zaštitu od neovlaštenog pristupa: VPN se može koristiti za zaštitu protoka podataka od neovlaštenog pristupa, kao što su hakiranje ili prisluškivanje.
 
 - Za pristup geografski ograničenim uslugama: VPN se može koristiti za pristup internetskim stranicama i servisima koji su inače dostupni samo u određenim geografskim područjima, kao što su streaming servisi ili online trgovine.
-## 📖 Reading materials 
+## 📖 Reading materials
 - [Networking Fundamentals - Adrian Cantrill](https://www.youtube.com/playlist?list=PLTk5ZYSbd9Mi_ya5tVFD8NFfU1YZOyml1)
 - [IPv4 Addressing](https://www.tutorialspoint.com/ipv4/ipv4_addressing.htm)
 - [Subnetting - Classful Netmasks - part 1](https://youtu.be/jFN9TNSPVj4)
 - [Subnetting - ANDing - part2](https://youtu.be/KS3oz_D9FF8)
 - [Learning Subnetting Part 2 - The Subnet Mask, the Network Address and ANDing](https://youtu.be/uE5gdwr1mE0)
 - [Subnetting Cisco CCNA -Part 2 The Magic Number](https://youtu.be/84-zNmomYzk)
+- [Everything You Need to Know About DNS (Domain Name System)](https://youtu.be/27r4Bzuj5NQ)
 - [DNS 101 Miniseries - #1 - What does DNS do ?](https://youtu.be/zEmUuNFBgN8)
 - [DNS 101 Miniseries - #2 - Why DNS needs a complex architecture!](https://youtu.be/QTu7yDnR_58)
-- [DNS 101 Miniseries #3 - How DNS actually works ... walking the tree](https://youtu.be/xf01fJQsagQ)  
-- [DNS 101 Miniseries - #4 - What happens when a domain is registered?](https://youtu.be/-WWQzOwbth4)  
+- [DNS 101 Miniseries #3 - How DNS actually works ... walking the tree](https://youtu.be/xf01fJQsagQ)
+- [DNS 101 Miniseries - #4 - What happens when a domain is registered?](https://youtu.be/-WWQzOwbth4)
 - [DNS 101 Miniseries - #5 - Why do we need DNSSEC](https://youtu.be/thAUzOnUvP4)
 - [DNS 101 Miniseries - #6 - How DNSSEC Works within a Zone](https://youtu.be/4qlIim15xwM)
-- [DNS 101 Miniseries - #7 - DNSSEC Chain of Trust](https://youtu.be/YCk2WI-Fbtk)  
+- [DNS 101 Miniseries - #7 - DNSSEC Chain of Trust](https://youtu.be/YCk2WI-Fbtk)
 - [DNS 101 Miniseries - #8 - The DNSSEC Root Signing Ceremony - the most important meeting ever](https://youtu.be/1VqscYMG_Rs)
 - [A Beginner's Guide to WebSockets](https://youtu.be/8ARodQ4Wlf4)
 - [DNS Prirucnik](/devops-mentorship-program/03-march/week-4-070323/files/DNS-prirucnik-1_5.pdf)
-- [What happens when you type a URL into your browser?](https://aws.amazon.com/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/)  
+- [What happens when you type a URL into your browser?](https://aws.amazon.com/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/)
 
-## 📹 Session recordings  
+## 📹 Session recordings
 - [**WEEK-4-tier-1-group-1 video session recording**](https://youtu.be/4coqHeNVeps)
-- [**WEEK-4-tier-1-group-2 video session recording**](https://youtu.be/UlkPnSWJlH8) 
+- [**WEEK-4-tier-1-group-2 video session recording**](https://youtu.be/UlkPnSWJlH8)
 
 
-[:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-4-070323/00-class-notes.md)  
-[:fast_forward: Additional Reading](/devops-mentorship-program/03-march/week-4-070323/02-additional-reading.md)   
-[:fast_forward: HOME - README.md](../../../README.md)  
-[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)  
+[:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-4-070323/00-class-notes.md)
+[:fast_forward: Additional Reading](/devops-mentorship-program/03-march/week-4-070323/02-additional-reading.md)
+[:fast_forward: HOME - README.md](../../../README.md)
+[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)
 
