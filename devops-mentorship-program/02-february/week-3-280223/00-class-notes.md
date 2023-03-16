@@ -38,7 +38,7 @@ This is free software; you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 ```
 ### Bash shell konfiguracijski fajlovi
-Shell konfiguracijski fajl je tekstualni fajl koji se koristi za konfigurisanje okruženja shell-a. Konfiguracijski fajlovi se koriste za postavljanje okruženja, definisanje shell promjenljivih, kreiranje aliasa, postavljanje putanja (PATH) i drugih varijabli, kao i za dodavanje funkcionalnosti shell-u korištenjem skripti i drugih dodataka. Kada se shell pokrene, prvo se čita konfiguracijski fajl kako bi se postavilo okruženje, prije nego što se shell prikaže na ekranu i korisnik može početi kucati komande. Konfiguracijski fajl se izvršava za svaki novi shell koji se pokrene, bilo da se shell pokrene na početku sesije, ili putem skripte ili terminala. Ovi fajlovi se nalaze u korisničkom direktoriju (home folder-u) i mogu biti uređeni korištenjem bilo kojeg tekst editora.
+Shell konfiguracijski fajl je tekstualni fajl koji se koristi za konfigurisanje okruzenja shell-a. Konfiguracijski fajlovi se koriste za postavljanje okruzenja, definisanje shell promjenljivih, kreiranje aliasa, postavljanje putanja (PATH) i drugih varijabli, kao i za dodavanje funkcionalnosti shell-u koristenjem skripti i drugih dodataka. Kada se shell pokrene, prvo se cita konfiguracijski fajl kako bi se postavilo okruzenje, prije nego sto se shell prikaze na ekranu i korisnik moze poceti kucati komande. Konfiguracijski fajl se izvrsava za svaki novi shell koji se pokrene, bilo da se shell pokrene na pocetku sesije, ili putem skripte ili terminala. Ovi fajlovi se nalaze u korisnickom direktoriju (home folder-u) i mogu biti uredjeni koristenjem bilo kojeg tekst editora.
 
 ```bash
 $ pwd
@@ -100,27 +100,27 @@ Skriptu mozemo izvrsiti na nekoliko nacin:
 
 `./` - U UNIX sistemima, "./" predstavlja relativnu putanju do trenutnog direktorija u kojem se nalazimo u shell-u. "." predstavlja trenutni direktorij, a "/" predstavlja putanju.
 
-Kada se koristi `./` zajedno sa nazivom izvršnog fajla (npr. "./hello.sh"), to znazi da se taj fajl pokreće iz trenutnog direktorija. Ovo je korisno kada se nalazimo u direktoriju u kojem se nalazi izvršni fajl, jer nam omogućava da pokrenemo fajl bez potrebe za kucanjem pune putanje do fajla.  
+Kada se koristi `./` zajedno sa nazivom izvrsnog fajla (npr. "./hello.sh"), to znazi da se taj fajl pokrece iz trenutnog direktorija. Ovo je korisno kada se nalazimo u direktoriju u kojem se nalazi izvrsni fajl, jer nam omogucava da pokrenemo fajl bez potrebe za kucanjem pune putanje do fajla.  
 
 ### Kompajler VS Interpreter  
 - **Kompajler** - Kompajler je program koji prevede izvorni kod u izvrsni fajl. Programski jezici koji koriste kompajler (C, C++, Java ...) za izradu izvrsnog fajla.  
 
-- **Interpreter** - Interpreter je program koji u toku izvršavanja prevodi jednu po jednu naredbu. Shell je zasnovan na interpreteru, svaka linija programa odnosno skripte je usnos u shell. Linije shell skripte se izvrsavaju jedna po jedna sekvencijalno. Cak i ako druga linija skripte ima gresku, shell interpreter ce izvrsiti prvu liniju.
+- **Interpreter** - Interpreter je program koji u toku izvrsavanja prevodi jednu po jednu naredbu. Shell je zasnovan na interpreteru, svaka linija programa odnosno skripte je usnos u shell. Linije shell skripte se izvrsavaju jedna po jedna sekvencijalno. Cak i ako druga linija skripte ima gresku, shell interpreter ce izvrsiti prvu liniju.
 
 ### Environment Variables
-**Environment variables** su varijable koje su definisane u operativnom sistemu i dostupne su svim procesima koji se pokrecu u tom okruzenju. One sadrze informacije koje se koriste za postavljanje okruzenja za procese koji se pokrecu u operativnom sistemu, kao što su putanje do direktorija, sistemski parametri, konfiguracijske postavke i druge informacije koje su potrebne da bi se programi izvršavali ispravno.
+**Environment variables** su varijable koje su definisane u operativnom sistemu i dostupne su svim procesima koji se pokrecu u tom okruzenju. One sadrze informacije koje se koriste za postavljanje okruzenja za procese koji se pokrecu u operativnom sistemu, kao sto su putanje do direktorija, sistemski parametri, konfiguracijske postavke i druge informacije koje su potrebne da bi se programi izvrsavali ispravno.
 
-Environment variables su u osnovi nazivi koji su povezani sa odredjenim vrijednostima. Na primjer, `PATH` je environment variable koja sadrži putanje do direktorija u kojima se nalaze izvršni fajlovi, a `HOME` je environment variable koja sadrži putanju do korisničkog direktorija (home folder-a).
+Environment variables su u osnovi nazivi koji su povezani sa odredjenim vrijednostima. Na primjer, `PATH` je environment variable koja sadrzi putanje do direktorija u kojima se nalaze izvrsni fajlovi, a `HOME` je environment variable koja sadrzi putanju do korisnickog direktorija (home folder-a).
 
 Environment variables se mogu definisati i mijenjati na razlicite nacine, ovisno o operativnom sistemu. U Unix sistemima se najcesce koristi `export` komanda kako bi se kreirale ili modifikovale environment variables.
 
-Programi koji se izvršavaju u **UNIX** okruženju mogu koristiti environment variables da bi pristupili informacijama o okruženju u kojem se pokreću. Na primjer, programi koji se koriste u skriptama mogu koristiti environment variables kako bi pristupili informacijama o putanjama do direktorija ili drugim informacijama koje su neophodne da bi se programi izvršili ispravno.
+Programi koji se izvrsavaju u **UNIX** okruzenju mogu koristiti environment variables da bi pristupili informacijama o okruzenju u kojem se pokrecu. Na primjer, programi koji se koriste u skriptama mogu koristiti environment variables kako bi pristupili informacijama o putanjama do direktorija ili drugim informacijama koje su neophodne da bi se programi izvrsili ispravno.
 
 #### PATH environment variable
 
-**PATH** je jedna od najvaznijih environment varijabli na UNIX sistemima. Ona definiše putanje direktorija u kojima se operativni sistem traži izvrsne (executable) fajlove kad izrsavate komande u shell-u.
+**PATH** je jedna od najvaznijih environment varijabli na UNIX sistemima. Ona definise putanje direktorija u kojima se operativni sistem trazi izvrsne (executable) fajlove kad izvrsavate komande u shell-u.
 
-Kada korisnik unese neku komandu u shell, operativni sistem traži tu komandu u nizu direktorija definisanim u `PATH` varijabli, počevši od prvog direktorija u nizu, sve dok ne pronađe traženi fajl. Ako se fajl ne pronađe u nijednom direktoriju u PATH-u, operativni sistem će prijaviti grešku i prikazati poruku o grešci.
+Kada korisnik unese neku komandu u shell, operativni sistem trazi tu komandu u nizu direktorija definisanim u `PATH` varijabli, pocevsi od prvog direktorija u nizu, sve dok ne pronadje trazeni fajl. Ako se fajl ne pronadje u nijednom direktoriju u PATH-u, operativni sistem ce prijaviti gresku i prikazati poruku o gresci.
 
 Standardne putanje koje su definisane unutar environment varijable `PATH` obicno ukljucuju direktorije poput `/usr/bin`, `/bin` i `/usr/local/bin`. Kada korisnik unese neku komandu, npr. `ls`, OS ce pretraziti direktorije navedene u `PATH` putanji unutar kojih ce traziti izvrsni (executable) fajl komande `ls`. Ako se izvrsni fajl za komandu `ls` nalazi u jednom od tih direktorija komanda `ls` ce biti uspjesno izvrsena.
 
@@ -138,7 +138,7 @@ $ echo $PATH
 
 Putanje u PATH-u na UNIX sistemima su odvojene dvotackom `:`.
 
-Korisnici mogu mijenjati `PATH` varijablu kako bi dodali nove direktorije u nju, omogucavajuci im da pokrenu programe koji se nalaze u drugim direktorijima osim standardnih direktorija. To se može uraditi dodavanjem novih direktorija u `PATH` putem komandne linije odnosno terminala ili putem konfiguracijskih fajlova za `shell`, kao sto je `.bashrc`  
+Korisnici mogu mijenjati `PATH` varijablu kako bi dodali nove direktorije u nju, omogucavajuci im da pokrenu programe koji se nalaze u drugim direktorijima osim standardnih direktorija. To se moze uraditi dodavanjem novih direktorija u `PATH` putem komandne linije odnosno terminala ili putem konfiguracijskih fajlova za `shell`, kao sto je `.bashrc`  
 
 ## 📖 Reading materials 
 [Linux Command Line and Shell Scripting Bible, 3nd Edition](/resources/books/linux_command_line_and_shell_scripting_bible_3rd_edition.pdf)
