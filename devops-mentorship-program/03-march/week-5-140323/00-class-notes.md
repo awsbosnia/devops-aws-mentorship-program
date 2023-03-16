@@ -219,6 +219,59 @@ Nekoliko je razloga zasto bi klijent zelio da koristi forward proxy server:
 ### Apache
 **Apache HTTP Server** ili **Apache** ili **Apache HTTPD** je besplatni, open-source web server koji se koristi za hostovanje web stranica i web aplikacija.
 
+####Instalacija Apache-a i osnovni konfiguracijski fajlovi
+Instalacija na CentOS 7:
+```bash
+$ sudo yum install httpd
+```
+Lokacija na kojoj je instaliran je `/etc/httpd/`.
+
+#### Konfiguracijski direktoriji i fajlovi
+
+Folderi koje vidimo na ovoj putanji su:
+- `conf` - folder koji sadrzi konfiguracijske fajlove za Apache server `httpd.conf` i `magic` fajlove.
+  - `httpd.conf` - glavni konfiguracijski fajl za Apache server
+  - `magic` - fajl koji sadrzi informacije o tipovima fajlova odnosno datoteka koje se prenose preko web-a. Apache koristi magic datoteku kako bi utvrdio vrstu datoteke koja se prenosi, a zatim pravilno poslao odgovarajući MIME tip u HTTP zaglavlje. MIME tip omogućuje klijentima da znaju kako da obrade datoteke koje primaju, što je posebno važno kada se radi o binarnim datotekama, poput izvršnih datoteka ili arhiva.
+- `conf.d` - folder koji sadrzi konfiguracijske fajlove za Apache server kreirane od strane korisnika
+- `modules` - Ovaj direktorij se koristi za pohranu modula koje Apache koristi. Ovdje se nalaze datoteke koje definiraju funkcionalnost Apache modula. To su prekompilirane datoteke s ekstenzijom `.so` za Unix sisteme ili `.dll` za Windows.
+- `conf.modules.d` -  direktorij se koristi za pohranu konfiguracijskih datoteka za Apache module. Ove datoteke opisuju kako se moduli učitavaju i konfigurisu. Sadrži datoteke s nazivom u obliku `XX-naziv_modula.conf`, gdje `XX` oznacava redoslijed u kojem se moduli učitavaju. Datoteke u ovom direktoriju obično sadrže `LoadModule` direktive koje specificiraju putanju do modula i naziv modula.
+
+
+#### Virtual Hosts / Virtuelni hostovi
+Zahvaljujuci virtuelnim hostovi, Apache server moze da hostuje vise web stranica na jednom serveru. Svaka web stranica ima svoj virtuelni host. Virtuelni hostovi se konfigurisu u `httpd.conf` fajlu. Ukoliko je potrebno da se konfigurise vise virtuelnih hostova, onda se konfiguracija virtuelnih hostova izdvoji u posebane fajlove koji se nalaze u `conf.d` direktoriju.
+
+```conf
+<VirtualHost *:80>
+    ServerName www.prva-stranica.com
+    DocumentRoot /var/www/prva-stranica.com
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName www.druga-stranica.com
+    DocumentRoot /var/www/druga-stranica.com
+</VirtualHost>
+```
+
+
+#### Reverse Proxy
+```conf
+<VirtualHost *:80>
+    ServerName example.com
+    ServerAlias www.example.com
+
+    # Proxy settings for Node.js app
+    ProxyPreserveHost On
+    ProxyPass / http://localhost:3000/
+    ProxyPassReverse / http://localhost:3000/
+    ProxyRequests Off
+
+</VirtualHost>
+```
+- `ProxyPreserveHost On` - ova opcija omogucava da se host header proslijedi na Node.js aplikaciju
+- `ProxyPass / http://localhost:3000/` - ova opcija proslijedjuje sve zahtjeve koji dolaze na Apache server na Node.js aplikaciju
+- `ProxyPassReverse / http://localhost:3000/` - ova opcija proslijedjuje sve odgovore koji dolaze od Node.js aplikacije na Apache server
+- `ProxyRequests Off` - zabranjuje koristenje apache web servera kao forward proxy servera
+
 ### Apache Tomcat
 **Apache Tomcat** ili samo **Tomcat** je open-source web server koji se koristi za posluzivanje web aplikacija koje su napisane u **Javi**. Tomcat se obicno koristi za posluzivanje dinamickih web stranica koje koriste **JSP (JavaServer Pages)** i servlet tehnologije.
 
