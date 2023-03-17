@@ -301,7 +301,7 @@ Zahvaljujuci virtuelnim hostovi, Apache server moze da hostuje vise web stranica
 
 ## 📹 Session recordings
 - [**WEEK-5-tier-1-group-1 video session recording**](https://youtu.be/agT0spYqHP4)
-- [**WEEK-5-tier-1-group-2 video session recording**]()
+- [**WEEK-5-tier-1-group-2 video session recording**](https://youtu.be/qhzWUF5mpWU)
 
 
 [:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-5-140323/00-class-notes.md)
