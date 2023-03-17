@@ -1,0 +1,228 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Create 15 EC2 instances (t3.small) in the eu-central-1 region with a specified Security Group and Key Pair
+
+Parameters:
+  KeyName:
+    Description: Name of an existing EC2 Key Pair to enable SSH access to the instances
+    Type: 'AWS::EC2::KeyPair::KeyName'
+    Default: 'devops-mentorship-program-week-2'
+
+Mappings:
+  RegionToAMI:
+    eu-central-1:
+      AMI: 'ami-0b4c74d41ee4bed78'  # CentOS AMI Image
+Conditions:
+  IsEuCentral1: !Equals [!Ref 'AWS::Region', 'eu-central-1']
+
+Resources:
+  EC2Instance1:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance2:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance3:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance4:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance5:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance6:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance7:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance8:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance9:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance10:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance11:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance12:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance13:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance14:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+  EC2Instance15:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
+Outputs:
+  Instance1PublicIp:
+    Description: 'Public IP of EC2 Instance 1'
+    Value: !GetAtt EC2Instance1.PublicIp
+  Instance2PublicIp:
+    Description: 'Public IP of EC2 Instance 2'
+    Value: !GetAtt EC2Instance2.PublicIp
+  Instance3PublicIp:
+    Description: 'Public IP of EC2 Instance 3'
+    Value: !GetAtt EC2Instance3.PublicIp
+  Instance4PublicIp:
+    Description: 'Public IP of EC2 Instance 4'
+    Value: !GetAtt EC2Instance4.PublicIp
+  Instance5PublicIp:
+    Description: 'Public IP of EC2 Instance 5'
+    Value: !GetAtt EC2Instance5.PublicIp
+  Instance6PublicIp:
+    Description: 'Public IP of EC2 Instance 6'
+    Value: !GetAtt EC2Instance6.PublicIp
+  Instance7PublicIp:
+    Description: 'Public IP of EC2 Instance 7'
+    Value: !GetAtt EC2Instance7.PublicIp
+  Instance8PublicIp:
+    Description: 'Public IP of EC2 Instance 8'
+    Value: !GetAtt EC2Instance8.PublicIp
+  Instance9PublicIp:
+    Description: 'Public IP of EC2 Instance 9'
+    Value: !GetAtt EC2Instance9.PublicIp
+  Instance10PublicIp:
+    Description: 'Public IP of EC2 Instance 10'
+    Value: !GetAtt EC2Instance10.PublicIp
+  Instance11PublicIp:
+    Description: 'Public IP of EC2 Instance 11'
+    Value: !GetAtt EC2Instance11.PublicIp
+  Instance12PublicIp:
+    Description: 'Public IP of EC2 Instance 12'
+    Value: !GetAtt EC2Instance12.PublicIp
+  Instance13PublicIp:
+    Description: 'Public IP of EC2 Instance 13'
+    Value: !GetAtt EC2Instance13.PublicIp
+  Instance14PublicIp:
+    Description: 'Public IP of EC2 Instance 14'
+    Value: !GetAtt EC2Instance14.PublicIp
+  Instance15PublicIp:
+    Description: 'Public IP of EC2 Instance 15'
+    Value: !GetAtt EC2Instance15.PublicIp
