@@ -3,7 +3,7 @@
 
 ## Racunarske Mreze
 **Racunarske mreze** su skup povezanih racunara i drugih uredjaja koji su medjusobno povezani radi razmjene informacija i resursa. Ove mreze omogucuju racunarima da komuniciraju i razmjenjuju podatke jedni s drugima putem zicanih ili bezicnih veza.
-Postoji nekoliko razlicitih vrsta racunarskih mreza, ukljucujuci lokalne mreze (LAN), mreze sireg podrucja (WAN), virtualne privatne mreže (VPN) itd.
+Postoji nekoliko razlicitih vrsta racunarskih mreza, ukljucujuci lokalne mreze (LAN), mreze sireg podrucja (WAN), virtualne privatne mreze (VPN) itd.
 
 Internet je racunarska mreza koja povezuje milione racunarskih uredjaja sirom svijeta.
 ![Internet](/devops-mentorship-program/03-march/week-4-070323/files/internet.png)
@@ -26,7 +26,7 @@ Medjunarodna organizacija za standardizaciju je krajem 70tih godina predlozila o
 
 ### Aplikativni sloj
 
-Na aplikativnom sloju nalaze se mrezne aplikacije i njihovi protokoli aplikativnog sloja. Apikativnom sloju pripadaju protokoli kao sto su `HTTP`, `SMTP`, `FTP`. Odredjene mrezene funkcionalnosti kao sto je npr: `DNS translacija` takodjer se obavljaju na aplikativnom sloju.
+Na aplikativnom sloju nalaze se mrezne aplikacije i njihovi protokoli aplikativnog sloja. Aplikativnom sloju pripadaju protokoli kao sto su `HTTP`, `SMTP`, `FTP`. Odredjene mrezne funkcionalnosti kao sto je npr: `DNS translacija` takodjer se obavljaju na aplikativnom sloju.
 
 ### Prezentacijski sloj
 
@@ -39,21 +39,21 @@ Sloj sesije obezbjedjuje razgranicavanje i sinhoronizovanje razmjene podatka ukl
 ### Transportni sloj
 
 Transportni sloj prenosi poruke aplikativnog sloja izmedju krajnjih tacaka aplikacije. Protokoli transportnog sloja su `TCP` i `UDP`.
-`TCP` protokol aplikacijama koje ga koriste nudi uslugu sa uspostavljanjem veze. Ova usluga podrazumjeva garantovanu isporuku poruka aplikativnog sloja do odredista i kontrolu toka Za razliku od `TCP` protokola, `UDP` protokol aplikacijama koje ga koriste nudi uslugu bez uspostavljanja veze sto ga cini manje pouzdanim jer nema kontrolu toka i kontrolu zagusenja.
+`TCP` protokol aplikacijama koje ga koriste nudi uslugu za uspostavljanjem veze. Ova usluga podrazumjeva garantovanu isporuku poruka aplikativnog sloja do odredista i kontrolu toka. Za razliku od `TCP` protokola, `UDP` protokol aplikacijama koje ga koriste nudi uslugu bez uspostavljanja veze sto ga cini manje pouzdanim jer nema kontrolu toka i kontrolu zagusenja.
 
 ### Mrezni sloj
 
-Mrezni sloj odgovoran je za prenosenje paketa mreznog sloja poznatih kao `datagrami` od jednog racunara do drugog. **Datagrami** su osnovna jedinica za prenos podataka u mrežama koje koriste paketno prenošenje podataka. Datagrami su obicno sastavljeni od zaglavlja (header) i korisnih podataka (payload). Zaglavlje sadrzi informacije o adresama odredista i izvora, kao i druge kontrole informacija koje su potrebne za uspjesan prijenos podataka. Payload sadrzi stvarne podatke koji se prenose preko mreze. Protokol transportnog sloja u izvornom racunaru prosljedjuje paket (odnosno segment) transportnog sloja i odredisnu mreznu adresu. **Mrezni sloj je taj koji obezbjedjuje isporuku paketa do transportnog sloja na odredisnom racunaru.**
+Mrezni sloj odgovoran je za prenosenje paketa mreznog sloja poznatih kao `datagrami` od jednog racunara do drugog. **Datagrami** su osnovna jedinica za prenos podataka u mrezama koje koriste paketno prenosenje podataka. Datagrami su obicno sastavljeni od zaglavlja (header) i korisnih podataka (payload). Zaglavlje sadrzi informacije o adresama odredista i izvora, kao i druge kontrole informacija koje su potrebne za uspjesan prijenos podataka. Payload sadrzi stvarne podatke koji se prenose preko mreze. Protokol transportnog sloja u izvornom racunaru prosljedjuje paket (odnosno segment) transportnog sloja i odredisnu mreznu adresu. **Mrezni sloj je taj koji obezbjedjuje isporuku paketa do transportnog sloja na odredisnom racunaru.**
 
 **IP protokol** pripada mreznom sloju. Mrezni sloj takodjer obuhvata protokole za rutiranje.
 
 ### Sloj veze
 
-Mrezni sloj usmjerava datagrame kroz niz rutera izmedju izvora i odredista. Za prednosenje paketa od jednog covera (racunara ili rutera) do sljedeceg, mrezni sloj se oslanja na usluge sloja veze. Primjeri protokola sloja veze su `ethernet`, `wifi` kao i protokoli koji se koriste za kablovske pristupne mreze.
+Mrezni sloj usmjerava datagrame kroz niz rutera izmedju izvora i odredista. Za prenosenje paketa od jednog covera (racunara ili rutera) do sljedeceg, mrezni sloj se oslanja na usluge sloja veze. Primjeri protokola sloja veze su `ethernet`, `wifi` kao i protokoli koji se koriste za kablovske pristupne mreze.
 
 ### Fizicki sloj
 
-Zadatak fizickog sloja jeste prenosenje pojedinacnih bitova iz istog paketa prosljedjenog od strane sloja veze izmedju susjetnih cvorova. Protokoli na ovom sloju zavise od vrste linka ali i medija uz pomoc kojeg je taj link ostvaren (opticka vlakna, bakrene parice i sl.)
+Zadatak fizickog sloja jeste prenosenje pojedinacnih bitova iz istog paketa prosljedjenog od strane sloja veze izmedju susjednih cvorova. Protokoli na ovom sloju zavise od vrste linka ali i medija uz pomoc kojeg je taj link ostvaren (opticka vlakna, bakrene parice i sl.)
 
 ## Protokoli
 Mrezni protokol slican je pravilu ponasanja medju ljudima. **Svime sto se desava na internetu a obuhvata komunikaciju dva udaljena samostalna dijela ili vise njih upravlja neki protokol.**
@@ -92,7 +92,7 @@ Svaki interfejs na svim racunarima i na ruterima mora da ima `IP adresu` koja je
 `a.b.c.d / X`  `(a.b.c.d/24)`
 `X` oznacava broj bitova u prvom dijelu adrese koji oznacavaju **MREZNI DIO IP ADRESE**, preostali biti su namjenjeni hostovim odnosno uredjajima unutar te podmreze.
 
-**Ruteri** izvan ove organizacije sa kojim komunicira ova mreza u obzir uzimaju samo adresu podmreze odnosno mrezni prefix adrese. Ovo doprinosi smanjenu velicine ruting tabela, gdje ostatale mreze sa kojima ova mreza komunicira ne moraju da znaju za ostale adrese unutar mreze, cesto i vise manjih podmreza unutar nje. Mogucnost da se korisiti jedan prefiks za predstavljanje vise mreza cesto se naziva agregacija adresa. Preostali `biti` unutar `IP adrese` odnose se na `hostove` i na osnovu njih se pravi razlika izmedju uredjaja unutar iste podmreze gdje svi ti hostovi imaju isti `mrezni prefix` odnosno istu `adresu podmreze`.
+**Ruteri** izvan ove organizacije sa kojim komunicira ova mreza u obzir uzimaju samo adresu podmreze odnosno mrezni prefix adrese. Ovo doprinosi smanjenu velicine ruting tabela, gdje ostale mreze sa kojima ova mreza komunicira ne moraju da znaju za ostale adrese unutar mreze, cesto i vise manjih podmreza unutar nje. Mogucnost da se korisiti jedan prefiks za predstavljanje vise mreza cesto se naziva agregacija adresa. Preostali `biti` unutar `IP adrese` odnose se na `hostove` i na osnovu njih se pravi razlika izmedju uredjaja unutar iste podmreze gdje svi ti hostovi imaju isti `mrezni prefix` odnosno istu `adresu podmreze`.
 
 `255.255.255.255` - IP Adresa za difuzno emitovanje. Kada racunar posalje `datagram` sa adresom odredista `255.255.255.255` ta se poruka isporucuje svim racunarima unutar iste podmreze.
 
@@ -111,16 +111,16 @@ Podklasa mreze B - `/16` koja obuhvata `65634` adrese bila je prevelika za vecin
 IP v4 adrese su ogranicene na 4.294.967.296 adrese.
 
 ### Specijalne IP adrese
-Postoji nekoliko IPv4 adresa koje se koriste za posebne svrhe. Ove adrese se ne mogu koristiti za komunikaciju između uređaja na internetu.
+Postoji nekoliko IPv4 adresa koje se koriste za posebne svrhe. Ove adrese se ne mogu koristiti za komunikaciju izmedju uredjaja na internetu.
 ![Sepecijalne IP adrese](/devops-mentorship-program/03-march/week-4-070323/files/special-ipv4.png)
 
 
 ### IPv6
-**IPv6 (Internet Protocol version 6)** adresiranje je nasljednik IPv4 protokola. IPv6 koristi 128-bitne adrese, što je znatno vise od IPv4 protokola koji koristi 32-bitne adrese. To znaci da IPv6 može podržati znatno veci broj mreznih uredjaja i povezanih uredjaja u poredjenju s IPv4.
+**IPv6 (Internet Protocol version 6)** adresiranje je nasljednik IPv4 protokola. IPv6 koristi 128-bitne adrese, sto je znatno vise od IPv4 protokola koji koristi 32-bitne adrese. To znaci da IPv6 moze podrzati znatno veci broj mreznih uredjaja i povezanih uredjaja u poredjenju s IPv4.
 
-IPv6 adrese se sastoje od 8 blokova koji se odvajaju sa dvije tacke. Svaki blok je zapisan sa 4 heksadecimalne znamenke, sto znaci da svaki blok ima vrijednost između `0` i `FFFF`. Na primjer, IPv6 adresa može izgledati ovako: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`.
+IPv6 adrese se sastoje od 8 blokova koji se odvajaju sa dvije tacke. Svaki blok je zapisan sa 4 heksadecimalne znamenke, sto znaci da svaki blok ima vrijednost izmedju `0` i `FFFF`. Na primjer, IPv6 adresa moze izgledati ovako: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`.
 
-Jedna od glavnih prednosti IPv6 protokola je veca sigurnost, jer IPv6 ukljucuje ugradjenu enkripciju i autentifikaciju koja stiti od napada na mreznu sigurnost. Takodjer, IPv6 adresiranje omogućuje jednostavnije upravljanje mrezom i vecu ucinkovitost u usporedbi s IPv4, jer se ne moraju koristiti razni trikovi poput NAT-a (Network Address Translation) kako bi se omogucilo povezivanje velikog broja uredjaja na internet.
+Jedna od glavnih prednosti IPv6 protokola je veca sigurnost, jer IPv6 ukljucuje ugradjenu enkripciju i autentifikaciju koja stiti od napada na mreznu sigurnost. Takodjer, IPv6 adresiranje omogucuje jednostavnije upravljanje mrezom i vecu ucinkovitost u usporedbi s IPv4, jer se ne moraju koristiti razni trikovi poput NAT-a (Network Address Translation) kako bi se omogucilo povezivanje velikog broja uredjaja na internet.
 IPv6 adrese su velicine 128 bita i mogu da obuhvate `340.282.366.920.938.463.463.374.607.431.768.211.456` adresa.
 
 ## Web aplikacije
@@ -139,19 +139,19 @@ Na internetu se racunar identifikuje svojom IP adresom, pored toga sto zna adres
 
 ### TCP Protokol
 
-**TCP (Transmission Control Protocol)** je jedan od osnovnih protokola na Internetu koji se koristi za uspostavljanje pouzdane veze između uređaja (npr. računala, mobilnih uređaja) putem mreže. TCP je odgovoran za sigurnu i pouzdanu isporuku podataka između računala preko mreže, a glavne značajke TCP-a uključuju:
+**TCP (Transmission Control Protocol)** je jedan od osnovnih protokola na Internetu koji se koristi za uspostavljanje pouzdane veze izmedju uredjaja (npr. racunala, mobilnih uredjaja) putem mreze. TCP je odgovoran za sigurnu i pouzdanu isporuku podataka izmedju racunala preko mreze, a glavne znacajke TCP-a ukljucuju:
 
-1. Pouzdana isporuka: TCP je dizajniran tako da osigura da se svi podaci isporučuju u pravom redoslijedu i da se svi podaci isporučuju bez gubitka ili dupliranja. Ovo je postignuto korištenjem različitih mehanizama poput potvrđivanja (acknowledgments), ponovnog slanja (retransmission) i prozora (window) za kontrolu protoka.
+1. Pouzdana isporuka: TCP je dizajniran tako da osigura da se svi podaci isporucuju u pravom redoslijedu i da se svi podaci isporucuju bez gubitka ili dupliranja. Ovo je postignuto koristenjem razlicitih mehanizama poput potvrdjivanja (acknowledgments), ponovnog slanja (retransmission) i prozora (window) za kontrolu protoka.
 
-2. Trošak: TCP održava razumnu kontrolu protoka kako bi se izbjegao zagušenje mreže i smanjio broj ponovnog slanja podataka.
+2. Trosak: TCP odrzava razumnu kontrolu protoka kako bi se izbjegao zagusenje mreze i smanjio broj ponovnog slanja podataka.
 
-3. Uspostava i prekidanje veze: TCP koristi trostepeni proces za uspostavu veze između dvije strane, nakon čega se podaci mogu prenositi u oba smjera. Također ima mehanizme za prekidanje veze kada je prijenos podataka završen.
+3. Uspostava i prekidanje veze: TCP koristi trostepeni proces za uspostavu veze izmedju dvije strane, nakon cega se podaci mogu prenositi u oba smjera. Takodjer ima mehanizme za prekidanje veze kada je prijenos podataka zavrsen.
 
-4. Pouzdanost: TCP provjerava integritet podataka kako bi se osiguralo da se preneseni podaci nisu promijenili ili oštetili tijekom prijenosa.
+4. Pouzdanost: TCP provjerava integritet podataka kako bi se osiguralo da se preneseni podaci nisu promijenili ili ostetili tijekom prijenosa.
 
-5. Poredak: TCP osigurava da se podaci isporučuju u pravom redoslijedu.
+5. Poredak: TCP osigurava da se podaci isporucuju u pravom redoslijedu.
 
-**TCP 3-Way Handshake Process** - Trostepeni proces za uspostavu veze između dva računala preko TCP-a sastoji se od:
+**TCP 3-Way Handshake Process** - Trostepeni proces za uspostavu veze izmedju dva racunala preko TCP-a sastoji se od:
 - SYN
 - SYN/ACK
 - ACK
@@ -160,47 +160,47 @@ Na internetu se racunar identifikuje svojom IP adresom, pored toga sto zna adres
 ![TCP 3-Way Handshake Process - 2](/devops-mentorship-program/03-march/week-4-070323/files/TCP-connection-1.png)
 
 
-**Korak 1:** Sinhronizacija (SYN) - U ovom koraku klijent šalje SYN paket poslužitelju kako bi inicirao uspostavu veze. SYN paket sadrži vrijednost početnog broja (Initial Sequence Number - ISN), koja se koristi za identifikaciju početne pozicije podataka u sekvencijskom broju, i zatvarački broj (window size), koji se koristi za kontrolu protoka podataka. Nakon što poslužitelj primi SYN paket, on šalje odgovor u koraku 2.
+**Korak 1:** Sinhronizacija (SYN) - U ovom koraku klijent salje SYN paket posluzitelju kako bi inicirao uspostavu veze. SYN paket sadrzi vrijednost pocetnog broja (Initial Sequence Number - ISN), koja se koristi za identifikaciju pocetne pozicije podataka u sekvencijskom broju, i zatvaracki broj (window size), koji se koristi za kontrolu protoka podataka. Nakon sto posluzitelj primi SYN paket, on salje odgovor u koraku 2.
 
-**Korak 2:** Potvrda (ACK i SYN) - U ovom koraku poslužitelj prima SYN paket od klijenta i šalje ACK paket klijentu, potvrđujući da je primio SYN paket. ACK paket također sadrži vrijednost sekvencijskog broja koja je jednaka vrijednosti početnog broja klijenta povećana za jedan, što označava sljedeći očekivani broj koji će klijent slati poslužitelju. Uz ACK paket, poslužitelj također šalje SYN paket klijentu kako bi inicirao uspostavu veze sa svoje strane. SYN paket od poslužitelja sadrži vrijednosti početnog broja i zatvaračkog broja koji su potrebni za uspostavu veze.
+**Korak 2:** Potvrda (ACK i SYN) - U ovom koraku posluzitelj prima SYN paket od klijenta i salje ACK paket klijentu, potvrdjujuci da je primio SYN paket. ACK paket takodjer sadrzi vrijednost sekvencijskog broja koja je jednaka vrijednosti pocetnog broja klijenta povecana za jedan, sto oznacava sljedeci ocekivani broj koji ce klijent slati posluzitelju. Uz ACK paket, posluzitelj takodjer salje SYN paket klijentu kako bi inicirao uspostavu veze sa svoje strane. SYN paket od posluzitelja sadrzi vrijednosti pocetnog broja i zatvarackog broja koji su potrebni za uspostavu veze.
 
-**Korak 3:** Potvrda (ACK) - U ovom koraku klijent prima SYN paket od poslužitelja i šalje ACK paket poslužitelju kako bi potvrdio da je primio SYN paket. ACK paket od klijenta sadrži vrijednost sekvencijskog broja koja je jednaka vrijednosti početnog broja poslužitelja povećana za jedan, što označava sljedeći očekivani broj koji će poslužitelj slati klijentu.
+**Korak 3:** Potvrda (ACK) - U ovom koraku klijent prima SYN paket od posluzitelja i salje ACK paket posluzitelju kako bi potvrdio da je primio SYN paket. ACK paket od klijenta sadrzi vrijednost sekvencijskog broja koja je jednaka vrijednosti pocetnog broja posluzitelja povecana za jedan, sto oznacava sljedeci ocekivani broj koji ce posluzitelj slati klijentu.
 
-Nakon što su ti koraci izvršeni, veza između klijenta i poslužitelja je uspostavljena i oba računala su spremna za razmjenu podataka. Važno je napomenuti da se isti trostepeni proces koristi za uspostavu veze u oba smjera, tako da je proces izvršen u oba smjera prije nego što započne razmjena podataka
+Nakon sto su ti koraci izvrseni, veza izmedju klijenta i posluzitelja je uspostavljena i oba racunala su spremna za razmjenu podataka. Vazno je napomenuti da se isti trostepeni proces koristi za uspostavu veze u oba smjera, tako da je proces izvrsen u oba smjera prije nego sto zapocne razmjena podataka
 
 #### HTTP Protokol
-**HTTP (Hypertext Transfer Protocol)** je protokol kojim se komunicira između klijenta i poslužitelja na webu. HTTP je protokol na aplikacijskom sloju, što znači da radi iznad protokola na nižim slojevima, poput TCP-a ili UDP-a, kako bi se omogućila komunikacija između aplikacija. HTTP koristi TXP kao svoj osnovni transportni protokol. HTTP prvo uspostavlja TCP vezu između klijenta i poslužitelja, a zatim se podaci prenose putem TCP veze.
+**HTTP (Hypertext Transfer Protocol)** je protokol kojim se komunicira izmedju klijenta i posluzitelja na webu. HTTP je protokol na aplikacijskom sloju, sto znaci da radi iznad protokola na nizim slojevima, poput TCP-a ili UDP-a, kako bi se omogucila komunikacija izmedju aplikacija. HTTP koristi TXP kao svoj osnovni transportni protokol. HTTP prvo uspostavlja TCP vezu izmedju klijenta i posluzitelja, a zatim se podaci prenose putem TCP veze.
 
-HTTP koristi model zahtjev-odgovor (request-response model), gdje klijent šalje zahtjev za određenim resursom na poslužitelju, a poslužitelj šalje odgovor koji sadrži tražene informacije. Zahtjev i odgovor sastoje se od headera i tijela.
+HTTP koristi model zahtjev-odgovor (request-response model), gdje klijent salje zahtjev za odredjenim resursom na posluzitelju, a posluzitelj salje odgovor koji sadrzi trazene informacije. Zahtjev i odgovor sastoje se od headera i tijela.
 
-Header sadrži metodu zahtjeva, URL zahtjevanog resursa, verziju protokola, moguće opcije, kao i druge metapodatke. Tijelo sadrži podatke koji se prenose putem HTTP-a, poput HTML koda, slike ili drugih vrsta datoteka.
+Header sadrzi metodu zahtjeva, URL zahtjevanog resursa, verziju protokola, moguce opcije, kao i druge metapodatke. Tijelo sadrzi podatke koji se prenose putem HTTP-a, poput HTML koda, slike ili drugih vrsta datoteka.
 
-HTTP metode zahtjeva uključuju GET, POST, PUT, DELETE, HEAD, OPTIONS i TRACE, a svaka metoda ima svoju specifičnu svrhu. Primjerice, GET metoda se koristi za preuzimanje resursa sa servera, POST metoda se koristi za slanje podataka na server, PUT metoda se koristi za ažuriranje postojećeg resursa, a DELETE metoda se koristi za brisanje resursa sa servera.
+HTTP metode zahtjeva ukljucuju GET, POST, PUT, DELETE, HEAD, OPTIONS i TRACE, a svaka metoda ima svoju specificnu svrhu. Primjerice, GET metoda se koristi za preuzimanje resursa sa servera, POST metoda se koristi za slanje podataka na server, PUT metoda se koristi za azuriranje postojeceg resursa, a DELETE metoda se koristi za brisanje resursa sa servera.
 
-HTTP koristi cookie-je (kolačiće) kako bi omogućio pohranjivanje informacija između više zahtjeva. Cookie-ji se koriste za pohranu korisničkih postavki, poput autentifikacijskih tokena, što korisnicima omogućuje da se prijavljuju bez potrebe za svakim unosom podataka za prijavu.
+HTTP koristi cookie-je (kolacice) kako bi omogucio pohranjivanje informacija izmedju vise zahtjeva. Cookie-ji se koriste za pohranu korisnickih postavki, poput autentifikacijskih tokena, sto korisnicima omogucuje da se prijavljuju bez potrebe za svakim unosom podataka za prijavu.
 
-Uz to, HTTP također podržava SSL (Secure Sockets Layer) i TLS (Transport Layer Security) protokole kako bi osigurao sigurnu komunikaciju putem interneta. Sigurna komunikacija se postiže korištenjem kriptografije, što štiti od prisluškivanja i manipulacije podacima.
+Uz to, HTTP takodjer podrzava SSL (Secure Sockets Layer) i TLS (Transport Layer Security) protokole kako bi osigurao sigurnu komunikaciju putem interneta. Sigurna komunikacija se postize koristenjem kriptografije, sto stiti od prisluskivanja i manipulacije podacima.
 
-Ukratko, HTTP je protokol kojim se omogućava komunikacija između klijenta i poslužitelja na webu. HTTP koristi model zahtjev-odgovor, podržava različite metode zahtjeva, koristi cookie-je za pohranu informacija između zahtjeva i osigurava sigurnu komunikaciju putem interneta.
+Ukratko, HTTP je protokol kojim se omogucava komunikacija izmedju klijenta i posluzitelja na webu. HTTP koristi model zahtjev-odgovor, podrzava razlicite metode zahtjeva, koristi cookie-je za pohranu informacija izmedju zahtjeva i osigurava sigurnu komunikaciju putem interneta.
 
 #### Cookies
 
-Kada korisnik započne sesiju na eBay web stranici, server će mu poslati kolačić koji će sadržavati jedinstveni identifikator sesije. Taj identifikator će biti korišten za identifikaciju korisnika u budućim zahtjevima koje korisnik šalje na server. Također, kolačići se koriste za pohranjivanje postavki i preferencija korisnika, kao što su preferirani jezik ili valuta.
+Kada korisnik zapocne sesiju na eBay web stranici, server ce mu poslati kolacic koji ce sadrzavati jedinstveni identifikator sesije. Taj identifikator ce biti koristen za identifikaciju korisnika u buducim zahtjevima koje korisnik salje na server. Takodjer, kolacici se koriste za pohranjivanje postavki i preferencija korisnika, kao sto su preferirani jezik ili valuta.
 
-Kada korisnik zatraži neku stranicu na eBay web stranici, kolačići će se poslati na server zajedno sa zahtjevom. Na taj način, server će biti u mogućnosti prepoznati korisnika i pružiti mu personalizirano iskustvo na web stranici.
+Kada korisnik zatrazi neku stranicu na eBay web stranici, kolacici ce se poslati na server zajedno sa zahtjevom. Na taj nacin, server ce biti u mogucnosti prepoznati korisnika i pruziti mu personalizirano iskustvo na web stranici.
 
-Također, kolačići se koriste za praćenje aktivnosti korisnika na web stranici. Na primjer, eBay može koristiti kolačiće za praćenje koje su proizvode korisnici pregledali ili stavili u košaricu za kupnju. Ove informacije se mogu koristiti za personaliziranje ponuda ili marketinških poruka koje će korisnik vidjeti na web stranici.
+Takodjer, kolacici se koriste za pracenje aktivnosti korisnika na web stranici. Na primjer, eBay moze koristiti kolacice za pracenje koje su proizvode korisnici pregledali ili stavili u kosaricu za kupnju. Ove informacije se mogu koristiti za personaliziranje ponuda ili marketinskih poruka koje ce korisnik vidjeti na web stranici.
 
 ![Cookies](/devops-mentorship-program/03-march/week-4-070323/files/cookies.png)
 
 #### HTTP metode zahtjeva
-**GET** - Ova metoda se koristi za preuzimanje resursa sa servera. Primjerice, ako želite preuzeti određenu web stranicu, možete koristiti GET metodu kako biste zatražili stranicu s poslužitelja. Primjer zahtjeva koji koristi GET metodu:
+**GET** - Ova metoda se koristi za preuzimanje resursa sa servera. Primjerice, ako zelite preuzeti odredjenu web stranicu, mozete koristiti GET metodu kako biste zatrazili stranicu s posluzitelja. Primjer zahtjeva koji koristi GET metodu:
 
 ```
 GET /index.html HTTP/1.1
 Host: devops-mentorship-program.com
 ```
-**POST** - Ova metoda se koristi za slanje podataka na server. Primjerice, ako želite poslati podatke s obrasca na server, možete koristiti POST metodu kako biste poslali podatke na server. Primjer zahtjeva koji koristi POST metodu:
+**POST** - Ova metoda se koristi za slanje podataka na server. Primjerice, ako zelite poslati podatke s obrasca na server, mozete koristiti POST metodu kako biste poslali podatke na server. Primjer zahtjeva koji koristi POST metodu:
 ```
 POST /login HTTP/1.1
 Host: www.example.com
@@ -208,9 +208,9 @@ Content-Type: application/x-www-form-urlencoded
 
 username=john&password=secret
 ```
-Ovaj primjer šalje podatke za prijavu (korisničko ime i lozinku) na server putem URL-kodiranih parametara.
+Ovaj primjer salje podatke za prijavu (korisnicko ime i lozinku) na server putem URL-kodiranih parametara.
 
-**PUT** - Ova metoda se koristi za ažuriranje postojećeg resursa na serveru. Primjerice, ako želite ažurirati određeni dokument na serveru, možete koristiti PUT metodu kako biste ažurirali taj dokument. Primjer zahtjeva koji koristi PUT metodu:
+**PUT** - Ova metoda se koristi za azuriranje postojeceg resursa na serveru. Primjerice, ako zelite azurirati odredjeni dokument na serveru, mozete koristiti PUT metodu kako biste azurirali taj dokument. Primjer zahtjeva koji koristi PUT metodu:
 
 ```
 PUT /document.doc HTTP/1.1
@@ -219,23 +219,23 @@ Content-Type: application/msword
 
 ... sadrzaj dokumenta ...
 ```
-Ovaj primjer ažurira postojeći dokument.doc s novim sadržajem.
+Ovaj primjer azurira postojeci dokument.doc s novim sadrzajem.
 
-**DELETE** - Ova metoda se koristi za brisanje resursa sa servera. Primjerice, ako želite izbrisati određeni dokument sa servera, možete koristiti DELETE metodu kako biste izbrisali taj dokument. Primjer zahtjeva koji koristi DELETE metodu:
+**DELETE** - Ova metoda se koristi za brisanje resursa sa servera. Primjerice, ako zelite izbrisati odredjeni dokument sa servera, mozete koristiti DELETE metodu kako biste izbrisali taj dokument. Primjer zahtjeva koji koristi DELETE metodu:
 
 ```
 DELETE /file.txt HTTP/1.1
 Host: www.example.com
 ```
-Ovaj primjer briše datoteku.txt s poslužitelja.
+Ovaj primjer brise datoteku.txt s posluzitelja.
 
 #### HTTP Poruke
-HTTP poruka se sastoji od tri dijela: početne linije (engl. start line), zaglavlja (engl. headers) i tijela (engl. body). Format HTTP poruke je strogo definiran i slijedi određena pravila.
-Početna linija (start line) se sastoji od tri dijela: HTTP metode, URI i verzije HTTP protokola. Primjer početne linije za GET zahtjev za web stranicu `https://example.com/page.html` u verziji HTTP/1.1 bi bio:
+HTTP poruka se sastoji od tri dijela: pocetne linije (engl. start line), zaglavlja (engl. headers) i tijela (engl. body). Format HTTP poruke je strogo definiran i slijedi odredjena pravila.
+Pocetna linija (start line) se sastoji od tri dijela: HTTP metode, URI i verzije HTTP protokola. Primjer pocetne linije za GET zahtjev za web stranicu `https://example.com/page.html` u verziji HTTP/1.1 bi bio:
 ```
 GET /page.html HTTP/1.1
 ```
-Zaglavlje (headers) dolazi nakon početne linije i sadrži razne informacije o zahtjevu ili odgovoru. Zaglavlje se sastoji od polja (engl. fields) koja su organizirana u obliku ključ-vrijednost parova. Svako polje se navodi u zasebnom redu i sastoji se od naziva polja i vrijednosti, odvojenih dvotočkom. Primjer zaglavlja bi bio:
+Zaglavlje (headers) dolazi nakon pocetne linije i sadrzi razne informacije o zahtjevu ili odgovoru. Zaglavlje se sastoji od polja (engl. fields) koja su organizirana u obliku kljuc-vrijednost parova. Svako polje se navodi u zasebnom redu i sastoji se od naziva polja i vrijednosti, odvojenih dvotackom. Primjer zaglavlja bi bio:
 
 
 ```
@@ -243,50 +243,50 @@ Host: example.com
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
 ```
-Tijelo (body) dolazi nakon zaglavlja i sadrži podatke koji se šalju u zahtjevu ili odgovoru. Tijelo je opcionalno i može biti prazno. Primjer tijela bi bio:
+Tijelo (body) dolazi nakon zaglavlja i sadrzi podatke koji se salju u zahtjevu ili odgovoru. Tijelo je opcionalno i moze biti prazno. Primjer tijela bi bio:
 ```
 username=john&password=secret
 ```
-Ukoliko se radi o HTTP odgovoru, početna linija će sadržavati statusni kod koji govori o uspješnosti obrade zahtjeva. Primjer početne linije za HTTP odgovor sa statusnim kodom 200 (OK) bi bio:
+Ukoliko se radi o HTTP odgovoru, pocetna linija ce sadrzavati statusni kod koji govori o uspjesnosti obrade zahtjeva. Primjer pocetne linije za HTTP odgovor sa statusnim kodom 200 (OK) bi bio:
 
 ```
 HTTP/1.1 200 OK
 ```
 #### HTTP Response Status Codes
 
-HTTP kodovi su 3-znamenkasti kodovi koje server šalje u odgovoru na zahtjev klijenta kako bi označio status odgovora. Ovdje su neki osnovni HTTP kodovi i njihovo značenje:
+HTTP kodovi su 3-znamenkasti kodovi koje server salje u odgovoru na zahtjev klijenta kako bi oznacio status odgovora. Ovdje su neki osnovni HTTP kodovi i njihovo znacenje:
 
-- `200 OK`: Server je uspješno obradio zahtjev i vratio očekivani sadržaj.
-- `201 Created`: Server je uspješno stvorio novi resurs u skladu s zahtjevom klijenta.
-- `204 No Content`: Server je uspješno obradio zahtjev, ali nema sadržaja koji bi se vratio kao odgovor.
-- `301 Moved Permanently`: Resurs koji je tražen je trajno premješten na drugu lokaciju. Klijent treba koristiti novu adresu za daljnje zahtjeve prema tom resursu.
-- `400 Bad Request`: Server nije uspio razumjeti zahtjev klijenta zbog pogrešne sintakse ili nepotpunih podataka.
-- `401 Unauthorized`: Klijent nije uspio autentificirati se prema serveru, odnosno nije poslao ispravne informacije za prijavu (npr. korisničko ime i lozinka).
-- `403 Forbidden`: Server je razumio zahtjev, ali ne dopušta pristup resursu zahtjevanom klijentu.
-- `404 Not Found`: Server nije uspio pronaći traženi resurs.
-- `500 Internal Server Error`: Server je doživio interno neplanirano ponašanje, što je dovelo do pogreške u obradi zahtjeva.
-- `503 Service Unavailable`: Server trenutno nije dostupan i ne može obraditi zahtjev klijenta.
+- `200 OK`: Server je uspjesno obradio zahtjev i vratio ocekivani sadrzaj.
+- `201 Created`: Server je uspjesno stvorio novi resurs u skladu s zahtjevom klijenta.
+- `204 No Content`: Server je uspjesno obradio zahtjev, ali nema sadrzaja koji bi se vratio kao odgovor.
+- `301 Moved Permanently`: Resurs koji je trazen je trajno premjesten na drugu lokaciju. Klijent treba koristiti novu adresu za daljnje zahtjeve prema tom resursu.
+- `400 Bad Request`: Server nije uspio razumjeti zahtjev klijenta zbog pogresne sintakse ili nepotpunih podataka.
+- `401 Unauthorized`: Klijent nije uspio autentificirati se prema serveru, odnosno nije poslao ispravne informacije za prijavu (npr. korisnicko ime i lozinka).
+- `403 Forbidden`: Server je razumio zahtjev, ali ne dopusta pristup resursu zahtjevanom klijentu.
+- `404 Not Found`: Server nije uspio pronaci trazeni resurs.
+- `500 Internal Server Error`: Server je dozivio interno neplanirano ponasanje, sto je dovelo do pogreske u obradi zahtjeva.
+- `503 Service Unavailable`: Server trenutno nije dostupan i ne moze obraditi zahtjev klijenta.
 
-Postoji mnogo drugih HTTP kodova koji se koriste za različite scenarije. Razumijevanje ovih kodova može pomoći klijentu da shvati što se dogodilo s njihovim zahtjevom i serveru kako bi mogao reagirati na određene zahtjeve i situacije.
+Postoji mnogo drugih HTTP kodova koji se koriste za razlicite scenarije. Razumijevanje ovih kodova moze pomoci klijentu da shvati sto se dogodilo s njihovim zahtjevom i serveru kako bi mogao reagirati na odredjene zahtjeve i situacije.
 
 #### HTTP Headers
-HTTP zaglavlje (engl. headers) je dio HTTP poruke koji se sastoji od polja koja prenose dodatne informacije o zahtjevu ili odgovoru. Zaglavlje je formatirano kao niz linija, pri čemu svaka linija predstavlja jedno polje. Svaki redak zaglavlja sadrži naziv polja, dvotočku i vrijednost polja, odvojene razmakom.
+HTTP zaglavlje (engl. headers) je dio HTTP poruke koji se sastoji od polja koja prenose dodatne informacije o zahtjevu ili odgovoru. Zaglavlje je formatirano kao niz linija, pri cemu svaka linija predstavlja jedno polje. Svaki redak zaglavlja sadrzi naziv polja, dvotocku i vrijednost polja, odvojene razmakom.
 
-Primjer zaglavlja za zahtjev može biti sljedeći:
+Primjer zaglavlja za zahtjev moze biti sljedeci:
 ```
 GET /index.html HTTP/1.1
 Host: www.example.com
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
 Accept-Language: en-US,en;q=0.5
 ```
-Ovaj primjer zaglavlja za zahtjev sadrži sljedeće polja:
+Ovaj primjer zaglavlja za zahtjev sadrzi sljedece polja:
 
-- Metoda (GET) i URI (/index.html) su dio početne linije HTTP poruke.
+- Metoda (GET) i URI (/index.html) su dio pocetne linije HTTP poruke.
 - Host: specifikacija servera s kojim korisnik komunicira.
 - User-Agent: informacija o pregledniku ili softveru koji korisnik koristi za pristup resursu.
 - Accept-Language: informacija o prihvatljivim jezicima koje korisnik preferira.
 
-Primjer zaglavlja za odgovor može biti sljedeći:
+Primjer zaglavlja za odgovor moze biti sljedeci:
 ```
 HTTP/1.1 200 OK
 Date: Mon, 10 Jun 2019 13:57:30 GMT
@@ -296,205 +296,205 @@ ETag: "abcde-7890-5a8b7c6d"
 Content-Length: 16384
 Content-Type: text/html; charset=UTF-8
 ```
-Ovaj primjer zaglavlja za odgovor sadrži sljedeća polja:
+Ovaj primjer zaglavlja za odgovor sadrzi sljedeca polja:
 
-- Statusni kod (200 OK) je dio početne linije HTTP poruke.
+- Statusni kod (200 OK) je dio pocetne linije HTTP poruke.
 - Date: datum i vrijeme kada je odgovor poslan.
 - Server: naziv servera koji je odgovorio na zahtjev.
 - Last-Modified: datum kada je resurs posljednji puta modificiran.
 - ETag: identifikator entiteta (engl. entity tag) koji predstavlja verziju resursa.
-- Content-Length: veličina tijela HTTP odgovora u bajtovima.
+- Content-Length: velicina tijela HTTP odgovora u bajtovima.
 - Content-Type: vrsta medija (engl. media type) koja se prenosi kao tijelo HTTP odgovora, ovdje je to tekstualni HTML dokument s kodnom stranicom UTF-8.
 
-Uz ova polja, u zaglavlju HTTP poruke se mogu nalaziti i druga polja koja se koriste za različite svrhe, kao što su autentifikacija, kolačići (engl. cookies), cache kontrola i druge.
+Uz ova polja, u zaglavlju HTTP poruke se mogu nalaziti i druga polja koja se koriste za razlicite svrhe, kao sto su autentifikacija, kolacici (engl. cookies), cache kontrola i druge.
 
 ### SSL/TLS
 **SSL (Secure Sockets Layer)** je kriptografski protokol koji se koristi za sigurnu komunikaciju izmedju racunara preko interneta. SSL se sastoji od dva sloja:
 - protokola za upravljanje sigurnoscu i
 - protokola za prijenos podataka.
 
-SSL omogućuje kripotovanje podataka koji se prenose preko interneta, što znači da su podaci zasticeni od neovlastenog pristupa i manipulacije. Osim toga, SSL omogućuje provjeru identiteta web servera s kojim se korisnik povezuje, kako bi se spriječilo da se podaci šalju na lažni ili zlonamjerni server.
+SSL omogucuje kripotovanje podataka koji se prenose preko interneta, sto znaci da su podaci zasticeni od neovlastenog pristupa i manipulacije. Osim toga, SSL omogucuje provjeru identiteta web servera s kojim se korisnik povezuje, kako bi se sprijecilo da se podaci salju na lazni ili zlonamjerni server.
 
-SSL certifikati su digitalni certifikati koji se koriste za autentifikaciju web servera i kriptiranje podataka koji se prenose između korisnika i servera. Certifikati se izdaju od strane pouzdanih tijela za izdavanje certifikata (engl. Certificate Authorities) koja provjeravaju identitet vlasnika certifikata i izdaju digitalni potpis koji se koristi za autentifikaciju.
+SSL certifikati su digitalni certifikati koji se koriste za autentifikaciju web servera i kriptiranje podataka koji se prenose izmedju korisnika i servera. Certifikati se izdaju od strane pouzdanih tijela za izdavanje certifikata (engl. Certificate Authorities) koja provjeravaju identitet vlasnika certifikata i izdaju digitalni potpis koji se koristi za autentifikaciju.
 
-Kada korisnik pristupi web stranici koja koristi SSL, preglednik i web server uspostavljaju sigurnu vezu koja se naziva SSL sesija. Tijekom ove sesije, podaci se kriptiraju i dekriptiraju kako bi se osigurala sigurnost podataka. Preglednik prikazuje simbol zaključanog lokota u traci adrese kako bi korisnik znao da se koristi SSL i da su podaci sigurni.
+Kada korisnik pristupi web stranici koja koristi SSL, preglednik i web server uspostavljaju sigurnu vezu koja se naziva SSL sesija. Tijekom ove sesije, podaci se kriptiraju i dekriptiraju kako bi se osigurala sigurnost podataka. Preglednik prikazuje simbol zakljucanog lokota u traci adrese kako bi korisnik znao da se koristi SSL i da su podaci sigurni.
 
-SSL je prethodnik protokola TLS (Transport Layer Security), koji je danas široko korišten protokol za sigurnu komunikaciju između računala preko interneta.
+SSL je prethodnik protokola TLS (Transport Layer Security), koji je danas siroko koristen protokol za sigurnu komunikaciju izmedju racunala preko interneta.
 
-**TLS (Transport Layer Security)** je kriptografski protokol koji se koristi za sigurnu komunikaciju između računala preko interneta. TLS se koristi za zaštitu različitih protokola koji se koriste za prijenos podataka, kao što su HTTP, SMTP, FTP itd.
+**TLS (Transport Layer Security)** je kriptografski protokol koji se koristi za sigurnu komunikaciju izmedju racunala preko interneta. TLS se koristi za zastitu razlicitih protokola koji se koriste za prijenos podataka, kao sto su HTTP, SMTP, FTP itd.
 
 TLS radi u tri glavna koraka:
 
-1. Dogovor o parametrima kriptiranja: Klijent i server se dogovaraju o parametrima kriptiranja, uključujući vrstu kriptografskog algoritma i duljinu ključa.
+1. Dogovor o parametrima kriptiranja: Klijent i server se dogovaraju o parametrima kriptiranja, ukljucujuci vrstu kriptografskog algoritma i duljinu kljuca.
 
-2. Razmjena ključeva: Klijent i server razmjenjuju javne ključeve kako bi se osigurala sigurna komunikacija. Klijent generira jedinstveni ključ za tu sesiju i šalje ga serveru koji ga zatim koristi za kriptiranje podataka.
+2. Razmjena kljuceva: Klijent i server razmjenjuju javne kljuceve kako bi se osigurala sigurna komunikacija. Klijent generira jedinstveni kljuc za tu sesiju i salje ga serveru koji ga zatim koristi za kriptiranje podataka.
 
-3. Autentifikacija: TLS koristi certifikate kako bi se osigurala autentičnost servera s kojim se klijent povezuje. Server šalje svoj certifikat klijentu kako bi se klijent uvjerio da se povezuje s pravim serverom.
+3. Autentifikacija: TLS koristi certifikate kako bi se osigurala autenticnost servera s kojim se klijent povezuje. Server salje svoj certifikat klijentu kako bi se klijent uvjerio da se povezuje s pravim serverom.
 
-TLS također podržava razne sigurnosne mehanizme kao što su provjera integriteta podataka, provjera autentičnosti klijenta i zaštita od ponovnog reproduciranja (engl. replay attack).
+TLS takodjer podrzava razne sigurnosne mehanizme kao sto su provjera integriteta podataka, provjera autenticnosti klijenta i zastita od ponovnog reproduciranja (engl. replay attack).
 ![TLS Handshake](/devops-mentorship-program/03-march/week-4-070323/files/tls-sequence-diagram.png)
 
-TLS handshake process je proces kojim se klijent i server dogovaraju o parametrima sigurne veze prije nego što započnu prijenos podataka. U ovom procesu, klijent i server razmjenjuju informacije o algoritmima kriptiranja i autentifikaciji, te se dogovaraju oko ključeva koji će se koristiti za kriptiranje podataka. TLS handshake proces se sastoji od sljedećih koraka:
+TLS handshake process je proces kojim se klijent i server dogovaraju o parametrima sigurne veze prije nego sto zapocnu prijenos podataka. U ovom procesu, klijent i server razmjenjuju informacije o algoritmima kriptiranja i autentifikaciji, te se dogovaraju oko kljuceva koji ce se koristiti za kriptiranje podataka. TLS handshake proces se sastoji od sljedecih koraka:
 
-1. `Client Hello:` Klijent započinje TLS handshake slanjem Client Hello poruke serveru. Ova poruka sadrži informacije o verziji TLS protokola koja se koristi, popis kriptografskih algoritama koje klijent podržava i nasumično generirani broj koji se koristi za stvaranje kasnije dogovorenog ključa.
+1. `Client Hello:` Klijent zapocinje TLS handshake slanjem Client Hello poruke serveru. Ova poruka sadrzi informacije o verziji TLS protokola koja se koristi, popis kriptografskih algoritama koje klijent podrzava i nasumicno generirani broj koji se koristi za stvaranje kasnije dogovorenog kljuca.
 
-2. `Server Hello:` Nakon što server primi Client Hello, server šalje Server Hello poruku klijentu. Ova poruka sadrži informacije o TLS verziji koju će koristiti, izboru kriptografskih algoritama i nasumično generirani broj koji će se koristiti za dogovor o ključu.
+2. `Server Hello:` Nakon sto server primi Client Hello, server salje Server Hello poruku klijentu. Ova poruka sadrzi informacije o TLS verziji koju ce koristiti, izboru kriptografskih algoritama i nasumicno generirani broj koji ce se koristiti za dogovor o kljucu.
 
-3. `Certificate:` Server šalje svoj certifikat klijentu, koji sadrži javni ključ koji će klijent kasnije koristiti za enkripciju podataka koje šalje serveru.
+3. `Certificate:` Server salje svoj certifikat klijentu, koji sadrzi javni kljuc koji ce klijent kasnije koristiti za enkripciju podataka koje salje serveru.
 
-4. `Server Key Exchange:` Ako je odabran Diffie-Hellman (DH) kriptografski algoritam, server šalje svoj DH javni ključ klijentu. Klijent tada generira svoj DH javni ključ i šalje ga serveru.
+4. `Server Key Exchange:` Ako je odabran Diffie-Hellman (DH) kriptografski algoritam, server salje svoj DH javni kljuc klijentu. Klijent tada generira svoj DH javni kljuc i salje ga serveru.
 
-5. `Client Key Exchange:` Klijent šalje serveru javni ključ koji se koristi za stvaranje zajedničkog tajnog ključa.
+5. `Client Key Exchange:` Klijent salje serveru javni kljuc koji se koristi za stvaranje zajednickog tajnog kljuca.
 
-6. `Certificate Verify:` Klijent potvrđuje valjanost certifikata servera, koristeći javni ključ iz certifikata.
+6. `Certificate Verify:` Klijent potvrdjuje valjanost certifikata servera, koristeci javni kljuc iz certifikata.
 
-7. `Change Cipher Spec:` Klijent i server se dogovaraju o tome koji će kriptografski algoritam koristiti i prelaze na taj algoritam.
+7. `Change Cipher Spec:` Klijent i server se dogovaraju o tome koji ce kriptografski algoritam koristiti i prelaze na taj algoritam.
 
-8. `Finished:` Nakon što su klijent i server dogovorili parametre sigurne veze, oba uređaja šalju Finished poruke jedan drugome. Ove poruke služe za potvrdu da je TLS handshake proces uspješno završen i da su klijent i server sada spremni za sigurnu komunikaciju.
+8. `Finished:` Nakon sto su klijent i server dogovorili parametre sigurne veze, oba uredjaja salju Finished poruke jedan drugome. Ove poruke sluze za potvrdu da je TLS handshake proces uspjesno zavrsen i da su klijent i server sada spremni za sigurnu komunikaciju.
 
-Nakon uspješno završenog TLS handshake procesa, klijent i server koriste zajednički tajni ključ za kriptiranje i dekriptiranje podataka koji se prenose između njih. TLS handshake proces se ponavlja za svaku novu sesiju komunikacije između klijenta i servera kako bi se osigurala sigurna i privatna komunikacija.
+Nakon uspjesno zavrsenog TLS handshake procesa, klijent i server koriste zajednicki tajni kljuc za kriptiranje i dekriptiranje podataka koji se prenose izmedju njih. TLS handshake proces se ponavlja za svaku novu sesiju komunikacije izmedju klijenta i servera kako bi se osigurala sigurna i privatna komunikacija.
 
 ### HTTPS
-**HTTPS (Hypertext Transfer Protocol Secure)** je sigurna verzija HTTP protokola koja se koristi za enkripciju podataka koji se razmjenjuju između web preglednika i web servera. HTTPS koristi SSL/TLS protokol za zaštitu privatnosti podataka korisnika, osiguravajući da se informacije ne mogu neovlašteno čitati, mijenjati ili krivotvoriti.
+**HTTPS (Hypertext Transfer Protocol Secure)** je sigurna verzija HTTP protokola koja se koristi za enkripciju podataka koji se razmjenjuju izmedju web preglednika i web servera. HTTPS koristi SSL/TLS protokol za zastitu privatnosti podataka korisnika, osiguravajuci da se informacije ne mogu neovlasteno citati, mijenjati ili krivotvoriti.
 
-Kada korisnik pokuša pristupiti HTTPS stranici, web server šalje SSL/TLS certifikat pregledniku. Preglednik tada provjerava valjanost certifikata, provjeravajući identitet web stranice. Nakon što preglednik potvrdi valjanost certifikata, on koristi javni ključ koji se nalazi u certifikatu za stvaranje tajnog ključa koji će se koristiti za enkripciju podataka.
+Kada korisnik pokusa pristupiti HTTPS stranici, web server salje SSL/TLS certifikat pregledniku. Preglednik tada provjerava valjanost certifikata, provjeravajuci identitet web stranice. Nakon sto preglednik potvrdi valjanost certifikata, on koristi javni kljuc koji se nalazi u certifikatu za stvaranje tajnog kljuca koji ce se koristiti za enkripciju podataka.
 
-Sve informacije koje se razmjenjuju između preglednika i servera se šifriraju prije slanja, tako da samo preglednik i web server mogu razumjeti sadržaj podataka. Ovo uključuje informacije kao što su korisnička imena i lozinke, podaci o kreditnoj kartici i drugi osjetljivi podaci.
+Sve informacije koje se razmjenjuju izmedju preglednika i servera se sifriraju prije slanja, tako da samo preglednik i web server mogu razumjeti sadrzaj podataka. Ovo ukljucuje informacije kao sto su korisnicka imena i lozinke, podaci o kreditnoj kartici i drugi osjetljivi podaci.
 
 
 ### Ostali TCP Protokoli
 Postoje mnogi popularni TCP protokoli osim HTTP-a i HTTPS-a, neki od njih su:
-- **FTP (File Transfer Protocol)** - Protokol za prijenos datoteka između računala. FTP koristi TCP/IP za prijenos podataka između klijenta i servera.
+- **FTP (File Transfer Protocol)** - Protokol za prijenos datoteka izmedju racunala. FTP koristi TCP/IP za prijenos podataka izmedju klijenta i servera.
 
 
-- **SSH (Secure Shell)** - Kriptografski siguran protokol za daljinsku administraciju i prijenos datoteka između računala. SSH koristi TCP/IP za sigurnu komunikaciju između klijenta i servera.
+- **SSH (Secure Shell)** - Kriptografski siguran protokol za daljinsku administraciju i prijenos datoteka izmedju racunala. SSH koristi TCP/IP za sigurnu komunikaciju izmedju klijenta i servera.
 
-- **Telnet** - Protokol za udaljeni pristup računalu putem mreže. Telnet koristi TCP/IP za prijenos podataka između klijenta i servera.
-
-
-- **POP3** (Post Office Protocol version 3) - Protokol za primanje e-pošte preko interneta. POP3 koristi TCP/IP za prijenos poruka između klijenta i servera.
-
-- **IMAP** (Internet Message Access Protocol) - Protokol za primanje i upravljanje e-poštom na udaljenom serveru. IMAP koristi TCP/IP za prijenos poruka između klijenta i servera.
+- **Telnet** - Protokol za udaljeni pristup racunalu putem mreze. Telnet koristi TCP/IP za prijenos podataka izmedju klijenta i servera.
 
 
-- **LDAP (Lightweight Directory Access Protocol)** - Protokol za pristup i upravljanje direktorijima na mreži. LDAP koristi TCP/IP za prijenos upita i odgovora između klijenta i servera.
+- **POP3** (Post Office Protocol version 3) - Protokol za primanje e-poste preko interneta. POP3 koristi TCP/IP za prijenos poruka izmedju klijenta i servera.
+
+- **IMAP** (Internet Message Access Protocol) - Protokol za primanje i upravljanje e-postom na udaljenom serveru. IMAP koristi TCP/IP za prijenos poruka izmedju klijenta i servera.
+
+
+- **LDAP (Lightweight Directory Access Protocol)** - Protokol za pristup i upravljanje direktorijima na mrezi. LDAP koristi TCP/IP za prijenos upita i odgovora izmedju klijenta i servera.
 
 ## UDP (User Datagram Protocol) Protokoli
-UDP (User Datagram Protocol) je protokol na nižem sloju transportnog protokola u OSI (Open Systems Interconnection) modelu. Za razliku od TCP-a, koji pruža pouzdani prijenos podataka, UDP ne pruža garancije o isporuci paketa. UDP paketi se šalju putem mreže bez ikakvog garancija o tome da li će paket stići na odredište, hoće li se zagubiti ili duplicirati.
+UDP (User Datagram Protocol) je protokol na nizem sloju transportnog protokola u OSI (Open Systems Interconnection) modelu. Za razliku od TCP-a, koji pruza pouzdani prijenos podataka, UDP ne pruza garancije o isporuci paketa. UDP paketi se salju putem mreze bez ikakve garancije o tome da li ce paket stici na odrediste, hoce li se zagubiti ili duplicirati.
 
-UDP protokol je često korišten za aplikacije koje zahtijevaju brz prijenos podataka, ali ne zahtijevaju pouzdanost prijenosa, kao što su video streaming, online igre i druge interaktivne aplikacije. Budući da UDP ne uključuje mehanizme kao što su potvrda primitka i ponovno slanje paketa, to ga čini manje pouzdanim, ali bržim i lakšim za uporabu.
+UDP protokol je cesto koristen za aplikacije koje zahtijevaju brz prijenos podataka, ali ne zahtijevaju pouzdanost prijenosa, kao sto su video streaming, online igre i druge interaktivne aplikacije. Buduci da UDP ne ukljucuje mehanizme kao sto su potvrda primitka i ponovno slanje paketa, to ga cini manje pouzdanim, ali brzim i laksim za uporabu.
 
-- **DNS (Domain Name System)** - UDP se često koristi za DNS jer DNS paketi obično nisu veliki, a brzina odgovora je ključna. DNS je odgovoran za mapiranje IP adresa na ljudski čitljive imena domena.
+- **DNS (Domain Name System)** - UDP se cesto koristi za DNS jer DNS paketi obicno nisu veliki, a brzina odgovora je kljucna. DNS je odgovoran za mapiranje IP adresa na ljudski citljive imena domena.
 
-- **DHCP (Dynamic Host Configuration Protocol)** - DHCP se koristi za automatsku konfiguraciju mrežnih postavki, kao što su IP adrese, podmrežne mreže i zadane mrežne brzine. UDP se koristi za prenošenje DHCP poruka između klijenata i DHCP poslužitelja.
+- **DHCP (Dynamic Host Configuration Protocol)** - DHCP se koristi za automatsku konfiguraciju mreznih postavki, kao sto su IP adrese, podmrezne mreze i zadane mrezne brzine. UDP se koristi za prenosenje DHCP poruka izmedju klijenata i DHCP posluzitelja.
 
-- **TFTP (Trivial File Transfer Protocol)** - UDP se često koristi za TFTP, protokol koji se koristi za jednostavan prijenos datoteka između računala u mreži. TFTP je jednostavan i ograničen protokol, ali se često koristi za firmware i konfiguracijske datoteke.
+- **TFTP (Trivial File Transfer Protocol)** - UDP se cesto koristi za TFTP, protokol koji se koristi za jednostavan prijenos datoteka izmedju racunala u mrezi. TFTP je jednostavan i ogranicen protokol, ali se cesto koristi za firmware i konfiguracijske datoteke.
 
-- **SNMP (Simple Network Management Protocol)** - SNMP se koristi za upravljanje mrežama i prikupljanje informacija o mrežama. UDP se često koristi za prenošenje SNMP poruka između mrežnih uređaja.
+- **SNMP (Simple Network Management Protocol)** - SNMP se koristi za upravljanje mrezama i prikupljanje informacija o mrezama. UDP se cesto koristi za prenosenje SNMP poruka izmedju mreznih uredjaja.
 
-- **RIP (Routing Information Protocol)** - UDP se koristi za RIP, protokol za razmjenu informacija o rutiranju između mrežnih uređaja. RIP je jedan od najjednostavnijih protokola za razmjenu informacija o rutiranju, ali nije najučinkovitiji i nije najbolji izbor za velike mreže.
+- **RIP (Routing Information Protocol)** - UDP se koristi za RIP, protokol za razmjenu informacija o rutiranju izmedju mreznih uredjaja. RIP je jedan od najjednostavnijih protokola za razmjenu informacija o rutiranju, ali nije najucinkovitiji i nije najbolji izbor za velike mreze.
 
-- **Syslog** - UDP se često koristi za syslog, protokol za prikupljanje i slanje log datoteka sa različitih uređaja u mreži, kao što su poslužitelji, mrežni uređaji i sigurnosni uređaji. Syslog omogućuje centralizirano upravljanje logovima i olakšava dijagnostiku problema u mreži.
+- **Syslog** - UDP se cesto koristi za syslog, protokol za prikupljanje i slanje log datoteka sa razlicitih uredjaja u mrezi, kao sto su posluzitelji, mrezni uredjaji i sigurnosni uredjaji. Syslog omogucuje centralizirano upravljanje logovima i olaksava dijagnostiku problema u mrezi.
 
-- **NTP (Network Time Protocol)** - UDP se koristi za NTP, protokol za sinkronizaciju vremena između računala u mreži. NTP omogućuje računalima u mreži da se sinkroniziraju sa zajedničkim referentnim vremenom, što je ključno za različite aplikacije koje se oslanjaju na točno vrijeme, kao što su bankarske transakcije ili mjerenje vremena u proizvodnoj liniji.
+- **NTP (Network Time Protocol)** - UDP se koristi za NTP, protokol za sinkronizaciju vremena izmedju racunala u mrezi. NTP omogucuje racunalima u mrezi da se sinkroniziraju sa zajednickim referentnim vremenom, sto je kljucno za razlicite aplikacije koje se oslanjaju na tocno vrijeme, kao sto su bankarske transakcije ili mjerenje vremena u proizvodnoj liniji.
 
 ### Common TCP and UDP Ports
 ![Common TCP and UDP Ports](/devops-mentorship-program/03-march/week-4-070323/files/common-udp-tcp-protocols.png)
 
 ## DNS (Domain Name System)
-DNS (Domain Name System) je strogo hijerarhijski distribuiran sistem koji povezuje ljudski čitljiva domenska imene s njihovim pripadajucim IP adresama. DNS je ključan za funkcioniranje Interneta jer omogućuje korisnicima da pristupe web stranicama, e-pošti i drugim uslugama na Internetu pomoću lako pamtljivih imena umjesto složenih IP adresa.
+DNS (Domain Name System) je strogo hijerarhijski distribuiran sistem koji povezuje ljudski citljiva domenska imene s njihovim pripadajucim IP adresama. DNS je kljucan za funkcioniranje Interneta jer omogucuje korisnicima da pristupe web stranicama, e-posti i drugim uslugama na Internetu pomocu lako pamtljivih imena umjesto slozenih IP adresa.
 
 DNS se sastoji od nekoliko komponenti:
 
-- **DNS poslužitelji:** Ovo su računala koja čuvaju bazu podataka DNS-a i odgovaraju na upite koje im šalju drugi računala na Internetu. DNS poslužitelji se mogu podijeliti u tri kategorije: korijenski, autoritativni i posrednički.
+- **DNS posluzitelji:** Ovo su racunala koja cuvaju bazu podataka DNS-a i odgovaraju na upite koje im salju drugi racunala na Internetu. DNS posluzitelji se mogu podijeliti u tri kategorije: korijenski, autoritativni i posrednicki.
 
-- **DNS rekordi:** Ovo su zapisi u bazi podataka DNS-a koji povezuju domenska imena s njihovim IP adresama. Postoje različiti vrste DNS zapisa, uključujući A zapis, CNAME zapis, MX zapis i PTR zapis, koji se koriste za različite svrhe.
+- **DNS rekordi:** Ovo su zapisi u bazi podataka DNS-a koji povezuju domenska imena s njihovim IP adresama. Postoje razliciti vrste DNS zapisa, ukljucujuci A zapis, CNAME zapis, MX zapis i PTR zapis, koji se koriste za razlicite svrhe.
 
-- **DNS klijenti:** Ovo su računala ili uređaji koji šalju upite DNS poslužiteljima kako bi saznali IP adresu za određeno domensko ime. DNS klijenti mogu biti ugrađeni u web preglednike, operativne sustave ili druge aplikacije koje se koriste za pristup Internetu.
+- **DNS klijenti:** Ovo su racunala ili uredjaji koji salju upite DNS posluziteljima kako bi saznali IP adresu za odredjeno domensko ime. DNS klijenti mogu biti ugradjeni u web preglednike, operativne sustave ili druge aplikacije koje se koriste za pristup Internetu.
 
-- **DNS protokoli:** Ovo su standardi za komunikaciju između DNS poslužitelja i DNS klijenata. Postoje različiti protokoli, uključujući DNS protokol i DNSSEC protokol koji se koriste za osiguravanje integriteta i autentičnosti podataka u bazi podataka DNS-a.\
+- **DNS protokoli:** Ovo su standardi za komunikaciju izmedju DNS posluzitelja i DNS klijenata. Postoje razliciti protokoli, ukljucujuci DNS protokol i DNSSEC protokol koji se koriste za osiguravanje integriteta i autenticnosti podataka u bazi podataka DNS-a.\
 
-- **DNS caching:** DNS poslužitelji i klijenti obično pohranjuju informacije o DNS upitima kako bi se smanjio broj upita koji se šalju DNS poslužiteljima i ubrzalo vrijeme odgovora. To se naziva DNS caching. DNS zapisi imaju svoje vrijeme života (TTL - Time to Live) koje se koristi za upravljanje caching-om, što znači da se informacije u cache-u automatski brišu nakon isteka TTL-a.
+- **DNS caching:** DNS posluzitelji i klijenti obicno pohranjuju informacije o DNS upitima kako bi se smanjio broj upita koji se salju DNS posluziteljima i ubrzalo vrijeme odgovora. To se naziva DNS caching. DNS zapisi imaju svoje vrijeme zivota (TTL - Time to Live) koje se koristi za upravljanje caching-om, sto znaci da se informacije u cache-u automatski brisu nakon isteka TTL-a.
 
-- **DNS hijacking:** Ovo je tehnika u kojoj napadač preusmjerava DNS upite s legitimne DNS adrese na lažnu adresu. To omogućava napadaču da preuzme kontrolu nad komunikacijom između DNS klijenta i poslužitelja te može preusmjeravati korisnike na zlonamjerne web stranice ili krađu identiteta.
+- **DNS hijacking:** Ovo je tehnika u kojoj napadac preusmjerava DNS upite s legitimne DNS adrese na laznu adresu. To omogucava napadacu da preuzme kontrolu nad komunikacijom izmedju DNS klijenta i posluzitelja te moze preusmjeravati korisnike na zlonamjerne web stranice ili kradju identiteta.
 
 ## Fully Qualified Domain Name (FQDN)
 
-Fully Qualified Domain Name (FQDN) je naziv koji se koristi za potpuno identificiranje jedinstvene lokacije na internetu, a sastoji se od nekoliko dijelova u hijerarhijskom poretku. FQDN uključuje sve dijelove naziva domene, uključujući naziv subdomene, naziv drugog nivoa i naziv domene vrha (top-level domain, TLD).
+Fully Qualified Domain Name (FQDN) je naziv koji se koristi za potpuno identificiranje jedinstvene lokacije na internetu, a sastoji se od nekoliko dijelova u hijerarhijskom poretku. FQDN ukljucuje sve dijelove naziva domene, ukljucujuci naziv subdomene, naziv drugog nivoa i naziv domene vrha (top-level domain, TLD).
 
-Primjer FQDN-a za web stranicu može biti: `www.example.com`.
+Primjer FQDN-a za web stranicu moze biti: `www.example.com`.
 
-**Domena** se odnosi na ime koje se koristi za identifikaciju određene web stranice ili servisa na internetu. Domena je sastavljena od `jedinstvenog naziva` i `top-level domene` (npr. `.com`, `.org`, `.net` itd.), a koristi se kako bi se olakšalo pronalaženje web stranice ili servisa na internetu.
+**Domena** se odnosi na ime koje se koristi za identifikaciju odredjene web stranice ili servisa na internetu. Domena je sastavljena od `jedinstvenog naziva` i `top-level domene` (npr. `.com`, `.org`, `.net` itd.), a koristi se kako bi se olaksalo pronalazenje web stranice ili servisa na internetu.
 
 **Domensko ime** je dio domene i odnosi se na ime koje se koristi za identifikaciju pojedinog web mjesta. Domensko ime se nalazi prije top-level domene i sastoji se od naziva web stranice i naziva domene koja se nalazi nakon toga. Na primjer, u domeni `google.com`, `google` je naziv web stranice, a `.com` je top-level domena.
 
-Komponente domene uključuju:
+Komponente domene ukljucuju:
 
 
 ![Domain](/devops-mentorship-program/03-march/week-4-070323/files/domain-description-image.jpg)
 
-- **Top-level domena (TLD):** TLD je najviša razina domene u hijerarhiji domena. To su najčešće tri slova (npr. .com, .org, .net, .gov itd.) koja se nalaze nakon naziva web stranice.
+- **Top-level domena (TLD):** TLD je najvisa razina domene u hijerarhiji domena. To su najcesce tri slova (npr. .com, .org, .net, .gov itd.) koja se nalaze nakon naziva web stranice.
 **Postoje dvije vrste TLD (Top Level Domain) domena:**
-    - generičke
+    - genericke
     - geografski bazirane
 
-    **Generičke domene** su one koje se mogu koristiti za bilo koju web stranicu, dok su geografski bazirane domene rezervirane za web stranice koje se odnose na pojedine zemlje. Na primjer, `.com` je generička domena, dok je `.ba` geografska domena.
+    **Genericke domene** su one koje se mogu koristiti za bilo koju web stranicu, dok su geografski bazirane domene rezervirane za web stranice koje se odnose na pojedine zemlje. Na primjer, `.com` je genericka domena, dok je `.ba` geografska domena.
 
-- **Druga razina domene (SLD):** SLD je dio domene koji se nalazi ispred top-level domene i koji obično predstavlja naziv web mjesta. Na primjer, u domeni `google.com`, `google` je SLD.
+- **Druga razina domene (SLD):** SLD je dio domene koji se nalazi ispred top-level domene i koji obicno predstavlja naziv web mjesta. Na primjer, u domeni `google.com`, `google` je SLD.
 
-- **Subdomena:** Subdomena je dio domene koji se nalazi ispred drugog nivoa domene i obično se koristi za organiziranje web stranica na istom web mjestu. Na primjer, u domeni `docs.google.com`, `docs` je subdomena koja pokazuje na Googleov servis za obradu teksta.
+- **Subdomena:** Subdomena je dio domene koji se nalazi ispred drugog nivoa domene i obicno se koristi za organiziranje web stranica na istom web mjestu. Na primjer, u domeni `docs.google.com`, `docs` je subdomena koja pokazuje na Googleov servis za obradu teksta.
 
-Domena i domensko ime koriste se kako bi se olakšalo pronalaženje i pristupanje web stranicama i servisima na internetu. Svaka domena mora biti jedinstvena i registrirana kod registrara domena, koji upravlja domenom i odgovoran je za dodjelu domena korisnicima.
+Domena i domensko ime koriste se kako bi se olaksalo pronalazenje i pristupanje web stranicama i servisima na internetu. Svaka domena mora biti jedinstvena i registrirana kod registrara domena, koji upravlja domenom i odgovoran je za dodjelu domena korisnicima.
 
 ### Domenski registri
-Slino kao i za IP adrese, postoje domenski registri, baze podataka o domenama i odgovarajućim IP adresama, po jedan za svaku TLD. Oni kao uslugu daju domenska imena za vlastitu TLD te omogućavaju ostatku svijeta pregled informacija o registracijama pojedinih domena. Domenski registri se inače nazivaju NIC (Network Information Centre).
+Slicno kao i za IP adrese, postoje domenski registri, baze podataka o domenama i odgovarajucim IP adresama, po jedan za svaku TLD. Oni kao uslugu daju domenska imena za vlastitu TLD te omogucavaju ostatku svijeta pregled informacija o registracijama pojedinih domena. Domenski registri se inace nazivaju NIC (Network Information Centre).
 ### DNS rezolucija
 
 Svaki se funkcionalni DNS sistem sastoji se od tri dijela:
 
-1.  **DNS klijent (engl. resolver)**, program koji se izvršava na klijentskom racunaru i koji formira određeni DNS zahtjev. Takav program ne mora biti poseban servis, on je na većini UNIX operativnih sistema najčešće ugrađen u standardnoj biblioteci u formi sistemskih poziva koje
-pozivaju različiti korisnički programi,
-2.  **Rekurzivni (engl. recursive) DNS poslužitelj**, koji nakon dobivenih
-upita za klijenta obavlja pretraživanje kroz DNS stablo i vraća nazad odgovore klijentima
-3. **Autoritativni (engl. authoritative) DNS poslužitelj**, koji odgovara na upite rekurzivnih poslužitelja te vraća ili završni odgovor ili zbog delegiranja vraća referencu na neki drugi autoritativni DNS poslužitelj.
+1.  **DNS klijent (engl. resolver)**, program koji se izvrsava na klijentskom racunaru i koji formira odredjeni DNS zahtjev. Takav program ne mora biti poseban servis, on je na vecini UNIX operativnih sistema najcesce ugradjen u standardnoj biblioteci u formi sistemskih poziva koje
+pozivaju razliciti korisnicki programi,
+2.  **Rekurzivni (engl. recursive) DNS posluzitelj**, koji nakon dobivenih
+upita za klijenta obavlja pretrazivanje kroz DNS stablo i vraca nazad odgovore klijentima
+3. **Autoritativni (engl. authoritative) DNS posluzitelj**, koji odgovara na upite rekurzivnih posluzitelja te vraca ili zavrsni odgovor ili zbog delegiranja vraca referencu na neki drugi autoritativni DNS posluzitelj.
 
-Sam proces primanja zahtjeva i njihove obrade te vraćanja odgovora se naziva **DNS rezolucija (engl. name resolution)**. Pojednostavljeno, osnovna rezolucija je proces pretvaranja domenskog imena u IP adresu: prvo tražimo autoritativni DNS poslužitelj, a zatim mu šaljemo upit za adresom, na koji on odgovara sa traženom adresom. Budući da je **DNS strogo distribuirana baza**, ona je raspodijeljena po mnogo različitih poslužitelja. No, očigledno je da zbog raspodijeljenosti rezolucija obično ne može biti obavljena kroz samo jedan upit i odgovor, već najčešće zahtijeva dužu komunikaciju i niz upita i odgovora. Najčešća je situacija da klijent šalje zahtjeve lokalnom DNS poslužitelju (nadležan za klijentsko računalo, obično dodijeljen od ISP-a ili ustanove u kojoj se nalazi klijentsko računalo), koji predstavlja rekurzivni poslužitelj i obavlja upite te zatim vraća odgovor klijentu. Dakle, najveći i najkompliciraniji dio procedure predstavlja traženje autoritativnog poslužitelja u složenoj DNS hijerarhiji.
-Što se samih tipova DNS rezolucije tiče, postoje dva osnovna tipa prolaska kroz DNS hijerarhiju da bi se otkrio točan zapis. Oni se razlikuju po tome tko obavlja većinu posla oko saznavanja podataka i njihove obrade, a prvenstveno se pojavljuju kad obrada određenog DNS upita zahtijeva nekoliko koraka (dakle, lokalni DNS poslužitelj nema sve informacije):
+Sam proces primanja zahtjeva i njihove obrade te vracanja odgovora se naziva **DNS rezolucija (engl. name resolution)**. Pojednostavljeno, osnovna rezolucija je proces pretvaranja domenskog imena u IP adresu: prvo trazimo autoritativni DNS posluzitelj, a zatim mu saljemo upit za adresom, na koji on odgovara sa trazenom adresom. Buduci da je **DNS strogo distribuirana baza**, ona je raspodijeljena po mnogo razlicitih posluzitelja. No, ocigledno je da zbog raspodijeljenosti rezolucija obicno ne moze biti obavljena kroz samo jedan upit i odgovor, vec najcesce zahtijeva duzu komunikaciju i niz upita i odgovora. Najcesca je situacija da klijent salje zahtjeve lokalnom DNS posluzitelju (nadlezan za klijentsko racunalo, obicno dodijeljen od ISP-a ili ustanove u kojoj se nalazi klijentsko racunalo), koji predstavlja rekurzivni posluzitelj i obavlja upite te zatim vraca odgovor klijentu. Dakle, najveci i najkompliciraniji dio procedure predstavlja trazenje autoritativnog posluzitelja u slozenoj DNS hijerarhiji.
+sto se samih tipova DNS rezolucije tice, postoje dva osnovna tipa prolaska kroz DNS hijerarhiju da bi se otkrio tocan zapis. Oni se razlikuju po tome tko obavlja vecinu posla oko saznavanja podataka i njihove obrade, a prvenstveno se pojavljuju kad obrada odredjenog DNS upita zahtijeva nekoliko koraka (dakle, lokalni DNS posluzitelj nema sve informacije):
 
-- **Iterativni** - kada klijent šalje dotične upite, poslužitelj mora odgovoriti jednim od dva moguća odgovora:
+- **Iterativni** - kada klijent salje doticne upite, posluzitelj mora odgovoriti jednim od dva moguca odgovora:
     a) odgovorom na zahtjev ili
-    b) imenom drugog DNS poslužitelja (vrši se delegiranje) koji ima više podataka o traženom upitu. U ovakvom tipu upita najveći dio posla obavlja klijent iterirajući akcije upit-odgovor i prolazeći kroz DNS hijerarhiju.
+    b) imenom drugog DNS posluzitelja (vrsi se delegiranje) koji ima vise podataka o trazenom upitu. U ovakvom tipu upita najveci dio posla obavlja klijent iterirajuci akcije upit-odgovor i prolazeci kroz DNS hijerarhiju.
 
-- **Rekurzivni** - kada klijent šalje rekurzivni upit, poslužitelj preuzima posao pronalaženja informacija o traženom upitu. Dakle, ono što je u iterativnom obavljao klijent, kod rekurzivnih upita obavlja poslužitelj - obrađuje informacije i šalje nove upite drugim poslužiteljima sve dok ne pronađe traženo. Dakle, klijent šalje svega jedan zahtjev te dobiva ili točnu informaciju koju je tražio ili poruku o grešci.
+- **Rekurzivni** - kada klijent salje rekurzivni upit, posluzitelj preuzima posao pronalazenja informacija o trazenom upitu. Dakle, ono sto je u iterativnom obavljao klijent, kod rekurzivnih upita obavlja posluzitelj - obradjuje informacije i salje nove upite drugim posluziteljima sve dok ne pronadje trazeno. Dakle, klijent salje svega jedan zahtjev te dobiva ili tocnu informaciju koju je trazio ili poruku o gresci.
 
-Očigledno je rekurzivan način pretraživanja vrlo povoljan za klijente, ali može znatno opteretiti DNS poslužitelje (na stranu i potencijalni problem trovanja DNS poslužitelja o kojem će kasnije biti riječi), pa se takve forme upita obično eksplicitno dozvoljavaju samo računalima iz lokalne mreže, dakle računalima kojima je dotični DNS poslužitelj nadležan. I isključivo njima.
+Ocigledno je rekurzivan nacin pretrazivanja vrlo povoljan za klijente, ali moze znatno opteretiti DNS posluzitelje (na stranu i potencijalni problem trovanja DNS posluzitelja o kojem ce kasnije biti rijeci), pa se takve forme upita obicno eksplicitno dozvoljavaju samo racunalima iz lokalne mreze, dakle racunalima kojima je doticni DNS posluzitelj nadlezan. I iskljucivo njima.
 ### DNS Hijerarhija
 
-**DNS (Domain Name System) hijerarhija** je organizacija domena na internetu koja omogućuje rješavanje domenskih imena u IP adrese. DNS hijerarhija ima nekoliko razina domena, pri čemu svaka razina odgovara jednoj komponenti u domenskom imenu.
+**DNS (Domain Name System) hijerarhija** je organizacija domena na internetu koja omogucuje rjesavanje domenskih imena u IP adrese. DNS hijerarhija ima nekoliko razina domena, pri cemu svaka razina odgovara jednoj komponenti u domenskom imenu.
 
-Najviša razina u DNS hijerarhiji su `root serveri`, koji se nalaze na vrhu hijerarhijske strukture i upucuju na druge DNS poslužitelje koji su zaduženi za rješavanje domenskih imena u nižim razinama. **Root serveri** su razmješteni sirom svijeta i upucuju na posluzitelje za `Top-Level Domain (TLD)` - **najvišu razinu domena**.
+Najvisa razina u DNS hijerarhiji su `root serveri`, koji se nalaze na vrhu hijerarhijske strukture i upucuju na druge DNS posluzitelje koji su zaduzeni za rjesavanje domenskih imena u nizim razinama. **Root serveri** su razmjesteni sirom svijeta i upucuju na posluzitelje za `Top-Level Domain (TLD)` - **najvisu razinu domena**.
 
-Nakon `root servera` dolaze `TLD` poslužitelji, koji upućuju na poslužitelje za drugu razinu domena (SLD), poput `.com`, `.org`, `.net` itd. `TLD` poslužitelji upućuju na poslužitelje za `SLD` domene, koji se nalaze na nižoj razini u hijerarhiji.
+Nakon `root servera` dolaze `TLD` posluzitelji, koji upucuju na posluzitelje za drugu razinu domena (SLD), poput `.com`, `.org`, `.net` itd. `TLD` posluzitelji upucuju na posluzitelje za `SLD` domene, koji se nalaze na nizoj razini u hijerarhiji.
 
-Poslužitelji za `SLD` domene upućuju na poslužitelje za subdomene, ukoliko su definirane. Npr, poslužitelj za domenu `example.com` bi uputio na poslužitelje za subdomene, kao što su `mail.example.com` ili `support.example.com`.
+Posluzitelji za `SLD` domene upucuju na posluzitelje za subdomene, ukoliko su definirane. Npr, posluzitelj za domenu `example.com` bi uputio na posluzitelje za subdomene, kao sto su `mail.example.com` ili `support.example.com`.
 
-Kada korisnik upiše domensko ime u pregledniku, preglednik prvo upućuje DNS upit lokalnom DNS poslužitelju. Ako lokalni DNS poslužitelj nema traženo rješenje, on šalje upit TLD poslužitelju, a zatim se upit šalje poslužitelju za SLD domenu i tako dalje, sve dok se ne pronađe IP adresa povezana s traženim domenskim imenom.
+Kada korisnik upise domensko ime u pregledniku, preglednik prvo upucuje DNS upit lokalnom DNS posluzitelju. Ako lokalni DNS posluzitelj nema trazeno rjesenje, on salje upit TLD posluzitelju, a zatim se upit salje posluzitelju za SLD domenu i tako dalje, sve dok se ne pronadje IP adresa povezana s trazenim domenskim imenom.
 
-DNS hijerarhija omogućuje brzo i učinkovito rješavanje domenskih imena u IP adrese, što je ključno za rad interneta.
+DNS hijerarhija omogucuje brzo i ucinkovito rjesavanje domenskih imena u IP adrese, sto je kljucno za rad interneta.
 
 ![DNS Query](/devops-mentorship-program/03-march/week-4-070323/files/Typical-DNS-request-and-response-cycle.jpg)
 
-Postoje četiri glavna tipa DNS poslužitelja:
+Postoje cetiri glavna tipa DNS posluzitelja:
 
-- **Root poslužitelji:** Ovo su najviši DNS poslužitelji u hijerarhiji i oni upućuju na poslužitelje TLD domena.
+- **Root posluzitelji:** Ovo su najvisi DNS posluzitelji u hijerarhiji i oni upucuju na posluzitelje TLD domena.
 
-- **TLD poslužitelji:** Ovi poslužitelji upućuju na poslužitelje za drugu razinu domena (SLD), poput .com, .org, .net itd.
+- **TLD posluzitelji:** Ovi posluzitelji upucuju na posluzitelje za drugu razinu domena (SLD), poput .com, .org, .net itd.
 
-- **Poslužitelji za SLD domene:** Ovi poslužitelji upućuju na poslužitelje za subdomene, ukoliko su definirane.
+- **Posluzitelji za SLD domene:** Ovi posluzitelji upucuju na posluzitelje za subdomene, ukoliko su definirane.
 
-- **Autoritativni poslužitelji:** Ovi poslužitelji su izvorni izvori informacija o DNS zapisima za određenu domenu i oni vraćaju IP adrese za tražena domenska imena.
+- **Autoritativni posluzitelji:** Ovi posluzitelji su izvorni izvori informacija o DNS zapisima za odredjenu domenu i oni vracaju IP adrese za trazena domenska imena.
 
-Kada se pronađe IP adresa povezana s traženim domenskim imenom, DNS poslužitelj vraća tu adresu lokalnom DNS poslužitelju, koji je sprema u cache. U budućnosti, kada se ponovno zatraži isto domensko ime, lokalni DNS poslužitelj vraća spremljenu IP adresu iz cache-a, umjesto da ponovo traži adresu od DNS poslužitelja.
+Kada se pronadje IP adresa povezana s trazenim domenskim imenom, DNS posluzitelj vraca tu adresu lokalnom DNS posluzitelju, koji je sprema u cache. U buducnosti, kada se ponovno zatrazi isto domensko ime, lokalni DNS posluzitelj vraca spremljenu IP adresu iz cache-a, umjesto da ponovo trazi adresu od DNS posluzitelja.
 
 ![DNS Hierarchy](/devops-mentorship-program/03-march/week-4-070323/files/dns-hierarchy.png)
 
@@ -504,19 +504,19 @@ Kada se pronađe IP adresa povezana s traženim domenskim imenom, DNS poslužite
 
 ## VPN (Virtual Private Network)
 
-**VPN (Virtual Private Network)** je sigurna mrežna veza koja povezuje udaljene korisnike i uređaje preko interneta kao da su direktno povezani u istoj lokalnoj mreži. VPN se koristi za sigurno spajanje na udaljene mreže, pristup internetskim stranicama i servisima koji su inače nedostupni izvan određene lokacije, za zaštitu privatnosti i anonimnosti, te za zaštitu protoka podataka od neovlaštenog pristupa.
+**VPN (Virtual Private Network)** je sigurna mrezna veza koja povezuje udaljene korisnike i uredjaje preko interneta kao da su direktno povezani u istoj lokalnoj mrezi. VPN se koristi za sigurno spajanje na udaljene mreze, pristup internetskim stranicama i servisima koji su inace nedostupni izvan odredjene lokacije, za zastitu privatnosti i anonimnosti, te za zastitu protoka podataka od neovlastenog pristupa.
 
-Kada korisnik uspostavi VPN vezu, svi podaci koji se prenose između korisnika i VPN poslužitelja su šifrirani, što znači da se informacije koje se prenose između korisnika i VPN poslužitelja ne mogu čitati ili pristupiti bilo kome drugom. VPN također može pružiti dodatnu sigurnost korištenjem protokola za autentifikaciju i enkripciju, kao što su IPsec (Internet Protocol Security), SSL/TLS (Secure Sockets Layer/Transport Layer Security) i drugi.
+Kada korisnik uspostavi VPN vezu, svi podaci koji se prenose izmedju korisnika i VPN posluzitelja su sifrirani, sto znaci da se informacije koje se prenose izmedju korisnika i VPN posluzitelja ne mogu citati ili pristupiti bilo kome drugom. VPN takodjer moze pruziti dodatnu sigurnost koristenjem protokola za autentifikaciju i enkripciju, kao sto su IPsec (Internet Protocol Security), SSL/TLS (Secure Sockets Layer/Transport Layer Security) i drugi.
 
-VPN se može koristiti na različite načine, uključujući:
+VPN se moze koristiti na razlicite nacine, ukljucujuci:
 
-- Za pristup udaljenim mrežama: VPN se koristi za povezivanje korisnika s udaljenim mrežama, kao što su poslovne mreže, koje inače ne bi bile dostupne izvan mreže.
+- Za pristup udaljenim mrezama: VPN se koristi za povezivanje korisnika s udaljenim mrezama, kao sto su poslovne mreze, koje inace ne bi bile dostupne izvan mreze.
 
-- Za zaštitu privatnosti: VPN se može koristiti za zaštitu privatnosti i anonimnosti na internetu, tako da se korisnikovo mjesto i aktivnosti ne mogu pratiti.
+- Za zastitu privatnosti: VPN se moze koristiti za zastitu privatnosti i anonimnosti na internetu, tako da se korisnikovo mjesto i aktivnosti ne mogu pratiti.
 
-- Za zaštitu od neovlaštenog pristupa: VPN se može koristiti za zaštitu protoka podataka od neovlaštenog pristupa, kao što su hakiranje ili prisluškivanje.
+- Za zastitu od neovlastenog pristupa: VPN se moze koristiti za zastitu protoka podataka od neovlastenog pristupa, kao sto su hakiranje ili prisluskivanje.
 
-- Za pristup geografski ograničenim uslugama: VPN se može koristiti za pristup internetskim stranicama i servisima koji su inače dostupni samo u određenim geografskim područjima, kao što su streaming servisi ili online trgovine.
+- Za pristup geografski ogranicenim uslugama: VPN se moze koristiti za pristup internetskim stranicama i servisima koji su inace dostupni samo u odredjenim geografskim podrucjima, kao sto su streaming servisi ili online trgovine.
 ## 📖 Reading materials
 - [Networking Fundamentals - Adrian Cantrill](https://www.youtube.com/playlist?list=PLTk5ZYSbd9Mi_ya5tVFD8NFfU1YZOyml1)
 - [IPv4 Addressing](https://www.tutorialspoint.com/ipv4/ipv4_addressing.htm)
