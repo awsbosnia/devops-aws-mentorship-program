@@ -1,5 +1,5 @@
 # Linux/UNIX OS [WIP]
-Linux i Unix Operativne Sisteme smo obradjivali u sklopu DevOps Mentorship programa. Predavanja iz tog dijela mozete pogledati u dijelu 📝 [Class notes](). 
+Linux i Unix Operativne Sisteme smo obradjivali u sklopu DevOps Mentorship programa. Predavanja iz tog dijela mozete pogledati u dijelu 📝 [Class notes]().
 
 ## Processes [WIP]
 
@@ -16,7 +16,7 @@ TO-DO:
 - systemd journal
 - Sticky bit
 
-## Security-Enhanced Linux (SELinux)   
+## Security-Enhanced Linux (SELinux)
 **Security-Enhanced Linux (SELinux)** je sigurnosni modul za Linux operativne sisteme koji je razvijen u suradnji s Nacionalnom sigurnosnom agencijom (NSA) Sjedinjenih Americkih Drzava.
 
 SELinux dodaje dodatni sloj sigurnosti na Linux sustav, s ciljem sprecavanja napadaca da zloupotrijebe ranjivosti softvera. Radi tako da osigurava izolaciju procesa, kriptiranje podataka i dodatne mehanizme za provjeru autenticnosti.
@@ -27,12 +27,14 @@ SELinux se moze konfigurisati i prilagoditi za razlicite zahtjeve sigurnosti. Np
 
 Ukratko, SELinux pruža dodatni sloj sigurnosti na Linux sustavu koji ograničava pristup resursima i pomaže u sprečavanju napada na ranjivosti softvera.
 
-Za vise informacija pogledati knjigu **SELinux System Administration - Third Edition** - [Safari Books Online](https://learning.oreilly.com/library/view/selinux-system-administration/9781800201477/) | [Amazon](https://www.amazon.com/SELinux-System-Administration-applications-information/dp/1800201478)  
+Za vise informacija pogledati knjigu **SELinux System Administration - Third Edition** - [Safari Books Online](https://learning.oreilly.com/library/view/selinux-system-administration/9781800201477/) | [Amazon](https://www.amazon.com/SELinux-System-Administration-applications-information/dp/1800201478)
+
+[📹 Security-Enhanced Linux for mere mortals - Red Hat Summit](https://youtu.be/_WOKRaM-HI4)
 
 [man](http://man.cat-v.org/unix_10th/)
 [Red Hat - System Administrator’s Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/index)
 
-# Page Navigation  
+# Page Navigation
 
 [:fast_forward: Sadrzaj - DevOps Learning Path](../table-of-contents.md)
-[:fast_forward: HOME - README.md](../README.md) 
+[:fast_forward: HOME - README.md](../README.md)
