@@ -27,7 +27,7 @@ Ovo je liste ZSH Plugins koje preporucujemo da instalirate.
 - zsh-autosuggestions
 - zsh-syntax-highlighting
 
-####Dodatna podesavanja terminala
+#### Dodatna podesavanja terminala
 
 Da bi omogucili shift-arow selection unutar terminala potrebno je unutar iterm2 Settings, unutar opcije `Keys-Key Bindings` dodati `Keyboard Shortcut` sa zeljenom kombinacijom, recimo :
 
@@ -69,7 +69,7 @@ Ovo je liste VS Code Extensions koje preporucujemo da instalirate.
 - [TabOut](https://marketplace.visualstudio.com/items?itemName=albert.TabOut)
 - [Panda Theme](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
 
-####Korisne aplikacije za bolju produktivnost
+#### Korisne aplikacije za bolju produktivnost
 
 - [Linear mouse](https://linearmouse.app)
 
