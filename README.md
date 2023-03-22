@@ -114,7 +114,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 
   </details>
 
-    <details>
+  <details>
   <summary>Week-6</summary>
 
   **Topic: Cloud, Amazon Web Services (AWS), Kreiranje AWS racuna, IAM User**
