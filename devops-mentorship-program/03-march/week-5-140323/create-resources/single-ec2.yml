@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Create 15 EC2 instances (t3.small) in the eu-central-1 region with a specified Security Group and Key Pair
+
+Parameters:
+  KeyName:
+    Description: Name of an existing EC2 Key Pair to enable SSH access to the instances
+    Type: 'AWS::EC2::KeyPair::KeyName'
+    Default: 'devops-mentorship-program-week-2'
+
+Mappings:
+  RegionToAMI:
+    eu-central-1:
+      AMI: 'ami-0b4c74d41ee4bed78'  # CentOS AMI Image
+Conditions:
+  IsEuCentral1: !Equals [!Ref 'AWS::Region', 'eu-central-1']
+
+Resources:
+  EC2Instance1:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.small'
+      ImageId: !FindInMap ['RegionToAMI', !Ref 'AWS::Region', 'AMI']
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - 'sg-02c3d0f164c33c9fc'
+      Tags:
+        - Key: 'Name'
+          Value: 'week-5-devops-mentorship-program'
