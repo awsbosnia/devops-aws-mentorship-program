@@ -17,7 +17,7 @@ AWS posjeduje data centre rasirene po cijelom svijetu. Data centri su grupisani 
 - [My First 12 Years at Amazon.com](http://jeff-barr.com/2014/08/19/my-first-12-years-at-amazon-dot-com/)
 ## 📹 Session recordings
 - [**WEEK-6-tier-1-group-1 video session recording**](https://youtu.be/no5T7CzRumI)
-- [**WEEK-6-tier-1-group-2 video session recording**]()
+- [**WEEK-6-tier-1-group-2 video session recording**](https://youtu.be/MBoN7FflLYs)
 
 [:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-5-210323/00-class-notes.md)
 [:fast_forward: Additional Reading](/devops-mentorship-program/03-march/week-5-210323/02-additional-reading.md)
