@@ -6,7 +6,7 @@
 **NOTE: Readme file ce biti dodatno azuriran i unaprijedjen**
 ## **🧚 Background Story**
 
-☁️ **AWS / Cloud / DevOps / Site Reliability Engineering / Platform Engineering / Production Engineering Mentorship program** ☁️ ili skraceno **DevOps Mentorship program** 😀 je mentorski program pokrenut od strane grupe entuzijasta, AWS zajednice u Bosni i Hercegovini te uz pomoc nasih kolega iz AWS zajednice Crne Gore sa ciljem sirenja znanja i pomoci svima onima koji zele da svoju IT karijeru grade i razvijaju u navedenom podrucuju.
+☁️ **AWS / Cloud / DevOps / Site Reliability Engineering / Platform Engineering / Production Engineering Mentorship program** ☁️ ili skraceno **DevOps Mentorship program** 😀 je mentorski program pokrenut od strane grupe entuzijasta, AWS zajednice u Bosni i Hercegovini te uz pomoc nasih kolega iz AWS zajednice Crne Gore sa ciljem sirenja znanja i pomoci svima onima koji zele da svoju IT karijeru grade i razvijaju u navedenom podrucju.
 
 Po definiciji, DevOps kao radno mjesto odnosno pozicija ne postoji, ono sto postoji je DevOps kultura i pokret koji se oslanja na upotrebu razilicitih alata i vjestina kako bi se pomoglo brzoj isporuci softvera. Upravo iz tog razloga, mentorship program podjednako obuhvata razvoj tehickih i "soft" skills.
 
@@ -36,7 +36,7 @@ Kako bi se komunikacija unutar slack kanala drzala sto preglednijom i boljom kre
 
 *Detaljnije upute o slack komunikaciji i pravilima komunikacije ce po potrebi biti postavljeni unutar samih slack kanala.*
 
-Svi kanali osim kanala `#mentorship-program-all-random` su privatni i ukoliko niste dobili pristup slack kanalu kojem pripadate budite slobodni da se napiste poruku unutar `#mentorship-program-all-random` kanala i zatrazite pristup.
+Svi kanali osim kanala `#mentorship-program-all-random` su privatni i ukoliko niste dobili pristup slack kanalu kojem pripadate budite slobodni da napiste poruku unutar `#mentorship-program-all-random` kanala i zatrazite pristup.
 ## **📊 Progres Overview**
 U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 **Svaka sedmica sadrzi sljedece fajlove:**
