@@ -156,7 +156,7 @@ Povratne informacije bilo pozitivne ili negativne su nam jako bitne. Budite slob
 
 ## **🚨 Code of Conduct**
 Molimo vas da se prilikom komunikacije sa polaznicima, mentorima i svim ucesnicima ovog programa odnosite sa postovanjem i uvazavanjem. Svako narusavanje ovog pravila ce biti sankcionisano na nacin da ce polaznik biti iskljucen iz programa.
-Detaljija pravila ponsanja su definisana unutar [AWS Code of Conduct](https://aws.amazon.com/codeofconduct/).
+Detaljnija pravila ponasanja su definisana unutar [AWS Code of Conduct](https://aws.amazon.com/codeofconduct/).
 
 ## **❓ FAQ**
 Za sva pitanje i nejasnoce molimo Vas da prvo pogledate [Frequently Asked Questions (FAQ)](FAQ.md) dokument.
