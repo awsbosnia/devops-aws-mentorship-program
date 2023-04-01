@@ -124,6 +124,15 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Additional reading](/devops-mentorship-program/03-march/week-6-210323/02-additional-reading.md)
 
   </details>
+    <summary>Week-7</summary>
+
+  **Topic: Cloud, Amazon Web Services (AWS), EC2, AWS CLI, IAM Groups, IAM Policy, Security Groups**
+
+  - [Class notes](devops-mentorship-program/03-march/week-7-280323/00-class-notes.md)
+  - [Homework](/devops-mentorship-program/03-march/week-7-280323/01-homework.md)
+  - [Additional reading](/devops-mentorship-program/03-march/week-7-280323/02-additional-reading.md)
+
+  </details>
 
 ## :office: :alarm_clock: Office Hours
 Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze kako bi se napravila rekapitulacija obradjenih tema, odgovrilo na eventualna pitanja, kao i dale dodatne upute ako je to potrebno. Snimci do sada odrzanih Office Hours sesija su dostupni preko linkova ispod.
@@ -135,6 +144,7 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
   - [DevOps Mentorship Program - Office Hours 18.02.2023.](https://youtu.be/Ve7BY5WwRDw)
   - [DevOps Mentorship Program - Office Hours 04.03.2023.](https://youtu.be/NTlYCjF0ldY)
   - [DevOps Mentorship Program - Office Hours 19.03.2023.](https://youtu.be/x75Mg0BofFg)
+  - [DevOps Mentorship Program - Office Hours 01.04.2023.](https://youtu.be/x75Mg0BofFg)
 
   </details>
 
