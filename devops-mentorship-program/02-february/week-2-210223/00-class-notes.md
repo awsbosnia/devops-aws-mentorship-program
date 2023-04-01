@@ -24,8 +24,8 @@ bazicni server, su Internet servisi. **(dio iz knjige [Linux i UNIX - B. Djordje
 ```bash
 $ man ssh #Manual for ssh command $ man <command-name>
 
-$ ssh [ip or hostname] #Secure shell, an encrypted network protocol 
-                       #allowing for remote login and command execution  
+$ ssh [ip or hostname] #Secure shell, an encrypted network protocol
+                       #allowing for remote login and command execution
 
 $ ssh -vvv #verbose for troubleshooting access
 
@@ -51,7 +51,7 @@ $ hostnamectl #Displays your hostname
        CPE OS Name: cpe:/o:centos:centos:7
             Kernel: Linux 3.10.0-1160.76.1.el7.x86_64
       Architecture: x86-64
------------------END-----------------  
+-----------------END-----------------
 
 $ cd / #Change directory to the root of the filesystem
 
@@ -69,14 +69,14 @@ $ rm file1 #Remove file1
 
 $ rm -r dir1 #Remove directory dir1 and all its contents
 ```
- 
+
 :boom: :exclamation: U **UNIX** sistemima, postoje dva tipa poveznica (eng. links) koje se koriste za stvaranje referenci na datoteke i direktorije - simbolicke (engl. symbolic links) i tvrde (engl. hard links).
 
-**Simbolička poveznica**, također poznata i kao `soft link`, je datoteka koja predstavlja simbolicku referencu na neku drugu datoteku ili direktorij. Simbolicka poveznica sadrži putanju do izvorne datoteke ili direktorija, a kada se na nju pristupa, sistem ce slijediti putanju koju simbolicka poveznica pokazuje i doci do izvorne datoteke. Simbolicke poveznice se stvaraju uz pomoc naredbe `ln -s`, **a brisanje simboličke poveznice neće utjecati na izvornu datoteku ili direktorij**. 
+**Simbolička poveznica**, također poznata i kao `soft link`, je datoteka koja predstavlja simbolicku referencu na neku drugu datoteku ili direktorij. Simbolicka poveznica sadrži putanju do izvorne datoteke ili direktorija, a kada se na nju pristupa, sistem ce slijediti putanju koju simbolicka poveznica pokazuje i doci do izvorne datoteke. Simbolicke poveznice se stvaraju uz pomoc naredbe `ln -s`, **a brisanje simboličke poveznice neće utjecati na izvornu datoteku ili direktorij**.
 
 S druge strane, tvrda poveznica, također poznata i kao `hard link`, je druga kopija iste datoteke ili direktorija. Tvrde poveznice se stvaraju uz pomoc naredbe ln, a nakon stvaranja tvrde poveznice, izvorna datoteka **i njezina tvrda poveznica se tretiraju kao jedna te ista datoteka**. To znaci da ako se promijeni sadrzaj izvorne datoteke, promjena ce se vidjeti i u tvrdoj poveznici, jer su to ista datoteka. Brisanje izvorne datoteke nece utjecati na tvrdu poveznicu, jer tvrda poveznica nije samo referenca na izvornu datoteku, vec je to druga kopija te datoteke.
 
-Kljucna razlika između simbolickih i tvrdih poveznica u **UNIX** sistemima je u tome što simbolicke poveznice predstavljaju samo referencu na izvornu datoteku ili direktorij, dok su tvrde poveznice kopije izvorne datoteke ili direktorija. :boom: :exclamation: 
+Kljucna razlika između simbolickih i tvrdih poveznica u **UNIX** sistemima je u tome što simbolicke poveznice predstavljaju samo referencu na izvornu datoteku ili direktorij, dok su tvrde poveznice kopije izvorne datoteke ili direktorija. :boom: :exclamation:
 ```bash
 $ ln -s /path/to/file /path/to/symlink #Create a symbolic link to file
 
@@ -86,7 +86,7 @@ $ ln file1 file2 #Create a hard link to file1
 ```bash
 $ ls # Directory listing
 
-$ ls -l 
+$ ls -l
 
 $ ls -la #Long listing, displays file ownership Displays hidden files/directories
 
@@ -116,9 +116,9 @@ $ rsync -e "ssh -P $port_value" remoteuser@remoteip:/path/  localpath #Copy file
 ```
 
 
-[grep command - slika](/resources/images/grep.jpg)    
-[find command - slika](/resources/images/find.jpg)      
-[Find i Grep - Notability biljeske](/resources/notability/bash_notes.pdf)  
+[grep command - slika](/resources/images/grep.jpg)
+[find command - slika](/resources/images/find.jpg)
+[Find i Grep - Notability biljeske](/resources/notability/bash_notes.pdf)
 
 ```bash
 $ chmod 600 <filename> #Change permissions for user
@@ -158,31 +158,31 @@ $ tree -L 2 #list contents of directories in a tree-like format with depth 2
  ```
  Za vise informacija o fajl sistemu i strukturi direktorijuma pogledati [File System Hierachy Standard](/resources/books/filesystem-hierarchy-standard.pdf)
 
-  ![alt Linux Directory Structure](/resources/images/linux-dirs.jpeg)  
+  ![alt Linux Directory Structure](/resources/images/linux-dirs.jpeg)
 
 
 ## 📖 Reading materials
 - [DevOps Learning Path - Linux/UNIX OS](../../../devops-tools/linux-unix.md)
-- [Linux i UNIX - B. Djordjevic, D.Pleskonjic, N.Macek - Beograd 2004](/resources/books/os-unix-i-linux-beograd-el-skola.pdf) 
-- [Osnove Administracije Operacijskog Sustava Linux - Obrazovni Sustav Srce Hr](/resources/papers/osnove-administracije-operacijskog-susteva-1-linux-srca.pdf) | [Biljeske iz Knjige](/devops-mentorship-program/02-february/week-2-210223/files/osnove-administracije-linuxa-biljeske.md)  
-- [UNIX and Linux System Administration Handbook, 5th Edition](/resources/books/unix-linux-sys-admin-handbook.pdf)   
-- [UNIX Operativni Sistemi](http://os.etf.rs/POS/tutorials/srdjan/kurs/html/sadrzaj.html)   
-- [yum cheat sheet](/resources/chaet-sheets/yum-cheatsheet.pdf)  
-- [Linux Performance Analysis in 60,000 Milliseconds](https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55)   
-## 📹 Session recordings  
-- [**WEEK-2-tier-1-group-1 video session recording**](https://youtu.be/VWUv7sISfs0)   
-- [**WEEK-2-tier-1-group-2 video session recording**](https://youtu.be/ZbtgMIyu5ZY)  
+- [Linux i UNIX - B. Djordjevic, D.Pleskonjic, N.Macek - Beograd 2004](/resources/books/os-unix-i-linux-beograd-el-skola.pdf)
+- [Osnove Administracije Operacijskog Sustava Linux - Obrazovni Sustav Srce Hr](/resources/papers/osnove-administracije-operacijskog-susteva-1-linux-srca.pdf) | [Biljeske iz Knjige](/devops-mentorship-program/02-february/week-2-210223/files/osnove-administracije-linuxa-biljeske.md)
+- [UNIX and Linux System Administration Handbook, 5th Edition](/resources/books/unix-linux-sys-admin-handbook.pdf)
+- [UNIX Operativni Sistemi](http://os.etf.rs/POS/tutorials/srdjan/kurs/html/sadrzaj.html)
+- [yum cheat sheet](/resources/chaet-sheets/yum-cheatsheet.pdf)
+- [Linux Performance Analysis in 60,000 Milliseconds](https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55)
+## 📹 Session recordings
+- [**WEEK-2-tier-1-group-1 video session recording**](https://youtu.be/VWUv7sISfs0)
+- [**WEEK-2-tier-1-group-2 video session recording**](https://youtu.be/ZbtgMIyu5ZY)
 
-## 🛠️ Tools 
-- vim - [Vim Cheat Sheet 1](/resources/chaet-sheets/vi-vim-cheat-sheet-and-tutorial.pdf) [Vim Cheat Sheet 2](https://vim.rtorr.com/)    
-- [:octocat: Learn-Vim](https://github.com/iggredible/Learn-Vim)  
+## 🛠️ Tools
+- vim - [Vim Cheat Sheet 1](/resources/chaet-sheets/vi-vim-cheat-sheet-and-tutorial.pdf) [Vim Cheat Sheet 2](https://vim.rtorr.com/)
+- [:octocat: Learn-Vim](https://github.com/iggredible/Learn-Vim)
 - [:octocat: tmux](https://github.com/tmux/tmux/wiki)
-- [chmod calculator](https://chmod-calculator.com/)
+- [chmod calculator](https://nettools.club/chmod_calc)
 
 
 
-[:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-2-210223/01-homework.md)  
-[:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-2-210223/02-additional-reading.md)   
-[:fast_forward: HOME - README.md](../../../README.md)  
-[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)  
+[:fast_forward: Homework Task](/devops-mentorship-program/02-february/week-2-210223/01-homework.md)
+[:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-2-210223/02-additional-reading.md)
+[:fast_forward: HOME - README.md](../../../README.md)
+[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)
 
