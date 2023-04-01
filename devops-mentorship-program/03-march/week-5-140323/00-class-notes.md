@@ -49,6 +49,12 @@ $ sudo systemctl start nginx # pokretanje Nginx-a
 Defaultni root direktoriji nalazi se na lokaciji: `/usr/share/nginx/html`. Ova putanja definisana je unutar `server` bloka defaultnog nginx konfiguracijskog fajla koji se nalazi na lokaciji `/etc/nginx/nginx.conf`.
 **nginx.conf** predstavlja globalni konfiguracijski fajl. U njemu se definisu globalne promenljive, globalni `http` blok, globalni `server` blok, itd.
 
+Koraci za automatsko pokretanje Nginx-a nakon restarta servera:
+```bash
+$ sudo systemctl enable nginx # da se Nginx automatski pokrece nakon restarta servera
+$ systemctl is-enabled nginx # provjera da li je nginx podesen za automatsko startanje
+```
+
 #### NGINX Konfiguracijski fajlovi
 Za svaki pojedinacni web sajt / web servis koji hostujete na serveru potrebno je kreirati zaseban `server` blok unutar konfiguracijskog fajla. Preporuka je da se ti konfiguracijski fajlovi nalaze u direktorijumu `/etc/nginx/conf.d/` i da imaju ekstenziju `.conf`. Za svaki sajt kreirate poseban konfiguracijski fajl.
 U NGINX-u, direktive (eng. directives) su komande koje definisu kako Nginx obradjuje HTTP zahtjeve. Svaka direktiva se sastoji od naziva i vrijednosti koja se dodeljuje tom nazivu. Direktive se koriste u konfiguracijskim fajlovima da bi se definisala podesavanja za Nginx web server, kao sto su server blokovi, lokacije i ostale opcije.
@@ -129,9 +135,38 @@ $ node -v # Check Node.js version
 ```
 
 #### Application setup
-```
+```bash
 $ npm install -g pm2 # Install pm2 process manager
 $ pm2 start server.js # Start Node.js application
+```
+Koraci za automatsko pokretanje pm2 nakon restarta servera:
+```bash
+$ pm2 startup # Da se generise startup skripta.
+$ pm2 save # Da se sacuva trenutna lista procesa kojima upravlja pm2 i koji ce se automatski startati prilikom svakog restarta servera.
+```
+
+Nakon izvrsenja komande `pm2 startup` prikazuje se komanda koju trebamo pokrenuti kao root user ili sa sudo privilegijama. A ukoliko smo komandu `pm2 startup` izvrsili kao root korisnik onda se ta komanda izvrsava automatski i ne trebamo je ponovo izvrsavati. Primjer takve komande koja se generise je:
+
+```shell
+sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u your_user --hp /home/your_user
+```
+* Komanda kreira `systemd` servis koji ce pokrenuti `pm2` pri sistemskom boot-u i izvrsiti je kao navedeni korisnik
+`your_user` username koji koristimo za pokretanje Node.js aplikacije
+`-u your_user` opcija `-u` specificira korisnika s cijim će se username-om izvrsiti navedena komanda
+`env PATH=$PATH:/usr/bin` postavljamo enviromental varijablu `PATH` da ukljucuje `/usr/bin` direktorij gdje se nalazi `node` binary executable file
+* `node` komanda se koristi za izvršavanje fajla. Na primjer `$ node app.js`
+`/usr/lib/node_modules/pm2/bin/pm2` je putanja do executable PM2 fajla
+`--hp /home/your_user` specificira gdje se nalazi `home` direktorij korisnika, kako bi pm2 znao gdje se nalaze korisnikovi
+konfiguracijski fajlovi i log fajlovi
+
+Defaultno se **pm2** servis pokrece kao root korisnik, ali je preporuka iz sigurnosnih razloga da koristimo non-root korisnike sa ogranicenim permisijama i zato se navodi putanja do `home` direktorija.
+
+Kao poruku da je komanda izvrsena uspjesno dobijemo nesto slicno "**Systemd process manager installed**" , sto znaci da je skripta instalirana i `pm2` ce se pokretati automatski pri sistemskom boot-u.
+
+Za provjeru koristimo komande:
+```shell
+$ systemctl status pm2-root # Provjera da li je proces aktivan.
+$ pm2 unstartup # Ako zelimo onemoguciti startup system.
 ```
 #### NGINX setup
 ```bash
