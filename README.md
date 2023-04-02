@@ -60,7 +60,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 <details>
   <summary>Week-1</summary>
 
-  **Topic: git, GitHub**
+  **Topics: git, GitHub**
 
   - [Class notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)
   - [Homework](/devops-mentorship-program/02-february/week-1-140223/01-homework.md)
@@ -71,7 +71,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 <details>
   <summary>Week-2</summary>
 
-  **Topic: Linux, UNIX**
+  **Topics: Linux, UNIX**
 
   - [Class notes](/devops-mentorship-program/02-february/week-2-210223/00-class-notes.md)
   - [Homework](/devops-mentorship-program/02-february/week-2-210223/01-homework.md)
@@ -82,7 +82,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 <details>
   <summary>Week-3</summary>
 
-  **Topic: Shell and Bash scripting**
+  **Topics: Shell and Bash scripting**
 
   - [Class notes](/devops-mentorship-program/02-february/week-3-280223/00-class-notes.md)
   - [Homework](/devops-mentorship-program/02-february/week-3-280223/01-homework.md)
@@ -95,7 +95,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 <details>
   <summary>Week-4</summary>
 
-  **Topic: Netoworks, OSI Model, TCP, HTTP, SSL, DNS**
+  **Topics: Netoworks, OSI Model, TCP, HTTP, SSL, DNS**
 
   - [Class notes](/devops-mentorship-program/03-march/week-4-070323/00-class-notes.md)
   - [Homework](/devops-mentorship-program/03-march/week-4-070323/01-homework.md)
@@ -117,21 +117,33 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   <details>
   <summary>Week-6</summary>
 
-  **Topic: Cloud, Amazon Web Services (AWS), Kreiranje AWS racuna, IAM User**
+  **Topics: Cloud, Amazon Web Services (AWS), Kreiranje AWS racuna, IAM User**
 
   - [Class notes](devops-mentorship-program/03-march/week-6-210323/00-class-notes.md)
   - [Homework](/devops-mentorship-program/03-march/week-6-210323/01-homework.md)
   - [Additional reading](/devops-mentorship-program/03-march/week-6-210323/02-additional-reading.md)
 
   </details>
-    <summary>Week-7</summary>
+  <details>
+  <summary>Week-7</summary>
 
-  **Topic: Cloud, Amazon Web Services (AWS), EC2, AWS CLI, IAM Groups, IAM Policy, Security Groups**
+  **Topics: Cloud, Amazon Web Services (AWS), EC2, AWS CLI, IAM Groups, IAM Policy, Security Groups**
 
   - [Class notes](devops-mentorship-program/03-march/week-7-280323/00-class-notes.md)
   - [Homework](/devops-mentorship-program/03-march/week-7-280323/01-homework.md)
   - [Additional reading](/devops-mentorship-program/03-march/week-7-280323/02-additional-reading.md)
+  </details>
 
+  #### :calendar: April 2023.
+
+  <details>
+  <summary>Week-8</summary>
+
+  **Topics:**
+
+  - [Class notes](devops-mentorship-program/04-april)
+  - [Homework](/devops-mentorship-program/04-april)
+  - [Additional reading](/devops-mentorship-program/04-april)
   </details>
 
 ## :office: :alarm_clock: Office Hours
@@ -144,7 +156,7 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
   - [DevOps Mentorship Program - Office Hours 18.02.2023.](https://youtu.be/Ve7BY5WwRDw)
   - [DevOps Mentorship Program - Office Hours 04.03.2023.](https://youtu.be/NTlYCjF0ldY)
   - [DevOps Mentorship Program - Office Hours 19.03.2023.](https://youtu.be/x75Mg0BofFg)
-  - [DevOps Mentorship Program - Office Hours 01.04.2023.](https://youtu.be/x75Mg0BofFg)
+  - [DevOps Mentorship Program - Office Hours 01.04.2023.](https://youtu.be/XgU5xPQ7jWE)
 
   </details>
 

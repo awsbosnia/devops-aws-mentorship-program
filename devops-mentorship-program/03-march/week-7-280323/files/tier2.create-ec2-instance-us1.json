@@ -1,0 +1,35 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowAllActionsInUsEast1ForT2Micro",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:*",
+                "cloudwatch:*",
+                "sns:*"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:RequestedRegion": "us-east-1"
+                },
+                "Bool": {
+                    "aws:MultiFactorAuthPresent": "true"
+                }
+            }
+        },
+        {
+            "Effect": "Deny",
+            "Action": "ec2:*",
+            "Resource": "*",
+            "Condition": {
+                "ForAnyValue:StringNotLike": {
+                    "ec2:InstanceType": [
+                        "t2.micro"
+                    ]
+                }
+            }
+        }
+    ]
+}
