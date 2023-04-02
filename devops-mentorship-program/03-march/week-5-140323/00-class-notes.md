@@ -291,7 +291,7 @@ Zahvaljujuci virtuelnim hostovi, Apache server moze da hostuje vise web stranica
 - **FTP serveri** - Koriste se za slanje i primanje fajlova preko `FTP (File Transfer Protocol)` protokola.
 - **DNS serveri** - Koriste se za razrjesavanje domenskih imena u IP adrese.
 ## 📖 Reading materials
-- [DevOps Learning Path - Linux/UNIX OS](../../../devops-tools/web-servers.md)
+- [DevOps Learning Path - Linux/UNIX OS](../../../devops-learning-path/web-servers.md)
 - [Proxy vs Reverse Proxy (Real-world Examples)](https://youtu.be/4NB0NDtOwIQ)
 - [nginx documentation](http://nginx.org/en/docs/)
 - [How nginx processes a request](http://nginx.org/en/docs/http/request_processing.html)

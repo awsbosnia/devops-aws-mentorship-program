@@ -33,3 +33,4 @@
 ## Resources
 
 [CMU Database Group](https://www.youtube.com/@CMUDatabaseGroup)
+[Andy Pavlo](http://www.cs.cmu.edu/~pavlo/)

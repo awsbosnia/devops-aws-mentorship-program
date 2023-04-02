@@ -1,5 +1,6 @@
 # 📝 Homework / Task assigment
-## 📅 Date: 21.02.2023.  
+## 📅 Date: 21.02.2023.
+#### [TASK-2: OverTheWire - bandit-labs](https://github.com/allops-solutions/devops-aws-mentorship-program/issues/9)
 
 Create new branch called: `week-2-bandit-labs` from your current `main` branch.
 
@@ -25,7 +26,7 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 
 **[ ONLY - TIER-1 ] - Only members from Tier-1-Group-1 need to post PRs in comment for review. Check before you post PRs, if your reviewer (mentor) has collaboration access to your repo.**
 
-[:fast_forward: Class Notes](/devops-mentorship-program/02-february/week-2-210223/00-class-notes.md)  
-[:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-2-210223/02-additional-reading.md)   
-[:fast_forward: HOME - README.md](../../../README.md)  
-[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)  
+[:fast_forward: Class Notes](/devops-mentorship-program/02-february/week-2-210223/00-class-notes.md)
+[:fast_forward: Additional Reading](/devops-mentorship-program/02-february/week-2-210223/02-additional-reading.md)
+[:fast_forward: HOME - README.md](../../../README.md)
+[:fast_forward: Sadrzaj - DevOps Learning Path](../../../table-of-contents.md)

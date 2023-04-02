@@ -30,4 +30,6 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 ### Twitter Nalozi
 - [AWS Hadnbook | @AWSHadbook101](https://twitter.com/AWSHandbook101)
 - [Towards AWS | @TowardsAws](https://twitter.com/TowardsAws)
+
 ### Podcastovi
+- [DevOps Paradox](https://open.spotify.com/show/6VRDZ6E89JfNY9BCANx70m?si=077b108747a0421e)
