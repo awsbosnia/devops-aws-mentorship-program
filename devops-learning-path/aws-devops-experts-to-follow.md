@@ -8,6 +8,7 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 - **Sébastien Stormacq - Principal Developer Advocate at AWS** | [linkedin](https://www.linkedin.com/in/sebastienstormacq/)
 - **Danilo Poccia - Chief Evangelist (EMEA) at AWS**
 - **Darko Mesaros - Senior Developer Advocate at AWS**  [twitter](https://twitter.com/darkosubotica) | [linkedin](https://www.linkedin.com/in/darko-mesaros/) | [blog](https://www.buildon.aws/) | [ruppp12 :wq!](https://www.rup12.net/) | [twitch](https://www.twitch.tv/ruptwelve)
+- **Dennis Traub Developer Advocate at AWS** | [linkedin](https://www.linkedin.com/in/dennis-traub/)
 - **Slobodan Stojanovic - AWS Serverless Hero** | [twitter](https://twitter.com/slobodan_) | [linkedin](https://www.linkedin.com/in/sstojanovic/)
 - **Aleksandar Simovic - AWS Serverless Hero** | [twitter](https://twitter.com/simalexan)
 - **Goran Opacic - AWS Data Hero** | [twitter]() | [linkedin]()
@@ -21,8 +22,11 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 - **Andrew Brown - AWS Community Hero** [twitter](https://twitter.com/andrewbrown/) | [linkedin](https://www.linkedin.com/in/andrew-wc-brown/)
 - **Viktor Farcic - Developer Advocate at Upbound** [linkedin](https://www.linkedin.com/in/viktorfarcic/)
 - **Ian Mckay - AWS Community Hero** [twitter](https://twitter.com/iann0036)
-
+- **Khawaja Shams - Co-Founder & CEO at Momento** [twitter](https://twitter.com/ksshams) | [linkedin](https://www.linkedin.com/in/kshams/)
+- **Yan Cui - AWS Serverless Hero** [twitter](https://twitter.com/theburningmonk) | [linkedin](https://www.linkedin.com/in/theburningmonk/) | [blog](https://theburningmonk.medium.com/)
+- ** ** [twitter]() | [linkedin]()
 - **Corey Quinn** [twitter](https://twitter.com/QuinnyPig)
+- **Patrick Debois** [twitter](https://twitter.com/patrickdebois)
 ### Blogs
 [dev.to - AWS Heroes](https://dev.to/aws-heroes)
 [dev.to - AWS Community Builders](https://dev.to/aws-builders)
@@ -33,6 +37,8 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 ### Twitter Nalozi
 - [AWS Hadnbook | @AWSHadbook101](https://twitter.com/AWSHandbook101)
 - [Towards AWS | @TowardsAws](https://twitter.com/TowardsAws)
+- [AWS Security | @AWSSecurityInfo](https://twitter.com/AWSSecurityInfo)
+- [What's New on AWS (Unoffical) | @awswhatsnew](https://twitter.com/awswhatsnew)
 
 ### Podcasts
 - [DevOps Paradox](https://open.spotify.com/show/6VRDZ6E89JfNY9BCANx70m?si=077b108747a0421e)
