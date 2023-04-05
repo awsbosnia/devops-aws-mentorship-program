@@ -1,14 +1,16 @@
-# 📝 Class notes
-## 📅 Date: 28.03.2023.
+# 📝 Week 7 - Class notes
+#### 📅 Date: 28.03.2023.
 
 ## Elastic Compute Cloud (EC2) - Basics
 **Elastic Compute Cloud (EC2)** je spada u kategoriju **IaaS** (Infrastructure as a Service) servisa. EC2 je AWS servis koji vam omogucava kreiranje i koristenje racunarskih resursa (CPU, RAM, GPU, Networking). EC2 instacu cesto nazivamo i virtuelnom masinom u cloudu.
 
 **Aazon Machine Image (AMI)** konfiguracija / template / sablon, koji koristimo da bi na osnovu njega brzo i jednostavno kreirali EC2 instancu. **AMI** sadrzi informacije o operativnom sistemu, arhitekturi (32/64-bit), ranije predinstaliranim aplikacijama itd. AMI moze biti Javni, Privatni ili Dijeljeni.
 
-**Instance Types / Tipovi EC2 instanci** predstavlja velicinu resurse vase EC2 sa stanvista resursa. Postoji vise razlicitih tipova EC2 instnaci koje su podjeljene u nekoliko porodica/kategorija. Tipovi instanci se oznacavaju, imenuju, kodovima npr: `t2.micro`, `m5.large`, `c5.2xlarge` itd.
+**Instance Types / Tipovi EC2 instanci** predstavlja velicinu resurse vase EC2 sa stanovista resursa. Postoji vise razlicitih tipova EC2 instnaci koje su podjeljene u nekoliko porodica/kategorija. Tipovi instanci se oznacavaju, imenuju, kodovima npr: `t2.micro`, `m5.large`, `c5.2xlarge` itd.
+
 ![Oznacavanje instanci](/devops-mentorship-program/03-march/week-7-280323/files/instance-types.png)
-*Slika preuzeta iz AWS dokumentacije [Instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html)
+**_*Slika preuzeta iz AWS dokumentacije [Instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html)_**
+
 Sjajan blog post na temu imenovanja EC2 instanci pogledajte na sljedecem linku [Amazon EC2 names explained](https://justingarrison.com/blog/2023-02-23-ec2-names-explained/)
 ## Identity Access Management (IAM) - Basics
 

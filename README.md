@@ -1,14 +1,21 @@
 # DevOps Mentorship Program
 
-  ![alt DevOps](/resources/images/dev_ops.png)
+  ![alt DevOps](/resources/images/dev_ops_awsbosnia.png)
 
 
-**NOTE: Readme file ce biti dodatno azuriran i unaprijedjen**
+- [Background Story](#🧚-background-story)
+- [How to use this repository](#💡-how-to-use-this-repository)
+- [Additional Channels for Communication](#💬-additional-channels-for-communication)
+- [DevOps Mentorship Program - Progres Overview](#📊-progres-overview)
+- [DevOps Learning Path](#📚-sadrzaj---devops-learning-path)
+-
 ## **🧚 Background Story**
 
 ☁️ **AWS / Cloud / DevOps / Site Reliability Engineering / Platform Engineering / Production Engineering Mentorship program** ☁️ ili skraceno **DevOps Mentorship program** 😀 je mentorski program pokrenut od strane grupe entuzijasta, AWS zajednice u Bosni i Hercegovini te uz pomoc nasih kolega iz AWS zajednice Crne Gore sa ciljem sirenja znanja i pomoci svima onima koji zele da svoju IT karijeru grade i razvijaju u navedenom podrucju.
 
 Po definiciji, DevOps kao radno mjesto odnosno pozicija ne postoji, ono sto postoji je DevOps kultura i pokret koji se oslanja na upotrebu razilicitih alata i vjestina kako bi se pomoglo brzoj isporuci softvera. Upravo iz tog razloga, mentorship program podjednako obuhvata razvoj tehickih i "soft" skills.
+
+**:sparkles: Pored toga sto ima za cilj da kroz predavanja odrzana za DevOps Mentorship Program pomogne svima onima koji zele da naprave svoje prve korake u AWS i DevOps svijetu cilj ovog repozitorija je  da ponudi  jedinstveni DevOps Learning Path sa biljeskama i uputama pisanim na nasem jeziku.**
 
 
 ## **💡 How to use this repository**
@@ -25,19 +32,19 @@ Ovaj repozitoriji ce biti koristen kao glavni izvor informacija za **DevOps Ment
 ...
 
 ## **💬 Additional Channels for Communication**
-Za dodatnu komunikaciju i kolaboraciju koristimo AWS Bosnia slack workspace. Ukoliko vec niste clan slack workspace-a istom se mozete pridruziti preko sljedeceg [linka](https://join.slack.com/t/awsbih/shared_invite/zt-ad8kr3c7-mcFYB~s9SRdEjulMo141dw).
+Za dodatnu komunikaciju i kolaboraciju koristimo **AWS Bosnia slack workspace**. Ukoliko vec niste clan slack workspace-a istom se mozete pridruziti preko sljedeceg [linka](https://join.slack.com/t/awsbih/shared_invite/zt-ad8kr3c7-mcFYB~s9SRdEjulMo141dw).
 
 Kako bi se komunikacija unutar slack kanala drzala sto preglednijom i boljom kreirane su sljedeci kanali:
-- **🔒#tier-1-group-1** Privatni kanal ciji su clanovi oni koji prate predavanja Utorkom.
-- **🔒#tier-1-group-2** Privatni kanal ciji su clanovi oni koji prate predavanja Cetvrtkom.
-- **🔒#tier-2** Kanal namjenjen onima koji su clanovi Tier-2 grupe polaznika.
-- **🔒#mentorship-program-all** Kanal u kojem se nalaze svi oni koji su se prijavili na mentorship program
-- **🔓#mentorship-program-all-random** Kanal u kojem se nalaze svi oni koji su se prijavili na mentoriship program i u kojem mozete postavljati i pisati poruke koje nisu striktno vezane za ovo sto radimo i ucimo. **NOTE: Ovo je javni kanal i poruke su vidljive svima koji se nalaze unutar AWS Bosnia slack workspace-a.**
+- **:closed_lock_with_key:#tier-1-group-1** Privatni kanal ciji su clanovi oni koji prate predavanja Utorkom.
+- **:closed_lock_with_key:#tier-1-group-2** Privatni kanal ciji su clanovi oni koji prate predavanja Cetvrtkom.
+- **:closed_lock_with_key:#tier-2** Kanal namjenjen onima koji su clanovi Tier-2 grupe polaznika.
+- **:closed_lock_with_key:#mentorship-program-all** Kanal u kojem se nalaze svi oni koji su se prijavili na mentorship program
+- **:unlock:#mentorship-program-all-random** Kanal u kojem se nalaze svi oni koji su se prijavili na mentoriship program i u kojem mozete postavljati i pisati poruke koje nisu striktno vezane za ovo sto radimo i ucimo. **NOTE: Ovo je javni kanal i poruke su vidljive svima koji se nalaze unutar AWS Bosnia slack workspace-a.**
 
 *Detaljnije upute o slack komunikaciji i pravilima komunikacije ce po potrebi biti postavljeni unutar samih slack kanala.*
 
 Svi kanali osim kanala `#mentorship-program-all-random` su privatni i ukoliko niste dobili pristup slack kanalu kojem pripadate budite slobodni da napiste poruku unutar `#mentorship-program-all-random` kanala i zatrazite pristup.
-## **📊 Progres Overview**
+## **📊 DevOps Mentorship Program - Progres Overview**
 U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 **Svaka sedmica sadrzi sljedece fajlove:**
 - **Class Notes** - biljeske sa predavanja, snimci predavanja kao i obavezna literatura i materijali za ucenje. Materijali za ucenje su poredani na nacin da bi trebali krenuti sa gledanjem/citanjem redom koji su navedeni.
@@ -52,6 +59,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 | 🌐      | Blog post               |
 | 📚      | Knjige                  |
 | 📖      | Dokumentacija           |
+| 📙      | AWS Zvanicna Dokumentacija |
 | 💵      | Resursi koji se placaju |
 
 ### :mortar_board: Predavanja po mjesecima i sedmicama
@@ -160,8 +168,13 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
 
   </details>
 
+
+## :repeat: DevOps Learning Path
+Cjelokupnom sadrzaju DevOps Learning Path-a mozete pristupiti preko linka ispod.
+
+ [:arrow_forward: DevOps Learning Path - Sadrzaj](/devops-mentorship-program/devops-learning-path.md)
 ## :bangbang: Team Notes and Updates
-Sve vaznije informacije i obavjestenja mozete pronaci unutar sljedeceg dokumenta:
+Sve vaznije informacije i obavjestenja mozete pronaci unutar dokumenta:
  [:pushpin: Importan Team Notes and Updates](/devops-mentorship-program/team-notes-and-updates.md)
 
 ## 👏 How to Contribute
