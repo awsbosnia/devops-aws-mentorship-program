@@ -1,14 +1,15 @@
 # AWS and DevOps Experts to Follow
 
-Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, napravili smo listu ljudi koje mozete pratiti na društvenim mrežama. Lista ce se redovno ažurirati.
+Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, napravili smo listu ljudi koje preporucujemo da pratite na društvenim mrežama. Lista ce se redovno azurirati.
 
-- **[AWS Heroes](https://aws.amazon.com/developer/community/heroes/) - Kompletna lista ljudi koji su prepoznati od strane AWS-a kao AWS Heroes.**
+**[AWS Heroes](https://aws.amazon.com/developer/community/heroes/) - Kompletna lista ljudi koji su prepoznati od strane AWS-a kao AWS Heroes.**
 
 - **Jeff Barr - Vice President & Chief Evangelist at AWS** [twitter](https://twitter.com/jeffbarr) | [linkedin](https://www.linkedin.com/in/jeffbarr/)
 - **Sébastien Stormacq - Principal Developer Advocate at AWS** | [linkedin](https://www.linkedin.com/in/sebastienstormacq/)
 - **Danilo Poccia - Chief Evangelist (EMEA) at AWS**
 - **Darko Mesaros - Senior Developer Advocate at AWS**  [twitter](https://twitter.com/darkosubotica) | [linkedin](https://www.linkedin.com/in/darko-mesaros/) | [blog](https://www.buildon.aws/) | [ruppp12 :wq!](https://www.rup12.net/) | [twitch](https://www.twitch.tv/ruptwelve)
 - **Dennis Traub Developer Advocate at AWS** | [linkedin](https://www.linkedin.com/in/dennis-traub/)
+- **Adrian Hornsby - Principal System Dev Engineer at AWS** | [twitter](https://twitter.com/adhorn) | [linkedin](https://www.linkedin.com/in/adrianhornsby/) | [blog](https://adhorn.medium.com/)
 - **Slobodan Stojanovic - AWS Serverless Hero** | [twitter](https://twitter.com/slobodan_) | [linkedin](https://www.linkedin.com/in/sstojanovic/)
 - **Aleksandar Simovic - AWS Serverless Hero** | [twitter](https://twitter.com/simalexan)
 - **Goran Opacic - AWS Data Hero** | [twitter]() | [linkedin]()
@@ -27,9 +28,28 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 - ** ** [twitter]() | [linkedin]()
 - **Corey Quinn** [twitter](https://twitter.com/QuinnyPig)
 - **Patrick Debois** [twitter](https://twitter.com/patrickdebois)
+
+### AWS Official Resources
+- [What's New with AWS?](https://aws.amazon.com/new/)
+- [AWS Documentation](https://aws.amazon.com/documentation-overview/)
+- [AWS YouTube](https://www.youtube.com/user/AmazonWebServices)
+- [AWS Events YouTube](https://www.youtube.com/@AWSEventsChannel)
+- [AWS Online Tech Talks YouTube](https://www.youtube.com/@AWSOnlineTechTalks)
+- [AWS Partner Network](https://www.youtube.com/@AWSPartnerNetwork)
+- [:octocat: AWS Samples](https://github.com/aws-samples)
+- [:octocat: Amazon Web Services - Labs](https://github.com/awslabs)
+- [AWS Architecture Center](https://aws.amazon.com/architecture)
+- [AWS Blog](https://aws.amazon.com/blogs/)
+- [BuildOn.AWS](https://www.buildon.aws/)
+- [AWS Workshops](https://workshops.aws/)
+- [AWS Twitch Kanal](https://www.twitch.tv/aws)
+- [AWS re:Post](https://repost.aws/)
+- [reddit/r/aws](https://www.reddit.com/r/aws/)
+- [AWS Stash](https://awsstash.com/)
 ### Blogs
-[dev.to - AWS Heroes](https://dev.to/aws-heroes)
-[dev.to - AWS Community Builders](https://dev.to/aws-builders)
+- [dev.to - AWS Heroes](https://dev.to/aws-heroes)
+- [dev.to - AWS Community Builders](https://dev.to/aws-builders)
+- [Last Week in AWS](https://ref.lastweekinaws.com/dfiinf)
 
 ### Youtube
 - [DevOps Toolkit](https://www.youtube.com/@DevOpsToolkit/videos)
