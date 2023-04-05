@@ -3,12 +3,20 @@
   ![alt DevOps](/resources/images/dev_ops_awsbosnia.png)
 
 
-- [Background Story](#🧚-background-story)
-- [How to use this repository](#💡-how-to-use-this-repository)
-- [Additional Channels for Communication](#💬-additional-channels-for-communication)
-- [DevOps Mentorship Program - Progres Overview](#📊-progres-overview)
-- [DevOps Learning Path](#📚-sadrzaj---devops-learning-path)
--
+- [🧚 Background Story](https://github.com/allops-solutions/devops-aws-mentorship-program#-background-story)
+- [💡 How to use this repository](https://github.com/allops-solutions/devops-aws-mentorship-program#-how-to-use-this-repository)
+- [💬 Additional Channels for Communication](https://github.com/allops-solutions/devops-aws-mentorship-program#-additional-channels-for-communication)
+- [:chart: DevOps Mentorship Program - Progres Overview](https://github.com/allops-solutions/devops-aws-mentorship-program#chart-devops-mentorship-program---progres-overview)
+  - [🎓 DevOps Mentorship Program - Class Notes and Recordings](https://github.com/allops-solutions/devops-aws-mentorship-program#mortar_board-devops-mentorship-program---class-notes-and-recordings)
+- [⏰ DevOps Mentorship Program - Office Hours](https://github.com/allops-solutions/devops-aws-mentorship-program#alarm_clock-devops-mentorship-program---office-hours)
+- [🔁 DevOps Learning Path - Table of Contents](https://github.com/allops-solutions/devops-aws-mentorship-program#repeat-devops-learning-path---table-of-contents)
+- [:bangbang: Team Notes and Updates](https://github.com/allops-solutions/devops-aws-mentorship-program#bangbang-team-notes-and-updates)
+- [👏 How to Contribute](https://github.com/allops-solutions/devops-aws-mentorship-program#-how-to-contribute)
+- [⭐ Contributors](https://github.com/allops-solutions/devops-aws-mentorship-program#star-contributors)
+- [💙 Feedback](https://github.com/allops-solutions/devops-aws-mentorship-program#blue_heart-feedback)
+- [🚨 Code of Conduct](https://github.com/allops-solutions/devops-aws-mentorship-program#-code-of-conduct)
+- [❓ FAQ](https://github.com/allops-solutions/devops-aws-mentorship-program#-faq)
+- [📝 License](https://github.com/allops-solutions/devops-aws-mentorship-program#memo-license)
 ## **🧚 Background Story**
 
 ☁️ **AWS / Cloud / DevOps / Site Reliability Engineering / Platform Engineering / Production Engineering Mentorship program** ☁️ ili skraceno **DevOps Mentorship program** 😀 je mentorski program pokrenut od strane grupe entuzijasta, AWS zajednice u Bosni i Hercegovini te uz pomoc nasih kolega iz AWS zajednice Crne Gore sa ciljem sirenja znanja i pomoci svima onima koji zele da svoju IT karijeru grade i razvijaju u navedenom podrucju.
@@ -135,7 +143,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   <details>
   <summary>Week-7</summary>
 
-  **Topics: Cloud, Amazon Web Services (AWS), EC2, AWS CLI, IAM Groups, IAM Policy, Security Groups**
+  **Topics: Cloud, Amazon Web Services (AWS), EC2, AWS CLI, IAM Users, IAM Groups, IAM Policy, Security Groups**
 
   - [Class notes](devops-mentorship-program/03-march/week-7-280323/00-class-notes.md)
   - [Homework](/devops-mentorship-program/03-march/week-7-280323/01-homework.md)
@@ -147,7 +155,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   <details>
   <summary>Week-8</summary>
 
-  **Topics:**
+  **Topics: AMI Image, Elastic Load Balancer, Security Groups**
 
   - [Class notes](devops-mentorship-program/04-april)
   - [Homework](/devops-mentorship-program/04-april)
@@ -189,7 +197,9 @@ Za detaljno objasnjenje kako da kreirate Pull Request molimo vas da pogledate [C
 ## :star: Contributors
 Hvala svima koji su svojim doprinosom pomogli da ovaj repozitorij bude sto je moguce bolji i kvalitetniji. Ispod pogledajte listu kontributora ovog projekta.
 - TODO:
-  - Iskorisiti alat kao sto je [All Contributors](https://allcontributors.org/) da bi se automatski generisao ovaj dio dokumenta.
+  - Mentori
+  - Gosti Predavaci
+  - Iskorisiti alat kao sto je [All Contributors](https://allcontributors.org/) da bi se automatski generisao dio dokumenta sa ljudima koji su pomogli u odrzavanju repozitorija.
 ## :blue_heart: Feedback
 Povratne informacije bilo pozitivne ili negativne su nam jako bitne. Budite slobodni da povratne informacije i generalni feedback posaljete na email <dzenan.dzevlan@gmail.com> ili da svoju podrsku ovom programu iskazete na drustvenim mrezama i [YouTube](https://www.youtube.com/channel/UCFad2d7jXJdeNLdOOllG61A) kanalu gdje objavljujemo snimke svih predavanja.
 
