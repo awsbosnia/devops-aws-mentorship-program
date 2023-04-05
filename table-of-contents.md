@@ -1,4 +1,4 @@
-# Sadrzaj
+# DevOps Learning Path - Table of Contents
 
 0. [UVOD - DevOps Pojmovi, Preporuke, Prakse i Standardi](/devops-learning-path/devops-practices.md)
 1. [Podesavanje i Konfiguracija Laptopa](/devops-learning-path/your-laptop-setup.md)

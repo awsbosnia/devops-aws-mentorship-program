@@ -31,7 +31,7 @@ Ovaj repozitoriji ce biti koristen kao glavni izvor informacija za **DevOps Ment
 
 ...
 
-## **💬 Additional Channels for Communication**
+## **💬 Channels for Communication**
 Za dodatnu komunikaciju i kolaboraciju koristimo **AWS Bosnia slack workspace**. Ukoliko vec niste clan slack workspace-a istom se mozete pridruziti preko sljedeceg [linka](https://join.slack.com/t/awsbih/shared_invite/zt-ad8kr3c7-mcFYB~s9SRdEjulMo141dw).
 
 Kako bi se komunikacija unutar slack kanala drzala sto preglednijom i boljom kreirane su sljedeci kanali:
@@ -44,14 +44,14 @@ Kako bi se komunikacija unutar slack kanala drzala sto preglednijom i boljom kre
 *Detaljnije upute o slack komunikaciji i pravilima komunikacije ce po potrebi biti postavljeni unutar samih slack kanala.*
 
 Svi kanali osim kanala `#mentorship-program-all-random` su privatni i ukoliko niste dobili pristup slack kanalu kojem pripadate budite slobodni da napiste poruku unutar `#mentorship-program-all-random` kanala i zatrazite pristup.
-## **📊 DevOps Mentorship Program - Progres Overview**
+## **:chart: DevOps Mentorship Program - Progres Overview**
 U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 **Svaka sedmica sadrzi sljedece fajlove:**
 - **Class Notes** - biljeske sa predavanja, snimci predavanja kao i obavezna literatura i materijali za ucenje. Materijali za ucenje su poredani na nacin da bi trebali krenuti sa gledanjem/citanjem redom koji su navedeni.
 - **Homework / Task assigment** - Zadatak odnosno task za rad kod kuce. Zadaci su dostupni na uvid i unutar projekta [DevOps / AWS Mentorship Program Project](https://github.com/orgs/allops-solutions/projects/1). Svima koji pripadaju Tier-1 grupi polaznika zadatak ce biti pregledan od strane mentora.
 - **Additional learning materials** - Dodatni materijali za ucenje (knjige, blogovi, video resursi) koji su namjenjeni onima koji zele znati vise i naucite vise o tehnologijama i alatima koje obradjujemo
 
-**Legenda:**
+**Legend:**
 
 | Simbol | Resurs                  |
 |--------|-------------------------|
@@ -62,7 +62,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 | 📙      | AWS Zvanicna Dokumentacija |
 | 💵      | Resursi koji se placaju |
 
-### :mortar_board: Predavanja po mjesecima i sedmicama
+### :mortar_board: DevOps Mentorship Program - Class Notes and Recordings
 #### :calendar: February 2023.
 
 <details>
@@ -154,7 +154,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Additional reading](/devops-mentorship-program/04-april)
   </details>
 
-## :office: :alarm_clock: Office Hours
+## :alarm_clock: DevOps Mentorship Program - Office Hours
 Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze kako bi se napravila rekapitulacija obradjenih tema, odgovrilo na eventualna pitanja, kao i dale dodatne upute ako je to potrebno. Snimci do sada odrzanih Office Hours sesija su dostupni preko linkova ispod.
 
  [:loudspeaker: DevOps Mentorship Program - Kick Off Meeting](https://youtu.be/Ybwp3LJ1Vlo)
@@ -169,7 +169,7 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
   </details>
 
 
-## :repeat: DevOps Learning Path
+## :repeat: DevOps Learning Path - Table of Contents
 Cjelokupnom sadrzaju DevOps Learning Path-a mozete pristupiti preko linka ispod.
 
  [:arrow_forward: DevOps Learning Path - Sadrzaj](/devops-mentorship-program/devops-learning-path.md)
@@ -186,6 +186,10 @@ Bilo da se radi o tipografskim greskama, nejasnim formulacijama, nedostacima u d
 
 Za detaljno objasnjenje kako da kreirate Pull Request molimo vas da pogledate [CONTRIBUTING](CONTRIBUTING.md) dokument.
 
+## :star: Contributors
+Hvala svima koji su svojim doprinosom pomogli da ovaj repozitorij bude sto je moguce bolji i kvalitetniji. Ispod pogledajte listu kontributora ovog projekta.
+- TODO:
+  - Iskorisiti alat kao sto je [All Contributors](https://allcontributors.org/) da bi se automatski generisao ovaj dio dokumenta.
 ## :blue_heart: Feedback
 Povratne informacije bilo pozitivne ili negativne su nam jako bitne. Budite slobodni da povratne informacije i generalni feedback posaljete na email <dzenan.dzevlan@gmail.com> ili da svoju podrsku ovom programu iskazete na drustvenim mrezama i [YouTube](https://www.youtube.com/channel/UCFad2d7jXJdeNLdOOllG61A) kanalu gdje objavljujemo snimke svih predavanja.
 
