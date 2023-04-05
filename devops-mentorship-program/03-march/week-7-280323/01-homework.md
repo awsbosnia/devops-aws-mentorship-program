@@ -15,13 +15,13 @@
 
 - [ ] **IAM User 1 / IAM User 2 / IAM User 3** - Azurirajte svog IAM Usera i dodajte **MFA virtual device**. To mozete uraditi unutar IAM Dashboard dijela preko opcije `Assigne MFA`.
 
-- [ ] **IAM User 1 / IAM User 2 / IAM User 3** Kreirajte CloudWatch billing alerte koji ce vam na email poslati notifikaciju ukoliko predvidjeni / estimate AWS troskovi predju 5$ mjesecno. Nazinc CloudWatch alarma treba da bude: `cw-cost-alert-ime-prezime`
+- [ ] **IAM User 1 / IAM User 2 / IAM User 3** Kreirajte CloudWatch billing alerte koji ce vam na email poslati notifikaciju ukoliko predvidjeni / estimate AWS troskovi predju 5$ mjesecno. Naziv CloudWatch alarma treba da bude: `cw-cost-alert-ime-prezime`
 **NOTE:** Upute kako da to uradite mozete pronaci na video sa [office hours sesije odrzane u Subotu](https://youtu.be/3OxR5wjBplE) ili unutar videa dostupnog na linku [ovdje](https://youtu.be/UlrmPXX4-LM).
 
 - [ ] **IAM User 1 i IAM User 2** - Kreirajte EC2 instancu tipa `t2.micro` koristeci AMI Image `Amazon Linux 3` gdje vasa EC2 instanca da ima sljedece osobine:
 
   - `Name: ec2-ime-prezime-web-server`
-  - Security Group sa inbound pravilima koja dozvoljavaju sav dolazni saobracaj za portove: `22` i `80`. Ime za Secruting Grup je: `sec-group-web-server`
+  - Security Group sa inbound pravilima koja dozvoljavaju sav dolazni saobracaj za portove: `22` i `80`. Ime za Security Group je: `sec-group-web-server`
   - Key Pair Name: `ime-prezime-web-server-key`
   - EBS volume size `14 GiB` `gp3`
 
