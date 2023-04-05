@@ -5,7 +5,7 @@
 
 - [🧚 Background Story](https://github.com/allops-solutions/devops-aws-mentorship-program#-background-story)
 - [💡 How to use this repository](https://github.com/allops-solutions/devops-aws-mentorship-program#-how-to-use-this-repository)
-- [💬 Additional Channels for Communication](https://github.com/allops-solutions/devops-aws-mentorship-program#-additional-channels-for-communication)
+- [💬 Channels for Communication](https://github.com/allops-solutions/devops-aws-mentorship-program#-channels-for-communication)
 - [:chart: DevOps Mentorship Program - Progres Overview](https://github.com/allops-solutions/devops-aws-mentorship-program#chart-devops-mentorship-program---progres-overview)
   - [🎓 DevOps Mentorship Program - Class Notes and Recordings](https://github.com/allops-solutions/devops-aws-mentorship-program#mortar_board-devops-mentorship-program---class-notes-and-recordings)
 - [⏰ DevOps Mentorship Program - Office Hours](https://github.com/allops-solutions/devops-aws-mentorship-program#alarm_clock-devops-mentorship-program---office-hours)
