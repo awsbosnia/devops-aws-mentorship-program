@@ -164,7 +164,7 @@ Week-8 koristeni AWS servisi:
 
 NOTE: Dzenan OOTO
 ### Group-1-Tier-1 06.06.2023.
-- Teme i predavaci ce biti naknadno dodani
+- Marin Radjenovic - CDK (Cloud Development Kit)
 
 ### Group-2-Tier-1 8.06.2023.
 - Teme i predavaci ce biti naknadno dodani
