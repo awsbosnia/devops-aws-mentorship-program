@@ -20,7 +20,7 @@ Kada posaljete zahtjev prema AWS API-iju, bilo da radite sa servisima koristeci 
 
 IAM dakle kontrolise **KO (autentifikacija)** moze pristupiti vasem AWS racunu  i **KOJE AKCIJE (autorizacija)** moze napraviti unutar AWS racuna.
 
-Postoje dva nacina da se verfikuje IAM korisnik unutar AWS racuna:
+Postoje dva nacina da se verifikuje IAM korisnik unutar AWS racuna:
 - Korisnicko ime i lozinka
 - Kljucevi za pristup (Access Keys)
 
