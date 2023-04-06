@@ -64,7 +64,7 @@ Week-8 koristeni AWS servisi:
     - Packer
     - EC2 Image Builder
 
-### Group-1-Tier-2
+### Group-1-Tier-2 20.04.2023.
 - Robert Zuljevic gost predavac deployment Java aplikacije na AWS-u
 - Infrastruktura aplikacije:
     - EC2 instance
@@ -82,7 +82,7 @@ Week-8 koristeni AWS servisi:
 ### Group-1-Tier-1 25.04.2023.
 - VPC Virtual Private Cloud Deep Dive
 
-### Group-1-Tier-2
+### Group-1-Tier-2 27.04.2023.
 - Milan Pavlovic - Uvod u Docker
 
 ## Week-12
@@ -180,9 +180,12 @@ NOTE: Dzenan OOTO
 ## Week - 21
 
 ### Group-1-Tier-1 20.06.2023.
+### Group-2-Tier-1 15.06.2023.
+- Teme i predavaci ce biti naknadno dodani
 
 ### Group-1-Tier-1 22.06.2023.
-
+### Group-2-Tier-1 15.06.2023.
+- Teme i predavaci ce biti naknadno dodani
 ## Week - 22
 
 ### Group-1-Tier-1 + Group-1-Tier-2 27.06.2023.
