@@ -8,7 +8,24 @@ Office Hours da se sastoje od 2 dijela:
 - Dio 1: AWS SAA Certifikacija
 - Dio 2: Q&A + Osvrt na ono sto se radilo u prethodne dvije sedmice
 
-## Do sada spomenuti AWS Servisi/Features:
+## Sadrzaj
+- [Lista spomenutih AWS servisa](##Lista-spomenutih-AWS-servisa)
+- [Week-8](##week-8)
+- [Week-9](##week-9)
+- [Week-10](##week-10)
+- [Week-11](##week-11)
+- [Week-12](##week-12)
+- [Week-13](##week-13)
+- [Week-14](##week-14)
+- [Week-15](##week-15)
+- [Week-16](##week-16)
+- [Week-17](##week-17)
+- [Week-18](##week-18)
+- [Week-19](##week-19)
+- [Week-20](##week-20)
+- [Week-21](##week-21)
+- [Dzenan Due Date 1.07.2023.](##Dzenan-Due-Date:-1.07.2023.)
+## Lista spomenutih AWS servisa
 - IAM (IAM Users, IAM Policy) - Begginers Level
 - EC2 (AMI) - Begginers Level
 - AWS Free Tier
@@ -26,16 +43,17 @@ Office Hours da se sastoje od 2 dijela:
 
 #### Group-1-Tier-2 | 06.04.2023.
 - Nastavak predavanja o AWS servisima od Utorka gdje smo podigli EC2 instance sa jednostavnom html stranicom i postavili ih iza Application Load Balancer (ALB) servisa. Demonstrirali smo HA izmedju razlicith AZ. Veceras cemo obraditi:
-- [ ] Elastic Block Storage (EBS)
-        - [ ] Snapshots
-        - [ ] Create Volume from Snapshot
-        - [ ] Create AMI from Volume
-        - [ ] Exapand Volume
-        - [ ] Attach Volume to EC2 instance
-        - [ ] Attach Multiple Volumes to EC2 instance
-- [ ] Austoscaling Groups (ASG) - kako se podesava, kako se povezuje sa ALB-om, kako se povezuje sa EC2 instancama
-- [ ] Podesavanje SSL certifikata na nasu EC2 instancu gdje koristimo SSL let's encrypt certifikat
-- [ ] Prebacivanje SSL certifikata sa EC2 instance na ALB servis koristeci AWS Certificate Manager (ACM) servis
+- [x] Elastic Block Storage (EBS)
+        - [x] Snapshots
+        - [x] Create Volume from Snapshot
+        - [x] Create AMI from Volume
+        - [x] Exapand Volume
+        - [x] Attach Volume to EC2 instance
+        - [x] Attach Multiple Volumes to EC2 instance
+        - [x] Pricing
+- [x] Austoscaling Groups (ASG) - kako se podesava, kako se povezuje sa ALB-om, kako se povezuje sa EC2 instancama
+- [x] ELB and AutoScaling Groups Pricing - "FREE za ASG", placate resurse koje koristite (EC2, CloudWatch...)
+
 
 Week-8 koristeni AWS servisi:
 - AWS EC2 -> Custom AMI
@@ -44,6 +62,8 @@ Week-8 koristeni AWS servisi:
 - EBS
 - ASG
 - ACM
+- CloudTrail
+- CloudWatch CPU alarms
 ------
 
 ## Week-9
@@ -56,6 +76,14 @@ Week-8 koristeni AWS servisi:
     - Self Managed Baze podataka, problemi i izazovi
 - AWS RDS - Relational Database Service
 - Database Migration Servis (DMS)
+
+## Office Hours
+
+- [ ] Podesavanje SSL certifikata na nasu EC2 instancu gdje koristimo SSL let's encrypt certifikat
+- [ ] Prebacivanje SSL certifikata sa EC2 instance na ALB servis koristeci AWS Certificate Manager (ACM) servis
+- [ ] IMDS - Instance Metadata Service
+        - Instance Metadata Service Version 1 (IMDSv1) – a request/response method  
+        - Instance Metadata Service Version 2 (IMDSv2) – a session-oriented method  
 
 ## Week-10
 ### Group-1-Tier-1 18.04.2023.
@@ -81,6 +109,7 @@ Week-8 koristeni AWS servisi:
 
 ### Group-1-Tier-1 25.04.2023.
 - VPC Virtual Private Cloud Deep Dive
+- VPC Lattice
 
 ### Group-1-Tier-2 27.04.2023.
 - Milan Pavlovic - Uvod u Docker
@@ -101,6 +130,7 @@ Week-8 koristeni AWS servisi:
     - CloudTrail
     - S3 Logs
     - Amazon Athena (Querying S3 Logs)
+    - Route53 (multi region failover, diferent routing policies)
 
 ### Group-1-Tier-2 04.05.2023.
 - Marin Radjenovic - Serverless / AWS Lambda / API Gateway / SQS
@@ -114,8 +144,6 @@ Week-8 koristeni AWS servisi:
 - Github actions (pre-commit hooks)
 
 ### Group-1-Tier-2 11.05.2023.
-- Viktor Farcic - Gost Predavac (devops state of mind) - 1h
-
 - CloudFront + S3 - Static Web Site Hosting
 
 ## Week-14
@@ -129,6 +157,8 @@ Week-8 koristeni AWS servisi:
 ## Week-15
 ### Group-1-Tier-1 16.05.2023.
 - Migrate Java app from EC2 to ECS
+- [Viktor Farcic](https://www.linkedin.com/in/viktorfarcic/) - Gost Predavac (devops state of mind) - 1h | Pocetak u 20h
+
 
 ### Group-1-Tier-2 18.05.2023.
 - Migrate Java app from ECS to ECS Fargate
@@ -177,7 +207,7 @@ NOTE: Dzenan OOTO
 ### Group-2-Tier-1 15.06.2023.
 - Teme i predavaci ce biti naknadno dodani
 
-## Week - 21
+## Week-21
 
 ### Group-1-Tier-1 20.06.2023.
 ### Group-2-Tier-1 15.06.2023.
@@ -186,22 +216,20 @@ NOTE: Dzenan OOTO
 ### Group-1-Tier-1 22.06.2023.
 ### Group-2-Tier-1 15.06.2023.
 - Teme i predavaci ce biti naknadno dodani
-## Week - 22
+## Week-22
 
 ### Group-1-Tier-1 + Group-1-Tier-2 27.06.2023.
 - Review results and impresions.
 - What next ? -> Break -> BI Weekly DevOps Office Hours / CI za DevOps Mentorship Program :)
 
-## Week - 23
+## Week-23
 
 ## Dzenan Due Date: 1.07.2023.
 - Ispraviti greske u repozitoriji
 - Dopuniti materijale i biljeske
 - Napraviti yt video snimke i repozitoriji javnim
 
-
-
-## TBD:
+## TBD
 
 - Jeff Gahan
 - Viktorija Denchovska
