@@ -71,6 +71,8 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 | 💵      | Resursi koji se placaju |
 
 ### :mortar_board: DevOps Mentorship Program - Class Notes and Recordings
+
+- [DevOps Mentorship Program - Table Of Contents](/devops-mentorship-program/to-do-list.md) - Dokument unutar kojeg pratimo napredak po sedmicama, datume predavanja, i pravimo osnovne biljeske o tome sta smo radili (imena servisa, tehnologija i alata) kao i osnovne napomene o predavanjima.
 #### :calendar: February 2023.
 
 <details>
@@ -155,7 +157,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   <details>
   <summary>Week-8</summary>
 
-  **Topics: AMI Image, Elastic Load Balancer, Security Groups**
+  **Topics: AMI Image, Application Load Balancer, Security Groups, EBS, ASG**
 
   - [Class notes](devops-mentorship-program/04-april/week-8-040423/00-class-notes.md)
   - [Homework](/devops-mentorship-program/04-april/week-8-040423/01-homework.md)
