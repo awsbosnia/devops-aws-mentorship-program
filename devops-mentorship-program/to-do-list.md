@@ -23,14 +23,14 @@ Office Hours da se sastoje od 2 dijela:
 - [ ] [Week-15](##week-15)
 - [ ] [Office Hours 27.05.2023.](##Office-Hours-27.05.2023.) 
 - [ ] [Week-16](##week-16)
-- [ ] [Week-17](##week-17)
-- [ ] [Office Hours 10.06.2023.](##Office-Hours-10.06.2023.) 
+- [ ] [Week-17](##week-17) 
 - [ ] [Week-18](##week-18)
+- [ ] [Office Hours 17.06.2023.](##Office-Hours-17.06.2023.) 
 - [ ] [Week-19](##week-19)
 - [ ] [Week-20](##week-20)
 - [ ] [Week-21](##week-21)
 - [ ] [Dzenan Due Date 1.07.2023.](##Dzenan-Due-Date:-1.07.2023.)
-- [ ] [Office Hours 1.01.2023.](##Office-Hours-1.07.2023.) 
+- [ ] [Office Hours 1.01.2023.](##Office-Hours-01.07.2023.) 
 ---
 ## Lista spomenutih AWS servisa
 - IAM (IAM Users, IAM Policy) - Begginers Level
@@ -75,10 +75,10 @@ Office Hours da se sastoje od 2 dijela:
 
 ## Week-9
 
-### Group-1-Tier-1 11.04.2023.
+#### Group-1-Tier-1 11.04.2023.
 - IAM deep dive
 
-### Group-1-Tier-2 13.04.2023.
+#### Group-1-Tier-2 13.04.2023.
 - Relacione Baze Podataka, instalacija MySQL-a, PostgreSQL-a na Amazon Linux EC2 instnaci
     - Self Managed Baze podataka, problemi i izazovi
 - AWS RDS - Relational Database Service
@@ -93,13 +93,13 @@ Office Hours da se sastoje od 2 dijela:
         - Instance Metadata Service Version 2 (IMDSv2) – a session-oriented method  
 ---
 ## Week-10
-### Group-1-Tier-1 18.04.2023.
+#### Group-1-Tier-1 18.04.2023.
 - Server Configuration Management
     - Ansible
     - Packer
     - EC2 Image Builder
 
-### Group-1-Tier-2 20.04.2023.
+#### Group-1-Tier-2 20.04.2023.
 - Robert Zuljevic gost predavac deployment Java aplikacije na AWS-u
 - Infrastruktura aplikacije:
     - EC2 instance
@@ -114,16 +114,19 @@ Office Hours da se sastoje od 2 dijela:
 
 ## Week-11
 
-### Group-1-Tier-1 25.04.2023.
+#### Group-1-Tier-1 25.04.2023.
 - VPC Virtual Private Cloud Deep Dive
 - VPC Lattice
 
-### Group-1-Tier-2 27.04.2023.
+#### Group-1-Tier-2 27.04.2023.
 - Milan Pavlovic - Uvod u Docker
+---
+## Office Hours 29.04.2023.
+
 ---
 ## Week-12
 
-### Group-1-Tier-1 2.05.2023.
+#### Group-1-Tier-1 2.05.2023.
 - Unaprijedjenje infrastrukture za Java aplikaciju iz Week-10
 - VPC
     - Private + Public Subnets
@@ -139,55 +142,60 @@ Office Hours da se sastoje od 2 dijela:
     - Amazon Athena (Querying S3 Logs)
     - Route53 (multi region failover, diferent routing policies)
 
-### Group-1-Tier-2 04.05.2023.
+#### Group-1-Tier-2 04.05.2023.
 - Marin Radjenovic - Serverless / AWS Lambda / API Gateway / SQS
 ---
 ## Week-13
 
-### Group-1-Tier-1 9.05.2023.
+#### Group-1-Tier-1 9.05.2023.
 - CI/CD
 - Halid Osmanovic - Jenkins
 - AWS CodePipeline, Code Build, Code Deploy
 - Github actions (pre-commit hooks)
 
-### Group-1-Tier-2 11.05.2023.
+#### Group-1-Tier-2 11.05.2023.
 - CloudFront + S3 - Static Web Site Hosting
+---
+## Office Hours 13.05.2023.
+
 ---
 ## Week-14
 
-### Group-1-Tier-1 16.05.2023.
+#### Group-1-Tier-1 16.05.2023.
 - Alma Beganovic - Infrastructure as Code (CloudFormation)
 
-### Group-2-Tier-2 18.05.2023.
+#### Group-2-Tier-2 18.05.2023.
 - Dragan Pavlovic - Infrastructure as Code (Terraform)
 ---
 ## Week-15
-### Group-1-Tier-1 16.05.2023.
+#### Group-1-Tier-1 23.05.2023.
 - Migrate Java app from EC2 to ECS
 - [Viktor Farcic](https://www.linkedin.com/in/viktorfarcic/) - Gost Predavac (devops state of mind) - 1h | Pocetak u 20h
 
 
-### Group-1-Tier-2 18.05.2023.
+#### Group-1-Tier-2 25.05.2023.
 - Migrate Java app from ECS to ECS Fargate
 ---
+## Office Hours 27.05.2023.
+
+---
 ## Week-16
-### Group-1-Tier-1 23.05.2023.
+### Group-1-Tier-1 30.05.2023.
 - Boris Bradic - Kubernetes
 
-### Group-1-Tier-2 25.05.2023.
+### Group-1-Tier-2 01.06.2023.
 - Boris Bradic - Kubernetes / EKS
 ---
 ## Week-17
+NOTE: Dzenan OOTO 
+#### Group-1-Tier-1 06.06.2023.
+- Marin Radjenovic - CDK (Cloud Development Kit)
 
-### Group-1-Tier-1 30.05.2023.
-- Urban Jurca
-  - DevOps Culture and Practices
-  - GitOps / ArgoCD / FluxCD
+#### Group-1-Tier-2 06.06.2023.
+- Marin Radjenovic - Overview of Machine Learning service on AWS
 
-### Group-1-Tier-1 30.05.2023.
-- Nenad Djordjevic
-  - Goland i DevOps
 ---
+
 ## Week-18
 ### Group-1-Tier-1 30.05.2023.
 - Monitoring and Observability
@@ -197,14 +205,19 @@ Office Hours da se sastoje od 2 dijela:
 ### Group-2-Tier-1 1.06.2023.
 - ELK Stack
 ---
-## Week-19
+## Office Hours 17.06.2023.
+- Pomjerili smo Office Hours sa 10.06.2023. na 17.06.2023. zbog toga sto je Dzenan OOTO u sedmici 5.06.2023. - 11.06.2023.
 
-NOTE: Dzenan OOTO
+---
+## Week-19
 ### Group-1-Tier-1 06.06.2023.
-- Marin Radjenovic - CDK (Cloud Development Kit)
+- Urban Jurca
+  - DevOps Culture and Practices
+  - GitOps / ArgoCD / FluxCD
 
 ### Group-2-Tier-1 8.06.2023.
-- Teme i predavaci ce biti naknadno dodani
+- Nenad Djordjevic
+    - Golang i DevOps
 ---
 ## Week-20
 
@@ -235,7 +248,10 @@ NOTE: Dzenan OOTO
 - Ispraviti greske u repozitoriji
 - Dopuniti materijale i biljeske
 - Napraviti yt video snimke i repozitoriji javnim
+- Napisati blog post o DevOps Mentorship Programu
 ---
+## Office Hours 01.07.2023.
+--- 
 ## TBD
 
 - Jeff Gahan
