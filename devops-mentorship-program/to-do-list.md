@@ -1,12 +1,12 @@
 # TO DO List
 
-**TO DO Lista za DevOps Mentorship Program i aktivnosti do kraja programa.**
+**TO DO Lista za DevOps Mentorship Program i aktivnosti do kraja programa.**  
 **NOTE:** Lista nije finalna i moze se mijenjati tokom trajanja programa. Takojder redoslijed predavanja je podlozan promijenama u zavisnosti
-od dostupnosti gosta predavaca.
-**NOTE 2:** Office Hours cemo koristiti da posebnu paznju obratimo na AWS Certifikaciju odnosno pripremu i polaganje AWS SAA certifikat. Tako da ce
-Office Hours da se sastoje od 2 dijela:
-- Dio 1: AWS SAA Certifikacija
-- Dio 2: Q&A + Osvrt na ono sto se radilo u prethodne dvije sedmice
+od dostupnosti gosta predavaca.  
+**NOTE 2:** Office Hours cemo koristiti da posebnu paznju obratimo na AWS Certifikaciju odnosno pripremu i polaganje AWS SAA certifikat. Tako da ce  
+Office Hours da se sastoje od 2 dijela:  
+- Dio 1: AWS SAA Certifikacija  
+- Dio 2: Q&A + Osvrt na ono sto se radilo u prethodne dvije sedmice  
 ---
 ## Sadrzaj
 - [Lista spomenutih AWS servisa](##Lista-spomenutih-AWS-servisa)
@@ -244,8 +244,8 @@ NOTE: Dzenan OOTO
 ---
 ## Week-23
 
-#### Dzenan Due Date: 1.07.2023.
-- Ispraviti greske u repozitoriji
+## Dzenan Due Date: 1.07.2023.
+- Ispraviti greske u repozitoriju
 - Dopuniti materijale i biljeske
 - Napraviti yt video snimke i repozitoriji javnim
 - Napisati blog post o DevOps Mentorship Programu
