@@ -176,12 +176,12 @@ Da bi utvrdio da li je request **Allow** ili **Deny** IAM ce raditi poredjenje o
 
 Rezultati evaluacije requesta korisnika odnosno poredjenja **authrisation context-a** sa **identity-policy**-jem je sljedeci:
 
-|         | Effect                  | Matches? | 
-|--------         |-------------------------|----------|
-| **Statement1**      | **Allow**         | **Yes**    |
-| Statement2      | Deny    | No       |
-| Statement3      | Allow       | Ignored  |
-| Statement4      | Allow        | Ignored  |
+|                 | Effect                  | Matches? | 
+|-----------------|-------------------------|----------|
+| **Statement1**  | **Allow**               | **Yes**  |
+| Statement2      | Deny                    | No       |
+| Statement3      | Allow                   | Ignored  |
+| Statement4      | Allow                   | Ignored  |
 Vidimo da se samo Statement1 poklapa sa authorization context-om i kako je Effect Allow, onda ce request biti Allowed.
 ## IAM Tips and Tricks
 [How can I troubleshoot access denied or unauthorized operation errors with an IAM policy?](https://aws.amazon.com/premiumsupport/knowledge-center/troubleshoot-iam-policy-issues/)  
