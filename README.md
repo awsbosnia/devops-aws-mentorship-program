@@ -28,7 +28,7 @@ Po definiciji, DevOps kao radno mjesto odnosno pozicija ne postoji, ono sto post
 
 ## **💡 How to use this repository**
 
-Ovaj repozitoriji ce biti koristen kao glavni izvor informacija za **DevOps Mentorship Program* gdje cemo pratiti i dodavati:
+Ovaj repozitoriji ce biti koristen kao glavni izvor informacija za *DevOps Mentorship Program* gdje cemo pratiti i dodavati:
 
 - Biljeske sa sedmicni predavanja
 - Biljeske sa Office Hours sesija
@@ -159,9 +159,18 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 
   **Topics: AMI Image, Application Load Balancer, Security Groups, EBS, ASG**
 
-  - [Class notes](devops-mentorship-program/04-april/week-8-040423/00-class-notes.md)
+  - [Class notes](/devops-mentorship-program/04-april/week-8-040423/00-class-notes.md)
   - [Homework](/devops-mentorship-program/04-april/week-8-040423/01-homework.md)
   - [Additional reading](/devops-mentorship-program/04-april/week-8-040423/02-additional-reading.md)
+  </details>  
+    <details>
+  <summary>Week-9</summary>
+
+  **Topics: IAM Deep Dive**
+
+  - [Class notes](/devops-mentorship-program/04-april/week-9-100423/00-class-notes.md)
+  - [Homework](/devops-mentorship-program/04-april/week-9-100423/01-homework.md)
+  - [Additional reading](/devops-mentorship-program/04-april/week-9-100423/02-additional-reading.md)
   </details>
 
 ## :alarm_clock: DevOps Mentorship Program - Office Hours

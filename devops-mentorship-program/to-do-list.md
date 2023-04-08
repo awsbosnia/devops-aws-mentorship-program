@@ -10,6 +10,13 @@ Office Hours da se sastoje od 2 dijela:
 ---
 ## Sadrzaj
 - [Lista spomenutih AWS servisa](##Lista-spomenutih-AWS-servisa)
+- [x] [Week-1](##week-1)
+- [x] [Week-2](##week-2)
+- [x] [Week-3](##week-3)
+- [x] [Week-4](##week-4)
+- [x] [Week-5](##week-5)
+- [x] [Week-6](##week-6)
+- [x] [Week-7](##week-7)
 - [x] [Week-8](##week-8) 
 - [ ] [Week-9](##week-9)
 - [ ] [Office Hours 15.04.2023.](##Office-Hours-15.04.2023.)    
@@ -41,6 +48,44 @@ Office Hours da se sastoje od 2 dijela:
 - Simple Email Service (SNS) - Kreiranje topica i dobijanje email-a
 - CloudWatch servis kreiranje billing alert-a
 - Elastic Load Balancer (ELB) -> Application Load Balancer
+
+---
+## Week-1
+[Week-1: Class Notes](/devops-mentorship-program/02-february/week-1-140223/00-class-notes.md)
+#### Group-1-Tier-1 14.02.2023.  
+
+#### Group-1-Tier-2 16.02.2023.  
+---
+## Week-2
+#### Group-1-Tier-1 21.02.2023.  
+
+#### Group-1-Tier-2 23.02.2023. 
+---
+## Week-3
+#### Group-1-Tier-1 28.02.2023.  
+
+#### Group-1-Tier-2 16.02.2023. 
+---
+## Week-4
+#### Group-1-Tier-1 07.02.2023.  
+
+#### Group-1-Tier-2 09.02.2023.  
+
+---
+## Week-5
+#### Group-1-Tier-1 14.03.2023.  
+
+#### Group-1-Tier-2 16.03.2023. 
+---
+## Week-6
+#### Group-1-Tier-1 21.03.2023.  
+
+#### Group-1-Tier-2 23.03.2023. 
+---
+## Week-7
+#### Group-1-Tier-1 28.03.2023.  
+
+#### Group-1-Tier-2 30.03.2023. 
 
 ---
 ## Week-8
@@ -122,6 +167,10 @@ Office Hours da se sastoje od 2 dijela:
 - Milan Pavlovic - Uvod u Docker
 ---
 ## Office Hours 29.04.2023.
+AWS Certification 
+Gosti predavaci:
+    - [Igor Ivanovic](https://www.linkedin.com/in/ivanovicigor/) 
+    - Marin Radjenovic 
 
 ---
 ## Week-12
@@ -134,6 +183,7 @@ Office Hours da se sastoje od 2 dijela:
     - Bastion Hosts
     - VPN (Open VPN, AWS Client VPN)
     - CloudWatch monitoring -> CloudWatch Insights (Log Insights)
+    - KMS (Key Management Service) - Encryption at rest
     - WAF
     - Network Firewall
     - Amazon Shield
@@ -144,6 +194,7 @@ Office Hours da se sastoje od 2 dijela:
 
 #### Group-1-Tier-2 04.05.2023.
 - Marin Radjenovic - Serverless / AWS Lambda / API Gateway / SQS
+- Alma Beganovic - API Gateway 
 ---
 ## Week-13
 
