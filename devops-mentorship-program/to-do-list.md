@@ -182,6 +182,7 @@ Gosti predavaci:
     - NAT Gateway (Managed vs Self Managed)
     - Bastion Hosts
     - VPN (Open VPN, AWS Client VPN)
+    - Bastion host
     - CloudWatch monitoring -> CloudWatch Insights (Log Insights)
     - KMS (Key Management Service) - Encryption at rest
     - WAF

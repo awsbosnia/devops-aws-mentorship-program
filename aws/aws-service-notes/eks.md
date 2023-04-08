@@ -4,6 +4,7 @@
 ## AWS EKS Resources
 - [📹 Kubernetes hands on introduction (2023) | Amazon EKS Workshop](https://www.youtube.com/live/_TFk5jQr2lk)  
 - [🛠️ EKS Workshop](https://www.eksworkshop.com/)
+- [🛠️ Amazon EKS Security Immersion Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/165b0729-2791-4452-8920-53b734419050/en-US)
 - [📖 AWS EKS Best Practices Guide](https://aws.github.io/aws-eks-best-practices/)  
 - [📹 Containers from the Couch YT Channel](https://www.youtube.com/@ContainersfromtheCouch)  
 - [:octocat: terraform-aws-eks-blueprints](https://github.com/aws-ia/terraform-aws-eks-blueprints)

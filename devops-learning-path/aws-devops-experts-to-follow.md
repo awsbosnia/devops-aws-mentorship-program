@@ -58,7 +58,8 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 - [AWS Hadnbook | @AWSHadbook101](https://twitter.com/AWSHandbook101)
 - [Towards AWS | @TowardsAws](https://twitter.com/TowardsAws)
 - [AWS Security | @AWSSecurityInfo](https://twitter.com/AWSSecurityInfo)
-- [What's New on AWS (Unoffical) | @awswhatsnew](https://twitter.com/awswhatsnew)
+- [What's New on AWS (Unoffical) | @awswhatsnew](https://twitter.com/awswhatsnew)  
+- [.NET on AWS | @dotnetonaws](https://twitter.com/dotnetonaws)
 
 ### Podcasts
 - [DevOps Paradox](https://open.spotify.com/show/6VRDZ6E89JfNY9BCANx70m?si=077b108747a0421e)
