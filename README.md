@@ -191,7 +191,7 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
 ## :repeat: DevOps Learning Path - Table of Contents
 Cjelokupnom sadrzaju DevOps Learning Path-a mozete pristupiti preko linka ispod.
 
- [:arrow_forward: DevOps Learning Path - Sadrzaj](/devops-mentorship-program/devops-learning-path.md)
+ [:arrow_forward: DevOps Learning Path - Sadrzaj](/table-of-contents.md)
 ## :bangbang: Team Notes and Updates
 Sve vaznije informacije i obavjestenja mozete pronaci unutar dokumenta:
  [:pushpin: Importan Team Notes and Updates](/devops-mentorship-program/team-notes-and-updates.md)
