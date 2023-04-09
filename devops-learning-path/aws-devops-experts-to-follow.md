@@ -62,6 +62,7 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 - [.NET on AWS | @dotnetonaws](https://twitter.com/dotnetonaws)
 
 ### Podcasts
+- [Cloud Security Podcats - Spotify](https://open.spotify.com/show/6LZgeh4GecRYPc0WrwMB4I?si=96ceee79de88407e) | [web](https://cloudsecuritypodcast.tv/)
 - [DevOps Paradox](https://open.spotify.com/show/6VRDZ6E89JfNY9BCANx70m?si=077b108747a0421e)
 - [Cables2Clouds](https://open.spotify.com/show/0XiacmzJ7FYilmOqBZPQaE?si=57dde8c89b00474b)
 - [AWS Bites](https://open.spotify.com/show/3Lh7PzqBFV6yt5WsTAmO5q?si=182d1c30b0cc4789)
@@ -82,3 +83,9 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 - [Netokracija Podcast](https://open.spotify.com/show/1JeEKPdFXJopMUEPXucMUK?si=36401caa1c47479b)
 - [awsovanje](https://open.spotify.com/show/3lY7x5aJiOgJ5CIiC7LkrY?si=4a0bfc39b1b74630)
 - [Screaming in the Cloud](https://open.spotify.com/show/3fBA9eNkGliCzp3Xuy1GVd?si=3c9db566573a4ab5)
+
+### Other useful resources / Pages / Links
+
+- [RedHat Devlopers](https://developers.redhat.com/)
+- [r/aws](https://www.reddit.com/r/aws/)  
+- [r/devops/](https://www.reddit.com/r/devops/)

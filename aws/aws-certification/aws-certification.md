@@ -44,3 +44,5 @@ Za polaganje AWS certifikata ne postoje nikakvi preduslovi u smislu da prethodno
 
 ### Kako se pripremiti za uspjesno polaganje AWS certifikata
 
+
+- [r/AWSCertifications](https://www.reddit.com/r/AWSCertifications/)

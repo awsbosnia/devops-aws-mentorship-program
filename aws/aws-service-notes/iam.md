@@ -293,7 +293,7 @@ Korsnik **Dzenan** koristi svoju IAM rolu  da bi dohvatio objekat **file.txt** i
     ]
 }
 ```
-## Authorisation context 
+### Authorisation context 
 
 ```text
 Principal: AJIAACCESSKEY
@@ -407,14 +407,14 @@ Postoje IAM akcije koje imaju nesto drugacije ime nego njihov API action ekvival
 ## IAM Policy Evaluation: Policy Evaluation Chains
 Prvi principal koji pravi request je **Role session**. **IAM Role** uvijek ima odgovarajucu sesiju koja je ustvari principal koji pravi request. IAM Rola sama po sebi ne pravi request bez sesije. Sljedeci principal koji pravi request je **IAM User**. IAM Users nemaju sesije i oni prave requestove. **Federated user (using sts:GetFederationToken)** je principal koji je dobio pristupne podatke koristeci `sts:GetFederationToken` API. Ovo nije korisnik koji je federated od strane idenity provajdera. Vecina AWS korisnika ne koristi cesto ovaj tip Federated korisnika. **Anonymous** principal predstavlja korisnika koji pravi ne-autorizovani request prema AWS-u. **Root** korinsik je specijalni tip principala i ne bi trebao biti koristen za svakodnevnu upotrebu jer se radi o korinsiku koji ima sve privilegije nad AWS racunom.
 
-
+![IAM Policy Evaluation: Policy Evaluation Chains](/resources/images/policy-evaluation-chain.jpg)
 
 
 
 ## Security best practices with AWS IAM
 ## IAM Tips and Tricks
-[How can I troubleshoot access denied or unauthorized operation errors with an IAM policy?](https://aws.amazon.com/premiumsupport/knowledge-center/troubleshoot-iam-policy-issues/)  
-[How to read encoded authorization error messages in AWS](https://arpadt.com/articles/decode-encoded-error-message)  
+- [How can I troubleshoot access denied or unauthorized operation errors with an IAM policy?](https://aws.amazon.com/premiumsupport/knowledge-center/troubleshoot-iam-policy-issues/)  
+- [How to read encoded authorization error messages in AWS](https://arpadt.com/articles/decode-encoded-error-message)  
 
 ## Resources
 - [AWS re:Invent 2018: [REPEAT 1] Become an IAM Policy Master in 60 Minutes or Less (SEC316-R1)](https://youtu.be/YQsK4MtsELU)

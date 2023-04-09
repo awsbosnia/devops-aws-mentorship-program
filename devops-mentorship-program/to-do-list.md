@@ -300,7 +300,7 @@ NOTE: Dzenan OOTO
 
 ## Dzenan Due Date: 1.07.2023.
 - Ispraviti greske u repozitoriju
-- Dopuniti materijale i biljeske
+- Dopuniti materijale i biljeske (materijali sa gdrive i individualnih biljeski)
 - Napraviti yt video snimke i repozitoriji javnim
 - Napisati blog post o DevOps Mentorship Programu
 ---
