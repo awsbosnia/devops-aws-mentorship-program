@@ -8,7 +8,44 @@ IAM dakle kontrolise **KO (autentifikacija)** moze pristupiti vasem AWS racunu  
 ## Jezik IAM Policy-a
 IAM Policy je napisan u JSON formatu. Svaki IAM Policy se sastoji od jednog ili vise **Statements**. Unutar **Statement** dijela mozemo imati sljedece elemenate:
 * **Effect** - `The Why` - Oznacava da li ce request biti Allow / Allowed ili Deny / Denied
-* **Principal** - `The Who` - Ovaj element oznacava entitet / Entity kojem je pristup dozvoljen ili odbijen, primjetiti cete da ponekad Principa element nije sadrzan unutar Policy Statemnt-a. 
+* **Principal** - `The Who` - Ovaj element oznacava entitet / Entity kojem je pristup dozvoljen ili odbijen, primjetiti cete da ponekad Principa element nije sadrzan unutar Policy Statemnt-a. Ovaj element je jedino dostupan unutar **resource based** i **vpc-endpoint** polisija.  Postoje cetiri moguca tipa **Principa** elementa:
+    - **AWS** - Koristite AWS tip Principal Elementa da referencirate druge AWS racune, role, korisnike kao i Session Principals. AWS racun unutar principal elemnta moze biti napisan na dva nacina:
+        - `arn:aws:iam::123456789012:root` - ARN koji sadrzi ID AWS racuna
+        - `123456789012` - ID AWS racuna bez `-` znakova
+    U oba ova slucaja principal je AWS account sa ID-em `123456789012`
+    - **Service** - Service Principal se koristi na nivou resursa da dozvoli pristup AWS servisu. Kada napisete AWS policy koji koristi Service Principal type obicno bi trebali ukljuciti Condition key elemnet koji specificira source ARN ili source Account odakle request dolazi. Npr:
+    ```json
+    {
+        "Effect": "Allow",
+        "Principal": {
+            "Service": "cloudtrail.amazonaws.com"
+        },
+        "Action": "s3:PutObject",
+        "Resource": "arn:aws:s3:::MOJ-S3-BUCKET/*",
+        "Condition": {
+            "ArnEquals": {
+                "aws:SourceArn": "arn:aws:cloudtrail:us-east-1:123456789012:trail/MOJ-TRAIL"
+            }
+        }
+    }
+    ```
+    To se koristi iz razloga da se izbjegne [**confused deputy problem**](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) o cemu smo vise pisali u nastavku u dijelu [Important Actions - iam:PassRole](##Important-Actions-iam:PassRole)
+    - **Federated** - Koristi se samo unutar IAM Trust Policies kako bi se dodijelio pristup za Web Idenity Session Principles od strane Web Idenity provajdera ili SAML Session Principle od strane SAML provajdera. 
+    - **Canonical User** (ne bi trebao da se koristi jer samo nekoliko slucajeva zahtijeva upotrebu ovog tipa Principal elementa)
+* **NotPrincipal** - Postoji i obrnuta varijanta **Principal** elementa. Medjutim nije ga preporuceno koristiti jer danas ne postoji use-case unutar AWS-a gdje bi ovaj element bio potreban. Umjesto toga mozete imati policy koji izgleda kao na primjeru ispod:
+```json
+{
+    "Effect": "Deny",
+    "Principal": "*",
+    "Action": "s3:GetObject",
+    "Resource": "arn:aws:s3:::MOJ-S3-BUCKET/*"
+    "Condition": {
+        "ArnNotEquals": {
+            "aws:arn": "arn:aws:iam::123456789012:role/MOJA-ROLA"
+        }
+    }
+}
+```  
 * **Action** - `The What` - Oznacava jednu ili vise Akcija koje su dozvoljene / Allowed ili odbijene / Denied. Set akcija koje su navedene unautar Action dijela se evaluira kao logicko `OR`. Postoje razlicite reporezentacije Action elementa, npr. `s3:PutObject`, `s3:*`, `s3:Put*`, `s3:*Object`, `s3:*Bucket`, `*`. Vrijednost Action elementa je podjeljena u dva dijela, `service prefix na lijevoj strani : ime akcije na desnoj strani`. Npr. `s3:PutObject` oznacava da je `service prefix` `s3` a `ime akcije` je `PutObject`. `*` oznacava wildcard za sve akcije.
 **NotAction** - Obrnuta varijanta **Action** elementa. Oznacava da je akcija koja je navedena u **NotAction** elementu zabranjena / Denied. Vise akcija unutar **Not Action** elementa se evaluiraju kao logicko `NOR`.
 * **Resource** - `The Where` - Oznacava jedan ili vise AWS resursa na koje se odnosi / primjenjuje Policy Statement. Resursi se specificiraju koristeci [ARN (Amazon Resource Name)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html). ARN se pise u formatu `arn:partition:service:region:account-id:resource-type/resource-id`. Kada pogledate ARN razlicitih AWS Servisa vidjeti cete da nemaju svi servisi sve dijelove ARN-a. Npr: ARN S3 bucketa `arn:aws:s3:::MOJ-S3-BUCKET` ne ukljucuje account-id ili region. Umjesto kopletnog arn koda mozete korisiti i `*` wildcard da zamijenite dio ili citav ARN. **Resource element se evaluira kao logicko `OR` unutar jednog Statement-a.**
@@ -50,7 +87,8 @@ IAM Policy je napisan u JSON formatu. Svaki IAM Policy se sastoji od jednog ili 
                 }
             }
     ```
-    **Condition** element moze da se sastoji od nekoliko elemenata. Npr:
+    **Condition** element moze da se sastoji od nekoliko elemenata. Npr:  
+
     ```json
     {
         "Effect": "Allow",
@@ -66,7 +104,62 @@ IAM Policy je napisan u JSON formatu. Svaki IAM Policy se sastoji od jednog ili 
         }
     }
     ```  
+    ili
+
+    ```json
+    {
+        "Effect": "Allow",
+        "Action": "iam:CreateRole",
+        "Resource": "*",
+        "Condition": {
+            "StringNotEquals": {              
+                "aws:RequestTag/Team": [   
+                    "DevOps",              
+                    "SRE"
+                ]
+            }
+        }
+    }
+    ``` 
+    ili
+
+    ```json
+    {
+        "Effect": "Allow",
+        "Action": "s3:CreateBucket",
+        "Resource": "*",
+        "Condition": {
+            "StringEquals": {              
+                "aws:PrincipalAccount":"111111111111",
+                "aws:SourceVpc":"vpc-1234567890abcdef0"
+            },
+            "StringLike": {              
+                "aws:PrincipalTag/Team":"Team-*"
+            }
+        }
+    }
+    ```
+    ili
+    ```json
+    {
+        "Effect": "Deny",
+        "Action": "s3:CreateBucket",
+        "Resource": "*",
+        "Condition": {
+            "StringNotEquals": {              
+                "aws:PrincipalAccount":"111111111111",
+                "aws:SourceVpc":"vpc-1234567890abcdef0"
+            },
+            "StringNotLike": {              
+                "aws:PrincipalTag/Team":"Team-*"
+            }
+        }
+    }
+    ```
     - **Operator** - Definise koje poredjenje IAM treba napraviti prije nego pokusa da poredi vrijednosti u vasem polisiju sa vrijednostima unutar **authorisation-context**. Postoji vise razlicitih [condition operatora](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html), koji operator cete koristiti zavisi od tipa koju vrijednost operatora ima unutar **authorisation-context-a**. Mozete koristiti razlicite sufixe sa operatorima `Equals` ili `NotEquals` ili `Like` da bi dobili tacno podudaranje ili wildcard podudaranje. Kako bi znali koji `condition-key` mozemo koristiti sa kojim IAM pristupom i resursom pogledajte [Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/reference.html). Unutar Service Authorization Reference dokumentacije za svaki AWS servis mozete pogledati koji `condition-key` mozete koristiti sa kojim tipom. Npr za [EC2 servis](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html#amazonec2-policy-keys) u koloni Type vidite koji tip mozete da koristite da bi te radili predjenje. **Condition keys** koji pocinju sa `aws:` mogu se koristiti sa svim AWS servisima.
+
+    ![Authorisation Context Matching](/resources/images/authorisation-context-matching-iam-policy.png)
+
     - **Key** - Definise koja vrijednost iz **authorisation-context** treba da se poredi sa vrijednostima u vasem polisiju.
     - **Value** - Definise vrijednost koja se poredi sa vrijednostima u vasem polisiju. Da bi se polisiji mogao izvrisiti, vrijednosti u polisiju moraju biti jednake vrijednostima u **authorisation-context-u**.  
 
@@ -200,7 +293,7 @@ Korsnik **Dzenan** koristi svoju IAM rolu  da bi dohvatio objekat **file.txt** i
     ]
 }
 ```
-- `authrisation context`:
+## Authorisation context 
 
 ```text
 Principal: AJIAACCESSKEY
@@ -275,6 +368,22 @@ Moguci rezultati evaluacije requesta korisnika odnosno poredjenja **authrisation
 * Implicit Deny - Nema podudarajucih Allow ili Deny Statements
 * Emplicit Deny - Najmanje jedan podudarajuci Deny Statement, ne postoji Explicit Allow Statement
 
+```text
+Principal: AJIAACCESSKEY
+Action: iam:CreateRole
+Resource: arn:aws:iam:1111111111:role/Dzenan
+Context:
+    aws:UserId=AKIAACCESSKEY:DzenanSession
+    aws:PrincipalAccount=1111111111
+    aws:PrincipalOrgId=o-example
+    aws:PrincipalARN=arn:aws:iam::1111111111:role/Dzenan
+    aws:MultiFactorAuthPresent=true
+    aws:SecureTransport=true
+    aws:PrincipalTag/dept=123
+    aws:PrincipalTag/project=blue
+    aws:TagKeys=dept,project
+```
+
 ## Important Actions - iam:PassRole
 
 Akcija **iam:PassRole** je specijalna akcija koja se koristi za delegiranje / dodjelu prava, ili kako se to naziva u AWS dokumentaciji radi se o **permission only** akciji. Ova akcija podrzava opciju specificiranja role koju korisnik moze da delegira / dodijli drugom korisniku. Ova akcija se koristi u kombinaciji sa **resource-based policy**-jima. 
@@ -295,9 +404,17 @@ Za bilo koju akciju / komnadu koju korisnik zeli da izvrsi nad AWS servisima kor
 Npr: API akcija `S3 CopyObject` zahtijeva `s3:GetObject` permisije nad S3 bucketom iz kojeg kopirate objekat / podatke, `s3:PutObject` nad S3 bucketom u koji kopirate objekat / podatke kao i `s3:ListBucket` privilegije. 
 Postoje IAM akcije koje imaju nesto drugacije ime nego njihov API action ekvivalent. Jedan od primjera je **Lambda Invoke** API akcija koja zahtijeva `lambda:InvokeFunction` IAM akciju. Preporuka je da provjerite AWS Dokumentaciju kako bi vidjeli koje tacno IAM akcije trebate kako bi korisnik mogao da izvrsi API akciju koju zelite. 
 
+## IAM Policy Evaluation: Policy Evaluation Chains
+Prvi principal koji pravi request je **Role session**. **IAM Role** uvijek ima odgovarajucu sesiju koja je ustvari principal koji pravi request. IAM Rola sama po sebi ne pravi request bez sesije. Sljedeci principal koji pravi request je **IAM User**. IAM Users nemaju sesije i oni prave requestove. **Federated user (using sts:GetFederationToken)** je principal koji je dobio pristupne podatke koristeci `sts:GetFederationToken` API. Ovo nije korisnik koji je federated od strane idenity provajdera. Vecina AWS korisnika ne koristi cesto ovaj tip Federated korisnika. **Anonymous** principal predstavlja korisnika koji pravi ne-autorizovani request prema AWS-u. **Root** korinsik je specijalni tip principala i ne bi trebao biti koristen za svakodnevnu upotrebu jer se radi o korinsiku koji ima sve privilegije nad AWS racunom.
+
+
+
+
+
+## Security best practices with AWS IAM
 ## IAM Tips and Tricks
 [How can I troubleshoot access denied or unauthorized operation errors with an IAM policy?](https://aws.amazon.com/premiumsupport/knowledge-center/troubleshoot-iam-policy-issues/)  
-[How to read encoded authorization error messages in AWS](https://arpadt.com/articles/decode-encoded-error-message)
+[How to read encoded authorization error messages in AWS](https://arpadt.com/articles/decode-encoded-error-message)  
 
 ## Resources
 - [AWS re:Invent 2018: [REPEAT 1] Become an IAM Policy Master in 60 Minutes or Less (SEC316-R1)](https://youtu.be/YQsK4MtsELU)
