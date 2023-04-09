@@ -64,12 +64,14 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 | Simbol | Resurs                  |
 |--------|-------------------------|
 | 📹      | Video lekcija           |
+| :warning: | Dokumentacija pisana za DevOps Learning Path, citanje obavezno! |
 | 🌐      | Blog post               |
 | 📚      | Knjige                  |
 | 📖      | Dokumentacija           |
 | 📙      | AWS Zvanicna Dokumentacija |
 | 💵      | Resursi koji se placaju |
 
+*Za simbole [emoji repo](https://github.com/ikatyang/emoji-cheat-sheet).
 ### :mortar_board: DevOps Mentorship Program - Class Notes and Recordings
 
 - [DevOps Mentorship Program - Table Of Contents](/devops-mentorship-program/to-do-list.md) - Dokument unutar kojeg pratimo napredak po sedmicama, datume predavanja, i pravimo osnovne biljeske o tome sta smo radili (imena servisa, tehnologija i alata) kao i osnovne napomene o predavanjima.
@@ -188,7 +190,7 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
   </details>
 
 
-## :repeat: DevOps Learning Path - Table of Contents
+## :infinity: DevOps Learning Path - Table of Contents
 Cjelokupnom sadrzaju DevOps Learning Path-a mozete pristupiti preko linka ispod.
 
  [:arrow_forward: DevOps Learning Path - Sadrzaj](/table-of-contents.md)

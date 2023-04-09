@@ -121,7 +121,9 @@ Office Hours da se sastoje od 2 dijela:
 ## Week-9
 
 #### Group-1-Tier-1 11.04.2023.
-- IAM deep dive
+- [ ] S3 Storage - Basics
+- [ ] IAM deep dive
+    - [ ] Pokazati na primjeru kopiranja objekata iz jednog S3 bucketa u drugi razliku u gresci koju dobijete kada imate `s3:ListBucket` i kad nemate `s3:ListBucket`. AWS docs [link](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html)
 
 #### Group-1-Tier-2 13.04.2023.
 - Relacione Baze Podataka, instalacija MySQL-a, PostgreSQL-a na Amazon Linux EC2 instnaci

@@ -45,6 +45,7 @@ IAM servis, pored navedenih mogucnosti, ima i ulogu da kooridinira sa **AWS Secu
 ## 📖 Reading materials
 
 - [:orange_book: Amazon EC2 FAQ](https://aws.amazon.com/ec2/faqs/)
+- [:warning: DevOps Learning Path: IAM](aws/aws-service-notes/iam.md)
 - [:orange_book: AWS Identity and Access Management (IAM) FAQs](https://aws.amazon.com/iam/faqs/)
 - [📹 Kako da kreirate i spojite se na EC2 instancu](https://youtu.be/dxcsN8HQk1o)
 - [📹 Uvod u Identity and Access Management (IAM) servis](https://youtu.be/i67-zDAyZNc)
