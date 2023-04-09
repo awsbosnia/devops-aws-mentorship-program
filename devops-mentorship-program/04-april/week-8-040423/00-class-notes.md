@@ -6,7 +6,7 @@
 ## Amazon EC2 Auto Scaling
 ## 📹 Session recordings
 - [**WEEK-8-tier-1-group-1 video session recording**](https://youtu.be/RHxli_5ya98)
-- [**WEEK-8-tier-1-group-2 video session recording**]()
+- [**WEEK-8-tier-1-group-2 video session recording**](https://youtu.be/CybYyZlCNAU)
 
 ## 📖 Reading materials
 - [📙 Elastic Load Balancing FAQs](https://aws.amazon.com/elasticloadbalancing/faqs/)
