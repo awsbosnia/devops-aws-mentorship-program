@@ -299,7 +299,7 @@ NOTE: Dzenan OOTO
 ## Week-23
 
 ## Dzenan Due Date: 1.07.2023.
-- Ispraviti greske u repozitoriju
+- Ispraviti greske u repozitoriju, povezati DevOps Learning Path sa Class Notes
 - Dopuniti materijale i biljeske (materijali sa gdrive i individualnih biljeski)
 - Napraviti yt video snimke i repozitoriji javnim
 - Napisati blog post o DevOps Mentorship Programu
