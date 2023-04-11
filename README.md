@@ -168,11 +168,11 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
     <details>
   <summary>Week-9</summary>
 
-  **Topics: IAM Deep Dive**
+  **Topics: Amazon S3, IAM Role, S3 Bucket Policy**
 
-  - [Class notes](/devops-mentorship-program/04-april/week-9-100423/00-class-notes.md)
-  - [Homework](/devops-mentorship-program/04-april/week-9-100423/01-homework.md)
-  - [Additional reading](/devops-mentorship-program/04-april/week-9-100423/02-additional-reading.md)
+  - [Class notes](/devops-mentorship-program/04-april/week-9-110423/00-class-notes.md)
+  - [Homework](/devops-mentorship-program/04-april/week-9-110423/01-homework.md)
+  - [Additional reading](/devops-mentorship-program/04-april/week-9-110423/02-additional-reading.md)
   </details>
 
 ## :alarm_clock: DevOps Mentorship Program - Office Hours
