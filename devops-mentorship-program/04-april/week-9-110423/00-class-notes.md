@@ -25,7 +25,7 @@ Amazon S3 mozemo koristiti za:
 ![S3 Access Control](/devops-mentorship-program/04-april/week-8-040423/files/s3-access-control.png)
 
 ## IAM Deep Dive
-[:infinity: DevOps Learning Path - AWS Identity and Access Management (IAM)](aws/aws-service-notes/iam.md)
+[:infinity: DevOps Learning Path - AWS Identity and Access Management (IAM)](/aws/aws-service-notes/iam.md)
 
 ## 📹 Session recordings
 - [**WEEK-9-tier-1-group-1 video session recording**](https://youtu.be/U7cS2TVmPtw)
