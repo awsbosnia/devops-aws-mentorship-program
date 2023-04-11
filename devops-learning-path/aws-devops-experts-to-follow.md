@@ -89,3 +89,5 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 - [RedHat Devlopers](https://developers.redhat.com/)
 - [r/aws](https://www.reddit.com/r/aws/)  
 - [r/devops/](https://www.reddit.com/r/devops/)
+- [o11y news!](https://o11y.news/)
+- [weekly.tf](https://www.weekly.tf/)

@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::769312778453:user/ec2-instance-headless"
+            },
+            "Action": [
+                "s3:PutObject",
+                "s3:ListBucket",
+                "s3:GetBucketAcl"
+            ],
+            "Resource": [
+                "arn:aws:s3:::dzenan-dzevlan-week-9",
+                "arn:aws:s3:::dzenan-dzevlan-week-9/*"
+            ]
+        }
+    ]
+}

@@ -3,7 +3,18 @@
 
 ## Amazon Elastic Load Balancer
 
+### Application Load Balancer
+
+### Network Load Balancer
+
+### Gateway Load Balancer
+
 ## Amazon EC2 Auto Scaling
+
+### Launch Configuration
+
+### Auto Scaling Policies 
+
 ## 📹 Session recordings
 - [**WEEK-8-tier-1-group-1 video session recording**](https://youtu.be/RHxli_5ya98)
 - [**WEEK-8-tier-1-group-2 video session recording**](https://youtu.be/CybYyZlCNAU)
