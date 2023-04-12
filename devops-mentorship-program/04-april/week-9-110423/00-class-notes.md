@@ -35,6 +35,7 @@ Amazon S3 mozemo koristiti za:
 - [📙 Amazon S3 FAQs](https://aws.amazon.com/s3/faqs/)
 - [:infinity: DevOps Learning Path: Identity Access Management Service (IAM)](/aws/aws-service-notes/iam.md)
 - [📙 Actions, resources, and condition keys for AWS services](https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html)
+- [📙 Amazon S3 API Actions](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations.html)
 - [🌐  Complete AWS IAM Reference](https://iam.cloudonaut.io/)
 - [📚 Effective IAM for AWS](resources/aws-books/effective-iam-for-aws.pdf)
 - [📚The Practical IAM Guide](/resources/aws-books/the_practical_aws_iam_guide_v1.0.pdf)

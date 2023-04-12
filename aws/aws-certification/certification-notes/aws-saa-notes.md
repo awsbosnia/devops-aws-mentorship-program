@@ -1,24 +1,6 @@
 # AWS Solution Architect Associate - Exam Notes
-
-Exam date: April 2021
-Kreiranje novog računa i zaštita root user-a
-(da li se koriste IAM Access Keys, MFA i slično)
-
-EC2:
-prepoznati ispravnu naredbu u slučaju da EC2 instanca nema pristup podacima
-169.254.169.254/latest/meta-data
-169.254.169.254/user-data/iam-info 
-EC2 Placement Groups (različite situacije u kojima treba prepoznati kad se koja koristi; visoka propusnost, niska latencija i sl)
-
-S3:
-Par pitanja u vezi enkripcije prije nego se podaci pošalju na S3 (encryption at rest)
-Prebacivanje između različitih S3 Object Storage Classes 
-(primjer o neke količine podataka, kolikdana se koristi učestalo, koliko godina je potrebno sačuvati podatke i slično)
-
-AWS Shield:
-za koju vrstu napada se koristi
-
-Exam date: June 2022
+Ovdje mozete pronaci biljeske sa ispita ljudi koji su vec izasli na ispit i polozili ga. Ideja ovih biljeski je da vam daju uvid u tip pitanja / servise koje trebate poznavati kako bi uspjesno polozili ispit. 
+### Exam date: June 2022
 -odrediti sta mozemo uraditi u slucaju da nam reserved instance nije vise potrebna
 - imamo jednu dx konekciju i 3 peered vpc, na koji nacin uspostaviti najotporniju vezu on premisses sa svim vpc, uzimajuci u obzir da je potrebno da bude sto isplativije rijesenje
 - imamo 3 tier app i sqs izmedju njih, na jednom tasku dolaze iste poruke vise puta. sta je uzrok. 
@@ -35,13 +17,7 @@ Exam date: June 2022
 - kakve postavke in/out odabrati ako zelimo da se bastionu može pristupiti samo sa korporacijskih ip adresa. 
 - 2 pitanja su bila, ne mogu tacno da se sjetim scenarija, ali traži se određivanje kombinacije storage za data i načina kojim se vrsi query nad data
 
-
-
-
-
-
-
-Exam date: June 2022
+### Exam date: June 2022
 
 
 AWS Macie
@@ -93,7 +69,7 @@ Weighted routing
 I jos jedno pitanje je bilo kad hocemo da route53 vraca na dns queires sa vecim broje healthy recorda (mutlivalue)
 Kao data dva vpca pa onda imamo on premises i kako to povezati u jedan gateway koji ce actovati kao hub(transit Gateway)
 
-EXAM DATE: JULY 2022.
+### EXAM DATE: JULY 2022.
 
 Generalno je ispit jako fokusiran na detalje, šta znači na detalje. Jedan primjer jeste CF tj. kako automatizovati kreiranje infrastrukture kroz template, pa dobijemo sva četiri odgovora koja se razlikuju u gotovo samo jednome detalju.
 
@@ -157,4 +133,23 @@ Još jedno pitanje gdje se navodi komunikacija kroz VPCove, tj. da li je komunik
 
 VPN - prijenost podataka s on-prema u AWS s mrežom od 100 MB, ukoliko je potrebno više od 1.25 GBs potrebno je koristiti neko drugo riješenje. 
 
-Cluster group - aplikacije koje zahtjevaju veliku computing snagu. 
+Cluster group - aplikacije koje zahtjevaju veliku computing snagu.
+
+### Exam date: April 2021  
+Kreiranje novog računa i zaštita root user-a
+(da li se koriste IAM Access Keys, MFA i slično)
+
+EC2:
+prepoznati ispravnu naredbu u slučaju da EC2 instanca nema pristup podacima
+169.254.169.254/latest/meta-data
+169.254.169.254/user-data/iam-info 
+EC2 Placement Groups (različite situacije u kojima treba prepoznati kad se koja koristi; visoka propusnost, niska latencija i sl)
+
+S3:
+Par pitanja u vezi enkripcije prije nego se podaci pošalju na S3 (encryption at rest)
+Prebacivanje između različitih S3 Object Storage Classes 
+(primjer o neke količine podataka, koliko dana se koristi učestalo, koliko godina je potrebno sačuvati podatke i slično)
+
+AWS Shield:
+za koju vrstu napada se koristi  
+

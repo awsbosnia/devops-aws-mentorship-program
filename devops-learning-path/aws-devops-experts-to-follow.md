@@ -25,7 +25,8 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 - **Ian Mckay - AWS Community Hero** [twitter](https://twitter.com/iann0036)
 - **Khawaja Shams - Co-Founder & CEO at Momento** [twitter](https://twitter.com/ksshams) | [linkedin](https://www.linkedin.com/in/kshams/)
 - **Yan Cui - AWS Serverless Hero** [twitter](https://twitter.com/theburningmonk) | [linkedin](https://www.linkedin.com/in/theburningmonk/) | [blog](https://theburningmonk.medium.com/)
-- ** ** [twitter]() | [linkedin]()
+- **Philipp Garbe - AWS Container Hero** [twitter]() | [linkedin]()
+- ** ** [twitter](https://twitter.com/pgarbe) | [linkedin]( https://linkedin.com/in/pgarbe) | [blog](https://garbe.io/)
 - **Corey Quinn** [twitter](https://twitter.com/QuinnyPig)
 - **Patrick Debois** [twitter](https://twitter.com/patrickdebois)
 
@@ -59,7 +60,8 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 - [Towards AWS | @TowardsAws](https://twitter.com/TowardsAws)
 - [AWS Security | @AWSSecurityInfo](https://twitter.com/AWSSecurityInfo)
 - [What's New on AWS (Unoffical) | @awswhatsnew](https://twitter.com/awswhatsnew)  
-- [.NET on AWS | @dotnetonaws](https://twitter.com/dotnetonaws)
+- [.NET on AWS | @dotnetonaws](https://twitter.com/dotnetonaws)  
+- [Architecture Notes | @arcnotes](https://twitter.com/arcnotes)
 
 ### Podcasts
 - [Cloud Security Podcats - Spotify](https://open.spotify.com/show/6LZgeh4GecRYPc0WrwMB4I?si=96ceee79de88407e) | [web](https://cloudsecuritypodcast.tv/)
