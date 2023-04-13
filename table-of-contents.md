@@ -94,5 +94,6 @@
 21. [Arhitektura Sistema / System Architecture](/devops-learning-path/system-architecture.md)
 22. [Interviju za posao](/devops-learning-path/interview-process.md)
 22. [Lista Preporucenih Knjiga](/books.md)
-23. [AWS and DevOps Experts to Follow](/devops-learning-path/aws-devops-experts-to-follow.md)
-24. [README](/README.md)
+23. [AWS and DevOps Experts to Follow](/devops-learning-path/aws-devops-experts-to-follow.md)  
+24. [Glossary](/devops-learning-path/glossary.md)  
+25. [README](/README.md)  

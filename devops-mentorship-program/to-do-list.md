@@ -178,7 +178,7 @@ Gosti predavaci:
 ## Week-12
 
 #### Group-1-Tier-1 2.05.2023.
-- Unaprijedjenje infrastrukture za Java aplikaciju iz Week-10
+- Unaprijedjenje infrastrukture za Java aplikaciju iz Week-10 (pogledati [AWS Web Application Architcture on AWS](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/web-application-architecture-on-aws-ra.pdf?did=wp_card&trk=wp_card))
 - VPC
     - Private + Public Subnets
     - NAT Gateway (Managed vs Self Managed)

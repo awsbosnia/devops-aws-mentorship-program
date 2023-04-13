@@ -252,6 +252,7 @@ Ukoliko se radi o HTTP odgovoru, pocetna linija ce sadrzavati statusni kod koji 
 ```
 HTTP/1.1 200 OK
 ```
+![HTTP Req Headers](/devops-mentorship-program/03-march/week-4-070323/files/http_req_headers.jpeg)
 #### HTTP Response Status Codes
 
 HTTP kodovi su 3-znamenkasti kodovi koje server salje u odgovoru na zahtjev klijenta kako bi oznacio status odgovora. Ovdje su neki osnovni HTTP kodovi i njihovo znacenje:
