@@ -135,9 +135,12 @@ Office Hours da se sastoje od 2 dijela:
 
 - [ ] Podesavanje SSL certifikata na nasu EC2 instancu gdje koristimo SSL let's encrypt certifikat
 - [ ] Prebacivanje SSL certifikata sa EC2 instance na ALB servis koristeci AWS Certificate Manager (ACM) servis
+
+Snimiti dodatne vide lekcije offline: 
 - [ ] IMDS - Instance Metadata Service
         - Instance Metadata Service Version 1 (IMDSv1) – a request/response method  
         - Instance Metadata Service Version 2 (IMDSv2) – a session-oriented method  
+- [ ] Kako instalirati MySQL na Amazon Linux 3 EC2 instancu (+osnovna konfiguracija)
 ---
 ## Week-10
 #### Group-1-Tier-1 18.04.2023.

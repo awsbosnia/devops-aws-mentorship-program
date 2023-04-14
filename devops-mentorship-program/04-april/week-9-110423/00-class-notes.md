@@ -27,11 +27,14 @@ Amazon S3 mozemo koristiti za:
 ## IAM Deep Dive
 [:infinity: DevOps Learning Path - AWS Identity and Access Management (IAM)](/aws/aws-service-notes/iam.md)
 
+## Amazon Relational Database Service (Amazon RDS)
+
 ## 📹 Session recordings
 - [**WEEK-9-tier-1-group-1 video session recording**](https://youtu.be/U7cS2TVmPtw)
-- [**WEEK-9-tier-1-group-2 video session recording**]()
+- [**WEEK-9-tier-1-group-2 video session recording**](https://youtu.be/wsxwo_stIC0)
 
 ## 📖 Reading materials
+#### Tuesday Class
 - [📙 Amazon S3 FAQs](https://aws.amazon.com/s3/faqs/)
 - [:infinity: DevOps Learning Path: Identity Access Management Service (IAM)](/aws/aws-service-notes/iam.md)
 - [📙 Actions, resources, and condition keys for AWS services](https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html)
@@ -43,7 +46,9 @@ Amazon S3 mozemo koristiti za:
 - [📹 AWS re:Inforce 2022 - Security best practices with AWS IAM (IAM201)](https://youtu.be/SMjvtxXOXdU)
 - [📹 AWS re:Invent 2018: [REPEAT 1] Become an IAM Policy Master in 60 Minutes or Less (SEC316-R1)](https://youtu.be/YQsK4MtsELU)
 - [📹 IAM Policy Evaluation Series: AWS IAM policy language explaine - Part 1](https://youtu.be/qsF6Kauh2J4)
-- [📹 IAM Policy Evaluation Series: policy evaluation chains | Amazon Web Services](https://youtu.be/71-Gjo6a5Cs)
+- [📹 IAM Policy Evaluation Series: policy evaluation chains | Amazon Web Services](https://youtu.be/71-Gjo6a5Cs)  
+
+#### Thursday Class
 - [📹 ]()
 
 
