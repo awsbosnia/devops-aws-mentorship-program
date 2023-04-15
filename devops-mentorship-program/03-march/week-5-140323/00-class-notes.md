@@ -158,6 +158,11 @@ $ node -e "console.log('Running Node.js ' + process.version)"
 Svakako je preporuka da pogledate [node github repozitoriji](https://github.com/nodesource/distributions) za instrukcije za instalaciju na razlicitim operativnim sistemima.
 #### Application setup
 ```bash
+# dodajte vas server public key na github kako bi mogli da klonirate application repo
+$ yum install git # Install git 
+$ git clone git@github.com:allops-solutions/nodejs-simple-app.git # Klonirajte aplikaciju na vas server
+$ cd nodejs-simple-app # Pozicionirajte se u folder sa aplikacijom
+$ npm install # Instalirajte sve potrebne pakete iz package.json fajla
 $ npm install -g pm2 # Install pm2 process manager
 $ pm2 start server.js # Start Node.js application
 ```
