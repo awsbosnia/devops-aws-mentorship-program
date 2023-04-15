@@ -320,11 +320,20 @@ Zahvaljujuci virtuelnim hostovi, Apache server moze da hostuje vise web stranica
     - MariaDB
     - Microsoft SQL Server
     - Oracle Database
+Vise o serverima baza podataka je receno tokom predavavanja u [**WEEK-9**](/devops-mentorship-program/04-april/week-9-110423/00-class-notes.md) snimak tog predavanja mozete pogledati na [**WEEK-9-tier-1-group-2 video session recording**](https://youtu.be/wsxwo_stIC0).
 
 - **E-mail serveri** - Koriste se za slanje i primanje e-poste.
 - **File serveri** - Koriste se za pohranu i dijeljenje fajlova.
 - **FTP serveri** - Koriste se za slanje i primanje fajlova preko `FTP (File Transfer Protocol)` protokola.
 - **DNS serveri** - Koriste se za razrjesavanje domenskih imena u IP adrese.
+
+## 📹 Session recordings
+- [**WEEK-5-tier-1-group-1 video session recording**](https://youtu.be/agT0spYqHP4)
+- [**WEEK-5-tier-1-group-2 video session recording**](https://youtu.be/qhzWUF5mpWU)
+
+## :infinity: DevOps Learning Path
+- [:infinity: DevOps Learning Path - SSL](/devops-learning-path/ssl.md)
+
 ## 📖 Reading materials
 - [DevOps Learning Path - Linux/UNIX OS](../../../devops-learning-path/web-servers.md)
 - [Proxy vs Reverse Proxy (Real-world Examples)](https://youtu.be/4NB0NDtOwIQ)
@@ -333,11 +342,6 @@ Zahvaljujuci virtuelnim hostovi, Apache server moze da hostuje vise web stranica
 - [nginx server names](http://nginx.org/en/docs/http/server_names.html)
 - [Avoiding the Top 10 NGINX Configuration Mistakes](https://www.nginx.com/blog/avoiding-top-10-nginx-configuration-mistakes/)
 - [Apache HTTP Server Project](https://httpd.apache.org/)
-
-## 📹 Session recordings
-- [**WEEK-5-tier-1-group-1 video session recording**](https://youtu.be/agT0spYqHP4)
-- [**WEEK-5-tier-1-group-2 video session recording**](https://youtu.be/qhzWUF5mpWU)
-
 
 [:fast_forward: Class Notes](/devops-mentorship-program/03-march/week-5-140323/00-class-notes.md)
 [:fast_forward: Additional Reading](/devops-mentorship-program/03-march/week-5-140323/02-additional-reading.md)

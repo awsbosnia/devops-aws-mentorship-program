@@ -51,9 +51,11 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 - [AWS Stash](https://awsstash.com/)
 ### Blogs
 - [All Things Distributed - Werner Vogels Blog](https://www.allthingsdistributed.com/)  
+- [dev.to - AWS Developer Advocates](https://dev.to/aws)
 - [dev.to - AWS Heroes](https://dev.to/aws-heroes)
 - [dev.to - AWS Community Builders](https://dev.to/aws-builders)
 - [Last Week in AWS](https://ref.lastweekinaws.com/dfiinf)
+- [Proud2BeCloud](https://blog.besharp.it/)
 
 ### Youtube
 - [DevOps Toolkit](https://www.youtube.com/@DevOpsToolkit/videos)

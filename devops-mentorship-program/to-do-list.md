@@ -182,6 +182,7 @@ Gosti predavaci:
 
 #### Group-1-Tier-1 2.05.2023.
 - Unaprijedjenje infrastrukture za Java aplikaciju iz Week-10 (pogledati [AWS Web Application Architcture on AWS](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/web-application-architecture-on-aws-ra.pdf?did=wp_card&trk=wp_card))
+- [Choosing the right health check with Elastic Load Balancing and EC2 Auto Scaling](https://aws.amazon.com/blogs/networking-and-content-delivery/choosing-the-right-health-check-with-elastic-load-balancing-and-ec2-auto-scaling/)
 - VPC
     - Private + Public Subnets
     - NAT Gateway (Managed vs Self Managed)
