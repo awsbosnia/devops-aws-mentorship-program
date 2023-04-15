@@ -168,6 +168,7 @@ $ pm2 start server.js # Start Node.js application
 ```
 Koraci za automatsko pokretanje pm2 nakon restarta servera:
 ```bash
+$ pm2 list # provjeriti da li je aplikacija pokrenuta ako nije pokrenuti je sa komandom pm2 start server.js
 $ pm2 startup # Da se generise startup skripta.
 $ pm2 save # Da se sacuva trenutna lista procesa kojima upravlja pm2 i koji ce se automatski startati prilikom svakog restarta servera.
 ```
