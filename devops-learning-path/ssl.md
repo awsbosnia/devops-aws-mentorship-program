@@ -1,8 +1,8 @@
 # SSL - Secure Sockets Layer
 
-**SSL** ili **Secure Sockets Layer** je protokol koji omogucava sigurnu komunikaciju te predstavlja unaprijedjenje TCCP protokola na nacin da uvodi povjerljivost, integritet podataka, autentifikaciju servera i autentifikaciju klijenta. 
+**SSL** ili **Secure Sockets Layer** je protokol koji omogucava sigurnu komunikaciju te predstavlja unaprijedjenje TCP protokola na nacin da uvodi povjerljivost, integritet podataka, autentifikaciju servera i autentifikaciju klijenta. 
 SSL se koristi za bezbijednost saobracaja koji se odvija preko HTTP protkola. Kako je SSL obezbjedjen od strane TCP 
-protkola moze ga koristiti svka aplikacija koja koristi, odnosno izvrsava se preko TCP protokol. SSL nudi jednostavan API sa soketima koji je slican API-ju koji nudi TCP protokol. Kada neka aplikacija hoce da koristi SSL ukljucuje se SSL klase i biblioteke. SSL se tehnicki nalazi u aplikacionom sloju ali iz perspektive programera to je transportni protokol koji koji pruza TCP usluge obogacene uslugama bezbjednosti. 
+protkola moze ga koristiti svaka aplikacija koja koristi, odnosno izvrsava se preko TCP protokola. SSL nudi jednostavan API sa soketima koji je slican API-ju koji nudi TCP protokol. Kada neka aplikacija hoce da koristi SSL ukljucuje se SSL klase i biblioteke. SSL se tehnicki nalazi u aplikacionom sloju ali iz perspektive programera to je transportni protokol koji koji pruza TCP usluge obogacene uslugama bezbjednosti. 
 Na sljedecoj slici mozete vidjeti gdje se SSL nalazi unutar OSI modela.
 ![SSL u OSI Modelu](/resources/images/ssl1.jpeg)  
 
@@ -175,6 +175,7 @@ Dokumentacija za importovanje certifikata u AWS Certificate Manager se nalazi na
 
 
 - [certbot intructions](https://certbot.eff.org/instructions?ws=nginx&os=pip)
+- [](https://eff-certbot.readthedocs.io/en/stable/using.html#setting-up-automated-renewal)
 - [Configure SSL/TLS on Amazon Linux 2023](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-amazon-linux-2023.html)
 - [MIT OPEN COURSEWARE - SSL and HTTPS](https://youtu.be/q1OF_0ICt9A)
 - [Apache SSL](https://httpd.apache.org/docs/2.4/ssl/ssl_faq.html#aboutcerts)
