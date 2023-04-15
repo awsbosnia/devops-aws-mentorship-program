@@ -90,6 +90,9 @@ U kontekstu PKI (Public Key Infrastructure), leaf certifikati su najniži u hije
 
 ## Setup Let's Encrypt SSL Certificate on EC2 Amazon Linux AMI3 (Nginx)
 U sljedecem primjeru cemo pokazati na koji nacin mozemo konfigurisati SSL Let's Encrypt certifikat na EC2 Amazon Linux AMI3 serveru koristeci Nginx web server. Za ovaj primjer cemo koristiti web aplikaciju i znanje koje smo stekli u tokom [Week-5](/devops-mentorship-program/03-march/week-5-140323/00-class-notes.md) predavanja iz serije predavanja odrzanih tokom DevOps Mentorship Programa.
+To podrazumijeva da imamo EC2 instancu sa Amazon Linux AMI3 operativnim sustavom, Nginx web serverom i web aplikaciju koja je dostupna na portu 80 koristeci nasu javnu IP adresu. 
+
+
 
 [MIT OPEN COURSEWARE - SSL and HTTPS](https://youtu.be/q1OF_0ICt9A)
 [Apache SSL](https://httpd.apache.org/docs/2.4/ssl/ssl_faq.html#aboutcerts)

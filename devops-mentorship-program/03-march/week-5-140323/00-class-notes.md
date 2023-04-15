@@ -133,7 +133,29 @@ $ sudo yum install -y gcc-c++ make # Install build tools
 $ sudo yum install nodejs # Install Node.js
 $ node -v # Check Node.js version
 ```
+Ukoliko dobijete sljedecu gresku:
+```bash
+## You don't appear to be running a supported version of Enterprise Linux. Please contact NodeSource at https://github.com/nodesource/distributions/issues if you think this is incorrect or would like your architecture to be considered for support. Include your 'distribution package' name: no package provides redhat-release
+no package provides centos-release
+no package provides cloudlinux-release
+no package provides sl-release
+```
+Node JS mozete instalirati koristeci node version manager (nvm) alat na sljedeci nacin:
+```bash
+# Install node version manager (nvm) by typing the following at the command line.
 
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
+# Activate nvm by typing the following at the command line.
+$ . ~/.nvm/nvm.sh
+
+# Use nvm to install the version 14 of Node.js by typing the following at the command line.
+$ nvm install 14
+
+# Test that Node.js is installed and running correctly by typing the following at the command line.
+$ node -e "console.log('Running Node.js ' + process.version)"
+```
+Svakako je preporuka da pogledate [node github repozitoriji](https://github.com/nodesource/distributions) za instrukcije za instalaciju na razlicitim operativnim sistemima.
 #### Application setup
 ```bash
 $ npm install -g pm2 # Install pm2 process manager

@@ -71,7 +71,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
 | 📙      | AWS Zvanicna Dokumentacija |
 | 💵      | Resursi koji se placaju |
 
-*Za simbole [emoji repo](https://github.com/ikatyang/emoji-cheat-sheet).
+*Za listu simbole pogledajte [emoji repo](https://github.com/ikatyang/emoji-cheat-sheet).
 ### :mortar_board: DevOps Mentorship Program - Class Notes and Recordings
 
 - [DevOps Mentorship Program - Table Of Contents](/devops-mentorship-program/to-do-list.md) - Dokument unutar kojeg pratimo napredak po sedmicama, datume predavanja, i pravimo osnovne biljeske o tome sta smo radili (imena servisa, tehnologija i alata) kao i osnovne napomene o predavanjima.
@@ -168,7 +168,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
     <details>
   <summary>Week-9</summary>
 
-  **Topics: Amazon S3, IAM Role, S3 Bucket Policy**
+  **Topics: Amazon S3, IAM Role, S3 Bucket Policy, Amazon RDS, MySQL**
 
   - [Class notes](/devops-mentorship-program/04-april/week-9-110423/00-class-notes.md)
   - [Homework](/devops-mentorship-program/04-april/week-9-110423/01-homework.md)
@@ -185,7 +185,8 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
   - [DevOps Mentorship Program - Office Hours 18.02.2023.](https://youtu.be/Ve7BY5WwRDw)
   - [DevOps Mentorship Program - Office Hours 04.03.2023.](https://youtu.be/NTlYCjF0ldY)
   - [DevOps Mentorship Program - Office Hours 19.03.2023.](https://youtu.be/x75Mg0BofFg)
-  - [DevOps Mentorship Program - Office Hours 01.04.2023.](https://youtu.be/3OxR5wjBplE)
+  - [DevOps Mentorship Program - Office Hours 01.04.2023.](https://youtu.be/3OxR5wjBplE)  
+  - [DevOps Mentorship Program - Office Hours 15.04.2023.]()
 
   </details>
 

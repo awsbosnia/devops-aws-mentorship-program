@@ -60,6 +60,13 @@ $ brew install git
 
 Na [**linku**](https://www.youtube.com/watch?v=nZYJKXXMvkM&ab_channel=TechPedia-HowtoTech) mozete ispratiti kako da kreirate ssh kljuc i podesite vas GitHub profil da mozete izvrsavati git commande.
 
+```bash
+$ ssh-keygen -t ed25519 -C "sqlheisenberg@gmail.com" #kreiranje ssh kljuca za korisnika sa email adresom sqlheisenberg@gmail.com
+# Kad na ekranu dobijete poruku Generating public/private ed25519 key pair odgovorite sa enter na pitanja koja ce se pojaviti
+# Ovo ce kreirati privatni i javni ssh kljuc u direktorijumu ~/.ssh/ sa nazivom id_ed25519 i id_ed25519.pub
+$ cat .ssh/id_ed25519.pub #Ispisite vas javni kljuc na ekran i kopirajte ga a zatim upisite u vas GitHub profil
+```
+
 **Osnovne Git Naredbe**
 
 ```bash
