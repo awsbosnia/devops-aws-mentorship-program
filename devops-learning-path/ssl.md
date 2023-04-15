@@ -90,10 +90,95 @@ U kontekstu PKI (Public Key Infrastructure), leaf certifikati su najniži u hije
 
 ## Setup Let's Encrypt SSL Certificate on EC2 Amazon Linux AMI3 (Nginx)
 U sljedecem primjeru cemo pokazati na koji nacin mozemo konfigurisati SSL Let's Encrypt certifikat na EC2 Amazon Linux AMI3 serveru koristeci Nginx web server. Za ovaj primjer cemo koristiti web aplikaciju i znanje koje smo stekli u tokom [Week-5](/devops-mentorship-program/03-march/week-5-140323/00-class-notes.md) predavanja iz serije predavanja odrzanih tokom DevOps Mentorship Programa.
-To podrazumijeva da imamo EC2 instancu sa Amazon Linux AMI3 operativnim sustavom, Nginx web serverom i web aplikaciju koja je dostupna na portu 80 koristeci nasu javnu IP adresu. 
+To podrazumijeva da imamo EC2 instancu sa Amazon Linux 3 operativnim sistemom, Nginx web serverom i web aplikaciju koja je dostupna po HTTP protokolu na portu 80 koristeci nasu javnu IP adresu. 
+
+1. Kreirali smo Route 53 DNS zapis `http://ssl.awsbosnia.com/` i usmerili ga na nasu Public IP adresu nase EC2 instance na kojoj se nalazi nasa aplikacija.
+
+2. Za kreiranje Lets Encrypt certifikata iskorisiti cemo [certbot](https://certbot.eff.org/) alat. Certbot je alat koji nam omogucava da automatski generisemo i instaliramo SSL certifikat.
+Na Amazon Linux Ami 3 cert bot cemo instalirati koristeci pip alat.
+```bash
+$ sudo dnf install python3 augeas-libs
+$ sudo python3 -m venv /opt/certbot/
+$ sudo /opt/certbot/bin/pip install --upgrade pip
+$ sudo /opt/certbot/bin/pip install certbot certbot-nginx
+$ sudo ln -s /opt/certbot/bin/certbot /usr/bin/certbot
+$ sudo certbot certonly --nginx # I am feeling conservative :) you can use sudo certbot --nginx instead to automatize the process
+```
+Output komande `sudo certbot certonly --nginx`:
+```bash
+[root@ip-172-31-91-148 ~]# sudo certbot certonly --nginx
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Please enter the domain name(s) you would like on your certificate (comma and/or
+space separated) (Enter 'c' to cancel): ssl.awsbosnia.com, www.ssl.awsbosnia.com
+Requesting a certificate for ssl.awsbosnia.com and www.ssl.awsbosnia.com
+
+Successfully received certificate.
+Certificate is saved at: /etc/letsencrypt/live/ssl.awsbosnia.com/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/ssl.awsbosnia.com/privkey.pem
+This certificate expires on 2023-07-14.
+These files will be updated when the certificate renews.
+
+NEXT STEPS:
+- The certificate will need to be renewed before it expires. Certbot can automatically renew the certificate in the background, but you may need to take steps to enable that functionality. See https://certbot.org/renewal-setup for instructions.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+If you like Certbot, please consider supporting our work by:
+ * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+ * Donating to EFF:                    https://eff.org/donate-le
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+``` 
+Vidimo da su nasli ccertifikati na sljedecoj lokaciji:
+```
+Certificate is saved at: /etc/letsencrypt/live/ssl.awsbosnia.com/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/ssl.awsbosnia.com/privkey.pem
+```
+3. Kako bi NGINX mogao da primi HTTPS zahtijeve neophodno je da azuriramo NGINX konfiguraciju. 
+```bash
+$ cp node-app.conf node-app.conf.bak # backup originalne konfiguracije
+```
+Nakon sto smo napravili backup upisujemo novi konfiguracijski fajl `node-app.conf`:
+```bash
+server {
+  listen 80;
+  server_name ssl.awsbosnia.com;
+  return 301 https://$server_name$request_uri;
+}
+
+server {
+  listen 443 ssl;
+  server_name ssl.awsbosnia.com;
+
+  ssl_certificate /etc/letsencrypt/live/ssl.awsbosnia.com/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/ssl.awsbosnia.com/privkey.pem;
+
+  location / {
+    proxy_pass http://127.0.0.1:8008;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+  }
+}
+```
+4. Restartujemo NGINX web server:
+```bash
+$ sudo systemctl restart nginx
+```
+Nakon toga vidimo da mozemo pristupiti nasoj web aplikaciji preko sigurne HTTPS veze https://ssl.awsbosnia.com/  
+
+## Import Lets Encrypt into AWS Certificate Manager
+```
+$ cd /etc/letsencrypt/live/ssl.awsbosnia.com/ # pozicioniramo se u folder sa certifikatima koje je generisao Lets Encrypt
+```
+Dokumentacija za importovanje certifikata u AWS Certificate Manager se nalazi na [Importing certificates into AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html).
 
 
-
-[MIT OPEN COURSEWARE - SSL and HTTPS](https://youtu.be/q1OF_0ICt9A)
-[Apache SSL](https://httpd.apache.org/docs/2.4/ssl/ssl_faq.html#aboutcerts)
-[OpenSSL Certificate Authority](https://jamielinux.com/docs/openssl-certificate-authority/)
+- [certbot intructions](https://certbot.eff.org/instructions?ws=nginx&os=pip)
+- [Configure SSL/TLS on Amazon Linux 2023](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-amazon-linux-2023.html)
+- [MIT OPEN COURSEWARE - SSL and HTTPS](https://youtu.be/q1OF_0ICt9A)
+- [Apache SSL](https://httpd.apache.org/docs/2.4/ssl/ssl_faq.html#aboutcerts)
+- [OpenSSL Certificate Authority](https://jamielinux.com/docs/openssl-certificate-authority/)
+- [openssl command](https://www.sslshopper.com/article-most-common-openssl-commands.html)
+- [6 OpenSSL command options that every sysadmin should know](https://www.redhat.com/sysadmin/6-openssl-commands)
+- [:infinity: DevOps Learning Path - AWS Certificate Manager](/aws/aws-service-notes/acm.md)
