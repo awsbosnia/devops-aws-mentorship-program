@@ -39,10 +39,10 @@ Na sljedecem [linku](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7Jtb4NxCS
 ## Self Signed Certficates
 Ponekad nije neophodno da imate SSL certifikat potpisan od strane poznatog Certified Authoritija. Uzmimo za prijmjer da imate development okruzenje gdje zelite da enkriptujete svu komunikaciju. Potrebno je da kreirate par privatnog i javnog kljuca i nakon toga da kreirate CRS koji ce biti potpisan od strane vaseg vlastitog CA. Vlastiti CA kreirate na nacin da ste kreirali par kljuceva koji ce poptpisati kljuceve kreirane od strane servera u development okruzenju. Kako se radi o vasem vlastitom CA, tom certifikatu nece biti vjerovano ali kako se radi o development okruzenju vi mozete reci vasoj aplikaciji da vjeruje CA koji je koristen za potpisivanje certifikata.
 
-## SSL Cahin Of Trust
+## SSL Chain Of Trust
 Chain of trust (lanac povjerenja) u kontekstu SSL certifikata odnosi se na proces provjere valjanosti certifikata kako bi se osigurala sigurna veza izmedju browsera/klijenta i web servera. Lanac povjerenja sastoji se od niza certifikata koji se proteže od SSL certifikata krajnjeg korisnika do root certifikata, preko jednog ili više intermediate certifikata.
 
-![SSL Chaing of trust](/resources/images/ssl-chain-of-trust.jpeg)
+![SSL Chain of trust](/resources/images/ssl-chain-of-trust.jpeg)
 
 **Evo kako lanac povjerenja funkcionise za SSL certifikate:**
 
