@@ -1,0 +1,181 @@
+body {
+	display: grid;
+	background: #607d8b;
+	min-height: 100vh;
+	place-content: center;
+}
+
+.loaded-content ~ .placeholder {
+	display: none !important;
+}
+
+.content {
+	display: flex;
+	gap: 1rem;
+	width: 70vw;
+}
+
+.profile-list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.profile-list-item {
+	display: flex;
+	flex-direction: row;
+	margin: 0.5rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.profile-list-item>.text-placeholder {
+	width: 16rem;
+	margin-top: 0;
+}
+
+.profile {
+	width: 20rem;
+	max-height: 25rem;
+}
+
+.profile > .text {
+	padding-left: 0.1rem;
+}
+
+.profile > .email {
+	font-size: 0.8rem;
+    color: #777;
+}
+
+.card {
+	border-radius: 1rem;
+	background: #fff;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+.profile-content {
+	flex-grow: 1;
+}
+
+.placeholder {
+	background: #eee;
+	border-radius: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.image {
+	height: 16rem;
+	margin-bottom: 1rem;
+	background: #eee;
+	border-radius: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.image img {
+	max-width: inherit;
+	max-height: inherit;
+	height: inherit;
+	width: inherit;
+	object-fit: cover;
+}
+
+.image > form {
+	width: 100%;
+	height: 100%;
+}
+
+.image input {
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.item-image {
+	height: 4rem;
+	width: 4rem;
+	background: #eee;
+	border-radius: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.item-image > img {
+	max-width: inherit;
+	max-height: inherit;
+	height: inherit;
+	width: inherit;
+	object-fit: cover;
+}
+
+.item-text {
+	text-align: left;
+	flex: 1 1 0;
+	margin-left: 2rem;
+}
+
+.title-placeholder {
+	height: 32px;
+	margin-bottom: 2rem;
+}
+
+.text-placeholder {
+	height: 22px;
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+.image:hover:after {
+	content: "\270E";
+	display: block;
+	font-size: 1.8rem;
+	line-height: 1;
+	color: black;
+	border-radius: 50%;
+	padding-left: 0.5rem;
+	transform: rotate(90deg);
+	animation: none;
+	font-weight: bold;
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+
+.placeholder:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100px;
+	background: linear-gradient(90deg, #eee, #f4f4f4, #eee);
+	animation: gradient 1s infinite ease-in-out;
+}
+
+a {
+	all: unset;
+}
+
+a:hover, .image > form:hover {
+	cursor: pointer;
+	opacity: 60%;
+}
+
+@keyframes gradient {
+  form {
+    left: 0%;
+  }
+  
+  to {
+    left: 100%;
+  }
+}

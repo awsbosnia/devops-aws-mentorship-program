@@ -1,0 +1,20 @@
+spring:
+  servlet.multipart:
+    max-file-size: 10MB
+    max-request-size: 10MB
+  thymeleaf.reactive.max-chunk-size: 8192
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate.ddl-auto: create
+server.tomcat.max-swallow-size: -1
+app:
+  secrets.db: s3-webapp-demo-db-user
+  datasource:
+    schema: s3-webapp-demo-db
+    url: jdbc:mysql://s3-webapp-demo-db.c6cxlmzhdmgm.eu-central-1.rds.amazonaws.com:3306/s3-webapp-demo-db
+    username: ${DB_USER:}
+    password: ${DB_PASS:}
+  profile.image.s3:
+    bucket: s3-webapp-demo-profile-images
+    access: ${AWS_ACCESS:}
+    secret: ${AWS_SECRET:}
