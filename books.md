@@ -23,7 +23,7 @@ Ovdje mozete pronaci listu knjiga za razlicite alate i tehnologije koje koristim
 - [The Unicorn Project](https://learning.oreilly.com/library/view/the-unicorn-project/9781098124175/)
 - [The Phoenix Project](https://learning.oreilly.com/library/view/the-phoenix-project/9781457191350/)
 - [The DevOps Handbook](https://learning.oreilly.com/library/view/the-devops-handbook/9781457191381/)
-- [The DevOps Engineer's Career Guide](https://www.amazon.com/DevOps-Engineers-Career-Guide-Professionals-ebook/dp/B07NDDGNLS/)
+- [The DevOps Engineer's Career Guide](https://www.amazon.com/DevOps-Engineers-Career-Guide-Professionals-ebook/dp/B07NDDGNLS/)  
 - [Effective DevOps](https://learning.oreilly.com/library/view/effective-devops/9781491926291/)
 - [Practice of System and Network Administration, The: DevOps and other Best Practices for Enterprise IT, Volume 1](https://learning.oreilly.com/library/view/practice-of-system/9780133415087/)
 - [Practice of Cloud System Administration, The: DevOps and SRE Practices for Web Services, Volume 2](https://learning.oreilly.com/library/view/practice-of-cloud/9780133478549/)

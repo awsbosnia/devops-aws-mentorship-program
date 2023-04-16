@@ -36,5 +36,5 @@ Za vise informacija pogledati knjigu **SELinux System Administration - Third Edi
 
 # Page Navigation
 
-[:fast_forward: Sadrzaj - DevOps Learning Path](../table-of-contents.md)
+[:fast_forward: :infinity: DevOps Learning Path - Sadrzaj](../table-of-contents.md)
 [:fast_forward: HOME - README.md](../README.md)
