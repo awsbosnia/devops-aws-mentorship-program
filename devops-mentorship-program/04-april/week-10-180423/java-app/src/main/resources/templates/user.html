@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<link th:href="@{/style.css}" rel="stylesheet"></link>
+</head>
+<body>
+	<div class="content">
+		<div class="card profile">
+			<div class="image">
+				<form method="POST"
+					th:action="@{/user/{id}/profile-image(id=${user.id})}"
+					enctype="multipart/form-data">
+					<img th:src="@{/user/{id}/profile-image(id=${user.id})}" /> <input
+						type="file" name="file" onchange="form.submit()" />
+				</form>
+			</div>
+			<div class="text">[[${user.firstName + " " + user.lastName}]]</div>
+			<div class="text email">[[${user.email}]]</div>
+		</div>
+		<div class="card profile-content">
+			<div class="title-placeholder placeholder"></div>
+			<div class="text-placeholder placeholder"></div>
+			<div class="text-placeholder placeholder"></div>
+			<div class="text-placeholder placeholder"></div>
+			<div class="text-placeholder placeholder"></div>
+			<div class="text-placeholder placeholder"></div>
+			<div class="text-placeholder placeholder"></div>
+			<div class="text-placeholder placeholder"></div>
+			<div class="text-placeholder placeholder"></div>
+		</div>
+	</div>
+</body>
+</html>

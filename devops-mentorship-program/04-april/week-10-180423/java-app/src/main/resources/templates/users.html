@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<link th:href="@{/style.css}" rel="stylesheet"></link>
+</head>
+<body>
+	<div class="content">
+		<div class="card profile-list">
+			<a class="profile-list-item" th:href="@{/user/{id}(id=${user.id})}"
+				th:each="user : ${users}">
+				<div class="item-image">
+					<img
+						th:src="@{/user/{id}/profile-image(id=${user.id})}" />
+				</div>
+				<div class="item-text">[[${user.firstName}]]</div>
+				<div class="item-text">[[${user.lastName}]]</div>
+				<div class="item-text">[[${user.email}]]</div>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
