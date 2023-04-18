@@ -1,6 +1,11 @@
 # 📝 Week 9 - Class notes
 ## 📅 Date: 11.04.2023.
 
+## SSL Deep Dive
+Kako smo u ranijim predavanjima propustili da spomenemo SSL certifikate tokom Office Hours sesije odrzane u Subotu 15.04. smo obradili tu temu.
+Biljeske i video mozete pronaci na sljedecim linkovima:
+- [SSL Certifikati](/devops-learning-path/ssl.md)
+- [DevOps Mentorship Program - Office Hours 15.04.2023.](https://youtu.be/w4GP-jHYffI) 
 ## Amazon Simple Storage Service (Amazon S3)
 Amazon S3 je object-level storage. Object-levle storage znaci da se podaci pohranjuju u "objektima" a ne hijerarhijskog strukturi direktiroja. Svaki objekt ukljucuje podatke i metapodatke koji opisuju objekt. Svaki objekt u S3-u ima svoj jedinstveni kljuc (key) koji se koristi za identifikaciju objekta. 
 Amazon S3 mozemo koristiti za:
