@@ -182,7 +182,7 @@ U nastavku su date neke od komandi koje se mogu koristiti za upravljanje certifi
 #
 $
 ```
-Ako zelite da saznate vise o OpenSSL komandama preporuka je da pogledate knjigu [Library: OpenSSL Cookbook  3rd Edition by Ivan Ristic](resources/books/openssl-cookbook-3ed.pdf)
+Ako zelite da saznate vise o OpenSSL komandama preporuka je da pogledate knjigu [Library: OpenSSL Cookbook  3rd Edition by Ivan Ristic](/resources/books/openssl-cookbook-3ed.pdf)
 
 # 📖 Learning materials  
 
