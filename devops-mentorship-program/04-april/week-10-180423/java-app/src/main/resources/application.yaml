@@ -8,7 +8,9 @@ spring:
     hibernate.ddl-auto: create
 server.tomcat.max-swallow-size: -1
 app:
-  secrets.db: s3-webapp-demo-db-user
+  secrets:
+    enabled: true
+    db: s3-webapp-demo-db-user
   datasource:
     schema: s3-webapp-demo-db
     url: jdbc:mysql://s3-webapp-demo-db.c6cxlmzhdmgm.eu-central-1.rds.amazonaws.com:3306/s3-webapp-demo-db
