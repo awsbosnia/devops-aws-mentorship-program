@@ -22,7 +22,7 @@ public class AWSConfig {
 	private String secretKey;
 
 	@Bean
-	@Profile("!local")
+	@Profile("!local & !test")
 	public AwsCredentialsProvider instanceCredentialsProvider() {
 		return InstanceProfileCredentialsProvider.create();
 	}
@@ -34,11 +34,13 @@ public class AWSConfig {
 	}
 	
 	@Bean
+	@Profile("!test")
 	public S3Client amazonS3(AwsCredentialsProvider credentialsProvider) {
 		return S3Client.builder().credentialsProvider(credentialsProvider).build();
 	}
 	
 	@Bean
+	@Profile("!test")
 	public SecretsManagerClient secretsManager(AwsCredentialsProvider credentialsProvider) {
 		return SecretsManagerClient.builder().credentialsProvider(credentialsProvider).build();
 	}

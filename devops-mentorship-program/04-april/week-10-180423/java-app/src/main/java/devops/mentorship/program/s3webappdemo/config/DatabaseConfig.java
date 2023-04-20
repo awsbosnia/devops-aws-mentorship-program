@@ -1,16 +1,14 @@
 package devops.mentorship.program.s3webappdemo.config;
 
 import javax.sql.DataSource;
-
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import lombok.Getter;
 import lombok.Setter;
 import software.amazon.awssdk.services.secretsmanager.SecretsManagerClient;
@@ -19,13 +17,14 @@ import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueRespon
 
 @Configuration
 public class DatabaseConfig {
-	@Value("${app.datasource.schema}")
+	@Value("${app.datasource.schema:}")
 	private String schema;
 	
-	@Value("${app.secrets.db}")
+	@Value("${app.secrets.db:}")
 	private String dbSecretId;
 	
 	@Bean
+	@ConditionalOnProperty(name = "app.secrets.enabled", havingValue = "true")
 	public DataSource getDataSource(SecretsManagerClient secretsManager) throws JsonMappingException, JsonProcessingException {
 		AWSSecretDBModel dbModel = getDBUserPass(secretsManager);
 		return DataSourceBuilder.create().url("jdbc:mysql://" + dbModel.host + "/" + this.schema)
