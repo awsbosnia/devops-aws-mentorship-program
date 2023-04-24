@@ -1,5 +1,9 @@
 # 📝 Week 9 - Class notes
-## 📅 Date: 10.04.2023.
+## 📅 Date: 18.04.2023.
+
+## 📹 Session recordings
+- [**WEEK-10-tier-1-group-1 video session recording**](https://youtu.be/PdvQEppnNh8)
+- [**WEEK-10-tier-1-group-2 video session recording**](https://youtu.be/6RRfsMy4uNY)
 
 [:fast_forward: Class Notes](/devops-mentorship-program/04-april/week-8-040423/00-class-notes.md)
 [:fast_forward: Additional Reading](/devops-mentorship-program/04-april/week-8-040423/02-additional-reading.md)

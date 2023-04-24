@@ -115,7 +115,10 @@ Office Hours da se sastoje od 2 dijela:
 - ASG
 - ACM
 - CloudTrail
-- CloudWatch CPU alarms
+- CloudWatch CPU alarms / Splunk / ELK 
+```bash
+java -jar -Dspring.profiles.active=dev s3-webapp-demo-0.0.1-SNAPSHOT.jar
+```
 ---
 
 ## Week-9
@@ -303,6 +306,8 @@ NOTE: Dzenan OOTO
 ## Week-23
 
 ## Dzenan Due Date: 1.07.2023.
+- Mind map update sa stvarima koje smo presli i koje prelazimo
+- Snimanje dodanih kratkih videa 15-20 min max za stvari koje su bitne a nisu se spomenule ili su preskocene
 - Ispraviti greske u repozitoriju, povezati DevOps Learning Path sa Class Notes
 - Dopuniti materijale i biljeske (materijali sa gdrive i individualnih biljeski)
 - Napraviti yt video snimke i repozitoriji javnim
