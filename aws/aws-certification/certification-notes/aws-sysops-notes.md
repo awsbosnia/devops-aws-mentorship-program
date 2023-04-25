@@ -158,7 +158,23 @@ Updejtovati stack sa time ujljuciti deletion protection i koristiti neki poseban
 Output prod id iinstance proslijediti na kraju laba
 
 
+### Exam date: Apr, 2023.
 
+Lab Exams:
+As of 28.3.2023, lab exams are not included until further notice. The exam consisted of 65 multiple choice questions.
 
+CloudFront and Route 53
+A lot of questions were related to these two, such as DNS record types, and communication between CF/R53 and ELB, ASG and EC2 servers (example question I had - How would I set up failover with a R53 health check to two ELBs in different regions)
 
+Monitoring and reporting
+How to get access logs for ELB, VPC, S3, how to create a report out of them.
+
+High availability and redundancy
+A lot of questions were focused on establishing high availability with ASG, Multi-AZ DB failovers for Aurora DB, S3 backups that needed quick retrieval and Global Network failovers, such as R53 routing and failover.
+
+Session Manager
+A particularly high number of questions had to do with SSM, how to troubleshoot it if it doesn't work (permissions and SSM agent), how to use it to automate processes, how to run one-time scripts on it etc.
+
+VPC
+A couple of questions were related to NACLs, Security Groups, ephemeral ports and IPv4/IPv6 routing
 
