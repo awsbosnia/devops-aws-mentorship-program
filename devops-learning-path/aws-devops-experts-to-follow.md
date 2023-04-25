@@ -67,6 +67,7 @@ Kako bi ostali u toku sa aktuelnostima i novostima iz svijeta AWS i DevOps-a, na
 - [What's New on AWS (Unoffical) | @awswhatsnew](https://twitter.com/awswhatsnew)  
 - [.NET on AWS | @dotnetonaws](https://twitter.com/dotnetonaws)  
 - [Architecture Notes | @arcnotes](https://twitter.com/arcnotes)
+- [AWS CloudFormation](https://twitter.com/AWSCloudFormer)
 
 ### Podcasts
 - [Cloud Security Podcats - Spotify](https://open.spotify.com/show/6LZgeh4GecRYPc0WrwMB4I?si=96ceee79de88407e) | [web](https://cloudsecuritypodcast.tv/)

@@ -18,9 +18,9 @@ Office Hours da se sastoje od 2 dijela:
 - [x] [Week-6](##week-6)
 - [x] [Week-7](##week-7)
 - [x] [Week-8](##week-8) 
-- [ ] [Week-9](##week-9)
-- [ ] [Office Hours 15.04.2023.](##Office-Hours-15.04.2023.)    
-- [ ] [Week-10](##week-10)
+- [x] [Week-9](##week-9)
+- [x] [Office Hours 15.04.2023.](##Office-Hours-15.04.2023.)    
+- [x] [Week-10](##week-10)
 - [ ] [Week-11](##week-11)
 - [ ] [Office Hours 29.04.2023.](##Office-Hours-29.04.2023.)  
 - [ ] [Week-12](##week-12)
@@ -115,29 +115,26 @@ Office Hours da se sastoje od 2 dijela:
 - ASG
 - ACM
 - CloudTrail
-- CloudWatch CPU alarms / Splunk / ELK 
-```bash
-java -jar -Dspring.profiles.active=dev s3-webapp-demo-0.0.1-SNAPSHOT.jar
-```
+ 
 ---
 
 ## Week-9
 
 #### Group-1-Tier-1 11.04.2023.
-- [ ] S3 Storage - Basics
+- [x] S3 Storage - Basics
 - [ ] IAM deep dive
     - [ ] Pokazati na primjeru kopiranja objekata iz jednog S3 bucketa u drugi razliku u gresci koju dobijete kada imate `s3:ListBucket` i kad nemate `s3:ListBucket`. AWS docs [link](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html)
 
 #### Group-1-Tier-2 13.04.2023.
-- Relacione Baze Podataka, instalacija MySQL-a, PostgreSQL-a na Amazon Linux EC2 instnaci
-    - Self Managed Baze podataka, problemi i izazovi
-- AWS RDS - Relational Database Service
-- Database Migration Servis (DMS)
+- [x] Relacione Baze Podataka, instalacija MySQL-a, PostgreSQL-a na Amazon Linux EC2 instnaci
+    - [x] Self Managed Baze podataka, problemi i izazovi
+- [x] AWS RDS - Relational Database Service
+- [ ] Database Migration Servis (DMS)
 ---
 ## Office Hours 15.04.2023.
 
-- [ ] Podesavanje SSL certifikata na nasu EC2 instancu gdje koristimo SSL let's encrypt certifikat
-- [ ] Prebacivanje SSL certifikata sa EC2 instance na ALB servis koristeci AWS Certificate Manager (ACM) servis
+- [x] Podesavanje SSL certifikata na nasu EC2 instancu gdje koristimo SSL let's encrypt certifikat
+- [x] Prebacivanje SSL certifikata sa EC2 instance na ALB servis koristeci AWS Certificate Manager (ACM) servis
 
 Snimiti dodatne vide lekcije offline: 
 - [ ] IMDS - Instance Metadata Service
@@ -147,13 +144,15 @@ Snimiti dodatne vide lekcije offline:
 ---
 ## Week-10
 #### Group-1-Tier-1 18.04.2023.
-- Server Configuration Management
-    - Ansible
-    - Packer
-    - EC2 Image Builder
+- [x] RDS part 2
+
+- [ ] Server Configuration Management
+    - [ ] Ansible
+    - [ ] Packer
+    - [ ] EC2 Image Builder
 
 #### Group-1-Tier-2 20.04.2023.
-- Robert Zuljevic gost predavac deployment Java aplikacije na AWS-u
+- [x] Robert Zuljevic gost predavac deployment Java aplikacije na AWS-u
 - Infrastruktura aplikacije:
     - EC2 instance
     - Access Key / Secret Access Key -> IAM Role
@@ -163,16 +162,26 @@ Snimiti dodatne vide lekcije offline:
     - Secrets Manager (Objasniti Secrets Manager vs Parameter Store )
     - Amazon RDS
     - Route 53
+```
+```bash
+# ucitavanje razlicitih app konfiguracijskih profila. Bitno za CI/CD i razlicita okruzenja Dev/QA/Prod 
+
+java -jar -Dspring.profiles.active=dev s3-webapp-demo-0.0.1-SNAPSHOT.jar
+```  
+
 ------
 
 ## Week-11
 
 #### Group-1-Tier-1 25.04.2023.
-- VPC Virtual Private Cloud Deep Dive
-- VPC Lattice
+- [ ] Komanda `aws secretsmanager get-secret-value --secret-id rds!db-f68a7098-4e7c-4d1d-906e-d75383c92e39`  je OK, ali je problem uzvicnik `rds!db`. Treba staviti escape backslash `rds\!db` - Hvala **Ismail Icanovic** 
+- [ ] S3 + CloudFront for static web site hosting
+- [ ] Elastic IPs
+- [ ] VPC Intro
 
 #### Group-1-Tier-2 27.04.2023.
-- Milan Pavlovic - Uvod u Docker
+- VPC Virtual Private Cloud Deep Dive
+- VPC Lattice
 ---
 ## Office Hours 29.04.2023.
 AWS Certification 
@@ -215,7 +224,7 @@ Gosti predavaci:
 - Github actions (pre-commit hooks)
 
 #### Group-1-Tier-2 11.05.2023.
-- CloudFront + S3 - Static Web Site Hosting
+- Docker
 ---
 ## Office Hours 13.05.2023.
 
