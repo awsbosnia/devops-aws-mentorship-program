@@ -98,7 +98,7 @@ Razlike izmedju Security Grupe i Network Access Control Lista
 #### Internet Gateway (IGW)
 
 Internet Gateway predstavlja horizontalno skalabilnu, redudantnu i visko dostupnu komponentu VPC-a koja dozvoljava komunikaciju izmedju instanci unutar VPC-a i interenta. 
-Kada je saobracaj poslan sa EC2 instance prema internetu, igw prevodi privatnu ip4 adresu u pridruzenu javnu ip4. IGW radi to jedan na jedan mapiranje izmedju javnih i privatnih adresa. Kada instanca prima saobracaj sa interenta internet gateway prevodi desitnacijsku javnu IPv4 adresu u odgovarajucu privatnu adresu EC2 instance i prosljedjuje saobracaj unutar VPC-a.
+Kada je saobracaj poslan sa EC2 instance prema internetu, igw prevodi privatnu ip4 adresu u pridruzenu javnu ip4. IGW radi to jedan na jedan mapiranje izmedju javnih i privatnih adresa. Kada instanca prima saobracaj sa interenta internet gateway prevodi destinacijsku javnu IPv4 adresu u odgovarajucu privatnu adresu EC2 instance i prosljedjuje saobracaj unutar VPC-a.
 
 Da bi unutar vaseg VPC-a kreirali javni subnet (podmerezu) gdje ce resursi koji se nalaze unutar istog biti dostupni sa interneta i imati izlaz na internet VPC mora imati pridruzen igw. Pored toga potrebno je definisati pravilo rutiranja unutar ruting tabele gdje se sav ne-lokalni saobracaj (0.0.0.0/0) salje na igw.
 
