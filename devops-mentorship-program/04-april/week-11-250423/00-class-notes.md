@@ -123,7 +123,11 @@ Prije pojave NAT serivsa, da bi instancama unutar privatnog subneta omogucili iz
 
 ## 📹 Session recordings
 - [**WEEK-11-tier-1-group-1 video session recording**](https://youtu.be/DVJ7UGoHL9Q)
-- [**WEEK-11-tier-1-group-2 video session recording**]()
+- [**WEEK-11-tier-1-group-2 video session recording**]()  
+
+## 📖 Reading materials
+- [📙 Amazon CloudFront FAQs](https://aws.amazon.com/cloudfront/faqs/)
+- [📙 Amazon VPC FAQs](https://aws.amazon.com/vpc/faqs/)
 
 [:fast_forward: Class Notes](/devops-mentorship-program/04-april/week-11-250423/01-homework.md)
 [:fast_forward: Additional Reading](/devops-mentorship-program/04-april/week-11-250423/02-additional-reading.md)
