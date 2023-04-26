@@ -174,6 +174,22 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Homework](/devops-mentorship-program/04-april/week-9-110423/01-homework.md)
   - [Additional reading](/devops-mentorship-program/04-april/week-9-110423/02-additional-reading.md)
   </details>
+   <summary>Week-10</summary>
+
+  **Topics: Java Application Deployment on EC2 using Secrets Manager, IAM Role, S3 and Amazon RDS**
+
+  - [Class notes](/devops-mentorship-program/04-april/week-10-180423/00-class-notes.md)
+  - [Homework](/devops-mentorship-program/04-april/week-10-180423/01-homework.md)
+  - [Additional reading](/devops-mentorship-program/04-april/week-10-180423/02-additional-reading.md)
+  </details>
+   <summary>Week-11</summary>
+
+  **Topics: Amazon CloudFront, Amazon Virtual Private Cloud (VPC)**
+
+  - [Class notes](/devops-mentorship-program/04-april/week-11-250423/00-class-notes.md)
+  - [Homework](/devops-mentorship-program/04-april/week-11-250423/01-homework.md)
+  - [Additional reading](/devops-mentorship-program/04-april/week-11-250423/02-additional-reading.md)
+  </details>
 
 ## :alarm_clock: DevOps Mentorship Program - Office Hours
 Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze kako bi se napravila rekapitulacija obradjenih tema, odgovrilo na eventualna pitanja, kao i dale dodatne upute ako je to potrebno. Snimci do sada odrzanih Office Hours sesija su dostupni preko linkova ispod.

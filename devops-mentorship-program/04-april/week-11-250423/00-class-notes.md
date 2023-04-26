@@ -65,7 +65,7 @@ Vodite racuna da automatski dodjeljene javne IPv4 adrese nisu fixne, te se mogu 
 
 Ukoliko vam je potrebna fixna javna IP adresa imate mogucnost da alocirate IPv4 javnu adresu koja je rezervisane od strane AWS-a, nakon sto alocirali javnu adresu imate mogucnost da je pridruzite EC2 instanci. Tako alocirane javne ip adrese postaju pridruzene vasem racunu i one se ne mijenjaju bez obzira sta vi uradite sa instancom kojoj je ta adresa pridruzena. Takve adrese se nazivaju Elastic IP Addresses. 
 
-Security Groups / Sigurnosne grupe
+#### Security Groups / Sigurnosne grupe
 
 Security Groups odnosno sigurnosne grupe predstavljaju virtuelni firewall koji kontrolise ulazni i izlazni saobracaj prema AWS resursima i EC2 instancama.
 Security grupe su na nivou instance, dakle uz pomoc security grupa ne mozete definisati pristup citavom subnetu nego samo resursima kojima je ta security grupa pridruzena.
@@ -85,8 +85,6 @@ Svaki vpc ima autmatski kreiranju standardnu ACL koja je pridruzena svakom subne
 
 Kada kreirate novu ACL ona ce odbijati sav dolazni i odlazni saobracaj dok vi ne kreirate pravila koja kazu drugacije.
 
-
-
 Razlike izmedju Security Grupe i Network Access Control Lista
 
 
@@ -102,7 +100,7 @@ Razlike izmedju Security Grupe i Network Access Control Lista
 Internet Gateway predstavlja horizontalno sakalabinlu, redudantnu i visko dostupnu komponentu VPC-a koja dozvoljava komunikaciju izmedju instanci unutar VPC-a i interenta. 
 Kada je saobracaj poslan sa EC2 instance prema internetu, igw prevodi privatnu ip4 adresu u pridruzenu javnu ip4. IGW radi to jedan na jedan mapiranje izmedju javnih i privatnih adresa. Kada instanca prima saobracaj sa interenta internet gateway prevodi prevodi desitnacijsku javnu IPv4 adresu u odgovarajucu privatnu adresu EC2 instance i prosljedjuje saobracaj unutar VPC-a.
 
-Da bi unutar vaseg VPC-a kreirali javni subnet (podmerezu) gdje ce resursi koji se nalaze unutar istog biti dostupni sa interenta i imati izlaz na interent VPC mora imati pridruzen igw. Pored toga potrebno je definisati pravilo rutiranja unutar ruting tabele gdje se sav ne-loklanlni saobracaj (0.0.0.0/0) salje na igw.
+Da bi unutar vaseg VPC-a kreirali javni subnet (podmerezu) gdje ce resursi koji se nalaze unutar istog biti dostupni sa interneta i imati izlaz na interent VPC mora imati pridruzen igw. Pored toga potrebno je definisati pravilo rutiranja unutar ruting tabele gdje se sav ne-loklanlni saobracaj (0.0.0.0/0) salje na igw.
 
 Pored navedenog neophodno je i da pravila definisana unutar ACL i SG dozvoljavaju zeljeni saobracaj.
 
@@ -124,7 +122,7 @@ Prije pojave NAT serivsa, da bi instancama unutar privatnog subneta omogucili iz
 
 
 ## 📹 Session recordings
-- [**WEEK-11-tier-1-group-1 video session recording**]()
+- [**WEEK-11-tier-1-group-1 video session recording**](https://youtu.be/DVJ7UGoHL9Q)
 - [**WEEK-11-tier-1-group-2 video session recording**]()
 
 [:fast_forward: Class Notes](/devops-mentorship-program/04-april/week-11-250423/01-homework.md)
