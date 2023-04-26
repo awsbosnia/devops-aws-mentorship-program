@@ -245,6 +245,7 @@ Gosti predavaci:
 
 #### Group-1-Tier-2 25.05.2023.
 - Migrate Java app from ECS to ECS Fargate
+- [ ] Spomenuti sta se desi kada imate NAT gateway i ECS Fargate task u privatnom subnetu. 
 ---
 ## Office Hours 27.05.2023.
 
