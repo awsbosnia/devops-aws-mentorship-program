@@ -165,7 +165,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Homework](/devops-mentorship-program/04-april/week-8-040423/01-homework.md)
   - [Additional reading](/devops-mentorship-program/04-april/week-8-040423/02-additional-reading.md)
   </details>  
-    <details>
+  <details>
   <summary>Week-9</summary>
 
   **Topics: Amazon S3, IAM Role, S3 Bucket Policy, Amazon RDS, MySQL**
@@ -174,7 +174,8 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Homework](/devops-mentorship-program/04-april/week-9-110423/01-homework.md)
   - [Additional reading](/devops-mentorship-program/04-april/week-9-110423/02-additional-reading.md)
   </details>
-   <summary>Week-10</summary>
+  <details>
+  <summary>Week-10</summary>
 
   **Topics: Java Application Deployment on EC2 using Secrets Manager, IAM Role, S3 and Amazon RDS**
 
@@ -182,6 +183,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Homework](/devops-mentorship-program/04-april/week-10-180423/01-homework.md)
   - [Additional reading](/devops-mentorship-program/04-april/week-10-180423/02-additional-reading.md)
   </details>
+  <details>
    <summary>Week-11</summary>
 
   **Topics: Amazon CloudFront, Amazon Virtual Private Cloud (VPC)**
