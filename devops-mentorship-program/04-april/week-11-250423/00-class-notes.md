@@ -9,11 +9,11 @@
 **Amazon Virtual Private Cloud** ili skraceno **Amazon VPC** je AWS servis koji vam omogucava da kreirate i definisete virtuelnu mrezu unutar AWS cloud-a te da unutar te mreze smjestite vase resurse.
 Vi imate potpunu kontrolu nad tom mrezom u smislu odabira IP adresnog opsega koji ce VPC da koristi te definisanja pravila pristupa resursima unutar VPC-a. 
 
-Amazon VPC je regionalni servis, sto znaci da kada kreirate VPC morate da odaberete AWS regiju unutar koje se on nalazi. VPC moze da obuhvate sve dostupne Availibility Zone (AZ) unutar te regije. Mozete kreirati vise VPC-eva unutar jedne regije i svaki je logicki izolovn od onog drugog. 
+Amazon VPC je regionalni servis, sto znaci da kada kreirate VPC morate da odaberete AWS regiju unutar koje se on nalazi. VPC moze da obuhvate sve dostupne Availibility Zone (AZ) unutar te regije. Mozete kreirati vise VPC-eva unutar jedne regije i svaki je logicki izolovan od onog drugog. 
 
 Prilikom kreiranja VPC-a morate definisati IPv4 opseg adresa (CIDR - Classless Inter-Domain Routing block) koje ce VPC da koristi.
 
-Kada kreirate VPC sa željenim opsegom adresa, taj opseg vise ne mozete da mijenjate.
+Kada kreirate VPC sa zeljenim opsegom adresa, taj opseg vise ne mozete da mijenjate.
 
 Kada kreirate Vas AWS racun, defaultni VPC je kreiran za vas. Preporuka od strane AWS-a je da ne brisete defaultni VPC jer se neki pojedini resursi unutar AWS racuna kreiraju unutar tog defaultnog VPC-a osim ukoliko prilikom njihovog kreiranja vi drugacije eksplicitno ne odredite.
 
@@ -72,12 +72,12 @@ Security grupe su na nivou instance, dakle uz pomoc security grupa ne mozete def
 
 Uz pomoc security grupa imate mogucnost definisanja saobracaja kojeg zelite prihvatiti ali nemate mogucnost da definisete koji saobracaj zelite odbiti. (za to se koriste access control liste).
 
-Takodjer vazno je napomenuti da su sigurnosne gurpe stateful sto znaci da ukoliko posaljete neki request prema vasoj EC2 instanci, saobracaj koji dolazi od strane EC2 instance kao odgovor na taj request je dozvoljen bez obzira na izlazna pravila vase sigurnosne grupe.
+Takodjer vazno je napomenuti da su sigurnosne grupe stateful sto znaci da ukoliko posaljete neki request prema vasoj EC2 instanci, saobracaj koji dolazi od strane EC2 instance kao odgovor na taj request je dozvoljen bez obzira na izlazna pravila vase sigurnosne grupe.
 
 #### Network Access Control Lists (NACLs)
 
 Network Access Control Lists ili NACL je dodatni nivou sigurnosti koji se za razliku od security grupa nalazi na na nivou subnet-a.
-ACL predstavlja numericki poredanu listu pravila koju kroz koju AWS prolazi, pocevsi od najmanjeg numerinsanog pravila, prilikom donosenja odluke da li je saobracaj dozvoljen prema i izvan subneta koji je pridruzen toj ACL.
+ACL predstavlja numericki poredanu listu pravila kroz koju AWS prolazi, pocevsi od najmanjeg numerinsanog pravila, prilikom donosenja odluke da li je saobracaj dozvoljen prema i izvan subneta koji je pridruzen toj ACL.
 
 Svaka ACL ima finalno DENY odnosno pravilo za odbijanje koje ne mozete promijeniti.
 
@@ -97,10 +97,10 @@ Razlike izmedju Security Grupe i Network Access Control Lista
 
 #### Internet Gateway (IGW)
 
-Internet Gateway predstavlja horizontalno sakalabinlu, redudantnu i visko dostupnu komponentu VPC-a koja dozvoljava komunikaciju izmedju instanci unutar VPC-a i interenta. 
-Kada je saobracaj poslan sa EC2 instance prema internetu, igw prevodi privatnu ip4 adresu u pridruzenu javnu ip4. IGW radi to jedan na jedan mapiranje izmedju javnih i privatnih adresa. Kada instanca prima saobracaj sa interenta internet gateway prevodi prevodi desitnacijsku javnu IPv4 adresu u odgovarajucu privatnu adresu EC2 instance i prosljedjuje saobracaj unutar VPC-a.
+Internet Gateway predstavlja horizontalno skalabilnu, redudantnu i visko dostupnu komponentu VPC-a koja dozvoljava komunikaciju izmedju instanci unutar VPC-a i interenta. 
+Kada je saobracaj poslan sa EC2 instance prema internetu, igw prevodi privatnu ip4 adresu u pridruzenu javnu ip4. IGW radi to jedan na jedan mapiranje izmedju javnih i privatnih adresa. Kada instanca prima saobracaj sa interenta internet gateway prevodi destinacijsku javnu IPv4 adresu u odgovarajucu privatnu adresu EC2 instance i prosljedjuje saobracaj unutar VPC-a.
 
-Da bi unutar vaseg VPC-a kreirali javni subnet (podmerezu) gdje ce resursi koji se nalaze unutar istog biti dostupni sa interneta i imati izlaz na interent VPC mora imati pridruzen igw. Pored toga potrebno je definisati pravilo rutiranja unutar ruting tabele gdje se sav ne-loklanlni saobracaj (0.0.0.0/0) salje na igw.
+Da bi unutar vaseg VPC-a kreirali javni subnet (podmerezu) gdje ce resursi koji se nalaze unutar istog biti dostupni sa interneta i imati izlaz na internet VPC mora imati pridruzen igw. Pored toga potrebno je definisati pravilo rutiranja unutar ruting tabele gdje se sav ne-lokalni saobracaj (0.0.0.0/0) salje na igw.
 
 Pored navedenog neophodno je i da pravila definisana unutar ACL i SG dozvoljavaju zeljeni saobracaj.
 
@@ -116,7 +116,7 @@ Postje slucajevi kao sto su preuzimanja sigurnosnih azuriranja, instalacije apli
 
 Da bi to postigli neophodno je da koristimo NAT instance ili NAT gateway.
 
-NAT gateway je AWS servis koji je dizaniran da bude visoko dostupan unutar AZ i ima zadatak da omoguci izlaz na interent resursima koji se nalaze unutar privatnog subneta.
+NAT gateway je AWS servis koji je dizajniran da bude visoko dostupan unutar AZ i ima zadatak da omoguci izlaz na interent resursima koji se nalaze unutar privatnog subneta.
 
 Prije pojave NAT serivsa, da bi instancama unutar privatnog subneta omogucili izlaz na interent bilo je neophodno da manuelno kreirate NAT instancu i da je samostalno odrzavate.
 
