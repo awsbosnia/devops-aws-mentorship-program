@@ -136,11 +136,6 @@ Office Hours da se sastoje od 2 dijela:
 - [x] Podesavanje SSL certifikata na nasu EC2 instancu gdje koristimo SSL let's encrypt certifikat
 - [x] Prebacivanje SSL certifikata sa EC2 instance na ALB servis koristeci AWS Certificate Manager (ACM) servis
 
-Snimiti dodatne vide lekcije offline: 
-- [ ] IMDS - Instance Metadata Service
-        - Instance Metadata Service Version 1 (IMDSv1) – a request/response method  
-        - Instance Metadata Service Version 2 (IMDSv2) – a session-oriented method  
-- [ ] Kako instalirati MySQL na Amazon Linux 3 EC2 instancu (+osnovna konfiguracija)
 ---
 ## Week-10
 #### Group-1-Tier-1 18.04.2023.
@@ -323,6 +318,25 @@ NOTE: Dzenan OOTO
 - Napraviti yt video snimke i repozitoriji javnim
 - Napisati blog post o DevOps Mentorship Programu
 ---
+## Offline Recordings TO DO List
+Snimiti dodatne vide lekcije offline: 
+- [ ] IMDS - Instance Metadata Service
+        - Instance Metadata Service Version 1 (IMDSv1) – a request/response method  
+        - Instance Metadata Service Version 2 (IMDSv2) – a session-oriented method  
+- [ ] AWS Systems Manager, Bastion Hosts (SSM Agent)
+    - [AWS Bites: 78: When do you need a bastion host?](https://open.spotify.com/episode/48vnERHfZtHVovUlG2quG0?si=1dcf9e9928a54a4d)
+        - port knocking technique https://github.com/moxie0/knockknock
+        - set up EC2 instance connect https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-set-up.html
+        - AWS IP address ranges https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html
+        - AWS Systems Manager Session Manager https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html / ECS Exec
+        - aws/amazon-ssm-agent https://github.com/aws/amazon-ssm-agent
+        - Inles Project on git https://github.com/inlets/
+        - Basti on Github https://github.com/BohdanPetryshyn/basti
+        - tailscale https://tailscale.com/
+        - wireguard https://www.wireguard.com/
+- [ ] VPN 
+- [ ] Custom NAT instance
+- [ ] Kako instalirati MySQL na Amazon Linux 3 EC2 instancu (+osnovna konfiguracija)
 ## Office Hours 01.07.2023.
 --- 
 ## TBD
