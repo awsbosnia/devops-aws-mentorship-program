@@ -7,9 +7,9 @@ Biljeske i video mozete pronaci na sljedecim linkovima:
 - [SSL Certifikati](/devops-learning-path/ssl.md)
 - [DevOps Mentorship Program - Office Hours 15.04.2023.](https://youtu.be/w4GP-jHYffI) 
 ## Amazon Simple Storage Service (Amazon S3)
-Amazon S3 je object-level storage. Object-levle storage znaci da se podaci pohranjuju u "objektima" a ne hijerarhijskog strukturi direktiroja. Svaki objekt ukljucuje podatke i metapodatke koji opisuju objekt. Svaki objekt u S3-u ima svoj jedinstveni kljuc (key) koji se koristi za identifikaciju objekta. 
+Amazon S3 je object-level storage. Object-level storage znaci da se podaci pohranjuju u "objektima" a ne hijerarhijskog strukturi direktorija. Svaki objekt ukljucuje podatke i metapodatke koji opisuju objekt. Svaki objekt u S3-u ima svoj jedinstveni kljuc (key) koji se koristi za identifikaciju objekta. 
 Amazon S3 mozemo koristiti za:
-- Backup i arhiviranje podataka - Amazon S3 je dizajniran na nacin da omogucava 99.999999999% (11 9') durability i  99.99% availaiblity. 
+- Backup i arhiviranje podataka - Amazon S3 je dizajniran na nacin da omogucava 99.999999999% (11 9') durability i  99.99% availability. 
 - Media storage i streaming 
 - Static website hosting
 - Data lake
@@ -18,13 +18,13 @@ Amazon S3 mozemo koristiti za:
 
 ### Tipovi S3 Storage-a
 
-- S3 Standard - Za generalnu upotrebu i za podatke kojima cesto prostupamo
+- S3 Standard - Za generalnu upotrebu i za podatke kojima cesto pristupamo
 - S3 Standard-Infrequent Access (S3 Standard-IA) - Za podatke ciji durability nam je bitan ali im ne pristupamo toliko cesto
 - S3 One Zone-Infrequent Access (S3 One Zone-IA) - Za podatke ciji durability nam je bitan ali im ne pristupamo toliko cesto. Razlika izmedju S3 Standard-IA i S3 One Zone-IA je sto S3 One Zone-IA ima samo jednu Availability Zone dok S3 Standard-IA ima 3 Availability Zone-a.
 - S3 Glacier Instant Retrieval - za podatke koji su nam jako bitni ali im ne pristupamo toliko cesto. Podaci se mogu vratiti u roku od 1 minuta.
 - S3 Glacier Flexible Retrieval - za podatke koji su nam jako bitni ali im ne pristupamo toliko cesto. Podacima mozete pristupiti koristeci expedited, standard ili bulk retrieval opcije. Expedited retrieval je najbrzi ali najskuplji, standard retrieval je srednje brz ali jeftiniji, bulk retrieval je najjeftiniji ali najsporiji.
 - S3 Glacier Deep Archive - za podatke koji su nam jako bitni ali im ne pristupamo toliko cesto, odnosno mozemo ih arhivirati na duze vrijeme. Podaci se mogu vratiti u roku od 12 sati.
-- S3 intelligent tiering - za podatke za koje nismo sigurni na koji nacim im pristupmao, S3 intelligent tiering automatski prebacuje podatke iz S3 Standard u S3 Standard-IA ili S3 One Zone-IA u zavisnosti od frekvencije pristupa podacima.
+- S3 intelligent tiering - za podatke za koje nismo sigurni na koji nacin im pristupamo, S3 intelligent tiering automatski prebacuje podatke iz S3 Standard u S3 Standard-IA ili S3 One Zone-IA u zavisnosti od frekvencije pristupa podacima.
 
 ### S3 kontrola pristupa
 ![S3 Access Control](/devops-mentorship-program/04-april/week-8-040423/files/s3-access-control.png)
