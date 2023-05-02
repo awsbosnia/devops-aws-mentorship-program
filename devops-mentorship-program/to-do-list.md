@@ -185,7 +185,7 @@ Gosti predavaci:
     - Marin Radjenovic 
 
 ---
-## Week-12
+## Week-12 (pauza)
 
 #### Group-1-Tier-1 2.05.2023.
 - Unaprijedjenje infrastrukture za Java aplikaciju iz Week-10 (pogledati [AWS Web Application Architcture on AWS](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/web-application-architecture-on-aws-ra.pdf?did=wp_card&trk=wp_card))
@@ -206,9 +206,19 @@ Gosti predavaci:
     - Amazon Athena (Querying S3 Logs)
     - Route53 (multi region failover, diferent routing policies)
 
-#### Group-1-Tier-2 04.05.2023.
-- Marin Radjenovic - Serverless / AWS Lambda / API Gateway / SQS
-- Alma Beganovic - API Gateway 
+## Week-12 [New Schedule]
+#### Group-1-Tier-1 09.05.2023.
+- Marin Radjenovic - Serverless - AWS Lambda / Event Bridge  / SNS /  SQS 
+   => Hello World Node JS lambda funkcija i deployment kroz AWS konzolu. 
+   => EventBridge / CloudWatch Events (cron job)
+   => SAM 
+   => Demo AWS Lambda / SNS / SQS 
+   
+
+#### Group-1-Tier-1 11.05.2023.
+=> Marin nastavlja tamo gdje je stao u utorak i sta nije stigao da odradi u Utorak.
+=> Alma Beganovic - API Gateway, Alma ce da nadopuni marina za API Gateway sto Marin, Marin ce da asistira 
+
 ---
 ## Week-13
 
@@ -218,7 +228,7 @@ Gosti predavaci:
 - AWS CodePipeline, Code Build, Code Deploy
 - Github actions (pre-commit hooks)
 
-#### Group-1-Tier-2 11.05.2023.
+#### Group-1-Tier-2 11.05.2023. # mora biti pomjereno
 - Docker
 ---
 ## Office Hours 13.05.2023.
@@ -257,8 +267,8 @@ NOTE: Dzenan OOTO
 #### Group-1-Tier-1 06.06.2023.
 - Marin Radjenovic - CDK (Cloud Development Kit)
 
-#### Group-1-Tier-2 06.06.2023.
-- Marin Radjenovic - Overview of Machine Learning service on AWS
+#### Group-1-Tier-2 08.06.2023.
+- Marin Radjenovic - Overview of Machine Learning services on AWS
 
 ---
 
