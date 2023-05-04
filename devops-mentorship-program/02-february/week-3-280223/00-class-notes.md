@@ -3,7 +3,7 @@
 ### Bash / Shell Scripting
 
 **Shell** je program koji obezbjedjuje korisniku direktnu interakciju sa operativnim sistemom. Na pocetku je Unix OS koristio shell program pod nazivom **Bourne shell**. Danas se koristi **Bash** shell program koji je kompatibilan sa Bourne shell-om. **Bash** shell je standardni shell program na vecini Linux distribucija.  
-Postoji vise razlicith shell programa koje su razvijane za razlicite verzije UNIX-a. Ovo su neki od njih:  
+Postoji vise razlicitih shell programa koji su razvijani za razlicite verzije UNIX-a. Ovo su neki od njih:  
 - `sh` - Bourne shell
 - `csh` - C shell
 - `ksh` - Korn shell
@@ -26,7 +26,7 @@ Da bi provjerili koji shell koristimo, mozemo ukucati komandu `echo $SHELL`. Ova
 $ echo $SHELL
 /bin/bash
 ```
-Prethodna komanda nam govori da koristimo `/bin/bash` odnosno Bash shell.  Sljedecom komndom mozemo provjeriti verziju Bash shell-a.  
+Prethodna komanda nam govori da koristimo `/bin/bash` odnosno Bash shell.  Sljedecom komandom mozemo provjeriti verziju Bash shell-a.  
 ```bash
 $ bash --version
 
@@ -100,7 +100,7 @@ Skriptu mozemo izvrsiti na nekoliko nacin:
 
 `./` - U UNIX sistemima, "./" predstavlja relativnu putanju do trenutnog direktorija u kojem se nalazimo u shell-u. "." predstavlja trenutni direktorij, a "/" predstavlja putanju.
 
-Kada se koristi `./` zajedno sa nazivom izvrsnog fajla (npr. "./hello.sh"), to znazi da se taj fajl pokrece iz trenutnog direktorija. Ovo je korisno kada se nalazimo u direktoriju u kojem se nalazi izvrsni fajl, jer nam omogucava da pokrenemo fajl bez potrebe za kucanjem pune putanje do fajla.  
+Kada se koristi `./` zajedno sa nazivom izvrsnog fajla (npr. "./hello.sh"), to znaci da se taj fajl pokrece iz trenutnog direktorija. Ovo je korisno kada se nalazimo u direktoriju u kojem se nalazi izvrsni fajl, jer nam omogucava da pokrenemo fajl bez potrebe za kucanjem pune putanje do fajla.  
 
 ### Kompajler VS Interpreter  
 - **Kompajler** - Kompajler je program koji prevede izvorni kod u izvrsni fajl. Programski jezici koji koriste kompajler (C, C++, Java ...) za izradu izvrsnog fajla.  
