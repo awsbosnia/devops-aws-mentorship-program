@@ -21,8 +21,8 @@ Office Hours da se sastoje od 2 dijela:
 - [x] [Week-9](##week-9)
 - [x] [Office Hours 15.04.2023.](##Office-Hours-15.04.2023.)    
 - [x] [Week-10](##week-10)
-- [ ] [Week-11](##week-11)
-- [ ] [Office Hours 29.04.2023.](##Office-Hours-29.04.2023.)  
+- [x] [Week-11](##week-11)
+- [x] [Office Hours 29.04.2023.](##Office-Hours-29.04.2023.)  
 - [ ] [Week-12](##week-12)
 - [ ] [Week-13](##week-13)
 - [ ] [Office Hours 13.05.2023.](##Office-Hours-13.05.2023.)  
@@ -327,6 +327,7 @@ NOTE: Dzenan OOTO
 - Dopuniti materijale i biljeske (materijali sa gdrive i individualnih biljeski)
 - Napraviti yt video snimke i repozitoriji javnim
 - Napisati blog post o DevOps Mentorship Programu
+- Koristiti `mkdocs` za sajt sa materijalima. Pogledaj primjer (ovdje)[https://github.com/aws-observability/observability-best-practices]
 ---
 ## Offline Recordings TO DO List
 Snimiti dodatne vide lekcije offline: 
