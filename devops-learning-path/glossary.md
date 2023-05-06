@@ -23,6 +23,7 @@ Kljucni pojmovi, njihovo znacenje i definicije.
 ### Idempotent Commands
 
 ### Immutable Infrastructure
+https://devopscube.com/immutable-infrastructure/
 
 ### Event Driven Architecture
 
