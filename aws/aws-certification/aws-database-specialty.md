@@ -1,0 +1,1 @@
+# AWS Database Specialty Certification
