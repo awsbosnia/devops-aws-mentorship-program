@@ -1,1 +1,0 @@
-HashiCorp Certified: Vault Associate

@@ -1,1 +1,0 @@
-# SAP on AWS Certification
