@@ -34,7 +34,7 @@ Uloga prezentacijskog sloja je da aplikacijama koje medjusobno komuniciraju, raz
 
 ### Sloj sesije
 
-Sloj sesije obezbjedjuje razgranicavanje i sinhoronizovanje razmjene podatka ukljucujuci i nacin za stvaranje tacke za oporavak u slucaju greske. Takodjer omogucava i seme za oporavak podataka.
+Sloj sesije obezbjedjuje razgranicavanje i sinhronizovanje razmjene podatka ukljucujuci i nacin za stvaranje tacke za oporavak u slucaju greske. Takodjer omogucava i seme za oporavak podataka.
 
 ### Transportni sloj
 
@@ -460,7 +460,7 @@ upita za klijenta obavlja pretrazivanje kroz DNS stablo i vraca nazad odgovore k
 3. **Autoritativni (engl. authoritative) DNS posluzitelj**, koji odgovara na upite rekurzivnih posluzitelja te vraca ili zavrsni odgovor ili zbog delegiranja vraca referencu na neki drugi autoritativni DNS posluzitelj.
 
 Sam proces primanja zahtjeva i njihove obrade te vracanja odgovora se naziva **DNS rezolucija (engl. name resolution)**. Pojednostavljeno, osnovna rezolucija je proces pretvaranja domenskog imena u IP adresu: prvo trazimo autoritativni DNS posluzitelj, a zatim mu saljemo upit za adresom, na koji on odgovara sa trazenom adresom. Buduci da je **DNS strogo distribuirana baza**, ona je raspodijeljena po mnogo razlicitih posluzitelja. No, ocigledno je da zbog raspodijeljenosti rezolucija obicno ne moze biti obavljena kroz samo jedan upit i odgovor, vec najcesce zahtijeva duzu komunikaciju i niz upita i odgovora. Najcesca je situacija da klijent salje zahtjeve lokalnom DNS posluzitelju (nadlezan za klijentsko racunalo, obicno dodijeljen od ISP-a ili ustanove u kojoj se nalazi klijentsko racunalo), koji predstavlja rekurzivni posluzitelj i obavlja upite te zatim vraca odgovor klijentu. Dakle, najveci i najkompliciraniji dio procedure predstavlja trazenje autoritativnog posluzitelja u slozenoj DNS hijerarhiji.
-sto se samih tipova DNS rezolucije tice, postoje dva osnovna tipa prolaska kroz DNS hijerarhiju da bi se otkrio tocan zapis. Oni se razlikuju po tome tko obavlja vecinu posla oko saznavanja podataka i njihove obrade, a prvenstveno se pojavljuju kad obrada odredjenog DNS upita zahtijeva nekoliko koraka (dakle, lokalni DNS posluzitelj nema sve informacije):
+Sto se samih tipova DNS rezolucije tice, postoje dva osnovna tipa prolaska kroz DNS hijerarhiju da bi se otkrio tocan zapis. Oni se razlikuju po tome tko obavlja vecinu posla oko saznavanja podataka i njihove obrade, a prvenstveno se pojavljuju kad obrada odredjenog DNS upita zahtijeva nekoliko koraka (dakle, lokalni DNS posluzitelj nema sve informacije):
 
 - **Iterativni** - kada klijent salje doticne upite, posluzitelj mora odgovoriti jednim od dva moguca odgovora:
     a) odgovorom na zahtjev ili
