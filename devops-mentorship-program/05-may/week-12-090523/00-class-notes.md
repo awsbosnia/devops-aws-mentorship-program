@@ -1,19 +1,18 @@
 # 📝 Week 12 - Class notes
 ## 📅 Date: 09.05.2023.
 
-## AWS Lambda
+## AWS Lambda  
+
+## Amazon Event Bridge
 
 ## Amazon Simple Queue Service (SQS)
 ## Amazon Simple Notification Service (SNS)
 
-## Amazon Event Bridge
-
 ## Amazon API Gateway
 
-## AWS Serverless Application Model (SAM) 
 
 ## 📹 Session recordings
-- [**WEEK-12-tier-1-group-1 video session recording**]()
+- [**WEEK-12-tier-1-group-1 video session recording**](https://youtu.be/xEhI5pEvgXM)
 - [**WEEK-12-tier-1-group-2 video session recording**]()  
 
 ## 📖 Reading materials
