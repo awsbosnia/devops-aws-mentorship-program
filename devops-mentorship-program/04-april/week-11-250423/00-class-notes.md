@@ -42,7 +42,7 @@ Subnet ili podmreza predstavlja dio VPC-a koji se nalazi unutar jedne Availibity
 Prilikom kreiranja subneta morate da odaberete AZ kojoj taj subnet pripada te da alocirate zeljene IP adrese iz opsega dodjeljenog VPC-u prilikom kreiranja VPC-a.
 Pa ukoliko smo za VPC odabrali CIDR blok 10.0.0.0/16 za subnet unutar tog VPC-a cemo odabrati manji adresni opseg npr: 10.0.0.0/24
 
-**NOTE: AWS ce rezervisati prve i zadnje cetiri IP adrese unutar svakog subneta kojeg kreirate za internu upotrebu.**
+**NOTE: AWS ce rezervisati prve cetiri i zadnju IP adresu unutar svakog subneta kojeg kreirate za internu upotrebu.**
 
 - **Javni / Public Subnet** - Pridruzena ruting tablela sadrzi rutu do internet gateway-a (igw)
 
@@ -110,15 +110,31 @@ Jos jedan od preduslova da bi instanca bila u mogucnosti da salje i prima saobra
 
 #### NAT Instances and NAT Gateways
 
-Prema definiciji ntiti jedna instanca koja se nalazi u privatnom subnetu ne moze da komunicira direktno sa interentom koristeci internet gateway. Sto je jos vaznije konekcije koje dolaze van vaseg VPC-a ne mogu da komuniciraju sa instanca koje se nalaze unutar privatnog subnet-a.
+Prema definiciji niti jedna instanca koja se nalazi u privatnom subnetu ne moze da komunicira direktno sa interentom koristeci internet gateway. Sto je jos vaznije konekcije koje dolaze van vaseg VPC-a ne mogu da komuniciraju sa instancama koje se nalaze unutar privatnog subnet-a.
 
-Postje slucajevi kao sto su preuzimanja sigurnosnih azuriranja, instalacije aplikacija sa interneta, kada je neopohodno omoguciti instancama koje se nalaze unutar privatnog subneta izlaz na interent. 
+Postoje slucajevi kao sto su preuzimanja sigurnosnih azuriranja, instalacije aplikacija sa interneta, kada je neopohodno omoguciti instancama koje se nalaze unutar privatnog subneta izlaz na interent. 
 
 Da bi to postigli neophodno je da koristimo NAT instance ili NAT gateway.
 
+#### NAT gateway
 NAT gateway je AWS servis koji je dizajniran da bude visoko dostupan unutar AZ i ima zadatak da omoguci izlaz na interent resursima koji se nalaze unutar privatnog subneta.
 
+NAT gateway radi nesto sto se zove *IP masquerading* ili maskiranje IP adresa i to na nacin da se cijeli jedan CIDR blok privatnih IP adresa "krije" iza jedne javne IP adrese koja je dodijeljena NAT gateway-u. Dakle, kada instanca sa privatnom IP adresom iz privatnog  subneta zeli izaci van svog VPC-a, bez da joj se dodijeli posebna javna IP adresa, tu nastupa NAT gateway koji ce ustupiti svoju javnu IP adresu. Sa ovom javnom IP adresom NAT gateway nastavlja rutiranje ka Internet gateway-u i omogucava se izlaz na mrezu. 
+
+NAT gateway postavlja se u public subnet unutar AZ i predstavlja samo *next hop* izmedju privatnog subneta i internet gateway-a. 
+Privatni subnet u default routing table upisuje NAT gateway, dok NAT gateway u routing table upisuje Internet gateway cime je obezbjedjeno povezivanje.
+
+Vazno je zapamtiti da sa koristenjem NAT gateway-a nemamo mogucnost dvosmjerne komunikacije putem mreze. Razlog tome je sto instance u slucaju koristenja NAT gateway-a mogu postaviti samo outbound pravila, ali ne i inbound pravila jer servis koji bi htio poslati nesto nasoj instanci, zna samo javnu IP adresu NAT gateway-a ali ne i adresu nase instance te ne moze specificirati kojoj tacno adresi tj. instanci je namijenjen paket ili request koji se salje. 
+
+#### NAT instance
 Prije pojave NAT serivsa, da bi instancama unutar privatnog subneta omogucili izlaz na interent bilo je neophodno da manuelno kreirate NAT instancu i da je samostalno odrzavate.
+
+NAT instance su EC2 instance koje su obavljale posao koji sada radi NAT gateway. 
+
+Svaka EC2 instanca ima ENI (Elastic Network Interface) koji simulira rad mrezne kartice kod stvarnih racunara. EC2 po defaultu radi filtriranje podataka te odbacuje sve one podatke cija source ili destination adresa nije adresa ENI-a tj. adresa EC2 instance. Ovaj proces obavlja Source/Destination check.
+
+Kada se radi NAT proces, onda kao source adress ili destinatin adress imamo adrese drugih servisa ili instanci, a kako ovaj saobracaj ne bi bio *dropped* moramo onemoguciti Source/destination check na EC2 instanci.
+Ovime nasa EC2 instanca postaje NAT instance i obavlja NAT proces.
 
 
 ## 📹 Session recordings
