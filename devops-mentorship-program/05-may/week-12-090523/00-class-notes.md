@@ -13,7 +13,8 @@
 
 ## 📹 Session recordings
 - [**WEEK-12-tier-1-group-1 video session recording**](https://youtu.be/xEhI5pEvgXM)
-- [**WEEK-12-tier-1-group-2 video session recording**]()  
+- [**WEEK-12-tier-1-group-2 video session recording - PART I**](https://youtu.be/Fb6R3YXPxv0)  
+- [**WEEK-12-tier-1-group-2 video session recording - PART II**](https://youtu.be/xysv_eSb1tQ)  
 
 ## 📖 Reading materials
 
