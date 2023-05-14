@@ -254,12 +254,6 @@ pauze koju smo pravili
 
 ---
 ## Week-16
-### Group-1-Tier-1 30.05.2023.
-- Alma Beganovic - Infrastructure as Code (CloudFormation)
-### Group-1-Tier-2 01.06.2023.
-- Dragan Pavlovic - Infrastructure as Code (Terraform)
----
-## Week-17
 NOTE: Dzenan OOTO 
 #### Group-1-Tier-1 06.06.2023.
 - Marin Radjenovic - CDK (Cloud Development Kit)
@@ -276,54 +270,70 @@ Stvari koje su se propustile do sada a potrebno ih je obraditi:
 - AWS Organisations
 
 ---
-## Week-18
+## Week-17
 
-### Group-1-Tier-1 30.05.2023.
+### Group-1-Tier-1 13.06.2023.
+- Goran Opacic - Amazon Aurora, Aurora Serverless 
+- Goran Opacic - DynamoDB
 - Monitoring and Observability
     - Grafana (Dragan Pavlovic)
     - Data Dog vs New Relic
 
-### Group-2-Tier-1 1.06.2023.
+### Group-2-Tier-1 15.06.2023.
 - ELK Stack
 ---
 ## Office Hours 17.06.2023.
 - Pomjerili smo Office Hours sa 10.06.2023. na 17.06.2023. zbog toga sto je Dzenan OOTO u sedmici 5.06.2023. - 11.06.2023.
 
 ---
-## Week-19
-### Group-1-Tier-1 06.06.2023.
+## Week-18
+### Group-1-Tier-1 20.06.2023.
   - Kubernetes [ovo ce vjerovatno biti pomjereno za neku od kasnijih sedmica]
   - GitOps / ArgoCD / FluxCD [ovo ce vjerovatno biti pomjereno za neku od kasnijih sedmica]
 
-### Group-2-Tier-1 8.06.2023.
+### Group-2-Tier-1 22.06.2023.
 - Nenad Djordjevic [Tek treba da se precizira tacan datum]
     - Golang i DevOps
 ---
-## Week-20
+## Week-19
 
-### Group-1-Tier-1 13.06.2023.
+### Group-1-Tier-1 27.06.2023.
 - Teme i predavaci ce biti naknadno dodani
 
-### Group-2-Tier-1 15.06.2023.
+### Group-2-Tier-1 29.06.2023.
+- Teme i predavaci ce biti naknadno dodani
+---
+## Office Hours 01.07.2023.
+Obavjesitit polaznike o prebacivanju na 1 predavanje sedmicno. 
+Predstaviti timeline za nastavak Mentorship Programa.
+--- 
+## Week-20
+Prebaciti na 1 predavanje sedmicno.
+### Tier-1 04.07.2023.
 - Teme i predavaci ce biti naknadno dodani
 ---
 ## Week-21
 
-### Group-1-Tier-1 20.06.2023.
-### Group-2-Tier-1 15.06.2023.
-- Teme i predavaci ce biti naknadno dodani
-
-### Group-1-Tier-2 22.06.2023.
-- Teme i predavaci ce biti naknadno dodani
----
-## Week-22
-
-### Group-1-Tier-1 + Group-1-Tier-2 27.06.2023.
+### Tier 1 11.07.2023.
+- Ranije je bilo planirano da ovo bude posljednje predavanje prvog ciklusa DevOps Menotrship Programa ali cemo to morati da prolongiramo jer neke teme nece stici da se obrade do ovog datuma. U skladu s tim potrebno je planirati daljnje aktivnosti pocevsi od Week-21.
 - Review results and impresions.
 - What next ? -> Break -> BI Weekly DevOps Office Hours / CI za DevOps Mentorship Program :)
 ---
-## Week-23
 
+## Office Hours 15.07.2023.
+
+## Week-22
+### Tier 1 18.07.2023.
+
+---
+
+## Week-23
+### Tier 1 25.07.2023.
+
+---
+## Office Hours 29.07.2023.
+Zavrsetak DevOps Mentorship Programa
+- Next steps
 ## Dzenan Due Date: 1.07.2023.
 - Mind map update sa stvarima koje smo presli i koje prelazimo
 - Snimanje dodanih kratkih videa 15-20 min max za stvari koje su bitne a nisu se spomenule ili su preskocene
@@ -352,7 +362,6 @@ Snimiti dodatne vide lekcije offline:
 - [ ] VPN 
 - [ ] Custom NAT instance
 - [ ] Kako instalirati MySQL na Amazon Linux 3 EC2 instancu (+osnovna konfiguracija)
-## Office Hours 01.07.2023.
 --- 
 ## TBD
 
