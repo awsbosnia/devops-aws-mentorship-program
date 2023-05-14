@@ -24,18 +24,23 @@ Office Hours da se sastoje od 2 dijela:
 - [x] [Week-11](##week-11)
 - [x] [Office Hours 29.04.2023.](##Office-Hours-29.04.2023.)  
 - [x] [Week-12](##week-12)
-- [ ] [Week-13](##week-13)
-- [ ] [Office Hours 13.05.2023.](##Office-Hours-13.05.2023.)  
+- [ ] [Office Hours 13.05.2023.](##Office-Hours-13.05.2023.) 
+- [ ] [Week-13](##week-13) 
 - [ ] [Week-14](##week-14)
-- [ ] [Week-15](##week-15)
 - [ ] [Office Hours 27.05.2023.](##Office-Hours-27.05.2023.) 
+- [ ] [Week-15](##week-15)
 - [ ] [Week-16](##week-16)
 - [ ] [Week-17](##week-17) 
-- [ ] [Week-18](##week-18)
 - [ ] [Office Hours 17.06.2023.](##Office-Hours-17.06.2023.) 
+- [ ] [Week-18](##week-18)
 - [ ] [Week-19](##week-19)
+- [ ] [Office Hours 01.07.2023.](##Office-Hours-01.07.2023.) 
 - [ ] [Week-20](##week-20)
 - [ ] [Week-21](##week-21)
+- [ ] [Office Hours 15.07.2023.](##Office-Hours-15.07.2023.) 
+- [ ] [Week-22](##week-22)
+- [ ] [Week-23](##week-23)
+- [ ] [Office Hours 29.07.2023.](##Office-Hours-29.07.2023.) 
 - [ ] [Dzenan Due Date 1.07.2023.](##Dzenan-Due-Date:-1.07.2023.)
 - [ ] [Office Hours 1.01.2023.](##Office-Hours-01.07.2023.) 
 ---
@@ -243,15 +248,15 @@ pauze koju smo pravili
 #### Group-2-Tier-2 25.05.2023.
 - CICD
 ---
+## Office Hours 27.05.2023.
+
+---
 ## Week-15
 #### Group-1-Tier-1 30.05.2023.
 - Cloud Formation (Infrastructure as Code) - Alma Beganovic / Dragan Pavlovic
 
 #### Group-1-Tier-2 01.06.2023.
 - Terrafrom IaC - Dragan Pavlovic
----
-## Office Hours 27.05.2023.
-
 ---
 ## Week-16
 NOTE: Dzenan OOTO 
