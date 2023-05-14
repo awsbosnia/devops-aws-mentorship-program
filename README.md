@@ -9,7 +9,7 @@
 - [:chart: DevOps Mentorship Program - Progres Overview](https://github.com/allops-solutions/devops-aws-mentorship-program#chart-devops-mentorship-program---progres-overview)
   - [🎓 DevOps Mentorship Program - Class Notes and Recordings](https://github.com/allops-solutions/devops-aws-mentorship-program#mortar_board-devops-mentorship-program---class-notes-and-recordings)
   - [⏰ DevOps Mentorship Program - Office Hours](https://github.com/allops-solutions/devops-aws-mentorship-program#alarm_clock-devops-mentorship-program---office-hours)
-  - [:wrench: DevOps Mentorship Program - TO DO List]
+  - [:wrench: DevOps Mentorship Program - TO DO List](/devops-mentorship-program/to-do-list.md)
 - [ :infinity: DevOps Learning Path - Table of Contents](/table-of-contents.md)
 - [:bangbang: Team Notes and Updates](https://github.com/allops-solutions/devops-aws-mentorship-program#bangbang-team-notes-and-updates)
 - [👏 How to Contribute](https://github.com/allops-solutions/devops-aws-mentorship-program#-how-to-contribute)
