@@ -9,6 +9,7 @@
 - [:chart: DevOps Mentorship Program - Progres Overview](https://github.com/allops-solutions/devops-aws-mentorship-program#chart-devops-mentorship-program---progres-overview)
   - [🎓 DevOps Mentorship Program - Class Notes and Recordings](https://github.com/allops-solutions/devops-aws-mentorship-program#mortar_board-devops-mentorship-program---class-notes-and-recordings)
   - [⏰ DevOps Mentorship Program - Office Hours](https://github.com/allops-solutions/devops-aws-mentorship-program#alarm_clock-devops-mentorship-program---office-hours)
+  - [:wrench: DevOps Mentorship Program - TO DO List]
 - [ :infinity: DevOps Learning Path - Table of Contents](/table-of-contents.md)
 - [:bangbang: Team Notes and Updates](https://github.com/allops-solutions/devops-aws-mentorship-program#bangbang-team-notes-and-updates)
 - [👏 How to Contribute](https://github.com/allops-solutions/devops-aws-mentorship-program#-how-to-contribute)
@@ -214,7 +215,8 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
   - [DevOps Mentorship Program - Office Hours 19.03.2023.](https://youtu.be/x75Mg0BofFg)
   - [DevOps Mentorship Program - Office Hours 01.04.2023.](https://youtu.be/3OxR5wjBplE)  
   - [DevOps Mentorship Program - Office Hours 15.04.2023.](https://youtu.be/w4GP-jHYffI)  
-  - [DevOps Mentorship Program - Office Hours 30.04.2023.](https://youtu.be/uaDfdZ-dK3o)
+  - [DevOps Mentorship Program - Office Hours 30.04.2023.](https://youtu.be/uaDfdZ-dK3o)  
+  - [DevOps Mentorship Program - Office Hours 13.05.2023.](https://youtu.be/N8ff6se9gO4)
 
   </details>
 
