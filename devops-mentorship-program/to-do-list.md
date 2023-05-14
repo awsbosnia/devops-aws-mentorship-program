@@ -277,6 +277,8 @@ Stvari koje su se propustile do sada a potrebno ih je obraditi:
 ## Week-17
 
 ### Group-1-Tier-1 13.06.2023.
+- Introduction to Docker
+
 - Goran Opacic - Amazon Aurora, Aurora Serverless 
 - Goran Opacic - DynamoDB
 - Monitoring and Observability
