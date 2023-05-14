@@ -42,7 +42,6 @@ Office Hours da se sastoje od 2 dijela:
 - [ ] [Week-23](##week-23)
 - [ ] [Office Hours 29.07.2023.](##Office-Hours-29.07.2023.) 
 - [ ] [Dzenan Due Date 1.07.2023.](##Dzenan-Due-Date:-1.07.2023.)
-- [ ] [Office Hours 1.01.2023.](##Office-Hours-01.07.2023.) 
 ---
 ## Lista spomenutih AWS servisa
 - IAM (IAM Users, IAM Policy) - Begginers Level
