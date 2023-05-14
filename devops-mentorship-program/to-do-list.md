@@ -23,7 +23,7 @@ Office Hours da se sastoje od 2 dijela:
 - [x] [Week-10](##week-10)
 - [x] [Week-11](##week-11)
 - [x] [Office Hours 29.04.2023.](##Office-Hours-29.04.2023.)  
-- [ ] [Week-12](##week-12)
+- [x] [Week-12](##week-12)
 - [ ] [Week-13](##week-13)
 - [ ] [Office Hours 13.05.2023.](##Office-Hours-13.05.2023.)  
 - [ ] [Week-14](##week-14)
@@ -108,13 +108,13 @@ Office Hours da se sastoje od 2 dijela:
 
 
 **Week-8 koristeni AWS servisi:**
-- AWS EC2 -> Custom AMI
-- Amzon Linux AMI
-- ALB -> Target Groups
-- EBS
-- ASG
-- ACM
-- CloudTrail
+ - [x] AWS EC2 -> Custom AMI
+ - [x] Amzon Linux AMI
+ - [x] ALB -> Target Groups
+ - [x] EBS
+ - [x] ASG
+ - [x] ACM
+ - [x] CloudTrail
  
 ---
 
@@ -141,11 +141,6 @@ Office Hours da se sastoje od 2 dijela:
 #### Group-1-Tier-1 18.04.2023.
 - [x] RDS part 2
 
-- [ ] Server Configuration Management
-    - [ ] Ansible
-    - [ ] Packer
-    - [ ] EC2 Image Builder
-
 #### Group-1-Tier-2 20.04.2023.
 - [x] Robert Zuljevic gost predavac deployment Java aplikacije na AWS-u
 - Infrastruktura aplikacije:
@@ -165,18 +160,17 @@ java -jar -Dspring.profiles.active=dev s3-webapp-demo-0.0.1-SNAPSHOT.jar
 ```  
 
 ------
-
 ## Week-11
 
 #### Group-1-Tier-1 25.04.2023.
-- [ ] Komanda `aws secretsmanager get-secret-value --secret-id rds!db-f68a7098-4e7c-4d1d-906e-d75383c92e39`  je OK, ali je problem uzvicnik `rds!db`. Treba staviti escape backslash `rds\!db` - Hvala **Ismail Icanovic** 
-- [ ] S3 + CloudFront for static web site hosting
-- [ ] Elastic IPs
-- [ ] VPC Intro
+- [x] Komanda `aws secretsmanager get-secret-value --secret-id rds!db-f68a7098-4e7c-4d1d-906e-d75383c92e39`  je OK, ali je problem uzvicnik `rds!db`. Treba staviti escape backslash `rds\!db` - Hvala **Ismail Icanovic** 
+- [x] S3 + CloudFront for static web site hosting
+- [x] Elastic IPs
+- [x] VPC Intro
 
 #### Group-1-Tier-2 27.04.2023.
-- VPC Virtual Private Cloud Deep Dive
-- VPC Lattice
+- [x] VPC Virtual Private Cloud Deep Dive
+- [ ] VPC Lattice
 ---
 ## Office Hours 29.04.2023.
 AWS Certification 
@@ -188,6 +182,9 @@ Gosti predavaci:
 ## Week-12 (pauza)
 
 #### Group-1-Tier-1 2.05.2023.
+Sljedece je potrebno prebaciti u neku od sedmica u nastavku jer smo ovo preskocili zbog
+pauze koju smo pravili
+```
 - Unaprijedjenje infrastrukture za Java aplikaciju iz Week-10 (pogledati [AWS Web Application Architcture on AWS](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/web-application-architecture-on-aws-ra.pdf?did=wp_card&trk=wp_card))
 - [Choosing the right health check with Elastic Load Balancing and EC2 Auto Scaling](https://aws.amazon.com/blogs/networking-and-content-delivery/choosing-the-right-health-check-with-elastic-load-balancing-and-ec2-auto-scaling/)
 - VPC
@@ -205,10 +202,10 @@ Gosti predavaci:
     - S3 Logs
     - Amazon Athena (Querying S3 Logs)
     - Route53 (multi region failover, diferent routing policies)
-
+```
 ## Week-12 [New Schedule]
 #### Group-1-Tier-1 09.05.2023.
-- Marin Radjenovic - Serverless - AWS Lambda / Event Bridge  / SNS /  SQS 
+- [x] Marin Radjenovic - Serverless - AWS Lambda / Event Bridge  / SNS /  SQS 
    => Hello World Node JS lambda funkcija i deployment kroz AWS konzolu. 
    => EventBridge / CloudWatch Events (cron job)
    => SAM 
@@ -216,51 +213,51 @@ Gosti predavaci:
    
 
 #### Group-1-Tier-1 11.05.2023.
-=> Marin nastavlja tamo gdje je stao u utorak i sta nije stigao da odradi u Utorak.
-=> Alma Beganovic - API Gateway, Alma ce da nadopuni marina za API Gateway sto Marin, Marin ce da asistira 
-
+- [x] Marin nastavlja tamo gdje je stao u utorak i sta nije stigao da odradi u Utorak.
+- [x] Alma Beganovic - API Gateway,
 ---
+
+## Office Hours 13.05.2023.
+- Analiza rezultata ankete
+- AWS SAA Certification - dodatno pojasnjenje
+----
 ## Week-13
 
-#### Group-1-Tier-1 9.05.2023.
-- CI/CD
-- Halid Osmanovic - Jenkins
-- AWS CodePipeline, Code Build, Code Deploy
-- Github actions (pre-commit hooks)
+#### Group-1-Tier-1 16.05.2023.
+- [Viktor Farcic](https://www.linkedin.com/in/viktorfarcic/) - Gost Predavac (devops state of mind) - 1h | Pocetak u 20h
+- Route 53
 
-#### Group-1-Tier-2 11.05.2023. # mora biti pomjereno
-- Docker
----
-## Office Hours 13.05.2023.
+#### Group-1-Tier-2 17.05.2023. # mora biti pomjereno
+- Simple Email Service (SES)
+- Urban Jurca
+
 
 ---
 ## Week-14
 
-#### Group-1-Tier-1 16.05.2023.
-- Alma Beganovic - Infrastructure as Code (CloudFormation)
-
-#### Group-2-Tier-2 18.05.2023.
-- Dragan Pavlovic - Infrastructure as Code (Terraform)
+#### Group-1-Tier-1 23.05.2023.
+- [ ]  Server Configuration Management
+ - [ ] Ansible
+ - [ ] Packer
+ - [ ] EC2 Image Builder
+#### Group-2-Tier-2 25.05.2023.
+- CICD
 ---
 ## Week-15
-#### Group-1-Tier-1 23.05.2023.
-- Migrate Java app from EC2 to ECS
-- [Viktor Farcic](https://www.linkedin.com/in/viktorfarcic/) - Gost Predavac (devops state of mind) - 1h | Pocetak u 20h
+#### Group-1-Tier-1 30.05.2023.
+- Cloud Formation (Infrastructure as Code) - Alma Beganovic / Dragan Pavlovic
 
-
-#### Group-1-Tier-2 25.05.2023.
-- Migrate Java app from ECS to ECS Fargate
-- [ ] Spomenuti sta se desi kada imate NAT gateway i ECS Fargate task u privatnom subnetu. 
+#### Group-1-Tier-2 01.06.2023.
+- Terrafrom IaC - Dragan Pavlovic
 ---
 ## Office Hours 27.05.2023.
 
 ---
 ## Week-16
 ### Group-1-Tier-1 30.05.2023.
-- Boris Bradic - Kubernetes
-
+- Alma Beganovic - Infrastructure as Code (CloudFormation)
 ### Group-1-Tier-2 01.06.2023.
-- Boris Bradic - Kubernetes / EKS
+- Dragan Pavlovic - Infrastructure as Code (Terraform)
 ---
 ## Week-17
 NOTE: Dzenan OOTO 
@@ -271,8 +268,16 @@ NOTE: Dzenan OOTO
 - Marin Radjenovic - Overview of Machine Learning services on AWS
 
 ---
+Teme za sedmice koje slijede tek treba da se preciziraju.
+Stvari koje su se propustile do sada a potrebno ih je obraditi:
+- Unaprijediti AWS infrastrukturu Java aplikacije sto je bilo planirano za Week 12.
+- Python on AWS
+- Overivew of Security Services on AWS
+- AWS Organisations
 
+---
 ## Week-18
+
 ### Group-1-Tier-1 30.05.2023.
 - Monitoring and Observability
     - Grafana (Dragan Pavlovic)
@@ -287,12 +292,11 @@ NOTE: Dzenan OOTO
 ---
 ## Week-19
 ### Group-1-Tier-1 06.06.2023.
-- Urban Jurca
-  - DevOps Culture and Practices
-  - GitOps / ArgoCD / FluxCD
+  - Kubernetes [ovo ce vjerovatno biti pomjereno za neku od kasnijih sedmica]
+  - GitOps / ArgoCD / FluxCD [ovo ce vjerovatno biti pomjereno za neku od kasnijih sedmica]
 
 ### Group-2-Tier-1 8.06.2023.
-- Nenad Djordjevic
+- Nenad Djordjevic [Tek treba da se precizira tacan datum]
     - Golang i DevOps
 ---
 ## Week-20
