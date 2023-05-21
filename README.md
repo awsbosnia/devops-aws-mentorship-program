@@ -193,7 +193,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Homework](/devops-mentorship-program/04-april/week-11-250423/01-homework.md)
   - [Additional reading](/devops-mentorship-program/04-april/week-11-250423/02-additional-reading.md)
   </details>  
-    <details>
+<details>
    <summary>Week-12</summary>
 
   **Topics: AWS Lambda, SNS, SQS, EventBridge, API Gateway**
@@ -201,6 +201,15 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Class notes](/devops-mentorship-program/05-may/week-12-090523/00-class-notes.md)
   - [Homework](/devops-mentorship-program/05-may/week-12-090523/01-homework.md)
   - [Additional reading](/devops-mentorship-program/05-may/week-12-090523/02-additional-reading.md)
+  </details>  
+  <details>
+   <summary>Week-13</summary>
+
+  **Topics: AWS Elasti Beanstalk, DevOps Culture and Practices (Viktor Farcic, Urban Jurca)**
+
+  - [Class notes](/devops-mentorship-program/05-may/week-13-160523/00-class-notes.md)
+  - [Homework](/devops-mentorship-program/05-may/week-13-160523/01-homework.md)
+  - [Additional reading](/devops-mentorship-program/05-may/week-13-160523/02-additional-reading.md)
   </details>
 
 ## :alarm_clock: DevOps Mentorship Program - Office Hours
