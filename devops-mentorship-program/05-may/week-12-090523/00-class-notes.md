@@ -251,7 +251,135 @@ Na slican nacin EventBridge prihvata evente od servisa unutar AWS accounta, nosi
 *Slika preuzeta sa learn.cantrill.io SAA*
 
 ## Amazon Simple Queue Service (SQS)
+
+
+SQS - Simple Queue Service nam pruza upravljanje redovima (queues) poruka. To je public service, znaci da je dostupan bilo gdje sa AWS public space endpoints pristupom. 
+To ukljucuje privatni VPC ako ima konektivnost ka servisima. U potpunosti je upravljiv, npr. **kreiramo queue i onda servis dostavlja taj queue kao servis**.
+Queues su HA (highly available), tako da ne moramo da brinemo o replikaciji i izdrljivosti. 
+Postoje dva tipa queues-a: 
+
+- Standard queues - najvise se koristi, ali postoji mogucnost da ne dobijemo poruke organizirano.
+
+- FIFO queues - pruza i garantira nam da poruke dolaze organizirano, i kada dobijemo poruke, vidimo ih organizirano, **npr. poruka 1, poruka 2, poruka 3...**.
+
+Posmatrajmo Standard queues kao autoput sa vise traka, dok je FIFO queues kao put sa jednom trakom bez prilike da bilo koga preteknemo. 
+Standard queues nam garantira barem jednu isporuku ali ne garantira order te isporuke. Sa standardnim queues mozemo dobiti istu poruku dostavljenu 2x i order moze biti drugaciji. 
+FIFO nam garantira order i isporuku tacno jednom. 
+
+
+![standard-vs-fifo](files/standard-vs-fifo.png)
+*Slika preuzeta sa learn.cantrill.io SAA*
+
+- FIFO (Performanse) 3000 poruka po sekundi sa batchingom ili 300 u sekundi bez
+
+- Naplacuje se po 'requestu', 1 request = 1-10 poruka do 64 KB
+
+- Short (odmah) vs Long (waitTimeSeconds) Polling - vise o ovome mozete procitati [ovdje](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-short-and-long-polling.html)
+
+- Posto poruke mogu zivjeti neko vrijeme u queues-u, produkt podrzava **at rest** KMS enkripciju (kada je spremljena na diskove Amazon SQS data centra) i **Transit** (kada putuje do i od Amazon SQS)
+
+- Queue policy - pristup queue je baziran na identity policies, ali moze se koristiti i queue policy kako bi se kontrolirao pristup sa istog accounta, dok queue policy se moze jedino koristiti kako bi se dodao pristup sa vanjskog ili external accounta. 
+
+![sqs-performances](files/sqs-performances.png)
+*Slika preuzeta sa learn.cantrill.io SAA*
+
+# 
+
+- Poruke koje se dodaju u queue, mogu biti do 256 KB. 
+
+- Primljene poruke su skrivene (visibility timeout). Npr. kada klijent primi i obradi poruku iz queue, poruka ostaje u queue. SQS ne brise automatski poruku. Buduci da je Amazon SQS distribuirani sistem, nema garancije da ce klijent zaista primiti poruku (npr. zbog problema sa konekcijom ili problema u klijentskoj aplikaciji). Zato, klijent mora izbrisati poruku iz queue nakon sto je primi i obradi. Vise o tome mozete procitati [ovdje](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html).
+
+- Dead-Letter queues je queue gdje se problemi s porukama mogu pomjeriti, npr. ako se poruke prime 5 ili vise puta i nikada se uspjesno ne izbrisu, jedan moguci izlaz iz toga je da se pomjere poruke u Dead-Letter queue. Vise o tome mozete procitati [ovdje](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html)
+
+- Queues su odlicni za skaliranje. Auto scaling grupe mogu da skaliraju u zavisnosti od a Lambda moze biti pozvana kada se poruka pojavi u queue i to nam omogucava da napravimo **Worker pool style architecture**.  
+
+![worker-pool-style-architecture](files/worker-pool-style-architecture.png)
+*Slika preuzeta sa learn.cantrill.io SAA*
+
+**POGLEDATI `FANOUT DESIGN`  OD 08:53 U VIDEU  `Simple Queue Service` NA CANTRILLU PA DO 10:46 - BITNO ZA EXAM**
+
+![sns-and-sqs-fanout](files/sns-and-sqs-fanout.png)
+*Slika preuzeta sa learn.cantrill.io SAA*
+
+###  SQS Delay Queues
+
+"Delay queues omogucavaju odgadjanje isporuke novih poruka potrosatima na odredjeni broj sekundi, npr. kada potrosacka aplikacija treba dodatno vrijeme za obradu poruka. Ako kreirate delay queue, sve poruke koje posaljete u queue ostaju nevidljive za potrosace tijekom trajanja vremenskog razdoblja kasnjenja. Zadano (minimalno) kasnjenje za queue je 0 sekundi, a maksimalno je 15 minuta." Vise o ovom, mozete procitati [ovdje](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-delay-queues.html)
+
+![sqs-delay-queues](files/sqs-delay-queues.png)
+*Slika preuzeta sa learn.cantrill.io SAA*
+
+#
+
+**PRIMJER KORISTENJA SQS-a**
+
+U SQS Queue nece se slati logovi, za to mozes koristimo CloudWatch logs group ili s3, unutar SQS-a idu "messages" nad kojima je potrebna neka akcija/radnja/intervencija da se uradi:
+
+Korisnik uploaduje klip kvalitete 480, mi proslijedimo tu poruku (video je ocigledno prevelik da bi stao unutar Queue-a, ali svaka poruka ima svoj metadata koji bi pokazivao npr. da se video nalazi na s3 bucketu odakle ga moze preuzeti Lambda, EC2 instanca odnosno endpoint koji obradjuje/pooluje poruke iz Queue-a, a ciji je zadatak recimo da napravi verzije 720 i 1080 video snimka).
+SQS se primarno koristi da se arhitektura decoupluje, odnosno da se stvori asynchronous nacin rada komponenti, gdje jedan komponenta sistema ne ovisi o drugoj, jedna pushuje messages u SQS, a druga pooluje messages, ta dva sistema prakticno ni ne znaju jedan za drugoga i najvaznije ne cekaju na response sto cini citav sistem mnogo brzim.
+SNS se vise koristi kada zelimo da alertujemo/obavijestimo u real time-u vise subscribera (aplikacije, kompontente u sistemu, ljude etc), monitoring (kada je doslo da breach-a nekog alarma/budgeta, pada nekog servisa etc). Prakticno da obavijestimo da se desilo nesto, da bi se (ne mora, moze biti samo obavjestenje neko, npr. saljes korisnicima push notifikaciju da je black Friday 50% off cijena) moglo nesto uraditi povodom toga.
+
 ## Amazon Simple Notification Service (SNS)
+
+
+SNS je **kljucna** komponenta mnogih arhitektura u AWS-u. 
+
+SNS je **visoko dostupan, trajan, siguran, pub-sub messaging servis**. Vise o pub-sub servisu mozete pogledati [ovdje](https://aws.amazon.com/what-is/pub-sub-messaging/)
+
+- Potreban nam je network connectivity sa javnim AWS endpointom kako bi pristupili SNS-u. 
+
+- Koordinacija slanja i primanja poruka. 
+
+- Poruke su sadrzaji velicine do **256 KB**.
+
+- **SNS Topics su glavni entitet SNS-a** - Tu se permisije kontroliraju kao i vecina konfiguracija koja se definira. 
+
+- Publisher salje poruke u TOPIC. 
+
+- TOPICS imaju Subscribere i oni po defaultu primaju sve poruke koje se salju u TOPIC. 
+
+- Subscriberi mogu da dodju u vise formi: HTTP(s), e-mail (JSON), SQS, Mobile Push, SMS poruke i Lambda . 
+
+![sns](/devops-mentorship-program/05-may/week-12-090523/files/sns.png)
+*Slika preuzeta sa learn.cantrill.io SAA*
+
+![sns-example](files/sns-example.png)
+*Slika preuzeta sa learn.cantrill.io SAA*
+
+#
+
+**HTTP(s)**: omogucuje slanje notifikacija putem HTTP(s) protokola. To je URL endpoint koji će primiti HTTP zahtijev sa sadrzajem notifikacije. Ova forma je veoma korisna kada bismo zeljeli da notifikacije stignu do web aplikacije.
+
+**E-mail (JSON)**: salju se notifikacije putem e-maila. Npr. navodi se adresa subscribera i onda notifikacija bude isporucena u JSON formatu putem e-mail poruke. 
+
+**SQS (Simple Queue Service)**: SNS omogucuje integraciju sa SQS. Moze se subscribe-ati SQS queue na SNS topic, tako da svaka notifikacija bude dostavljena u queue kao poruka. 
+
+**Mobile Push**: salju se notifikacije putem mobilnih push servisa. Uradi se subscribe mobilne aplikacije na SNS topic, a notifikacije će biti dostavljene putem push servisa na uredjajima korisnika.
+
+**SMS poruke**: moze se pretplatiti telefonski broj kao subscriber, a notifikacija će biti isporucena kao SMS poruka. 
+
+**Lambda**: SNS moze pozvati cak Lambda funkciju kao subscribera. Kada se notifikacija posalje na SNS topic, Lambda funkcija će biti automatski pokrenuta i moci ce obraditi notifikaciju na zeljeni način. 
+
+# 
+
+SNS se koristi u mnogo AWS produkta i servisa, npr. **CloudWatch** koristi SNS kada alarmi promijene stanje, **CloudFormation** koristi SNS kada stacks promijene stanje. **Auto-Scaling grupa** moze biti konfigurisana da salje notifikacije u TOPIC kada se scaling eventi javljaju. 
+
+Funkcionalnosti koje pruza SNS su veoma bitne. SNS pruza: 
+
+- Status isporuke (delivery status) - HTTP(s) Lambda, SQS
+
+- Ponovni pokusaji isporuke (delivery retries)
+
+- Visoko dostupan i skalabilan (region) - svi podaci koji se posalju u SNS se repliciraju u regiji
+
+- Server side enkripcija (SSE)
+
+- Mogucnost cross-accounta kroz TOPIC policy
+
+**SNS se opsezno koristi kada se deploya projekt u AWS**
+
+![sns-functionality](files/sns-functionality.png)
+*Slika preuzeta sa learn.cantrill.io SAA*
+
 
 ## Amazon API Gateway
 
