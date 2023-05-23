@@ -1,8 +1,8 @@
-# 📖 Week 8 - Additional learning materials
-## 📅 Date: 28.03.2023.
+# 📖 Week 14 - Additional learning materials
+## 📅 Date: 23.05.2023.
 
 ### 📚 Books
-
+[Ansible: Up and Running, 3rd Edition](https://learning.oreilly.com/library/view/ansible-up-and/9781098109141/)
 ### 🌐 Blog Posts
 
 
