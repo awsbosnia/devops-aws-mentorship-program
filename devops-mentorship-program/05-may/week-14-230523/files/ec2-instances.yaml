@@ -1,0 +1,67 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Create 5 EC2 Instances for Week 14 of the DevOps Mentorship Program
+Resources:
+  EC2Instance1:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0889a44b331db0194
+      InstanceType: t2.micro
+      KeyName: week-8
+      SecurityGroupIds:
+        - sg-0300ca0c384d5aa00
+      SubnetId: subnet-053627bc31d80c2a8
+      Tags:
+        - Key: Name
+          Value: webserver
+
+  EC2Instance2:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0889a44b331db0194
+      InstanceType: t2.micro
+      KeyName: week-8
+      SecurityGroupIds:
+        - sg-0300ca0c384d5aa00
+      SubnetId: subnet-053627bc31d80c2a8
+      Tags:
+        - Key: Name
+          Value: webserver
+
+  EC2Instance3:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0889a44b331db0194
+      InstanceType: t2.micro
+      KeyName: week-8
+      SecurityGroupIds:
+        - sg-0300ca0c384d5aa00
+      SubnetId: subnet-053627bc31d80c2a8
+      Tags:
+        - Key: Name
+          Value: webserver
+
+  EC2Instance4:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0889a44b331db0194
+      InstanceType: t2.micro
+      KeyName: week-8
+      SecurityGroupIds:
+        - sg-0300ca0c384d5aa00
+      SubnetId: subnet-053627bc31d80c2a8
+      Tags:
+        - Key: Name
+          Value: webserver
+
+  EC2Instance5:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0889a44b331db0194
+      InstanceType: t2.micro
+      KeyName: week-8
+      SecurityGroupIds:
+        - sg-0300ca0c384d5aa00
+      SubnetId: subnet-053627bc31d80c2a8
+      Tags:
+        - Key: Name
+          Value: webserver

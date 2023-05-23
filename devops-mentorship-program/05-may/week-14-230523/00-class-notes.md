@@ -7,6 +7,7 @@ Image predstavlja sablon odnosno template koji unutar sebe sadrzi prekonfigurisa
 
 ![AMI](/devops-mentorship-program/05-may/week-14-230523/files/AMI.jpeg)
 ### Golden Image
+Golden Image predstavlja predifisnisanu i pre-konfigurisani image koji cemo korisiti kao osnovu za sve hostove koje kreiramo. 
 
 ### Packer
 Packer je besplatni open-source alat, razvijen od komapnije HashiCorp i napisan u programskom jeziku GO, koji se koriste za kreiranje Images. Packer vam dozvoljava da kreirate iste images za razlicite platforme. Npr. mozete kreirati isti image za AWS, Azure, vmWare, VirtualBox itd. Packer je takodje integriran sa razlicitim alatima za konfigurisanje servera kao sto su Ansible, Chef, Puppet, SaltStack itd. Packer koristi JSON konfiguracione fajlove za definisanje sta zelite da se nalazi unutar image-a. Packer je cross-platform alat i moze se koristiti na Windows, Linux i Mac OS operativnim sistemima. Packer mozete koristiti za razlicite scenarije i taskove medjutim dva najecsca razloga zasto da koristite Packer su konzistentnost images koje kreirate i mogucnost integracije u vas CI/CD pipeline.
@@ -110,6 +111,8 @@ Da bi vidjeli dokumentaciju modula izvrsite komandu:
 ```bash
 $ ansible-doc <module_name>
 ```
+#### Ansible Roles
+Ansible Roles su najbolji nacin za organizovanje i ponovno koristenje Ansible koda. Ansible role je direktorij koji sadrzi sve sto je potrebno da bi se izvrsio odredjeni zadatak. 
 
 #### Ansible Inventory file
 Ansible inventory je datoteka koja sadrži listu hostova na kojima će se izvrsavati Ansible taskovi. Ansible inventory može biti u razlicitim formatima, kao što su INI, YAML ili JSON. Ansible inventory moze sadrzavati i grupisane hostove, sto vam omogucava da grupisete hostove prema razlicitim kreterijima (npr. development, production itd).
