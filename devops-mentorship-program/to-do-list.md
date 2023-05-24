@@ -25,7 +25,7 @@ Office Hours da se sastoje od 2 dijela:
 - [x] [Office Hours 29.04.2023.](##Office-Hours-29.04.2023.)  
 - [x] [Week-12](##week-12)
 - [x] [Office Hours 13.05.2023.](##Office-Hours-13.05.2023.) 
-- [ ] [Week-13](##week-13) 
+- [x] [Week-13](##week-13) 
 - [ ] [Week-14](##week-14)
 - [ ] [Office Hours 27.05.2023.](##Office-Hours-27.05.2023.) 
 - [ ] [Week-15](##week-15)
@@ -245,7 +245,7 @@ pauze koju smo pravili
  - [ ] Packer
  - [ ] EC2 Image Builder
 #### Group-2-Tier-2 25.05.2023.
-- CICD
+- CICD # cicd mora biti pomjeren za 13.05 ili 15.06 jer nismo stigli da obradimo Ansible 23.05. pa ansible mora biti pomjeren na 25.05.
 ---
 ## Office Hours 27.05.2023.
 
@@ -266,15 +266,16 @@ NOTE: Dzenan OOTO
 - Marin Radjenovic - Overview of Machine Learning services on AWS
 
 ---
-Teme za sedmice koje slijede tek treba da se preciziraju.
-Stvari koje su se propustile do sada a potrebno ih je obraditi:
-- Unaprijediti AWS infrastrukturu Java aplikacije sto je bilo planirano za Week 12.
-- Python on AWS
-- Overivew of Security Services on AWS
-- AWS Organisations
+## Week-17
+#### Group-1-Tier-1 13.06.2023  
+- [ ] CICD 
+    - [ ] Jenkins - Halid Osmanovic
+    - [ ] AWS Developer Tools (Code Pipline, Code Build, Code Deploy)
+    - [ ] GitHub Actions (precommit hooks, linters, notifications, sonar qube etc.)
+#### Group-1-Tier-2 15.06.2023
 
 ---
-## Week-17
+## Week-18
 
 ### Group-1-Tier-1 13.06.2023.
 - Introduction to Docker
@@ -288,6 +289,13 @@ Stvari koje su se propustile do sada a potrebno ih je obraditi:
 ### Group-2-Tier-1 15.06.2023.
 - ELK Stack
 ---
+
+Teme za sedmice koje slijede tek treba da se preciziraju.
+Stvari koje su se propustile do sada a potrebno ih je obraditi:
+- Unaprijediti AWS infrastrukturu Java aplikacije sto je bilo planirano za Week 12.
+- Python on AWS
+- Overivew of Security Services on AWS
+- AWS Organisations
 ## Office Hours 17.06.2023.
 - Pomjerili smo Office Hours sa 10.06.2023. na 17.06.2023. zbog toga sto je Dzenan OOTO u sedmici 5.06.2023. - 11.06.2023.
 
@@ -350,7 +358,8 @@ Zavrsetak DevOps Mentorship Programa
 - Koristiti `mkdocs` za sajt sa materijalima. Pogledaj primjer (ovdje)[https://github.com/aws-observability/observability-best-practices]
 ---
 ## Offline Recordings TO DO List
-Snimiti dodatne vide lekcije offline: 
+Snimiti dodatne video lekcije offline: 
+- [ ] EC2 - Deep Dive (different connecting options, instance connect), user data, placement groups
 - [ ] IMDS - Instance Metadata Service
         - Instance Metadata Service Version 1 (IMDSv1) – a request/response method  
         - Instance Metadata Service Version 2 (IMDSv2) – a session-oriented method  
@@ -365,6 +374,8 @@ Snimiti dodatne vide lekcije offline:
         - Basti on Github https://github.com/BohdanPetryshyn/basti
         - tailscale https://tailscale.com/
         - wireguard https://www.wireguard.com/
+        - EC2 Instance Connect 
+- [ ] AWS Recycle Bin (New feature for EBS Snapshots)
 - [ ] VPN 
 - [ ] Custom NAT instance
 - [ ] Kako instalirati MySQL na Amazon Linux 3 EC2 instancu (+osnovna konfiguracija)
@@ -372,7 +383,9 @@ Snimiti dodatne vide lekcije offline:
 ## TBD
 
 - Jeff Gahan
-- Viktorija Denchovska
+- Viktorija Denchovska - Agilne Metodologije
+- Nenad Djordjevic - GO Lang
+- Milan Milanovic - System Architecture
 - Goran Opacic - DynamoDB / NoSQL baze podataka
 - Andrew Owen - Networking Operations Center (NOC) / Monitoring and Observability
 - Darko Mesaros

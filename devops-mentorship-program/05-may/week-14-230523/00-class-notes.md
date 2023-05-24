@@ -35,6 +35,7 @@ Primjer imperativnog pristupa:
 ```bash
 $ export PDSH_SSH_ARGS_APPEND="-i /Users/ddzevlan/Downloads/week-8.pem"  # SSH key za AWS instancu
 $ pdsh -w ^hosts.txt sudo yum -y install java # hostname komanda na svim serverima
+$ PDSH_SSH_ARGS_APPEND="-o StrictHostKeyChecking=no" pdsh -l ec2-user -w ^ip-addresses ./start-testing.sh
 ```
 
 - **Declarative** Deklarativni pristup: U ovom pristupu, definisete sta zelite postici, ali ne i kako to postici. Na primjer, umjesto da definisete niz koraka za postavljanje servera, samo definisete zeljeno stanje (npr. "X softver treba biti instaliran, Y datoteka treba izgledati ovako, Z servis treba biti pokrenut"), a alat za upravljanje konfiguracijama (kao što su Ansible, Puppet, Chef ili SaltStack) odgovoran je za utvrđivanje kako postići to stanje. Ako stanje već postoji (npr. ako je softver već instaliran), alat neće ništa raditi; ako stanje ne postoji, alat će poduzeti potrebne korake za postizanje tog stanja.
