@@ -136,7 +136,7 @@ EC2 Image Builder je AWS-ov servis koji vam omogućuje da automatizirate proces 
 AWS Systems Manager je AWS-ov servis koji vam omogućuje da centralizirano upravljate vašim AWS resursima. AWS Systems Manager vam omogućuje da automatizirate operacije i upravljate konfiguracijama vasih resursa unutar AWS cloud okruzenja.
 
 ## 📹 Session recordings
-- [**WEEK-14-tier-1-group-1 video session recording**]()
+- [**WEEK-14-tier-1-group-1 video session recording**](https://youtu.be/4L-p7Wh4Dlc)
 - [**WEEK-14-tier-1-group-2 video session recording**]()  
   
 ## 📖 Reading materials  

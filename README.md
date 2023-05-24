@@ -211,6 +211,15 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Homework](/devops-mentorship-program/05-may/week-13-160523/01-homework.md)
   - [Additional reading](/devops-mentorship-program/05-may/week-13-160523/02-additional-reading.md)
   </details>
+    <details>
+   <summary>Week-13</summary>
+
+  **Topics: Server Configuration Management, Base Images, PACKER**
+
+  - [Class notes](/devops-mentorship-program/05-may/week-14-230523/00-class-notes.md)
+  - [Homework](/devops-mentorship-program/05-may/week-14-230523/01-homework.md)
+  - [Additional reading](/devops-mentorship-program/05-may/week-14-230523/02-additional-reading.md)
+  </details>
 
 ## :alarm_clock: DevOps Mentorship Program - Office Hours
 Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze kako bi se napravila rekapitulacija obradjenih tema, odgovrilo na eventualna pitanja, kao i dale dodatne upute ako je to potrebno. Snimci do sada odrzanih Office Hours sesija su dostupni preko linkova ispod.
