@@ -1,5 +1,5 @@
-# 📖 Week 8 - Additional learning materials
-## 📅 Date: 28.03.2023.
+# 📖 Week 15 - Additional learning materials
+## 📅 Date: 30.05.2023.
 
 ### 📚 Books
 
