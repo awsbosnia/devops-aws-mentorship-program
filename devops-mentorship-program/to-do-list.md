@@ -26,8 +26,8 @@ Office Hours da se sastoje od 2 dijela:
 - [x] [Week-12](##week-12)
 - [x] [Office Hours 13.05.2023.](##Office-Hours-13.05.2023.) 
 - [x] [Week-13](##week-13) 
-- [ ] [Week-14](##week-14)
-- [ ] [Office Hours 27.05.2023.](##Office-Hours-27.05.2023.) 
+- [x] [Week-14](##week-14)
+- [x] [Office Hours 27.05.2023.](##Office-Hours-27.05.2023.) 
 - [ ] [Week-15](##week-15)
 - [ ] [Week-16](##week-16)
 - [ ] [Week-17](##week-17) 
