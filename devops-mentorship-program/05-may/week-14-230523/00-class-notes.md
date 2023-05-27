@@ -137,7 +137,7 @@ AWS Systems Manager je AWS-ov servis koji vam omogućuje da centralizirano uprav
 
 ## 📹 Session recordings
 - [**WEEK-14-tier-1-group-1 video session recording**](https://youtu.be/4L-p7Wh4Dlc)
-- [**WEEK-14-tier-1-group-2 video session recording**]()  
+- [**WEEK-14-tier-1-group-2 video session recording**](https://youtu.be/AkwoyEM639o)  
   
 ## 📖 Reading materials  
 - [**Golden Image or Foil Ball? (repost)**](https://madstop.com/post/85950592485/golden-image-or-foil-ball-repost)

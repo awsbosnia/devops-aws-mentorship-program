@@ -418,7 +418,7 @@ Funkcionalnosti koje pruza SNS su veoma bitne. SNS pruza:
 - [**WEEK-12-tier-1-group-2 video session recording - PART II**](https://youtu.be/xysv_eSb1tQ)  
 
 ## 📖 Reading materials
-
+[Connecting SNS to SQS: Fanout SNS Topics to SQS Queues](https://blog.awsfundamentals.com/amazon-sns-to-sqs)
 
 
 [:fast_forward: Class Notes](/devops-mentorship-program/05-may/week-12-090523/00-class-notes.md)
