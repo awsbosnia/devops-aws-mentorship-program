@@ -153,3 +153,31 @@ Prebacivanje između različitih S3 Object Storage Classes
 AWS Shield:
 za koju vrstu napada se koristi  
 
+### Exam date: May 2023 
+
+Snow Family, data sync, storage gateway (detaljno) ~ 10 pitanja
+Lambda vs ECS Fargate vs ECS EC2 vs EC2 ASG, SPOT Instance (detaljno) Kad koji compute koristiti ?
+Auto scaling i load balanceri osim GWLB (detaljno)
+ASG Target tracking simple scaling (detaljno)
+Secrets manager (detaljno)
+RDS i Aurora (detaljno) mogućnosti za multi region i odabir jednog u odnosu na druge
+RDS - IAM autentifikacijom, multi AZ, RR... (detaljno)
+S3, replikacija, verisoning, object lock, Athena, website hosting, storage classes, events (detaljno)
+DynamoDB (detaljno) backupi, provisioned vs on demand
+VPC Endpoints (detaljno)
+VPC peering (detaljno)
+CF Vs Global Accelerator (detaljno) ~ 5-10 pitanja usporedbe ili pojedinacno
+
+EFS, FSx (srednje detaljno) grupa laksih pitanja
+WAF ~ jedno pitanje
+SNS vs SQS, SQS FIFO (srednje detaljno) kad koji koristit
+AWS Backup (srednje detaljno)
+Cognito sa Api GW (srednje detaljno)
+Redshift (srednje detaljno)
+Transit GW (srednje detaljno)
+Lambda i serverles (dosta pitanja, srednje detaljno)
+Lake Formation (srednje detaljno) pruzanja permisija za multi account
+
+ML treba znati za svaki servis samo za sta sluzi (osonve)
+Macie (osnove)
+EMR, GLUE, KINESIS po pitanje dva za svako (osnove)
