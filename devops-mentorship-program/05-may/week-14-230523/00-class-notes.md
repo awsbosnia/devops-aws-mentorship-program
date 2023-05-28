@@ -144,6 +144,7 @@ AWS Systems Manager je AWS-ov servis koji vam omogućuje da centralizirano uprav
 - [**Packer Docs: Build an Image**](https://developer.hashicorp.com/packer/tutorials/aws-get-started/aws-get-started-build-image)  
 - [**Packer Docs: Amazon AMI Builder**](https://developer.hashicorp.com/packer/plugins/builders/amazon)  
 - [**Automated, immutable, and declarative**](https://justingarrison.com/blog/2022-11-04-immutable-declarative-automated/)  
+- [DevOps AWSBosnia - YAML](https://devops.awsbosnia.com/devops-learning-path/yaml#uvod)  
 
 
 [:fast_forward: Class Notes](/devops-mentorship-program/05-may/week-14-230523/00-class-notes.md)
