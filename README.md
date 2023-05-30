@@ -235,6 +235,7 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
   - [DevOps Mentorship Program - Office Hours 15.04.2023.](https://youtu.be/w4GP-jHYffI)  
   - [DevOps Mentorship Program - Office Hours 30.04.2023.](https://youtu.be/uaDfdZ-dK3o)  
   - [DevOps Mentorship Program - Office Hours 13.05.2023.](https://youtu.be/N8ff6se9gO4)
+  - [DevOps Mentorship Program - Office Hours 27.05.2023.](https://youtu.be/SjPYe_uZT4s)  
 
   </details>
 
