@@ -5,15 +5,13 @@ AWS CodeCommit je 'version control' servis od strane Amazon Web Services (AWS) i
 CodeCommit je sigurna, visoko skalabilna i upravljiva (managed) usluga za kontrolu source koda koja hosta privatne Git repositorije. CodeCommit eliminise potrebu za upravljanjem vlastitim sistemom za kontrolu source koda ili brigu o skaliranju infrastrukture. CodeCommit se moze koristiti za skladistenje svega, od koda do binarnih datoteka. Podržava standardnu funkcionalnost Gita, tako da se bez ikakvih problema integrira sa vec postojecim Git alatima.
 
 Sta sve sa CodeCommitom mozemo procitajte [ovdje](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html#welcome-introducing)
-
-
 #
 
 # CodeCommit, Git, biranje pravog AWS servisa za vase potrebe
 
 Kao servis zasnovan na Gitu, CodeCommit je dobro prilagodjen vecini potreba za verzionim kontrolama. Ne postoje proizvoljna ogranicenja velicine fajla, vrste fajla i velicine repozitorijuma. Međudjim, postoje inherentna ogranicenja Gita koja mogu negativno uticati na performanse odredjenih vrsta operacija. Potencijalno smanjenje performansi repozitorijuma CodeCommita moze se izbjeci tako što ce se izbjegavati njegovo koriscenje za slucajeve u kojima su druge AWS usluge bolje prilagodjene zadatku. Takodjer, mogu se optimizovati performanse Gita za kompleksne repositorije. Evo nekih slucajeva u kojima Git, a samim tim i CodeCommit, mozda nisu najbolje rjesenje, ili gde bismo mozda trebali poduzeti dodatne korake radi optimizacije za Git.
 
-![use-case](/files/1.use-case.png)
+![use-case](files/1.use-case.png)
 
 # Kako CodeCommit radi?
 
@@ -21,7 +19,7 @@ CodeCommit pruza konzolu za jednostavno kreiranje repositorija i pregled postoje
 
 Sljedeća slika prikazuje kako koristiti development masinu, AWS CLI ili CodeCommit konzolu i CodeCommit uslugu za kreiranje i upravljanje repositorijima:
 
-![how-does-codecommit-work](/files/2.how-does-codecommit-work.png)
+![how-does-codecommit-work](files/2.how-does-codecommit-work.png)
 
 - Koristite AWS CLI ili CodeCommit konzolu za kreiranje CodeCommit repositorija.
 
@@ -41,7 +39,7 @@ CodeCommit je optimiziran za timski razvoj softvera. On upravlja grupama promjen
 
 Bilo ko s AWS accountom moze besplatno zapoceti sa servisom AWS CodeCommit. Vaš racun dobiva 5 aktivnih korisnika besplatno mjesecno (unutar ogranicenja), nakon cega placate N/A za svakog dodatnog aktivnog korisnika mjesecno. Nema unaprijed definiranih naknada ili obaveza.
 
-![pricing](/files/3.pricing.png)
+![pricing](files/3.pricing.png)
 
 **Primjer** 
 
