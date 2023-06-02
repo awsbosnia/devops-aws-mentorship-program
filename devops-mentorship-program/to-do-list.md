@@ -356,6 +356,7 @@ Zavrsetak DevOps Mentorship Programa
 - Napraviti yt video snimke i repozitoriji javnim
 - Napisati blog post o DevOps Mentorship Programu
 - Koristiti `mkdocs` za sajt sa materijalima. Pogledaj primjer (ovdje)[https://github.com/aws-observability/observability-best-practices]
+- Prije nego ucinimo 
 ---
 ## Offline Recordings TO DO List
 Snimiti dodatne video lekcije offline: 
