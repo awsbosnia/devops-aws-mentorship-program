@@ -1,0 +1,109 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: This template creates one EC2 instance and Security Group
+
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label:
+          default: Instance Name
+        Parameters:
+          - InstanceName
+      - Label:
+          default: Instance Type
+        Parameters:
+          - MyInstanceType
+      - Label:
+          default: Stage Name
+        Parameters:
+          - StageName
+
+    ParameterLabels:
+      InstanceName:
+        default: Instance Name
+      MyInstanceType:
+        default: Instance Type  
+      StageName:
+        default: Stage Name 
+
+Parameters:
+  InstanceName:
+    Description: Please enter Instance Name
+    Type: String 
+    Default: 'ab-mentorship-demo'
+  MyInstanceType:
+    Description: 'Please choose a supported instance type'
+    Type: String
+    Default: 't2.micro'
+    AllowedValues:
+      - 't2.micro'
+      - 't2.medium'
+      - 't2.large'
+  StageName:
+    Type: String
+    Description: 'Please choose a supported stage'
+    Default: 'dev'
+    AllowedValues:
+      - 'dev'
+      - 'prod'
+
+Mappings: 
+  RegionAMIMap: 
+    us-east-1: 
+      "dev": "ami-0715c1897453cabd1"
+    eu-central-1: 
+      "dev": "ami-07151644aeb34558a"
+  SubnetMap:
+    us-east-1:
+      "private": "subnet-42096127"
+    eu-central-1:
+      "private": "subnet-11903e79"
+  VpcMap:
+    us-east-1:
+      "vpc": "vpc-21bcb146"
+    eu-central-1:
+      "vpc": "vpc-7ddb3115"
+  KeyPairMap:
+    us-east-1:
+      "devkey": "ab-mentorship-demo-key"
+    eu-central-1:
+      "devkey": "ab-mentorship-demo-key-eu"
+
+Resources:
+  MySecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties: 
+      GroupDescription: Security group for SSHing EC2 demo instances
+      GroupName: !Sub 'ab-mentorship-demo-sg-${AWS::Region}'
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+      VpcId: !FindInMap [VpcMap, !Ref "AWS::Region", vpc]
+
+  MyDemoInstance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      AvailabilityZone: !Select [ 0, !GetAZs '' ]
+      SubnetId: !FindInMap [SubnetMap, !Ref "AWS::Region", private]
+      SecurityGroupIds:
+        - !Ref MySecurityGroup
+      ImageId: !FindInMap [RegionAMIMap, !Ref "AWS::Region", dev]
+      InstanceType: !Ref MyInstanceType
+      KeyName: !FindInMap [KeyPairMap, !Ref "AWS::Region", devkey]
+      Tags:
+        - Key: Stage
+          Value: !Ref StageName
+        - Key: Stack
+          Value: !Sub '${AWS::StackName}'
+        - Key: Name
+          Value: !Sub '${InstanceName}.${AWS::Region}.${StageName}.awsbosnia.com'
+          #Value: !Ref InstanceName
+
+Outputs:
+  InstanceID:
+    Description: The Instance ID
+    Value: !Ref MyDemoInstance
+    Export:
+      Name: !Sub 'mentorship-demo-ec2-instance-${AWS::Region}'

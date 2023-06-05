@@ -1,0 +1,9 @@
+- name: Install Apache
+  hosts: webservers
+  become: yes
+
+  tasks:
+    - name: Install Apache package
+      ansible.builtin.dnf:
+        name: httpd
+        state: present

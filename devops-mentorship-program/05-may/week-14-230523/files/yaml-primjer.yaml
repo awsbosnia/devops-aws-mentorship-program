@@ -1,0 +1,63 @@
+Banana:
+    Kalorije: 
+        Masti: 0.4
+        Ugljkohidrati: 27
+
+
+Fruits:
+    - Banana:
+        Kalorije: 
+            Masti: 0.4
+            Ugljkohidrati: 27
+    - Jabuka:
+        Kalorije: 
+            Masti: 0.4
+            Ugljkohidrati: 27
+
+Boja: Plava
+Model: VW
+Transmisija: Manuelna
+Cijena: 1000
+
+
+Boja: Plava
+Model: 
+    Ime: VW Golf 2
+    Godiste: 1990
+Transmisija: Manuelna
+Cijena: 1000
+
+
+- Plavi Golf
+- Crveni Golf
+- Zeleni Golf
+- Crni Golf
+
+
+- Color: Blue
+  Model:    
+    Ime: VW Golf 2
+    Godina: 1990
+  Transmisija: Manuelna
+  Cijena: 1000
+
+- Color: Crveni
+  Model:    
+    Ime: VW Golf 2
+    Godina: 1990
+  Transmisija: Manuelna
+  Cijena: 1000
+
+- Color: Zeleni
+  Model:    
+    Ime: VW Golf 2
+    Godina: 1990
+  Transmisija: Manuelna
+  Cijena: 1000
+
+- Color: Crni
+  Model:    
+    Ime: VW Golf 2
+    Godina: 1990
+  Transmisija: Manuelna
+  Cijena: 1000

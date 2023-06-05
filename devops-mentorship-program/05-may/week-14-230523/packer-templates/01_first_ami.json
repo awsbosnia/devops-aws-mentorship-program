@@ -1,0 +1,11 @@
+{
+    "builders": [{
+      "type": "amazon-ebs",
+      "region": "us-east-1",
+      "source_ami": "ami-0889a44b331db0194",
+      "instance_type": "t2.micro",
+      "ssh_username": "ec2-user",
+      "temporary_key_pair_type": "ed25519",
+      "ami_name": "packer-devops-mentorship {{timestamp}}"
+    }]
+}

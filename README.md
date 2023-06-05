@@ -193,7 +193,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Homework](/devops-mentorship-program/04-april/week-11-250423/01-homework.md)
   - [Additional reading](/devops-mentorship-program/04-april/week-11-250423/02-additional-reading.md)
   </details>  
-    <details>
+<details>
    <summary>Week-12</summary>
 
   **Topics: AWS Lambda, SNS, SQS, EventBridge, API Gateway**
@@ -201,6 +201,24 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Class notes](/devops-mentorship-program/05-may/week-12-090523/00-class-notes.md)
   - [Homework](/devops-mentorship-program/05-may/week-12-090523/01-homework.md)
   - [Additional reading](/devops-mentorship-program/05-may/week-12-090523/02-additional-reading.md)
+  </details>  
+  <details>
+   <summary>Week-13</summary>
+
+  **Topics: AWS Elasti Beanstalk, DevOps Culture and Practices (Viktor Farcic, Urban Jurca)**
+
+  - [Class notes](/devops-mentorship-program/05-may/week-13-160523/00-class-notes.md)
+  - [Homework](/devops-mentorship-program/05-may/week-13-160523/01-homework.md)
+  - [Additional reading](/devops-mentorship-program/05-may/week-13-160523/02-additional-reading.md)
+  </details>
+    <details>
+   <summary>Week-13</summary>
+
+  **Topics: Server Configuration Management, Base Images, PACKER**
+
+  - [Class notes](/devops-mentorship-program/05-may/week-14-230523/00-class-notes.md)
+  - [Homework](/devops-mentorship-program/05-may/week-14-230523/01-homework.md)
+  - [Additional reading](/devops-mentorship-program/05-may/week-14-230523/02-additional-reading.md)
   </details>
 
 ## :alarm_clock: DevOps Mentorship Program - Office Hours
@@ -217,6 +235,7 @@ Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze k
   - [DevOps Mentorship Program - Office Hours 15.04.2023.](https://youtu.be/w4GP-jHYffI)  
   - [DevOps Mentorship Program - Office Hours 30.04.2023.](https://youtu.be/uaDfdZ-dK3o)  
   - [DevOps Mentorship Program - Office Hours 13.05.2023.](https://youtu.be/N8ff6se9gO4)
+  - [DevOps Mentorship Program - Office Hours 27.05.2023.](https://youtu.be/SjPYe_uZT4s)  
 
   </details>
 
