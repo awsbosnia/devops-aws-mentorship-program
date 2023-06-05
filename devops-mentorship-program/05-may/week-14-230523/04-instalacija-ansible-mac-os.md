@@ -3,7 +3,7 @@
 ## Instalacija homebrew packet managera
 
 Za instalaciju Ansible na macOS, potreban je packet manager koji se naziva `homebrew`. 
-Homebrew je besplatan open-source alat za upravljanje paketima. Omogucava jednostavno instaliranje softvera i alata koji nisu ukljuceni u osnovnu instalaciju macOS-a.
+Homebrew je besplatan open-source alat za upravljanje paketima. Omogucava  jednostavno instaliranje softvera i alata koji nisu ukljuceni u osnovnu instalaciju macOS-a.
 
 [Ovdje](https://www.youtube.com/watch?v=UBdiA0SJqLE) mozete pogledati kako instalirati homebrew.
 
