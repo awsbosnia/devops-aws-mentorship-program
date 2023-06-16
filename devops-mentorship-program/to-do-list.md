@@ -299,6 +299,9 @@ Stvari koje su se propustile do sada a potrebno ih je obraditi:
 ## Office Hours 17.06.2023.
 - Pomjerili smo Office Hours sa 10.06.2023. na 17.06.2023. zbog toga sto je Dzenan OOTO u sedmici 5.06.2023. - 11.06.2023.
 
+- Pokazati kako se moze kreirati MySQL DB koristeci ansible (kreiranje custom user-a / baze / tabela) - generalno manipulacija sa MySQL-om koristeci ansible.
+
+- I ako moze dynamic inventory da nam pokazes. Kako da pokupimo EC2 instance odmah u grupe hostova (EC2 dynamic inventory)
 ---
 ## Week-18
 ### Group-1-Tier-1 20.06.2023.

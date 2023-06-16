@@ -28,7 +28,11 @@
 
 - **Drift detection**- detekcija svih izmjena koje su izvrsene manuelno nad resursima koji su kreirani iz ***Stack***-a.
 
-### Terrafrom
+### Terrafrom  
+
+## 📹 Session recordings
+- [**WEEK-15-tier-1-group-1 video session recording**](https://youtu.be/h8sN4-6w9e8)
+- [**WEEK-15-tier-1-group-2 video session recording**](https://youtu.be/eJOhtwGnmIY)  
 
 [:fast_forward: Class Notes](/devops-mentorship-program/05-may/week-15-300523/00-class-notes.md)
 [:fast_forward: Additional Reading](/devops-mentorship-program/05-may/week-15-300523/02-additional-reading.md)
