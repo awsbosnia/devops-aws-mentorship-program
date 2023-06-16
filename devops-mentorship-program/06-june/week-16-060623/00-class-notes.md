@@ -139,7 +139,7 @@
 >:moneybag: **Pricing**
 > Pay for use - per second of transcribed video
 
-- Vise o servisu  
+- Vise o servisu:
 
 ![slika](files/transcribe.png)
 *Slika preuzeta sa learn.cantrill.io*
