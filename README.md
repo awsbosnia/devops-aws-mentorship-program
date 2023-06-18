@@ -193,7 +193,9 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Homework](/devops-mentorship-program/04-april/week-11-250423/01-homework.md)
   - [Additional reading](/devops-mentorship-program/04-april/week-11-250423/02-additional-reading.md)
   </details>   
+
 #### :calendar: Maj 2023.
+
 <details>
    <summary>Week-12</summary>
 
@@ -229,9 +231,11 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Class notes](/devops-mentorship-program/05-may/week-15-300523/00-class-notes.md)
   - [Homework](/devops-mentorship-program/05-may/week-15-300523/01-homework.md)
   - [Additional reading](/devops-mentorship-program/05-may/week-15-300523/02-additional-reading.md)
-  </details>
+  </details>    
+
 #### :calendar: Jun 2023.
-    <details>
+
+  <details>
    <summary>Week-16</summary>
 
   **Topics:**
@@ -240,7 +244,7 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Homework](/devops-mentorship-program/06-june/week-16-060623/01-homework.md)
   - [Additional reading](/devops-mentorship-program/06-june/week-16-060623/02-additional-reading.md)
   </details>
-    <details>
+  <details>
    <summary>Week-17</summary>
 
   **Topics:**
@@ -248,7 +252,8 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Class notes](/devops-mentorship-program/06-june/week-16-060623/00-class-notes.md)
   - [Homework](/devops-mentorship-program/06-june/week-16-060623/01-homework.md)
   - [Additional reading](/devops-mentorship-program/06-june/week-16-060623/02-additional-reading.md)
-  </details>
+  </details>  
+   <details>
    <summary>Week-18</summary>
 
   **Topics:**
@@ -257,6 +262,19 @@ U nastavku mozete pronaci linkove za pracenje napretka po mjesecima i sedmicama.
   - [Homework](/devops-mentorship-program/06-june/week-18-200623/01-homework.md)
   - [Additional reading](/devops-mentorship-program/06-june/week-18-200623/02-additional-reading.md)
   </details>  
+  <details>  
+   <summary>Week-19</summary>
+
+  **Topics:**
+
+  - [Class notes](/devops-mentorship-program/06-june/week-18-200623/00-class-notes.md)
+  - [Homework](/devops-mentorship-program/06-june/week-18-200623/01-homework.md)
+  - [Additional reading](/devops-mentorship-program/06-june/week-18-200623/02-additional-reading.md)
+  </details>   
+
+  #### :calendar: July 2023.  
+
+  #### :calendar: August 2023.
 
 ## :alarm_clock: DevOps Mentorship Program - Office Hours
 Svako druge Subote organizujemo Office Hours sesije. Office Hours sesije sluze kako bi se napravila rekapitulacija obradjenih tema, odgovrilo na eventualna pitanja, kao i dale dodatne upute ako je to potrebno. Snimci do sada odrzanih Office Hours sesija su dostupni preko linkova ispod.
