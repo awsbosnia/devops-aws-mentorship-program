@@ -383,6 +383,8 @@ Snimiti dodatne video lekcije offline:
 - [ ] VPN 
 - [ ] Custom NAT instance
 - [ ] Kako instalirati MySQL na Amazon Linux 3 EC2 instancu (+osnovna konfiguracija)
+- [ ] Polling vs Webhooks
+- [ ] Caching databases (Redis, Memcached)
 ---
 ## DevOps Learning Path - YT offline recordings
 Lista tema koju je potrebno obraditi u zasebnim video materijalima za DevOps Learning Path
