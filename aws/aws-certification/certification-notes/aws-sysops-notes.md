@@ -178,3 +178,51 @@ A particularly high number of questions had to do with SSM, how to troubleshoot 
 VPC
 A couple of questions were related to NACLs, Security Groups, ephemeral ports and IPv4/IPv6 routing
 
+### Exam date: June 16, 2023.
+
+
+- Following services were featured on the exam:
+- cloudformation -> cfn-init, cfn-signal, stacksets, drift detection
+- r53 -> which type of policy would you choose given the scenario, in my case there was geo-proximity, geolocation and failover
+- ec2 placement groups -> cluster and partition in my case
+- ec2 status checks -> both system and instance status checks
+- given the scenario, what should we do with the AMI -> copy or share it and what that process embodies
+- a few questions about system manager -> automation documents with AWS Config for automatic monitoring and remediation as well as run document option when we want to run script across ec2 instances
+- s3 -> many questions about s3 versioning, bucket policies, storage classes (with Glacier and vault), s3 select, s3 inventory, multi-part upload, athena, s3 encryption, s3 MFA delete, s3 access points, s3 CORS, s3 lifecycle policies
+- CloudFront -> many questions regarding the scenarios such as what we should do to increase the cache ration in Edge Locations
+- amazon aurora -> question or two
+- cw alarms, cw log groups, EventBridge, cloudTrail
+- aws organizations, aws budgets, aws Health Dashboard
+- amazon macie, trusted advisor, kms encryption using customer managed keys, aws artifact
+- secret manager and parameter store
+- many questions about VPC and networking in general as well as troubleshooting networking issues -> NAT Gateway, Internet Gateway, ipv4 + ipv6 CIDR blocks, public vs private subnet, egress-only-internet gateway, VPN, Direct Connect, NACLs, Security Groups, ephemeral ports etc.
+- a question or two about DynamoDB
+- AWS WAF + DDos protection + Network FireWall
+- CloudHSM
+- questions about ALB and NLB -> mostly questions about listeners, how to add SSL/TLS, which one should when we need insane performances (NLB) or capabilities to inspect the request and based on it route to specific endpoint (ALB)
+- AWS Certificate Manager (ACM)
+- Cognito user pools vs identity pools + Identity Federation -> I think only one or two questions
+- VPC endpoints
+- AWS Config -> a few questions
+- EBS volumes with DLM
+- Storage Gateway
+
+
+Questions I remember from the exam:
+
+
+1. What is happening when you deploy a stackset and it is in state OUTDATE? -> it means it is deploying a stack to that specific region
+2. What is happening when you deploy a stackset and it is in state OUTDATE? -> it means it is deploying a stack to that specific region
+3. How to achieve lowest latency and highest networking capabilities between ec2 instances? -> cluster placement groups
+4. SSM agent is installed on ec2 instances, but the instance is still not under the management of the SSM? -> we need to attach the policy to the EC2 instance
+5. We want to track who accesses our ALB, what should we use? -> we can use the ALB's tracing and logging capabilities
+6. How to get info on the memory utilization on EC2 instances as well as intervals as low as 1 minute? -> use CloudWatch agent and enable detailed monitoring (both)
+7. If we do not want to hardcode the DB credentials in the code, where should we store it if we want to be able to rotate the credentials automatically and what do we need more to be able to make this solution work? -> Secret Manager and IAM ROLE attached to EC2/Lambda
+8. A screenshot of the VPC Flow Log record and you are supposed to determine what went wrong ->
+e.g:
+2 123456789010 eni-1235b8ca123456789 172.31.16.139 172.31.16.21 20641 22 6 20 4249 1418530010 1418530070 ACCEPT OK
+2 123456789010 eni-1235b8ca123456789 172.31.9.69 172.31.9.12 49761 3389 6 20 4249 1418530010 1418530070 REJECT OK
+please check: https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-records-examples.html
+9. We are using Lambda function with RDS and we get a "TooManyConnections" error, what should we do to resolve this issue -> use RDS proxy which will manage connection pools and clean up idle connections
+10. A question regarding the AWS Cost Allocation Tags
+11. How to connect an EC2 to s3 from VPC without traversing the public internet? -> VPC Gateway endpoint
