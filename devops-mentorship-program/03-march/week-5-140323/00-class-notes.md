@@ -42,7 +42,8 @@ Server OS ima nekoliko karakteristika koje ga razlikuju od Operatinih Sistema na
 #### Instalacija NGINX-a na CentOS 7
 Koraci za instalaciju Nginx-a na CentOS 7:
 ```bash
-$ sudo yum install epel-release -y # instalacija EPEL repozitorija
+$ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+$ sudo rpm -ihv --nodeps ./epel-release-latest-8.noarch.rpm
 $ sudo yum install nginx -y # instalacija Nginx-a
 $ sudo systemctl start nginx # pokretanje Nginx-a
 ```
