@@ -1,5 +1,40 @@
 # AWS Solution Architect Associate - Exam Notes
 Ovdje mozete pronaci biljeske sa ispita ljudi koji su vec izasli na ispit i polozili ga. Ideja ovih biljeski je da vam daju uvid u tip pitanja / servise koje trebate poznavati kako bi uspjesno polozili ispit. 
+
+### Exam date: July 2023  
+
+billing i saving plans za cijelu organizaciju (da li moze cijela organizacija profitirati od saving plana i gdje se nalazi opcija za consolidated billing/kako se podesava)
+
+dosta pitanja sa scenarijima pa koje rjesenje je najbolje: 
+1) ne znam na engleskom tacnu formulaciju, nije cost effective, nije ni admin overhead ali kao sto manje operacija/posla da se prebaci infrastruktura na aws, pa je kljucno bilo u odgovorima sta odabrati za bazu, da li na ec2, rds ili amazon aurora
+2) cost effective pa predlozeni odgovori koja su kombinacija ebs/s3 i eks/ecs
+3) ec2 purchase options
+4) parametere store, secret manager, meta-data
+5) ec2 placement groups
+6) api gateway, alb, nlb
+7) sns, sqs
+8) ec2, lambda, step function
+9) real-time stream processing and storing (kinesis data stream/data firehose/s3/dynamodb)
+10) povezivanje veceg broja vpc-a vpc peering/transit gateway
+11) storage types, pa najjeftnije rjesenje
+12) nacls ili security groups
+
+
+s3 enkripcija, perfomanse optimization
+ebs enkripcija
+fargate mode
+lambda kao servis je dosta prisutna u pitanjima opcenito
+global accelerator
+vpc endpoints
+waf
+fsx
+macie
+retention period na sqs
+par pitanja vezano za cross-region pristupe servisima, sta moze ili kako backup uraditi za drugu regiju i slicno
+dosta pitanja za baze u smislu koje je odgovarajuce rjesenje za dati problem
+jedno pitanje za ML servise
+scaling policies
+
 ### Exam date: June 2022
 -odrediti sta mozemo uraditi u slucaju da nam reserved instance nije vise potrebna
 - imamo jednu dx konekciju i 3 peered vpc, na koji nacin uspostaviti najotporniju vezu on premisses sa svim vpc, uzimajuci u obzir da je potrebno da bude sto isplativije rijesenje
